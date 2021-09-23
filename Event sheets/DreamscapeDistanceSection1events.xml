@@ -1,0 +1,299 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>DreamscapeDistanceSection1events</name>
+    <events>
+        <include>bossevents_dd</include>
+        <include>MainPlayer</include>
+        <event-block sid="632898541076165">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="995720463548611" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="770950791595487" type="Function">
+                    <param id="0" name="Name">&quot;Screen_FadeOut&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="-9" name="Set value" sid="230752622407820" type="System">
+                    <param id="0" name="Variable">MaxPartyMemb</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="446807075466644" type="System">
+                    <param id="0" name="Variable">Char1IsInParty</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="418572872830009" type="System">
+                    <param id="0" name="Variable">Char2IsInParty</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="943851127611098" type="System">
+                    <param id="0" name="Variable">Char3IsInParty</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="516409697705558" type="System">
+                    <param id="0" name="Variable">PartyOrder</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="612124335667192" type="System">
+                    <param id="0" name="Variable">levelhasgrav</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="614663612052506" type="System">
+                    <param id="0" name="Variable">CurrentLevel</param>
+                    <param id="1" name="Value">&quot;DreamscapeDistance1&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="277954584053113" type="System">
+                    <param id="0" name="Variable">PartySwitchEnabled</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="0" name="Play" sid="531764192028113" type="Audio">
+                    <param id="0" name="Audio file">DD1</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;levelmusic&quot;</param>
+                </action>
+                <action id="4" name="Set animation" sid="831419186488853" type="hud_eyecountr">
+                    <param id="0" name="Animation">&quot;b&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="414183807337187">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="612393476957970" type="System">
+                            <param id="0" name="Variable">cacapoopee</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-13" name="Set boolean" sid="511749406600502" type="PlayerObject">
+                            <param id="0" name="Instance variable">EnableControl</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="799086074476035" type="System">
+                            <param id="0" name="Variable">PartyOrder</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="322397567472652" type="PlayerObject">
+                            <param id="0" name="Instance variable">Character</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="720759540419771" type="System">
+                            <param id="0" name="Variable">Char1IsInParty</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="644056778925432" type="System">
+                            <param id="0" name="Variable">Char2IsInParty</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="812959152533822" type="hudicon_trees">
+                            <param id="0" name="Animation">&quot;inactive&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="467970161470183" type="hudicon_l">
+                            <param id="0" name="Animation">&quot;active&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="619751691795731" type="hudicon_s">
+                            <param id="0" name="Animation">&quot;inactive&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <variable constant="0" name="cacapoopee" sid="126213092439109" static="0" type="number">0</variable>
+        <event-group description="" disabled="1" sid="548455090161889" title="SecondIntroCutscene">
+            <sub-events>
+                <event-block disabled="1" sid="914824554761385">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="867038339642199" type="Camera">
+                            <param id="0" name="Comparison">5</param>
+                            <param id="1" name="X co-ordinate">8168</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="614821061159011" type="System">
+                            <param id="0" name="Variable">cacapoopee</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="728822142679794" type="System">
+                            <param id="0" name="Variable">cacapoopee</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="0" name="Call function" sid="318714836774563" type="Function">
+                            <param id="0" name="Name">&quot;dialogue&quot;</param>
+                            <param id="1" name="Parameter {n}">&quot;DDsection1haha&quot;</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="867549158909151" type="PlayerObject">
+                            <param id="0" name="Instance variable">EnableControl</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block disabled="1" sid="932767385523926">
+                    <conditions>
+                        <condition behavior="Platform" id="2" name="Is on floor" sid="228310315849627" type="PlayerObject" />
+                        <condition id="-14" name="Compare variable" sid="105377506869828" type="System">
+                            <param id="0" name="Variable">cacapoopee</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="208446432727950" type="PlayerObject">
+                            <param id="0" name="Instance variable">Character</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="771719417298846" type="playerskin_Trees">
+                            <param id="0" name="Animation">&quot;Idle&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block disabled="1" sid="437944830599423">
+                    <conditions>
+                        <condition id="0" name="On function" sid="631029007332910" type="Function">
+                            <param id="0" name="Name">&quot;DDsecondopening_weed&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="163712612803921" type="Function">
+                            <param id="0" name="Name">&quot;end_dialogue&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="496751523707720" type="PlayerObject">
+                            <param id="0" name="Instance variable">EnableControl</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="754184764832665" type="System">
+                            <param id="0" name="Seconds">1.0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="377098830525987" type="System">
+                            <param id="0" name="Variable">cacapoopee</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="793347848424385" type="playerskin_Test">
+                            <param id="0" name="Animation">&quot;Falling&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block disabled="1" sid="798689935619593">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="580142321394506" type="System" />
+                        <condition id="-14" name="Compare variable" sid="477100019937833" type="System">
+                            <param id="0" name="Variable">cacapoopee</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Set Y" sid="511301939490678" type="playerskin_Test">
+                            <param id="0" name="Y">Self.Y+8</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block disabled="1" sid="626356896039495">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="208123571114050" type="playerskin_Test">
+                            <param id="0" name="Object">playerskin_Trees</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="838033557904992" type="System">
+                            <param id="0" name="Variable">cacapoopee</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="936463094255365" type="System">
+                            <param id="0" name="Variable">cacapoopee</param>
+                            <param id="1" name="Value">3</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="238387717564663" type="playerskin_Trees">
+                            <param id="0" name="Animation">&quot;Death&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="0" name="Spawn another object" sid="421037014712039" type="playerskin_Trees">
+                            <param id="0" name="Object">coolexplosion</param>
+                            <param id="1" name="Layer">&quot;ForegroundArt&quot;</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-7" name="Set size" sid="345813466670735" type="coolexplosion">
+                            <param id="0" name="Width">200</param>
+                            <param id="1" name="Height">200</param>
+                        </action>
+                        <action id="0" name="Play" sid="766122444760261" type="Audio">
+                            <param id="0" name="Audio file">explosion</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;explosion&quot;</param>
+                        </action>
+                        <action behavior="Rotate" id="0" name="Set speed" sid="778374992143456" type="playerskin_Trees">
+                            <param id="0" name="Speed">360</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="294356090140370" type="System">
+                            <param id="0" name="Variable">PartyOrder</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="935172111917483" type="PlayerObject">
+                            <param id="0" name="Instance variable">Character</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="472658273512600" type="System">
+                            <param id="0" name="Variable">Char1IsInParty</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="702571972580686" type="System">
+                            <param id="0" name="Variable">Char2IsInParty</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="172850620576746" type="hudicon_trees">
+                            <param id="0" name="Animation">&quot;inactive&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="857158431304423" type="hudicon_l">
+                            <param id="0" name="Animation">&quot;active&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="935094354129632" type="hudicon_s">
+                            <param id="0" name="Animation">&quot;inactive&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="481464134132291" type="playerskin_Test">
+                            <param id="0" name="Animation">&quot;Idle&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="509389837125812" type="System">
+                            <param id="0" name="Seconds">2.0</param>
+                        </action>
+                        <action id="0" name="Call function" sid="373612474705407" type="Function">
+                            <param id="0" name="Name">&quot;dialogue&quot;</param>
+                            <param id="1" name="Parameter {n}">&quot;DDsection1secondintro&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block disabled="1" sid="941482631288805">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="868143093207790" type="System" />
+                        <condition id="-14" name="Compare variable" sid="367676261328051" type="System">
+                            <param id="0" name="Variable">cacapoopee</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-1" name="Set X" sid="817876155396911" type="playerskin_Trees">
+                            <param id="0" name="X">Self.X+6</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="111724810013910" type="playerskin_Trees">
+                            <param id="0" name="Y">Self.Y-6</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

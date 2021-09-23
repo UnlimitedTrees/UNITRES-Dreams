@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>ULTRAMEGAresultsEvents</name>
+    <events>
+        <event-block sid="653622723223053">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="901093236879303" type="System" />
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="622347889245504" type="FakeTest_BG1green">
+                    <param id="0" name="X">Self.X-((0.5 * 60) * dt)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="856374350074075">
+            <conditions>
+                <condition id="-1" name="Compare X" sid="484651699497760" type="FakeTest_BG1green">
+                    <param id="0" name="Comparison">3</param>
+                    <param id="1" name="X co-ordinate">-32</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="567285823060324" type="FakeTest_BG1green">
+                    <param id="0" name="X">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="877890802316327">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="421014109346659" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="298356536002712">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="329446931012576" type="System">
+                            <param id="0" name="Variable">Score</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">HighScore_UM</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="573991508597371" type="System">
+                            <param id="0" name="Variable">HighScore_UM</param>
+                            <param id="1" name="Value">Score</param>
+                        </action>
+                        <action id="0" name="Set item" sid="766071947518928" type="LocalStorage">
+                            <param id="0" name="Key">&quot;HighScore_UM&quot;</param>
+                            <param id="1" name="Value">HighScore_UM</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="837803274945670">
+                    <conditions />
+                    <actions>
+                        <action id="0" name="Set text" sid="873966784556234" type="debug_num1">
+                            <param id="0" name="Text">&quot;Your Current Score is: &quot; &amp; Score</param>
+                        </action>
+                        <action id="0" name="Set text" sid="761199204555016" type="debug_num2">
+                            <param id="0" name="Text">&quot;Your Deaths Were: &quot; &amp; ULTRAMEGAdeaths</param>
+                        </action>
+                        <action id="0" name="Set text" sid="368192076083456" type="debug_num3">
+                            <param id="0" name="Text">&quot;And Your High Score is: &quot; &amp; HighScore_UM</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="169053107433535" type="System">
+                            <param id="0" name="Seconds">10.0</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="901584020237282" type="System">
+                            <param id="0" name="Layout">UnlimitedTrees</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="642119327451800" type="System">
+                            <param id="0" name="Variable">SavedLevel_UM</param>
+                            <param id="1" name="Value">&quot;&quot;</param>
+                        </action>
+                        <action id="0" name="Set item" sid="726540761798697" type="LocalStorage">
+                            <param id="0" name="Key">&quot;SavedLevel_UM&quot;</param>
+                            <param id="1" name="Value">SavedLevel_UM</param>
+                        </action>
+                        <action id="0" name="Set item" sid="883705629375711" type="LocalStorage">
+                            <param id="0" name="Key">&quot;SavePointActive_UM&quot;</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="0" name="Set item" sid="563587589515914" type="LocalStorage">
+                            <param id="0" name="Key">&quot;CurrentScore_UM&quot;</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="762315616108446" type="System">
+                            <param id="0" name="Variable">ULTRAMEGAdeaths</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>

@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>JokerLevelEvents</name>
+    <events>
+        <include>bossevents_UNITRES</include>
+        <include>MainPlayer</include>
+        <event-block sid="680902893535886">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="114475556418293" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="121863074603022" type="System">
+                    <param id="0" name="Variable">MaxPartyMemb</param>
+                    <param id="1" name="Value">3</param>
+                </action>
+                <action id="-9" name="Set value" sid="650830840518759" type="System">
+                    <param id="0" name="Variable">Char1IsInParty</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="627722981447137" type="System">
+                    <param id="0" name="Variable">Char2IsInParty</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="796321874212022" type="System">
+                    <param id="0" name="Variable">Char3IsInParty</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="748794003910756" type="System">
+                    <param id="0" name="Variable">PartyOrder</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="596610626527704" type="System">
+                    <param id="0" name="Variable">MiniBossIsDead</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="993924508945413" type="System">
+                    <param id="0" name="Variable">CurrentLevel</param>
+                    <param id="1" name="Value">&quot;ChaoticCarnival2&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="686039747324248" type="System">
+                    <param id="0" name="Variable">PartySwitchEnabled</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="694845952926455" type="hud_eyecountr">
+                    <param id="0" name="Animation">&quot;b&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="795526600319686">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="285555382766586" type="System" />
+                <condition id="-3" name="Is on-screen" sid="520106475588864" type="eye" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="459132871593651">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="322503086249276" type="eye">
+                            <param id="0" name="Comparison">4</param>
+                            <param id="1" name="X co-ordinate">PlayerObject.X</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="133665772320206" type="PlayerObject">
+                            <param id="0" name="Instance variable">Player</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-1" name="Set X" sid="681181921785929" type="eye">
+                            <param id="0" name="X">Self.X-4</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="897597674402359">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="505858191183854" type="eye">
+                            <param id="0" name="Comparison">2</param>
+                            <param id="1" name="X co-ordinate">PlayerObject.X</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="375611610841278" type="PlayerObject">
+                            <param id="0" name="Instance variable">Player</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-1" name="Set X" sid="182746923028750" type="eye">
+                            <param id="0" name="X">Self.X+4</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="199933618982552">
+                    <conditions>
+                        <condition id="-2" name="Compare Y" sid="188601789873930" type="eye">
+                            <param id="0" name="Comparison">4</param>
+                            <param id="1" name="Y co-ordinate">PlayerObject.Y</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="237005956435571" type="PlayerObject">
+                            <param id="0" name="Instance variable">Player</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Set Y" sid="781387283323481" type="eye">
+                            <param id="0" name="Y">Self.Y-4</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="532213405670796">
+                    <conditions>
+                        <condition id="-2" name="Compare Y" sid="796164693382600" type="eye">
+                            <param id="0" name="Comparison">2</param>
+                            <param id="1" name="Y co-ordinate">PlayerObject.Y</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="552347406445315" type="PlayerObject">
+                            <param id="0" name="Instance variable">Player</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Set Y" sid="426316058952906" type="eye">
+                            <param id="0" name="Y">Self.Y+4</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="500063206819064">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="999099834735713" type="eye">
+                    <param id="0" name="Object">PlayerObject</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="642245552133351" type="PlayerObject">
+                    <param id="0" name="Instance variable">Player</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions />
+        </event-block>
+    </events>
+</c2eventsheet>

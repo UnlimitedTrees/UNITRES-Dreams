@@ -1,0 +1,498 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>PlayerAIEvents</name>
+    <events>
+        <event-group description="" sid="388172327960154" title="BasicMovement">
+            <sub-events>
+                <event-block sid="342724683225526">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="954322732753128" type="System" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="147437860978025">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="617397127736957" type="PlayerObject">
+                                    <param id="0" name="Instance variable">Player</param>
+                                    <param id="1" name="Comparison">1</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                                <condition id="-8" name="Is boolean instance variable set" sid="324233799112595" type="PlayerObject">
+                                    <param id="0" name="Instance variable">IsAI</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="776070398443595" type="PlayerObject">
+                                    <param id="0" name="Instance variable">Player</param>
+                                    <param id="1" name="Comparison">2</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="294429844416711">
+                                    <conditions>
+                                        <condition id="-1" name="Compare X" sid="212264108589603" type="PlayerObject">
+                                            <param id="0" name="Comparison">5</param>
+                                            <param id="1" name="X co-ordinate">Camera.X+52</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="Platform" id="7" name="Simulate control" sid="695499241494535" type="PlayerObject">
+                                            <param id="0" name="Control">0</param>
+                                        </action>
+                                    </actions>
+                                    <sub-events>
+                                        <event-block sid="872962221517253">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="686145261317634" type="PlayerObject">
+                                                    <param id="0" name="Instance variable">Character</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">1</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="7" name="Set mirrored" sid="531584968036552" type="playerskin_Trees">
+                                                    <param id="0" name="State">0</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="938122365217196">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="411369712553750" type="PlayerObject">
+                                                    <param id="0" name="Instance variable">Character</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">2</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="7" name="Set mirrored" sid="478288190390680" type="playerskin_Test">
+                                                    <param id="0" name="State">0</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="422850676891881">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="933826194845392" type="PlayerObject">
+                                                    <param id="0" name="Instance variable">Character</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">3</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="7" name="Set mirrored" sid="532977110823360" type="playerskin_Test2">
+                                                    <param id="0" name="State">0</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="733328132742175">
+                                    <conditions>
+                                        <condition id="-1" name="Compare X" sid="379136739769838" type="PlayerObject">
+                                            <param id="0" name="Comparison">3</param>
+                                            <param id="1" name="X co-ordinate">Camera.X-52</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="Platform" id="7" name="Simulate control" sid="868369421024772" type="PlayerObject">
+                                            <param id="0" name="Control">1</param>
+                                        </action>
+                                    </actions>
+                                    <sub-events>
+                                        <event-block sid="494828989719473">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="223426913913975" type="PlayerObject">
+                                                    <param id="0" name="Instance variable">Character</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">1</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="7" name="Set mirrored" sid="673241729208862" type="playerskin_Trees">
+                                                    <param id="0" name="State">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="733262008974413">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="848320313391988" type="PlayerObject">
+                                                    <param id="0" name="Instance variable">Character</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">2</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="7" name="Set mirrored" sid="632613779423278" type="playerskin_Test">
+                                                    <param id="0" name="State">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="906513534972595">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="730023478348355" type="PlayerObject">
+                                                    <param id="0" name="Instance variable">Character</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">3</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="7" name="Set mirrored" sid="937625407403823" type="playerskin_Test2">
+                                                    <param id="0" name="State">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block any="1" sid="521758405667338">
+                                    <conditions>
+                                        <condition behavior="Platform" id="10" name="Is by wall" sid="609183313829408" type="PlayerObject">
+                                            <param id="0" name="Side">0</param>
+                                        </condition>
+                                        <condition behavior="Platform" id="10" name="Is by wall" sid="490821073557249" type="PlayerObject">
+                                            <param id="0" name="Side">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="Platform" id="7" name="Simulate control" sid="814594183617775" type="PlayerObject">
+                                            <param id="0" name="Control">2</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="231249462960582">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="838578674663951" type="PlayerObject">
+                                    <param id="0" name="Instance variable">Player</param>
+                                    <param id="1" name="Comparison">1</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                                <condition id="-8" name="Is boolean instance variable set" sid="931886773850319" type="PlayerObject">
+                                    <param id="0" name="Instance variable">IsAI</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="445577885071634" type="PlayerObject">
+                                    <param id="0" name="Instance variable">Player</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="337116915242871">
+                                    <conditions>
+                                        <condition id="-1" name="Compare X" sid="329943037547052" type="PlayerObject">
+                                            <param id="0" name="Comparison">5</param>
+                                            <param id="1" name="X co-ordinate">Camera.X+(PlayerObject.Player * 52)</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="Platform" id="7" name="Simulate control" sid="752261974492305" type="PlayerObject">
+                                            <param id="0" name="Control">0</param>
+                                        </action>
+                                    </actions>
+                                    <sub-events>
+                                        <event-block sid="430014982765651">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="502856603069221" type="PlayerObject">
+                                                    <param id="0" name="Instance variable">Character</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">1</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="7" name="Set mirrored" sid="277408775060882" type="playerskin_Trees">
+                                                    <param id="0" name="State">0</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="270013025735544">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="584715967352597" type="PlayerObject">
+                                                    <param id="0" name="Instance variable">Character</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">2</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="7" name="Set mirrored" sid="274503163115589" type="playerskin_Test">
+                                                    <param id="0" name="State">0</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="134103280890039">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="671663363968818" type="PlayerObject">
+                                                    <param id="0" name="Instance variable">Character</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">3</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="7" name="Set mirrored" sid="344193564355544" type="playerskin_Test2">
+                                                    <param id="0" name="State">0</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="265132768879694">
+                                    <conditions>
+                                        <condition id="-1" name="Compare X" sid="259342189739369" type="PlayerObject">
+                                            <param id="0" name="Comparison">3</param>
+                                            <param id="1" name="X co-ordinate">Camera.X-(PlayerObject.Player+2 * 52)</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="Platform" id="7" name="Simulate control" sid="694369115244354" type="PlayerObject">
+                                            <param id="0" name="Control">1</param>
+                                        </action>
+                                    </actions>
+                                    <sub-events>
+                                        <event-block sid="527052543450950">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="823342859518105" type="PlayerObject">
+                                                    <param id="0" name="Instance variable">Character</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">1</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="7" name="Set mirrored" sid="724768306062232" type="playerskin_Trees">
+                                                    <param id="0" name="State">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="779826267185739">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="501455028278462" type="PlayerObject">
+                                                    <param id="0" name="Instance variable">Character</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">2</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="7" name="Set mirrored" sid="421607943926457" type="playerskin_Test">
+                                                    <param id="0" name="State">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="440699295145355">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="116818509579310" type="PlayerObject">
+                                                    <param id="0" name="Instance variable">Character</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">3</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="7" name="Set mirrored" sid="553826942243724" type="playerskin_Test2">
+                                                    <param id="0" name="State">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block any="1" sid="871911166403353">
+                                    <conditions>
+                                        <condition behavior="Platform" id="10" name="Is by wall" sid="243496456911054" type="PlayerObject">
+                                            <param id="0" name="Side">0</param>
+                                        </condition>
+                                        <condition behavior="Platform" id="10" name="Is by wall" sid="616292913491542" type="PlayerObject">
+                                            <param id="0" name="Side">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="Platform" id="7" name="Simulate control" sid="350563426812477" type="PlayerObject">
+                                            <param id="0" name="Control">2</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="468566509261136">
+                    <conditions>
+                        <condition behavior="Platform" id="5" name="On jump" sid="896834709789565" type="PlayerObject" />
+                        <condition id="-7" name="Compare instance variable" sid="466013490231169" type="PlayerObject">
+                            <param id="0" name="Instance variable">Player</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-8" name="Is boolean instance variable set" sid="150832416603733" type="PlayerObject">
+                            <param id="0" name="Instance variable">IsAI</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="848259871451871" type="Function">
+                            <param id="0" name="Name">&quot;AIJump&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="810745863124089">
+                    <conditions>
+                        <condition id="0" name="On function" sid="259495241789420" type="Function">
+                            <param id="0" name="Name">&quot;AIJump&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="466584898714359">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="284073361852093" type="PlayerObject">
+                                    <param id="0" name="Instance variable">Player</param>
+                                    <param id="1" name="Comparison">1</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="296861412947497" type="PlayerObject">
+                                    <param id="0" name="Instance variable">Player</param>
+                                    <param id="1" name="Comparison">2</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Wait" sid="524968959238040" type="System">
+                                    <param id="0" name="Seconds">0.5</param>
+                                </action>
+                                <action behavior="Platform" id="7" name="Simulate control" sid="425088311360186" type="PlayerObject">
+                                    <param id="0" name="Control">2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="818896903636829">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="306392143780591" type="PlayerObject">
+                                    <param id="0" name="Instance variable">Player</param>
+                                    <param id="1" name="Comparison">1</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="644608653000349" type="PlayerObject">
+                                    <param id="0" name="Instance variable">Player</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Wait" sid="672040589523249" type="System">
+                                    <param id="0" name="Seconds">0.8</param>
+                                </action>
+                                <action behavior="Platform" id="7" name="Simulate control" sid="105688040703719" type="PlayerObject">
+                                    <param id="0" name="Control">2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="850834338600334" title="Respawn">
+            <sub-events>
+                <comment>this is the most laziest of workarounds for a problem</comment>
+                <event-block sid="512711072032705">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="684256458187923" type="System" />
+                        <condition id="-7" name="Compare instance variable" sid="862645226050169" type="PlayerObject">
+                            <param id="0" name="Instance variable">Player</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="194295598101521" type="System">
+                            <param id="0" name="Object to create">superpeepee</param>
+                            <param id="1" name="Layer">&quot;PlayerLayer&quot;</param>
+                            <param id="2" name="X">PlayerObject.X</param>
+                            <param id="3" name="Y">PlayerObject.Y</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="533790293463131">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="810451166548468" type="System" />
+                        <condition id="-7" name="Compare instance variable" sid="843655016067278" type="PlayerObject">
+                            <param id="0" name="Instance variable">Player</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="759674776801143" type="superpeepee">
+                            <param id="0" name="X">PlayerObject.X</param>
+                            <param id="1" name="Y">PlayerObject.Y</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="603759630775168">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="120499328023135" type="PlayerObject">
+                            <param id="0" name="Instance variable">Player</param>
+                            <param id="1" name="Comparison">1</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-8" name="Is boolean instance variable set" sid="911052396985298" type="PlayerObject">
+                            <param id="0" name="Instance variable">IsAI</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block any="1" sid="370875934983183">
+                            <conditions>
+                                <condition id="-1" name="Compare X" sid="212875796251308" type="PlayerObject">
+                                    <param id="0" name="Comparison">5</param>
+                                    <param id="1" name="X co-ordinate">Camera.X+400</param>
+                                </condition>
+                                <condition id="-1" name="Compare X" sid="344033058609751" type="PlayerObject">
+                                    <param id="0" name="Comparison">3</param>
+                                    <param id="1" name="X co-ordinate">Camera.X-400</param>
+                                </condition>
+                                <condition id="-2" name="Compare Y" sid="821281631569110" type="PlayerObject">
+                                    <param id="0" name="Comparison">5</param>
+                                    <param id="1" name="Y co-ordinate">Camera.Y+400</param>
+                                </condition>
+                                <condition id="-2" name="Compare Y" sid="976216397436727" type="PlayerObject">
+                                    <param id="0" name="Comparison">3</param>
+                                    <param id="1" name="Y co-ordinate">Camera.Y-400</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="240851861854750" type="Function">
+                                    <param id="0" name="Name">&quot;AIRespawn&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="164835117985291">
+                    <conditions>
+                        <condition id="0" name="On function" sid="899338540364925" type="Function">
+                            <param id="0" name="Name">&quot;AIRespawn&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="398972839154737">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="743980949654659" type="PlayerObject">
+                                    <param id="0" name="Instance variable">Player</param>
+                                    <param id="1" name="Comparison">1</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                                <condition id="-8" name="Is boolean instance variable set" sid="712759305794659" type="PlayerObject">
+                                    <param id="0" name="Instance variable">IsAI</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Set position" sid="789145738807543" type="PlayerObject">
+                                    <param id="0" name="X">superpeepee.X</param>
+                                    <param id="1" name="Y">superpeepee.Y</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

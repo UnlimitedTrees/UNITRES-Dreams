@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>PCSection2BossRoomEvents</name>
+    <events>
+        <include>bossevents_UNITRES</include>
+        <include>bossevents_pc</include>
+        <include>MainPlayer</include>
+        <event-block sid="359579556664211">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="890380260512547" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="957545290662479" type="Function">
+                    <param id="0" name="Name">&quot;Screen_FadeOut&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="-9" name="Set value" sid="231841862957990" type="System">
+                    <param id="0" name="Variable">MaxPartyMemb</param>
+                    <param id="1" name="Value">3</param>
+                </action>
+                <action id="-9" name="Set value" sid="549263099401650" type="System">
+                    <param id="0" name="Variable">Char1IsInParty</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="867748779097740" type="System">
+                    <param id="0" name="Variable">Char2IsInParty</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="258800226902622" type="System">
+                    <param id="0" name="Variable">Char3IsInParty</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="595298651053904" type="System">
+                    <param id="0" name="Variable">PartyOrder</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="828482070289736" type="System">
+                    <param id="0" name="Variable">MiniBossIsDead</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="841490142804567" type="System">
+                    <param id="0" name="Variable">CurrentLevel</param>
+                    <param id="1" name="Value">&quot;PerfectCity3&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="478382433277007" type="System">
+                    <param id="0" name="Variable">PartySwitchEnabled</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="182533335351749" type="System">
+                    <param id="0" name="Variable">levelhasgrav</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action disabled="1" id="0" name="Play" sid="342377109364065" type="Audio">
+                    <param id="0" name="Audio file">PC1</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;levelmusic&quot;</param>
+                </action>
+                <action id="4" name="Set animation" sid="122439617163406" type="hud_eyecountr">
+                    <param id="0" name="Animation">&quot;a&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

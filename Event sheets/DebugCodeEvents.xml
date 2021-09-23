@@ -1,0 +1,527 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>DebugCodeEvents</name>
+    <events>
+        <event-block sid="340145341095046">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="946623515485106" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="135582413844826" type="debug_num1">
+                    <param id="0" name="Text">Self.Variable1</param>
+                </action>
+                <action id="0" name="Set text" sid="498746336246226" type="debug_num2">
+                    <param id="0" name="Text">Self.Variable1</param>
+                </action>
+                <action id="0" name="Set text" sid="544170937697982" type="debug_num3">
+                    <param id="0" name="Text">Self.Variable1</param>
+                </action>
+                <action id="0" name="Set text" sid="669941569804688" type="debug_num4">
+                    <param id="0" name="Text">Self.Variable1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block any="1" sid="384673660858071">
+            <conditions>
+                <condition id="4" name="On key code pressed" sid="806822557374672" type="Keyboard">
+                    <param id="0" name="Keycode">key_attack</param>
+                </condition>
+                <condition id="6" name="On button pressed" sid="781726633383878" type="Gamepad">
+                    <param id="0" name="Gamepad">0</param>
+                    <param id="1" name="Button">2</param>
+                </condition>
+                <condition id="6" name="On button pressed" sid="422033108132411" type="Gamepad">
+                    <param id="0" name="Gamepad">0</param>
+                    <param id="1" name="Button">7</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="380882366746708">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="979929258085307" type="System">
+                            <param id="0" name="Variable">DebugModeEnabled</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="111179380471957" type="System">
+                            <param id="0" name="Layout">FinalExtrasMenu</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="192991605039149" type="System">
+                            <param id="0" name="Variable">pissdick</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="942967520444604" type="System">
+                            <param id="0" name="Variable">sunk_opacity</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="376649661526738" type="System">
+                            <param id="0" name="Variable">cacapoopee</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="225829042600771" type="System">
+                            <param id="0" name="Variable">SavePointisActive</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="489197285898411" type="System">
+                            <param id="0" name="Variable">Score</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="742476979406289" type="System">
+                            <param id="0" name="Variable">menuvar</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="557934196826779" type="System">
+                            <param id="0" name="Variable">onmenu</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="405874481938942" type="System">
+                            <param id="0" name="Variable">MiniBossIsDead</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="154265973465845">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="652221670157536" type="debug_num1">
+                    <param id="0" name="Instance variable">Variable1</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">5</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="154425162506284" type="debug_num2">
+                    <param id="0" name="Instance variable">Variable1</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">9</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="651146912455231" type="debug_num3">
+                    <param id="0" name="Instance variable">Variable1</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="887665463741200" type="debug_num4">
+                    <param id="0" name="Instance variable">Variable1</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">3</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="992730317566150" type="System">
+                    <param id="0" name="Variable">DebugModeEnabled</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="656948111356561" type="System">
+                    <param id="0" name="Variable">DebugModeEnabled</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Set text" sid="114541506724687" type="menu_title">
+                    <param id="0" name="Text">&quot;Happy Unlimited Trees Day.&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="407075879075080" type="System">
+                    <param id="0" name="Seconds">1.0</param>
+                </action>
+                <action behavior="Fade" id="1" name="Start fade" sid="103405571156806" type="e" />
+                <action id="-16" name="Wait" sid="255296056750220" type="System">
+                    <param id="0" name="Seconds">1.0</param>
+                </action>
+                <action id="33" name="Stop all" sid="695526558217002" type="Audio" />
+                <action id="-2" name="Go to layout" sid="753484218605164" type="System">
+                    <param id="0" name="Layout">NOTICE</param>
+                </action>
+                <action id="-9" name="Set value" sid="911924590139703" type="System">
+                    <param id="0" name="Variable">pissdick</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="170598902175510" type="System">
+                    <param id="0" name="Variable">sunk_opacity</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="861069446868371" type="System">
+                    <param id="0" name="Variable">cacapoopee</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="618003449643232" type="System">
+                    <param id="0" name="Variable">SavePointisActive</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="582875236017803" type="System">
+                    <param id="0" name="Variable">Score</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="516239325792008" type="System">
+                    <param id="0" name="Variable">menuvar</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="405749606353465" type="System">
+                    <param id="0" name="Variable">onmenu</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="482666749024813" type="System">
+                    <param id="0" name="Variable">MiniBossIsDead</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="837660782574784">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="598008889017423" type="debug_num1">
+                    <param id="0" name="Instance variable">Variable1</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="513641899574898" type="debug_num1">
+                    <param id="0" name="Instance variable">Variable1</param>
+                    <param id="1" name="Value">9</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="823895348814249">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="216872310982890" type="debug_num2">
+                    <param id="0" name="Instance variable">Variable1</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="962558854396004" type="debug_num2">
+                    <param id="0" name="Instance variable">Variable1</param>
+                    <param id="1" name="Value">9</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="817098797777807">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="704624382624284" type="debug_num3">
+                    <param id="0" name="Instance variable">Variable1</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="913778537849010" type="debug_num3">
+                    <param id="0" name="Instance variable">Variable1</param>
+                    <param id="1" name="Value">9</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="531839342152961">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="698160328171246" type="debug_num4">
+                    <param id="0" name="Instance variable">Variable1</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="309655248902506" type="debug_num4">
+                    <param id="0" name="Instance variable">Variable1</param>
+                    <param id="1" name="Value">9</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="436983856042345">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="574816154443751" type="debug_num1">
+                    <param id="0" name="Instance variable">Variable1</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">9</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="823739745000770" type="debug_num1">
+                    <param id="0" name="Instance variable">Variable1</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="579797913902682">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="922786133070562" type="debug_num2">
+                    <param id="0" name="Instance variable">Variable1</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">9</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="436644661775825" type="debug_num2">
+                    <param id="0" name="Instance variable">Variable1</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="423530661571404">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="731008611494981" type="debug_num3">
+                    <param id="0" name="Instance variable">Variable1</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">9</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="163705945307426" type="debug_num3">
+                    <param id="0" name="Instance variable">Variable1</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="199620832846939">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="630315145185059" type="debug_num4">
+                    <param id="0" name="Instance variable">Variable1</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">9</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="259000708555932" type="debug_num4">
+                    <param id="0" name="Instance variable">Variable1</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block any="1" sid="190458696140552">
+            <conditions>
+                <condition id="4" name="On key code pressed" sid="778549011401321" type="Keyboard">
+                    <param id="0" name="Keycode">key_left</param>
+                </condition>
+                <condition id="6" name="On button pressed" sid="452748167570731" type="Gamepad">
+                    <param id="0" name="Gamepad">0</param>
+                    <param id="1" name="Button">14</param>
+                </condition>
+                <condition id="5" name="Compare axis" sid="291864797239057" type="Gamepad">
+                    <param id="0" name="Gamepad">0</param>
+                    <param id="1" name="Axis">0</param>
+                    <param id="2" name="Comparison">2</param>
+                    <param id="3" name="Value">-16</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="922653671973820">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="765331499206761" type="HUDcursor">
+                            <param id="0" name="Instance variable">atPos</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-1" name="Set X" sid="285358188168354" type="HUDcursor">
+                            <param id="0" name="X">Self.X-16</param>
+                        </action>
+                        <action id="-12" name="Subtract from" sid="629863742752044" type="HUDcursor">
+                            <param id="0" name="Instance variable">atPos</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block any="1" sid="375760688231824">
+            <conditions>
+                <condition id="4" name="On key code pressed" sid="780138968399909" type="Keyboard">
+                    <param id="0" name="Keycode">key_right</param>
+                </condition>
+                <condition id="6" name="On button pressed" sid="152264632805947" type="Gamepad">
+                    <param id="0" name="Gamepad">0</param>
+                    <param id="1" name="Button">15</param>
+                </condition>
+                <condition id="5" name="Compare axis" sid="156279884011609" type="Gamepad">
+                    <param id="0" name="Gamepad">0</param>
+                    <param id="1" name="Axis">0</param>
+                    <param id="2" name="Comparison">4</param>
+                    <param id="3" name="Value">16</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="855730756735252">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="292106538044814" type="HUDcursor">
+                            <param id="0" name="Instance variable">atPos</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-1" name="Set X" sid="140419412483685" type="HUDcursor">
+                            <param id="0" name="X">Self.X+16</param>
+                        </action>
+                        <action id="-11" name="Add to" sid="798080930517561" type="HUDcursor">
+                            <param id="0" name="Instance variable">atPos</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block any="1" sid="218969868061360">
+            <conditions>
+                <condition id="4" name="On key code pressed" sid="424694106789665" type="Keyboard">
+                    <param id="0" name="Keycode">key_up</param>
+                </condition>
+                <condition id="6" name="On button pressed" sid="609824580473948" type="Gamepad">
+                    <param id="0" name="Gamepad">0</param>
+                    <param id="1" name="Button">12</param>
+                </condition>
+                <condition id="5" name="Compare axis" sid="963564121047823" type="Gamepad">
+                    <param id="0" name="Gamepad">0</param>
+                    <param id="1" name="Axis">1</param>
+                    <param id="2" name="Comparison">2</param>
+                    <param id="3" name="Value">-16</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="361433086905137">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="972552979589864" type="HUDcursor">
+                            <param id="0" name="Instance variable">atPos</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Subtract from" sid="469036611475016" type="debug_num1">
+                            <param id="0" name="Instance variable">Variable1</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="750514720828800">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="148436472660041" type="HUDcursor">
+                            <param id="0" name="Instance variable">atPos</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Subtract from" sid="619697270965373" type="debug_num2">
+                            <param id="0" name="Instance variable">Variable1</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="959887160686603">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="332194682713358" type="HUDcursor">
+                            <param id="0" name="Instance variable">atPos</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Subtract from" sid="524818683244801" type="debug_num3">
+                            <param id="0" name="Instance variable">Variable1</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="745087414119698">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="952955978837087" type="HUDcursor">
+                            <param id="0" name="Instance variable">atPos</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Subtract from" sid="215234439880251" type="debug_num4">
+                            <param id="0" name="Instance variable">Variable1</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block any="1" sid="123586964456814">
+            <conditions>
+                <condition id="4" name="On key code pressed" sid="859605231838108" type="Keyboard">
+                    <param id="0" name="Keycode">key_down</param>
+                </condition>
+                <condition id="6" name="On button pressed" sid="809571935183700" type="Gamepad">
+                    <param id="0" name="Gamepad">0</param>
+                    <param id="1" name="Button">13</param>
+                </condition>
+                <condition id="5" name="Compare axis" sid="424000176337558" type="Gamepad">
+                    <param id="0" name="Gamepad">0</param>
+                    <param id="1" name="Axis">1</param>
+                    <param id="2" name="Comparison">4</param>
+                    <param id="3" name="Value">16</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="316977275944231">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="450937083219704" type="HUDcursor">
+                            <param id="0" name="Instance variable">atPos</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-11" name="Add to" sid="146231073883047" type="debug_num1">
+                            <param id="0" name="Instance variable">Variable1</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="220590177721486">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="718455406335678" type="HUDcursor">
+                            <param id="0" name="Instance variable">atPos</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-11" name="Add to" sid="984388581487947" type="debug_num2">
+                            <param id="0" name="Instance variable">Variable1</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="830502457971685">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="285348432859224" type="HUDcursor">
+                            <param id="0" name="Instance variable">atPos</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-11" name="Add to" sid="759308699591289" type="debug_num3">
+                            <param id="0" name="Instance variable">Variable1</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="828293963419891">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="430570466010733" type="HUDcursor">
+                            <param id="0" name="Instance variable">atPos</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-11" name="Add to" sid="708074699139220" type="debug_num4">
+                            <param id="0" name="Instance variable">Variable1</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>

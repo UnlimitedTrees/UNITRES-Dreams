@@ -1,0 +1,293 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>TranquilTrenchSection2Events</name>
+    <events>
+        <include>MainPlayer</include>
+        <event-block sid="475190326690976">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="220040759131851" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="848672012552306" type="System">
+                    <param id="0" name="Variable">MaxPartyMemb</param>
+                    <param id="1" name="Value">3</param>
+                </action>
+                <action id="-9" name="Set value" sid="857204135866675" type="System">
+                    <param id="0" name="Variable">Char1IsInParty</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="326054431610080" type="System">
+                    <param id="0" name="Variable">Char2IsInParty</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="229726463742557" type="System">
+                    <param id="0" name="Variable">Char3IsInParty</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="788111650804846" type="System">
+                    <param id="0" name="Variable">PartyOrder</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="565011085577188" type="System">
+                    <param id="0" name="Variable">MiniBossIsDead</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="224693121846870" type="System">
+                    <param id="0" name="Variable">CurrentLevel</param>
+                    <param id="1" name="Value">&quot;TranquilTrench2&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="153040446702108" type="System">
+                    <param id="0" name="Variable">PartySwitchEnabled</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="427379805908411" type="hud_eyecountr">
+                    <param id="0" name="Animation">&quot;TT1&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="0" name="Call function" sid="476766939772106" type="Function">
+                    <param id="0" name="Name">&quot;SaveFunction&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="166472344325305">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="585441517786481" type="System">
+                            <param id="0" name="Variable">AssMode</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="305930187780786" type="System">
+                            <param id="0" name="Variable">darknessmodeenabled</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="520272947072986" type="Audio">
+                            <param id="0" name="Audio file">TT2_Intro</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;TT2Intro&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="412031241551446">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="169652799154824" type="System">
+                            <param id="0" name="Variable">AssMode</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="602531078617325" type="System">
+                            <param id="0" name="Variable">darknessmodeenabled</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="198425453097931" type="Audio">
+                            <param id="0" name="Audio file">TT2_BetaIntro</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;TT2BetaIntro&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="246290853358302">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="783891249050662" type="System">
+                            <param id="0" name="Variable">teabatmode</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="923887487893865" type="System">
+                            <param id="0" name="Variable">kyleandlucymode</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="469954098652348" type="System">
+                            <param id="0" name="Variable">christmasmode</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="940584296190481" type="System">
+                            <param id="0" name="Variable">juliamode</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="637528416381430" type="Platform2" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="911885248090113">
+            <conditions>
+                <condition id="0" name="On ended" sid="767252648073539" type="Audio">
+                    <param id="0" name="Tag">&quot;TT2Intro&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="289597417731129" type="Audio">
+                    <param id="0" name="Audio file">TT2_Loop</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;levelmusic&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="341921923422879">
+            <conditions>
+                <condition id="0" name="On ended" sid="652721654468020" type="Audio">
+                    <param id="0" name="Tag">&quot;TT2BetaIntro&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="986954330620690" type="Audio">
+                    <param id="0" name="Audio file">TT2_BetaLoop</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;levelmusic&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block any="1" sid="306816873985814">
+            <conditions>
+                <condition id="-1" name="Compare X" sid="452146164370693" type="playerskin_Trees">
+                    <param id="0" name="Comparison">5</param>
+                    <param id="1" name="X co-ordinate">31968</param>
+                </condition>
+                <condition id="-1" name="Compare X" sid="933664763623933" type="playerskin_kyle">
+                    <param id="0" name="Comparison">5</param>
+                    <param id="1" name="X co-ordinate">31968</param>
+                </condition>
+                <condition id="-1" name="Compare X" sid="352861309223717" type="playerskin_teabat">
+                    <param id="0" name="Comparison">5</param>
+                    <param id="1" name="X co-ordinate">31968</param>
+                </condition>
+                <condition id="-1" name="Compare X" sid="182098355058320" type="playerskin_Julia">
+                    <param id="0" name="Comparison">5</param>
+                    <param id="1" name="X co-ordinate">31968</param>
+                </condition>
+                <condition id="-1" name="Compare X" sid="521356221829347" type="playerskin_christmastrees">
+                    <param id="0" name="Comparison">5</param>
+                    <param id="1" name="X co-ordinate">31968</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="513757431140227">
+                    <conditions>
+                        <condition id="-8" name="Is boolean instance variable set" sid="882131552746805" type="Camera">
+                            <param id="0" name="Instance variable">IsActive</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-13" name="Set boolean" sid="563451052630476" type="Camera">
+                            <param id="0" name="Instance variable">IsActive</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="0" name="Call function" sid="627292041449406" type="Function">
+                            <param id="0" name="Name">&quot;Screen_FadeIn&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="-16" name="Wait" sid="473163452228606" type="System">
+                            <param id="0" name="Seconds">3.85</param>
+                        </action>
+                        <action id="33" name="Stop all" sid="612507990827207" type="Audio" />
+                        <action id="-9" name="Set value" sid="232440664462533" type="System">
+                            <param id="0" name="Variable">SavePointisActive_DC</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="953681856672587" type="System">
+                            <param id="0" name="Variable">SavedX_DC</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="732117400593127" type="System">
+                            <param id="0" name="Variable">SavedY_DC</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="608968068671261" type="System">
+                            <param id="0" name="Variable">SavePointisActive</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="148113095197439" type="System">
+                            <param id="0" name="Variable">SavedX</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="476838466563674" type="System">
+                            <param id="0" name="Variable">SavedY</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="764998621623752" type="System">
+                            <param id="0" name="Seconds">1.0</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="862185772423187">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="166805472775672" type="System">
+                                    <param id="0" name="Variable">teabatmode</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="601337348684880" type="System">
+                                    <param id="0" name="Variable">kyleandlucymode</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="571100361297636" type="System">
+                                    <param id="0" name="Variable">juliamode</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="991835418472100" type="System">
+                                    <param id="0" name="Variable">christmasmode</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="478751972665863" type="System">
+                                    <param id="0" name="Layout">VanishedDreams</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block any="1" sid="608675192728987">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="719960139513571" type="System">
+                                    <param id="0" name="Variable">teabatmode</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="474537720864917" type="System">
+                                    <param id="0" name="Variable">kyleandlucymode</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="903958350249215" type="System">
+                                    <param id="0" name="Variable">juliamode</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="473840789843486" type="System">
+                                    <param id="0" name="Variable">christmasmode</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="541609438604479" type="System">
+                                    <param id="0" name="Layout">SubconsciousScenery - Section 1Final</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>

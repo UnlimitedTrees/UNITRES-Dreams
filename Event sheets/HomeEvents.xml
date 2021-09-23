@@ -1,0 +1,290 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>HomeEvents</name>
+    <events>
+        <include>MainPlayer</include>
+        <event-block sid="713245846912064">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="722484916618225" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="659765999466303" type="System">
+                    <param id="0" name="Variable">MaxPartyMemb</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="414296633597413" type="System">
+                    <param id="0" name="Variable">Char1IsInParty</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="607101144937242" type="System">
+                    <param id="0" name="Variable">Char2IsInParty</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="395612526071803" type="System">
+                    <param id="0" name="Variable">Char3IsInParty</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="881011259879323" type="System">
+                    <param id="0" name="Variable">PartyOrder</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="657582636539458" type="System">
+                    <param id="0" name="Variable">levelhasgrav</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="0" name="Play" sid="579157961511843" type="Audio">
+                    <param id="0" name="Audio file">Home</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;levelmusic&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="434390937889447" type="System">
+                    <param id="0" name="Variable">CurrentLevel</param>
+                    <param id="1" name="Value">&quot;UnlimitedTreesZone&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="901323427278871">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="265476610201248" type="Keyboard">
+                    <param id="0" name="Key">49</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="853318927995889" type="System">
+                    <param id="0" name="Variable">DebugModeEnabled</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="996895221076743" type="PlayerObject">
+                    <param id="0" name="X">288</param>
+                    <param id="1" name="Y">152</param>
+                </action>
+                <action id="-3" name="Set position" sid="924030171637686" type="FakeCamera">
+                    <param id="0" name="X">288</param>
+                    <param id="1" name="Y">152</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="504115184571189">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="464329583370401" type="Keyboard">
+                    <param id="0" name="Key">50</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="646646294657374" type="System">
+                    <param id="0" name="Variable">DebugModeEnabled</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="512335605086847" type="PlayerObject">
+                    <param id="0" name="X">30448</param>
+                    <param id="1" name="Y">136</param>
+                </action>
+                <action id="-3" name="Set position" sid="762735744195247" type="FakeCamera">
+                    <param id="0" name="X">30448</param>
+                    <param id="1" name="Y">136</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="279303186563040">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="209867832127101" type="System">
+                    <param id="0" name="Variable">key</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="454927808179239" type="DialogueTrigger">
+                    <param id="0" name="Instance variable">dialogue</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;UTZDoor1&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="723643926815273" type="DialogueTrigger">
+                    <param id="0" name="Instance variable">dialogue</param>
+                    <param id="1" name="Value">&quot;UTZDoor2&quot;</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="150478767866027" type="DialogueTrigger">
+                    <param id="0" name="Instance variable">worksonce</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-10" name="Set value" sid="472496424175248" type="DialogueTrigger">
+                    <param id="0" name="Instance variable">secondarydialogue</param>
+                    <param id="1" name="Value">&quot;UTZDoor2&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="346895251999726">
+            <conditions>
+                <condition id="-18" name="On created" sid="244733205008384" type="playerskin_Trees" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="738181635494711" type="playerskin_Trees" />
+            </actions>
+        </event-block>
+        <event-block sid="489748667878087">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="860055677937655" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="725318734325880">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="337364677773288" type="PlayerObject">
+                            <param id="0" name="Comparison">4</param>
+                            <param id="1" name="X co-ordinate">FakeCamera.X+0.1</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="838776724249825" type="PlayerObject">
+                            <param id="0" name="Instance variable">Player</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-2" name="Compare Y" sid="316331377270154" type="FakeCamera">
+                            <param id="0" name="Comparison">2</param>
+                            <param id="1" name="Y co-ordinate">200</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-1" name="Set X" sid="512922270875164" type="FakeCamera">
+                            <param id="0" name="X">PlayerObject.X</param>
+                        </action>
+                        <action id="-5" name="Set width" sid="972759345992786" type="Platform2">
+                            <param id="0" name="Width">Self.Width+16</param>
+                        </action>
+                        <action id="-5" name="Set width" sid="217413735531340" type="Home_expanding">
+                            <param id="0" name="Width">Self.Width+16</param>
+                        </action>
+                        <action id="-5" name="Set width" sid="623905286457752" type="Home_BG1">
+                            <param id="0" name="Width">Self.Width+16</param>
+                        </action>
+                        <action id="-5" name="Set width" sid="122650542097213" type="Home_BG2">
+                            <param id="0" name="Width">Self.Width+16</param>
+                        </action>
+                        <action id="-5" name="Set width" sid="554485573396812" type="Home_BG3">
+                            <param id="0" name="Width">Self.Width+16</param>
+                        </action>
+                        <action id="-5" name="Set width" sid="857257550500031" type="Home_BG4">
+                            <param id="0" name="Width">Self.Width+16</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="682732549391886">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="757016056208558" type="PlayerObject">
+                            <param id="0" name="Comparison">2</param>
+                            <param id="1" name="X co-ordinate">FakeCamera.X-0.1</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="698888611728676" type="PlayerObject">
+                            <param id="0" name="Instance variable">Player</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-1" name="Compare X" sid="141183796605724" type="FakeCamera">
+                            <param id="0" name="Comparison">4</param>
+                            <param id="1" name="X co-ordinate">288</param>
+                        </condition>
+                        <condition id="-2" name="Compare Y" sid="941844893241979" type="FakeCamera">
+                            <param id="0" name="Comparison">2</param>
+                            <param id="1" name="Y co-ordinate">200</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-1" name="Set X" sid="146935920156406" type="FakeCamera">
+                            <param id="0" name="X">PlayerObject.X</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="767695597086657">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="855847512547942" type="PlayerObject">
+                    <param id="0" name="Object">Home_transport</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="150513283876522">
+                    <conditions>
+                        <condition id="-2" name="Compare Y" sid="702594216013277" type="FakeCamera">
+                            <param id="0" name="Comparison">2</param>
+                            <param id="1" name="Y co-ordinate">200</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="951017373037957" type="Function">
+                            <param id="0" name="Name">&quot;Screen_FadeIn&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="894468310684541" type="PlayerObject">
+                            <param id="0" name="Instance variable">EnableControl</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="733897404456342" type="System">
+                            <param id="0" name="Seconds">1.0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="521221640238461" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="245106028579912" type="FakeCamera">
+                            <param id="0" name="X">288</param>
+                            <param id="1" name="Y">480</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="706624009972196" type="PlayerObject">
+                            <param id="0" name="X">464</param>
+                            <param id="1" name="Y">480</param>
+                        </action>
+                        <action id="0" name="Call function" sid="588587075923208" type="Function">
+                            <param id="0" name="Name">&quot;Screen_FadeOut&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="943205310930774" type="PlayerObject">
+                            <param id="0" name="Instance variable">EnableControl</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="249248840591656">
+                    <conditions>
+                        <condition id="-2" name="Compare Y" sid="129675095615365" type="FakeCamera">
+                            <param id="0" name="Comparison">4</param>
+                            <param id="1" name="Y co-ordinate">400</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="644882556715041" type="Function">
+                            <param id="0" name="Name">&quot;Screen_FadeIn&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="875088785958281" type="PlayerObject">
+                            <param id="0" name="Instance variable">EnableControl</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="244248072654371" type="System">
+                            <param id="0" name="Seconds">1.0</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="170859209116094" type="FakeCamera">
+                            <param id="0" name="X">288</param>
+                            <param id="1" name="Y">152</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="336508220663632" type="PlayerObject">
+                            <param id="0" name="X">144</param>
+                            <param id="1" name="Y">188</param>
+                        </action>
+                        <action id="0" name="Call function" sid="265932790405662" type="Function">
+                            <param id="0" name="Name">&quot;Screen_FadeOut&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="530491094787710" type="PlayerObject">
+                            <param id="0" name="Instance variable">EnableControl</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>

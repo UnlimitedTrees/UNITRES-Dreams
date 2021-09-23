@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>SubconciousScenerySection1Events</name>
+    <events>
+        <include>bossevents_UNITRES</include>
+        <include>MainPlayer</include>
+        <event-block sid="449865216201681">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="139828682035355" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="972666853296139" type="Function">
+                    <param id="0" name="Name">&quot;Screen_FadeOut&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="-9" name="Set value" sid="939089127426522" type="System">
+                    <param id="0" name="Variable">MaxPartyMemb</param>
+                    <param id="1" name="Value">2</param>
+                </action>
+                <action id="-9" name="Set value" sid="761914003276378" type="System">
+                    <param id="0" name="Variable">Char1IsInParty</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="395857226012167" type="System">
+                    <param id="0" name="Variable">Char2IsInParty</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="184591301727358" type="System">
+                    <param id="0" name="Variable">Char3IsInParty</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="380133099968260" type="System">
+                    <param id="0" name="Variable">PartyOrder</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="451204346209776" type="System">
+                    <param id="0" name="Variable">MiniBossIsDead</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="935012004262144" type="System">
+                    <param id="0" name="Variable">levelhasgrav</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="788639689246030" type="System">
+                    <param id="0" name="Variable">darkness_lowpoint</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="749447440456389" type="System">
+                    <param id="0" name="Variable">PartySwitchEnabled</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="991876486886633" type="hudicon_trees">
+                    <param id="0" name="Animation">&quot;inactive&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="250966330392531" type="hudicon_l">
+                    <param id="0" name="Animation">&quot;active&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="148790605017045" type="hudicon_s">
+                    <param id="0" name="Animation">&quot;inactive&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="291991914137834" type="System">
+                    <param id="0" name="Variable">CurrentLevel</param>
+                    <param id="1" name="Value">&quot;SubconciousScenery1&quot;</param>
+                </action>
+                <action id="0" name="Play" sid="542498805037583" type="Audio">
+                    <param id="0" name="Audio file">SS1</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;levelmusic&quot;</param>
+                </action>
+                <action id="4" name="Set animation" sid="119737902954684" type="hud_eyecountr">
+                    <param id="0" name="Animation">&quot;a&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="422298429130531">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="810368992447626" type="System" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Set Y" sid="899286383892636" type="SS1_BG5">
+                    <param id="0" name="Y">Self.Y+0.5</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="623511939842843">
+            <conditions>
+                <condition id="-2" name="Compare Y" sid="828548312049737" type="SS1_BG5">
+                    <param id="0" name="Comparison">5</param>
+                    <param id="1" name="Y co-ordinate">-64</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Set Y" sid="236264082326225" type="SS1_BG5">
+                    <param id="0" name="Y">-192</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="839656321111798">
+            <conditions>
+                <condition id="-1" name="Compare X" sid="147765469494972" type="Camera">
+                    <param id="0" name="Comparison">5</param>
+                    <param id="1" name="X co-ordinate">3152</param>
+                </condition>
+                <condition id="-1" name="Compare X" sid="300585820646142" type="Camera">
+                    <param id="0" name="Comparison">2</param>
+                    <param id="1" name="X co-ordinate">5456</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="985472498961120" type="portal1">
+                    <param id="0" name="X">3936</param>
+                    <param id="1" name="Y">1300</param>
+                </action>
+                <action id="-8" name="Set angle" sid="573017358733825" type="portal1">
+                    <param id="0" name="Angle">135</param>
+                </action>
+                <action id="-3" name="Set position" sid="165484432913643" type="portal2">
+                    <param id="0" name="X">4552</param>
+                    <param id="1" name="Y">1056</param>
+                </action>
+                <action id="-8" name="Set angle" sid="831987428649784" type="portal2">
+                    <param id="0" name="Angle">315</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="655059331040151">
+            <conditions>
+                <condition id="-1" name="Compare X" sid="990298832041863" type="Camera">
+                    <param id="0" name="Comparison">5</param>
+                    <param id="1" name="X co-ordinate">5456</param>
+                </condition>
+                <condition id="-1" name="Compare X" sid="508993059099630" type="Camera">
+                    <param id="0" name="Comparison">2</param>
+                    <param id="1" name="X co-ordinate">16000</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="319814568663641" type="portal1">
+                    <param id="0" name="X">6424</param>
+                    <param id="1" name="Y">2000</param>
+                </action>
+                <action id="-8" name="Set angle" sid="801334119083521" type="portal1">
+                    <param id="0" name="Angle">270</param>
+                </action>
+                <action id="-3" name="Set position" sid="436502993135128" type="portal2">
+                    <param id="0" name="X">4552</param>
+                    <param id="1" name="Y">1056</param>
+                </action>
+                <action id="-8" name="Set angle" sid="639414717666171" type="portal2">
+                    <param id="0" name="Angle">315</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="867666197407145">
+            <conditions>
+                <condition id="-1" name="Compare X" sid="847498842745681" type="Camera">
+                    <param id="0" name="Comparison">5</param>
+                    <param id="1" name="X co-ordinate">16000</param>
+                </condition>
+                <condition id="-1" name="Compare X" sid="565679415510890" type="Camera">
+                    <param id="0" name="Comparison">2</param>
+                    <param id="1" name="X co-ordinate">20296</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="558794204360924" type="portal1">
+                    <param id="0" name="X">19392</param>
+                    <param id="1" name="Y">3240</param>
+                </action>
+                <action id="-8" name="Set angle" sid="562938715074116" type="portal1">
+                    <param id="0" name="Angle">270</param>
+                </action>
+                <action id="-3" name="Set position" sid="226934789025512" type="portal2">
+                    <param id="0" name="X">19760</param>
+                    <param id="1" name="Y">2944</param>
+                </action>
+                <action id="-8" name="Set angle" sid="588484015323343" type="portal2">
+                    <param id="0" name="Angle">315</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block disabled="1" sid="127743688014053">
+            <conditions>
+                <condition id="-1" name="Compare X" sid="507943583694352" type="Camera">
+                    <param id="0" name="Comparison">5</param>
+                    <param id="1" name="X co-ordinate">20296</param>
+                </condition>
+                <condition id="-1" name="Compare X" sid="800799442166929" type="Camera">
+                    <param id="0" name="Comparison">2</param>
+                    <param id="1" name="X co-ordinate">20736</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="216132737763325" type="portal1">
+                    <param id="0" name="X">20592</param>
+                    <param id="1" name="Y">3440</param>
+                </action>
+                <action id="-8" name="Set angle" sid="239648593754211" type="portal1">
+                    <param id="0" name="Angle">270</param>
+                </action>
+                <action id="-3" name="Set position" sid="285707967888108" type="portal2">
+                    <param id="0" name="X">20392</param>
+                    <param id="1" name="Y">2688</param>
+                </action>
+                <action id="-8" name="Set angle" sid="809410755296831" type="portal2">
+                    <param id="0" name="Angle">315</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block disabled="1" sid="493147780667213">
+            <conditions>
+                <condition id="-1" name="Compare X" sid="777009573232452" type="Camera">
+                    <param id="0" name="Comparison">5</param>
+                    <param id="1" name="X co-ordinate">20736</param>
+                </condition>
+                <condition id="-1" name="Compare X" sid="137609973209692" type="Camera">
+                    <param id="0" name="Comparison">2</param>
+                    <param id="1" name="X co-ordinate">99999</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="740467863349477" type="portal1">
+                    <param id="0" name="X">20944</param>
+                    <param id="1" name="Y">3576</param>
+                </action>
+                <action id="-8" name="Set angle" sid="475027586067865" type="portal1">
+                    <param id="0" name="Angle">270</param>
+                </action>
+                <action id="-3" name="Set position" sid="308239689299952" type="portal2">
+                    <param id="0" name="X">20648</param>
+                    <param id="1" name="Y">2216</param>
+                </action>
+                <action id="-8" name="Set angle" sid="492042436482669" type="portal2">
+                    <param id="0" name="Angle">315</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="477695702093872">
+            <conditions>
+                <condition id="-1" name="Compare X" sid="805184962139903" type="Camera">
+                    <param id="0" name="Comparison">5</param>
+                    <param id="1" name="X co-ordinate">36352</param>
+                </condition>
+                <condition id="-8" name="Is boolean instance variable set" sid="744979815916008" type="Camera">
+                    <param id="0" name="Instance variable">IsActive</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set boolean" sid="165391935471522" type="Camera">
+                    <param id="0" name="Instance variable">IsActive</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="0" name="Call function" sid="800847675955349" type="Function">
+                    <param id="0" name="Name">&quot;Screen_FadeIn&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="-16" name="Wait" sid="260071813755578" type="System">
+                    <param id="0" name="Seconds">1.0</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="490983350323890" type="System">
+                    <param id="0" name="Layout">SubconciousScenery - Section 2</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

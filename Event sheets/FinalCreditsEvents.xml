@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>FinalCreditsEvents</name>
+    <events>
+        <event-block sid="982220965673860">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="334092388635498" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="490536329783093" type="Audio">
+                    <param id="0" name="Audio file">newcredits</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;credits&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="875341850828390" type="System">
+                    <param id="0" name="Seconds">4.5</param>
+                </action>
+                <action id="-10" name="Set value" sid="875044851366386" type="finalcredits_tilemap">
+                    <param id="0" name="Instance variable">poopinh</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="276647172542143">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="516771514991003" type="finalcredits_tilemap">
+                    <param id="0" name="Instance variable">poopinh</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="-2" name="Compare Y" sid="204549175420165" type="Camera">
+                    <param id="0" name="Comparison">5</param>
+                    <param id="1" name="Y co-ordinate">448</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="950200053286948" type="finalcredits_tilemap">
+                    <param id="0" name="Instance variable">poopinh</param>
+                    <param id="1" name="Value">2</param>
+                </action>
+                <action id="-16" name="Wait" sid="313110958157820" type="System">
+                    <param id="0" name="Seconds">4.5</param>
+                </action>
+                <action id="-10" name="Set value" sid="621052437127599" type="finalcredits_tilemap">
+                    <param id="0" name="Instance variable">poopinh</param>
+                    <param id="1" name="Value">3</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="864615061601543">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="376213116423368" type="finalcredits_tilemap">
+                    <param id="0" name="Instance variable">poopinh</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">3</param>
+                </condition>
+                <condition id="-2" name="Compare Y" sid="116263225325885" type="Camera">
+                    <param id="0" name="Comparison">5</param>
+                    <param id="1" name="Y co-ordinate">828</param>
+                </condition>
+                <condition id="-1" name="Compare X" sid="247110365204049" type="Camera">
+                    <param id="0" name="Comparison">5</param>
+                    <param id="1" name="X co-ordinate">828</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="823325893535128" type="finalcredits_tilemap">
+                    <param id="0" name="Instance variable">poopinh</param>
+                    <param id="1" name="Value">4</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="683695088673295">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="697090752430308" type="finalcredits_tilemap">
+                    <param id="0" name="Instance variable">poopinh</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">4</param>
+                </condition>
+                <condition id="-2" name="Compare Y" sid="314835400231613" type="Camera">
+                    <param id="0" name="Comparison">5</param>
+                    <param id="1" name="Y co-ordinate">1884</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="851233058146170" type="finalcredits_tilemap">
+                    <param id="0" name="Instance variable">poopinh</param>
+                    <param id="1" name="Value">5</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="212817042977206">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="946241934098865" type="finalcredits_tilemap">
+                    <param id="0" name="Instance variable">poopinh</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">5</param>
+                </condition>
+                <condition id="-2" name="Compare Y" sid="462663418852338" type="Camera">
+                    <param id="0" name="Comparison">3</param>
+                    <param id="1" name="Y co-ordinate">260</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="282417083738463" type="finalcredits_tilemap">
+                    <param id="0" name="Instance variable">poopinh</param>
+                    <param id="1" name="Value">6</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="271994431027103">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="820752193522635" type="finalcredits_tilemap">
+                    <param id="0" name="Instance variable">poopinh</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">6</param>
+                </condition>
+                <condition id="-1" name="Compare X" sid="773214415558193" type="Camera">
+                    <param id="0" name="Comparison">5</param>
+                    <param id="1" name="X co-ordinate">2016</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="309120152403641" type="finalcredits_tilemap">
+                    <param id="0" name="Instance variable">poopinh</param>
+                    <param id="1" name="Value">7</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="469374424507185">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="691562095530685" type="finalcredits_tilemap">
+                    <param id="0" name="Instance variable">poopinh</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">7</param>
+                </condition>
+                <condition id="-1" name="Compare X" sid="875242842985302" type="Camera">
+                    <param id="0" name="Comparison">3</param>
+                    <param id="1" name="X co-ordinate">1652</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="671765419198387" type="finalcredits_tilemap">
+                    <param id="0" name="Instance variable">poopinh</param>
+                    <param id="1" name="Value">8</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="360907666457321">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="593754190640206" type="finalcredits_tilemap">
+                    <param id="0" name="Instance variable">poopinh</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">8</param>
+                </condition>
+                <condition id="-2" name="Compare Y" sid="597405328943902" type="Camera">
+                    <param id="0" name="Comparison">5</param>
+                    <param id="1" name="Y co-ordinate">2544</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="409443065424330" type="finalcredits_tilemap">
+                    <param id="0" name="Instance variable">poopinh</param>
+                    <param id="1" name="Value">2</param>
+                </action>
+                <action id="-16" name="Wait" sid="283082952217483" type="System">
+                    <param id="0" name="Seconds">4.5</param>
+                </action>
+                <action id="33" name="Stop all" sid="798568631873457" type="Audio" />
+                <action id="-2" name="Go to layout" sid="172458140892831" type="System">
+                    <param id="0" name="Layout">UnlimitedTrees</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="647583495882989">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="983794507325544" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="341195006235012">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="704370976717347" type="finalcredits_tilemap">
+                            <param id="0" name="Instance variable">poopinh</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="967343275355018" type="Camera">
+                            <param id="0" name="X">Self.X</param>
+                            <param id="1" name="Y">lerp(Camera.Y,450,0.05)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="686393001850876">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="373866117949025" type="finalcredits_tilemap">
+                            <param id="0" name="Instance variable">poopinh</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="167409629445408" type="Camera">
+                            <param id="0" name="X">lerp(Camera.X,832,0.05)</param>
+                            <param id="1" name="Y">lerp(Camera.Y,832,0.05)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="927847017440470">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="775572627423109" type="finalcredits_tilemap">
+                            <param id="0" name="Instance variable">poopinh</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="886462765453790" type="Camera">
+                            <param id="0" name="X">Self.X</param>
+                            <param id="1" name="Y">Self.Y+((0.5 * 60) * dt)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="851665005077090">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="488330367462141" type="finalcredits_tilemap">
+                            <param id="0" name="Instance variable">poopinh</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">5</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="673039980829591" type="Camera">
+                            <param id="0" name="X">lerp(Camera.X,832,0.01)</param>
+                            <param id="1" name="Y">lerp(Camera.Y,256,0.01)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="974692347072269">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="676725822324510" type="finalcredits_tilemap">
+                            <param id="0" name="Instance variable">poopinh</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">6</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="328623647980693" type="Camera">
+                            <param id="0" name="X">Self.X+((0.5 * 60) * dt)</param>
+                            <param id="1" name="Y">Self.Y</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="379546983306070">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="103626875939982" type="finalcredits_tilemap">
+                            <param id="0" name="Instance variable">poopinh</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">7</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="907478875023920" type="Camera">
+                            <param id="0" name="X">lerp(Camera.X,1648,0.05)</param>
+                            <param id="1" name="Y">lerp(Camera.Y,576,0.05)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="903551369838997">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="110702244866936" type="finalcredits_tilemap">
+                            <param id="0" name="Instance variable">poopinh</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">8</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="140295804919063" type="Camera">
+                            <param id="0" name="X">Self.X</param>
+                            <param id="1" name="Y">Self.Y+((0.65 * 60) * dt)</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>

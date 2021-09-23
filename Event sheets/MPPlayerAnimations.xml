@@ -1,0 +1,2545 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>MPPlayerAnimations</name>
+    <events>
+        <event-group description="" sid="122046120733041" title="Player 2 Animations">
+            <sub-events>
+                <event-block sid="838607043956419">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="349614348857078" type="System">
+                            <param id="0" name="Variable">multiplayermode</param>
+                            <param id="1" name="Comparison">1</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="666707492836504">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="556817057294496" type="PlayerObject">
+                                    <param id="0" name="Instance variable">Player</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="867921042704773" type="PlayerObject">
+                                    <param id="0" name="Instance variable">Character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                                <condition id="2" name="Is playing" sid="291954398056244" type="playerskin_Trees">
+                                    <param id="0" name="Animation">&quot;Walking&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="6" name="Set speed" sid="694098892552427" type="playerskin_Trees">
+                                    <param id="0" name="Speed">13 * (PlayerObject.Platform.Speed / 200)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="928845191019976">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="498777518842432" type="PlayerObject">
+                                    <param id="0" name="Instance variable">Player</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="350470277526512" type="PlayerObject">
+                                    <param id="0" name="Instance variable">Character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                                <condition id="2" name="Is playing" sid="254329118636284" type="playerskin_Trees">
+                                    <param id="0" name="Animation">&quot;peelout&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="6" name="Set speed" sid="174347057408703" type="playerskin_Trees">
+                                    <param id="0" name="Speed">23 * (PlayerObject.Platform.Speed / 200)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="609431369494445">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="773972160055333" type="PlayerObject">
+                                    <param id="0" name="Instance variable">Player</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="255509940583583" type="PlayerObject">
+                                    <param id="0" name="Instance variable">Character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                                <condition id="2" name="Is playing" sid="714249576050522" type="playerskin_Test">
+                                    <param id="0" name="Animation">&quot;Walking&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="6" name="Set speed" sid="891880918012512" type="playerskin_Test">
+                                    <param id="0" name="Speed">10 * (PlayerObject.Platform.Speed / 200)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="145737774412384">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="952986020793983" type="PlayerObject">
+                                    <param id="0" name="Instance variable">Player</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="852316839704674" type="PlayerObject">
+                                    <param id="0" name="Instance variable">Character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                                <condition id="2" name="Is playing" sid="897276138470027" type="playerskin_Test2">
+                                    <param id="0" name="Animation">&quot;Walking&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="6" name="Set speed" sid="648903047219342" type="playerskin_Test2">
+                                    <param id="0" name="Speed">25 * (PlayerObject.Platform.Speed / 200)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="985920714320866">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="829015765947188" type="PlayerObject">
+                                    <param id="0" name="Instance variable">Player</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="448041720608087" type="PlayerObject">
+                                    <param id="0" name="Instance variable">Character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                                <condition id="2" name="Is playing" sid="245770729226175" type="playerskin_teabat">
+                                    <param id="0" name="Animation">&quot;Walking&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="6" name="Set speed" sid="961990285942495" type="playerskin_teabat">
+                                    <param id="0" name="Speed">25 * (PlayerObject.Platform.Speed / 200)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="416622460812335">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="652104912191063" type="PlayerObject">
+                                    <param id="0" name="Instance variable">Player</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="808416155554594" type="PlayerObject">
+                                    <param id="0" name="Instance variable">Character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">5</param>
+                                </condition>
+                                <condition id="2" name="Is playing" sid="507307040069712" type="playerskin_kyle">
+                                    <param id="0" name="Animation">&quot;Walking&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="6" name="Set speed" sid="888325902457941" type="playerskin_kyle">
+                                    <param id="0" name="Speed">13 * (PlayerObject.Platform.Speed / 200)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="455727044776362">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="909583573563362" type="PlayerObject">
+                                    <param id="0" name="Instance variable">Player</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="283574609328896" type="PlayerObject">
+                                    <param id="0" name="Instance variable">Character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">5</param>
+                                </condition>
+                                <condition id="2" name="Is playing" sid="839733388798933" type="playerskin_kyle">
+                                    <param id="0" name="Animation">&quot;peelout&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="6" name="Set speed" sid="290380891479805" type="playerskin_kyle">
+                                    <param id="0" name="Speed">23 * (PlayerObject.Platform.Speed / 200)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="592476545982572">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="326910230426742" type="PlayerObject">
+                                    <param id="0" name="Instance variable">Player</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="527430370907338" type="PlayerObject">
+                                    <param id="0" name="Instance variable">Character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">6</param>
+                                </condition>
+                                <condition id="2" name="Is playing" sid="235598287453229" type="playerskin_Julia">
+                                    <param id="0" name="Animation">&quot;Walking&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="6" name="Set speed" sid="699436835517297" type="playerskin_Julia">
+                                    <param id="0" name="Speed">10 * (PlayerObject.Platform.Speed / 200)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="803940761957926">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="448007292275752" type="PlayerObject">
+                                    <param id="0" name="Instance variable">Player</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="297054500265724" type="PlayerObject">
+                                    <param id="0" name="Instance variable">Character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">6</param>
+                                </condition>
+                                <condition id="2" name="Is playing" sid="946714096245935" type="playerskin_Julia">
+                                    <param id="0" name="Animation">&quot;peelout&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="6" name="Set speed" sid="335283614487774" type="playerskin_Julia">
+                                    <param id="0" name="Speed">23 * (PlayerObject.Platform.Speed / 200)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="284783866887936">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="633499001172814" type="PlayerObject">
+                                    <param id="0" name="Instance variable">Player</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="632898908503487" type="PlayerObject">
+                                    <param id="0" name="Instance variable">Character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">7</param>
+                                </condition>
+                                <condition id="2" name="Is playing" sid="462559476862747" type="playerskin_christmastrees">
+                                    <param id="0" name="Animation">&quot;Walking&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="6" name="Set speed" sid="125310534500033" type="playerskin_christmastrees">
+                                    <param id="0" name="Speed">13 * (PlayerObject.Platform.Speed / 200)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="148002412861522">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="778943371207923" type="PlayerObject">
+                                    <param id="0" name="Instance variable">Player</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="324475362855930" type="PlayerObject">
+                                    <param id="0" name="Instance variable">Character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">7</param>
+                                </condition>
+                                <condition id="2" name="Is playing" sid="486736199327895" type="playerskin_christmastrees">
+                                    <param id="0" name="Animation">&quot;peelout&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="6" name="Set speed" sid="316308130784124" type="playerskin_christmastrees">
+                                    <param id="0" name="Speed">23 * (PlayerObject.Platform.Speed / 200)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-group description="" sid="825968295006369" title="Player2_Trees">
+                    <sub-events>
+                        <event-block sid="371161271815825">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="403218772598488" type="System">
+                                    <param id="0" name="Variable">multiplayermode</param>
+                                    <param id="1" name="Comparison">1</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block any="1" sid="305815229696312">
+                                    <conditions>
+                                        <condition id="5" name="Compare axis" sid="587258209891415" type="Gamepad">
+                                            <param id="0" name="Gamepad">1</param>
+                                            <param id="1" name="Axis">0</param>
+                                            <param id="2" name="Comparison">2</param>
+                                            <param id="3" name="Value">0</param>
+                                        </condition>
+                                        <condition id="3" name="Is button down" sid="607544644747803" type="Gamepad">
+                                            <param id="0" name="Gamepad">1</param>
+                                            <param id="1" name="Button">14</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="259398992152558">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="568400011777952" type="playerskin_Trees">
+                                                    <param id="0" name="Instance variable">stagewascleared</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">0</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="650853728690936" type="PlayerObject">
+                                                    <param id="0" name="Instance variable">Player</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">2</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="161915749413109" type="PlayerObject">
+                                                    <param id="0" name="Instance variable">Character</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">1</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="7" name="Set mirrored" sid="451489566958092" type="playerskin_Trees">
+                                                    <param id="0" name="State">0</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block any="1" sid="623202450374184">
+                                    <conditions>
+                                        <condition id="5" name="Compare axis" sid="572201508959271" type="Gamepad">
+                                            <param id="0" name="Gamepad">1</param>
+                                            <param id="1" name="Axis">0</param>
+                                            <param id="2" name="Comparison">4</param>
+                                            <param id="3" name="Value">0</param>
+                                        </condition>
+                                        <condition id="3" name="Is button down" sid="511597150878218" type="Gamepad">
+                                            <param id="0" name="Gamepad">1</param>
+                                            <param id="1" name="Button">15</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="835301361656430">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="606715315699450" type="playerskin_Trees">
+                                                    <param id="0" name="Instance variable">stagewascleared</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">0</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="864493494690811" type="PlayerObject">
+                                                    <param id="0" name="Instance variable">Player</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">2</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="468032752554307" type="PlayerObject">
+                                                    <param id="0" name="Instance variable">Character</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">1</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="7" name="Set mirrored" sid="238923166143366" type="playerskin_Trees">
+                                                    <param id="0" name="State">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="414565989630875" title="Player2_Test">
+                    <sub-events>
+                        <event-block sid="500443880576803">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="575555373727634" type="System">
+                                    <param id="0" name="Variable">multiplayermode</param>
+                                    <param id="1" name="Comparison">1</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block any="1" sid="506666620230966">
+                                    <conditions>
+                                        <condition id="5" name="Compare axis" sid="980547319927083" type="Gamepad">
+                                            <param id="0" name="Gamepad">1</param>
+                                            <param id="1" name="Axis">0</param>
+                                            <param id="2" name="Comparison">2</param>
+                                            <param id="3" name="Value">0</param>
+                                        </condition>
+                                        <condition id="3" name="Is button down" sid="868047440930765" type="Gamepad">
+                                            <param id="0" name="Gamepad">1</param>
+                                            <param id="1" name="Button">14</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="836272758195613">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="861698897347184" type="playerskin_Test">
+                                                    <param id="0" name="Instance variable">stagewascleared</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">0</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="765893595554009" type="PlayerObject">
+                                                    <param id="0" name="Instance variable">Player</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">2</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="109489483809908" type="PlayerObject">
+                                                    <param id="0" name="Instance variable">Character</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">2</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="7" name="Set mirrored" sid="994263775682192" type="playerskin_Test">
+                                                    <param id="0" name="State">0</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block any="1" sid="366426999971611">
+                                    <conditions>
+                                        <condition id="5" name="Compare axis" sid="147398626232027" type="Gamepad">
+                                            <param id="0" name="Gamepad">1</param>
+                                            <param id="1" name="Axis">0</param>
+                                            <param id="2" name="Comparison">4</param>
+                                            <param id="3" name="Value">0</param>
+                                        </condition>
+                                        <condition id="3" name="Is button down" sid="358802351987765" type="Gamepad">
+                                            <param id="0" name="Gamepad">1</param>
+                                            <param id="1" name="Button">15</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="122267040970249">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="831609599115638" type="playerskin_Test">
+                                                    <param id="0" name="Instance variable">stagewascleared</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">0</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="195307403057861" type="PlayerObject">
+                                                    <param id="0" name="Instance variable">Player</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">2</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="127338812057409" type="PlayerObject">
+                                                    <param id="0" name="Instance variable">Character</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">2</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="7" name="Set mirrored" sid="922667564092957" type="playerskin_Test">
+                                                    <param id="0" name="State">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="486839107519525" title="Player2_Test2">
+                    <sub-events>
+                        <event-block sid="790284040007137">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="517325140134654" type="System">
+                                    <param id="0" name="Variable">multiplayermode</param>
+                                    <param id="1" name="Comparison">1</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block any="1" sid="347400317871344">
+                                    <conditions>
+                                        <condition id="5" name="Compare axis" sid="554987377723526" type="Gamepad">
+                                            <param id="0" name="Gamepad">1</param>
+                                            <param id="1" name="Axis">0</param>
+                                            <param id="2" name="Comparison">2</param>
+                                            <param id="3" name="Value">0</param>
+                                        </condition>
+                                        <condition id="3" name="Is button down" sid="680739898778414" type="Gamepad">
+                                            <param id="0" name="Gamepad">1</param>
+                                            <param id="1" name="Button">14</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="938164223203651">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="203858197691586" type="playerskin_Test2">
+                                                    <param id="0" name="Instance variable">stagewascleared</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">0</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="833171853285387" type="PlayerObject">
+                                                    <param id="0" name="Instance variable">Player</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">2</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="712611499831616" type="PlayerObject">
+                                                    <param id="0" name="Instance variable">Character</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">3</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="7" name="Set mirrored" sid="475267124260518" type="playerskin_Test2">
+                                                    <param id="0" name="State">0</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block any="1" sid="878971723222477">
+                                    <conditions>
+                                        <condition id="5" name="Compare axis" sid="712247473046913" type="Gamepad">
+                                            <param id="0" name="Gamepad">1</param>
+                                            <param id="1" name="Axis">0</param>
+                                            <param id="2" name="Comparison">4</param>
+                                            <param id="3" name="Value">0</param>
+                                        </condition>
+                                        <condition id="3" name="Is button down" sid="925980804597029" type="Gamepad">
+                                            <param id="0" name="Gamepad">1</param>
+                                            <param id="1" name="Button">15</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="197985936582749">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="184837352968154" type="playerskin_Test2">
+                                                    <param id="0" name="Instance variable">stagewascleared</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">0</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="940908526184558" type="PlayerObject">
+                                                    <param id="0" name="Instance variable">Player</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">2</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="240720356245165" type="PlayerObject">
+                                                    <param id="0" name="Instance variable">Character</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">3</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="7" name="Set mirrored" sid="571386277864119" type="playerskin_Test2">
+                                                    <param id="0" name="State">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="760021457438465" title="Player2_Teabat">
+                    <sub-events>
+                        <event-block sid="869568300699428">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="346765068539164" type="System">
+                                    <param id="0" name="Variable">multiplayermode</param>
+                                    <param id="1" name="Comparison">1</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block any="1" sid="173026448840957">
+                                    <conditions>
+                                        <condition id="5" name="Compare axis" sid="139366247475025" type="Gamepad">
+                                            <param id="0" name="Gamepad">1</param>
+                                            <param id="1" name="Axis">0</param>
+                                            <param id="2" name="Comparison">2</param>
+                                            <param id="3" name="Value">0</param>
+                                        </condition>
+                                        <condition id="3" name="Is button down" sid="328313255998402" type="Gamepad">
+                                            <param id="0" name="Gamepad">1</param>
+                                            <param id="1" name="Button">14</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="912869629475989">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="650932224987901" type="playerskin_teabat">
+                                                    <param id="0" name="Instance variable">stagewascleared</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">0</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="789678874841162" type="PlayerObject">
+                                                    <param id="0" name="Instance variable">Player</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">2</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="112388153119826" type="PlayerObject">
+                                                    <param id="0" name="Instance variable">Character</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">4</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="7" name="Set mirrored" sid="390167598508789" type="playerskin_teabat">
+                                                    <param id="0" name="State">0</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block any="1" sid="663655425377180">
+                                    <conditions>
+                                        <condition id="5" name="Compare axis" sid="877048275411297" type="Gamepad">
+                                            <param id="0" name="Gamepad">1</param>
+                                            <param id="1" name="Axis">0</param>
+                                            <param id="2" name="Comparison">4</param>
+                                            <param id="3" name="Value">0</param>
+                                        </condition>
+                                        <condition id="3" name="Is button down" sid="585738297271596" type="Gamepad">
+                                            <param id="0" name="Gamepad">1</param>
+                                            <param id="1" name="Button">15</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="362270326388968">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="511133759249069" type="playerskin_teabat">
+                                                    <param id="0" name="Instance variable">stagewascleared</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">0</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="707099411377317" type="PlayerObject">
+                                                    <param id="0" name="Instance variable">Player</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">2</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="648563485905987" type="PlayerObject">
+                                                    <param id="0" name="Instance variable">Character</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">4</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="7" name="Set mirrored" sid="550698266266735" type="playerskin_teabat">
+                                                    <param id="0" name="State">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="368647107100150" title="Player2_Julia">
+                    <sub-events>
+                        <event-block sid="374075759277877">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="685102205638432" type="System">
+                                    <param id="0" name="Variable">multiplayermode</param>
+                                    <param id="1" name="Comparison">1</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block any="1" sid="447935664224465">
+                                    <conditions>
+                                        <condition id="5" name="Compare axis" sid="353448456399571" type="Gamepad">
+                                            <param id="0" name="Gamepad">1</param>
+                                            <param id="1" name="Axis">0</param>
+                                            <param id="2" name="Comparison">2</param>
+                                            <param id="3" name="Value">0</param>
+                                        </condition>
+                                        <condition id="3" name="Is button down" sid="385249961383350" type="Gamepad">
+                                            <param id="0" name="Gamepad">1</param>
+                                            <param id="1" name="Button">14</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="559193382617642">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="362123284544296" type="playerskin_Julia">
+                                                    <param id="0" name="Instance variable">stagewascleared</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">0</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="838290690876650" type="PlayerObject">
+                                                    <param id="0" name="Instance variable">Player</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">2</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="460607803479600" type="PlayerObject">
+                                                    <param id="0" name="Instance variable">Character</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">6</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="7" name="Set mirrored" sid="809660344798682" type="playerskin_Julia">
+                                                    <param id="0" name="State">0</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block any="1" sid="189661189271982">
+                                    <conditions>
+                                        <condition id="5" name="Compare axis" sid="489302763460611" type="Gamepad">
+                                            <param id="0" name="Gamepad">1</param>
+                                            <param id="1" name="Axis">0</param>
+                                            <param id="2" name="Comparison">4</param>
+                                            <param id="3" name="Value">0</param>
+                                        </condition>
+                                        <condition id="3" name="Is button down" sid="204931595293412" type="Gamepad">
+                                            <param id="0" name="Gamepad">1</param>
+                                            <param id="1" name="Button">15</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="501749272060378">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="262743087948107" type="playerskin_Julia">
+                                                    <param id="0" name="Instance variable">stagewascleared</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">0</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="916619098967079" type="PlayerObject">
+                                                    <param id="0" name="Instance variable">Player</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">2</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="187411540370457" type="PlayerObject">
+                                                    <param id="0" name="Instance variable">Character</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">6</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="7" name="Set mirrored" sid="977750707330263" type="playerskin_Julia">
+                                                    <param id="0" name="State">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="690264838567987" title="Player2_ChristmasTrees">
+                    <sub-events>
+                        <event-block sid="715221639167922">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="979957693425981" type="System">
+                                    <param id="0" name="Variable">multiplayermode</param>
+                                    <param id="1" name="Comparison">1</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block any="1" sid="235040888518295">
+                                    <conditions>
+                                        <condition id="5" name="Compare axis" sid="637495567269596" type="Gamepad">
+                                            <param id="0" name="Gamepad">1</param>
+                                            <param id="1" name="Axis">0</param>
+                                            <param id="2" name="Comparison">2</param>
+                                            <param id="3" name="Value">0</param>
+                                        </condition>
+                                        <condition id="3" name="Is button down" sid="501505956647378" type="Gamepad">
+                                            <param id="0" name="Gamepad">1</param>
+                                            <param id="1" name="Button">14</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="237216251634803">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="986603989734342" type="playerskin_christmastrees">
+                                                    <param id="0" name="Instance variable">stagewascleared</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">0</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="984624191393230" type="PlayerObject">
+                                                    <param id="0" name="Instance variable">Player</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">2</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="235272438980307" type="PlayerObject">
+                                                    <param id="0" name="Instance variable">Character</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">7</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="7" name="Set mirrored" sid="404316544622834" type="playerskin_christmastrees">
+                                                    <param id="0" name="State">0</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block any="1" sid="711752511415900">
+                                    <conditions>
+                                        <condition id="5" name="Compare axis" sid="543054823509007" type="Gamepad">
+                                            <param id="0" name="Gamepad">1</param>
+                                            <param id="1" name="Axis">0</param>
+                                            <param id="2" name="Comparison">4</param>
+                                            <param id="3" name="Value">0</param>
+                                        </condition>
+                                        <condition id="3" name="Is button down" sid="509810160912761" type="Gamepad">
+                                            <param id="0" name="Gamepad">1</param>
+                                            <param id="1" name="Button">15</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="832931923754732">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="630738655855696" type="playerskin_christmastrees">
+                                                    <param id="0" name="Instance variable">stagewascleared</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">0</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="693245104587609" type="PlayerObject">
+                                                    <param id="0" name="Instance variable">Player</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">2</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="212785218052658" type="PlayerObject">
+                                                    <param id="0" name="Instance variable">Character</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">7</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="7" name="Set mirrored" sid="967110598006928" type="playerskin_christmastrees">
+                                                    <param id="0" name="State">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="857623878131436" title="Player 3 Animations">
+            <sub-events>
+                <event-block sid="333983336871665">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="212486786379847" type="System">
+                            <param id="0" name="Variable">multiplayermode</param>
+                            <param id="1" name="Comparison">1</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="475772991510662">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="782735537791427" type="PlayerObject">
+                                    <param id="0" name="Instance variable">Player</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="562818152205531" type="PlayerObject">
+                                    <param id="0" name="Instance variable">Character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                                <condition id="2" name="Is playing" sid="936171952979638" type="playerskin_Trees">
+                                    <param id="0" name="Animation">&quot;Walking&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="6" name="Set speed" sid="351178392810319" type="playerskin_Trees">
+                                    <param id="0" name="Speed">13 * (PlayerObject.Platform.Speed / 200)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="409546807781183">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="796007197693511" type="PlayerObject">
+                                    <param id="0" name="Instance variable">Player</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="847668214630993" type="PlayerObject">
+                                    <param id="0" name="Instance variable">Character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                                <condition id="2" name="Is playing" sid="970765254330503" type="playerskin_Trees">
+                                    <param id="0" name="Animation">&quot;peelout&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="6" name="Set speed" sid="299058662957404" type="playerskin_Trees">
+                                    <param id="0" name="Speed">23 * (PlayerObject.Platform.Speed / 200)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="611191058883323">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="409157528669847" type="PlayerObject">
+                                    <param id="0" name="Instance variable">Player</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="609723749350777" type="PlayerObject">
+                                    <param id="0" name="Instance variable">Character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                                <condition id="2" name="Is playing" sid="264970488347946" type="playerskin_Test">
+                                    <param id="0" name="Animation">&quot;Walking&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="6" name="Set speed" sid="894453236577728" type="playerskin_Test">
+                                    <param id="0" name="Speed">10 * (PlayerObject.Platform.Speed / 200)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="193265117924624">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="260113516593879" type="PlayerObject">
+                                    <param id="0" name="Instance variable">Player</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="139842802546129" type="PlayerObject">
+                                    <param id="0" name="Instance variable">Character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                                <condition id="2" name="Is playing" sid="492048319658495" type="playerskin_Test2">
+                                    <param id="0" name="Animation">&quot;Walking&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="6" name="Set speed" sid="531280343791478" type="playerskin_Test2">
+                                    <param id="0" name="Speed">25 * (PlayerObject.Platform.Speed / 200)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="575276125622564">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="963406852861180" type="PlayerObject">
+                                    <param id="0" name="Instance variable">Player</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="147821919616386" type="PlayerObject">
+                                    <param id="0" name="Instance variable">Character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                                <condition id="2" name="Is playing" sid="848502138988547" type="playerskin_teabat">
+                                    <param id="0" name="Animation">&quot;Walking&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="6" name="Set speed" sid="792789771489675" type="playerskin_teabat">
+                                    <param id="0" name="Speed">25 * (PlayerObject.Platform.Speed / 200)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="422635959220203">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="634193418633655" type="PlayerObject">
+                                    <param id="0" name="Instance variable">Player</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="599281404621345" type="PlayerObject">
+                                    <param id="0" name="Instance variable">Character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">5</param>
+                                </condition>
+                                <condition id="2" name="Is playing" sid="221517500995922" type="playerskin_kyle">
+                                    <param id="0" name="Animation">&quot;Walking&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="6" name="Set speed" sid="259838235603907" type="playerskin_kyle">
+                                    <param id="0" name="Speed">13 * (PlayerObject.Platform.Speed / 200)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="794202826967161">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="608407532695477" type="PlayerObject">
+                                    <param id="0" name="Instance variable">Player</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="832978791533336" type="PlayerObject">
+                                    <param id="0" name="Instance variable">Character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">5</param>
+                                </condition>
+                                <condition id="2" name="Is playing" sid="782096122569710" type="playerskin_kyle">
+                                    <param id="0" name="Animation">&quot;peelout&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="6" name="Set speed" sid="132563664751843" type="playerskin_kyle">
+                                    <param id="0" name="Speed">23 * (PlayerObject.Platform.Speed / 200)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="214347775033457">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="271746448042227" type="PlayerObject">
+                                    <param id="0" name="Instance variable">Player</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="425282985212557" type="PlayerObject">
+                                    <param id="0" name="Instance variable">Character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">6</param>
+                                </condition>
+                                <condition id="2" name="Is playing" sid="986618236093795" type="playerskin_Julia">
+                                    <param id="0" name="Animation">&quot;Walking&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="6" name="Set speed" sid="710839959695546" type="playerskin_Julia">
+                                    <param id="0" name="Speed">10 * (PlayerObject.Platform.Speed / 200)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="248008177719873">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="197126635325883" type="PlayerObject">
+                                    <param id="0" name="Instance variable">Player</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="171703149068815" type="PlayerObject">
+                                    <param id="0" name="Instance variable">Character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">6</param>
+                                </condition>
+                                <condition id="2" name="Is playing" sid="729344383941314" type="playerskin_Julia">
+                                    <param id="0" name="Animation">&quot;peelout&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="6" name="Set speed" sid="691825005220163" type="playerskin_Julia">
+                                    <param id="0" name="Speed">23 * (PlayerObject.Platform.Speed / 200)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="989660796391384">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="355222683785095" type="PlayerObject">
+                                    <param id="0" name="Instance variable">Player</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="541845031019314" type="PlayerObject">
+                                    <param id="0" name="Instance variable">Character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">7</param>
+                                </condition>
+                                <condition id="2" name="Is playing" sid="267141535001041" type="playerskin_christmastrees">
+                                    <param id="0" name="Animation">&quot;Walking&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="6" name="Set speed" sid="792590307254465" type="playerskin_christmastrees">
+                                    <param id="0" name="Speed">13 * (PlayerObject.Platform.Speed / 200)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="225879344015001">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="301971590116231" type="PlayerObject">
+                                    <param id="0" name="Instance variable">Player</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="444579678280821" type="PlayerObject">
+                                    <param id="0" name="Instance variable">Character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">7</param>
+                                </condition>
+                                <condition id="2" name="Is playing" sid="312897955425381" type="playerskin_christmastrees">
+                                    <param id="0" name="Animation">&quot;peelout&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="6" name="Set speed" sid="220787743757517" type="playerskin_christmastrees">
+                                    <param id="0" name="Speed">23 * (PlayerObject.Platform.Speed / 200)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-group description="" sid="328658089608599" title="Player3_Trees">
+                    <sub-events>
+                        <event-block sid="624269772026236">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="544201330234472" type="System">
+                                    <param id="0" name="Variable">multiplayermode</param>
+                                    <param id="1" name="Comparison">1</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block any="1" sid="217041966325845">
+                                    <conditions>
+                                        <condition id="5" name="Compare axis" sid="158192828384137" type="Gamepad">
+                                            <param id="0" name="Gamepad">2</param>
+                                            <param id="1" name="Axis">0</param>
+                                            <param id="2" name="Comparison">2</param>
+                                            <param id="3" name="Value">0</param>
+                                        </condition>
+                                        <condition id="3" name="Is button down" sid="245522266215734" type="Gamepad">
+                                            <param id="0" name="Gamepad">2</param>
+                                            <param id="1" name="Button">14</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="599751186803982">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="124046622365595" type="playerskin_Trees">
+                                                    <param id="0" name="Instance variable">stagewascleared</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">0</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="957138034822178" type="PlayerObject">
+                                                    <param id="0" name="Instance variable">Player</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">3</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="877219201457776" type="PlayerObject">
+                                                    <param id="0" name="Instance variable">Character</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">1</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="7" name="Set mirrored" sid="864712253452026" type="playerskin_Trees">
+                                                    <param id="0" name="State">0</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block any="1" sid="499573258949872">
+                                    <conditions>
+                                        <condition id="5" name="Compare axis" sid="152442546304110" type="Gamepad">
+                                            <param id="0" name="Gamepad">2</param>
+                                            <param id="1" name="Axis">0</param>
+                                            <param id="2" name="Comparison">4</param>
+                                            <param id="3" name="Value">0</param>
+                                        </condition>
+                                        <condition id="3" name="Is button down" sid="845887926568074" type="Gamepad">
+                                            <param id="0" name="Gamepad">2</param>
+                                            <param id="1" name="Button">15</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="866444029335329">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="433790187393065" type="playerskin_Trees">
+                                                    <param id="0" name="Instance variable">stagewascleared</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">0</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="109374451049623" type="PlayerObject">
+                                                    <param id="0" name="Instance variable">Player</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">3</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="816951673563892" type="PlayerObject">
+                                                    <param id="0" name="Instance variable">Character</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">1</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="7" name="Set mirrored" sid="304585377729168" type="playerskin_Trees">
+                                                    <param id="0" name="State">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="272697470101706" title="Player3_Test">
+                    <sub-events>
+                        <event-block sid="966535989678536">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="277861522380087" type="System">
+                                    <param id="0" name="Variable">multiplayermode</param>
+                                    <param id="1" name="Comparison">1</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block any="1" sid="503489205035150">
+                                    <conditions>
+                                        <condition id="5" name="Compare axis" sid="435379621845244" type="Gamepad">
+                                            <param id="0" name="Gamepad">2</param>
+                                            <param id="1" name="Axis">0</param>
+                                            <param id="2" name="Comparison">2</param>
+                                            <param id="3" name="Value">0</param>
+                                        </condition>
+                                        <condition id="3" name="Is button down" sid="881783212416075" type="Gamepad">
+                                            <param id="0" name="Gamepad">2</param>
+                                            <param id="1" name="Button">14</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="319089902283804">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="178852355172787" type="playerskin_Test">
+                                                    <param id="0" name="Instance variable">stagewascleared</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">0</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="896429285646478" type="PlayerObject">
+                                                    <param id="0" name="Instance variable">Player</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">3</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="156841485342099" type="PlayerObject">
+                                                    <param id="0" name="Instance variable">Character</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">2</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="7" name="Set mirrored" sid="402570358746853" type="playerskin_Test">
+                                                    <param id="0" name="State">0</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block any="1" sid="497112768943403">
+                                    <conditions>
+                                        <condition id="5" name="Compare axis" sid="631748873577742" type="Gamepad">
+                                            <param id="0" name="Gamepad">2</param>
+                                            <param id="1" name="Axis">0</param>
+                                            <param id="2" name="Comparison">4</param>
+                                            <param id="3" name="Value">0</param>
+                                        </condition>
+                                        <condition id="3" name="Is button down" sid="474438816174009" type="Gamepad">
+                                            <param id="0" name="Gamepad">2</param>
+                                            <param id="1" name="Button">15</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="482589080150254">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="911439909856740" type="playerskin_Test">
+                                                    <param id="0" name="Instance variable">stagewascleared</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">0</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="601389810178944" type="PlayerObject">
+                                                    <param id="0" name="Instance variable">Player</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">3</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="889519515904799" type="PlayerObject">
+                                                    <param id="0" name="Instance variable">Character</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">2</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="7" name="Set mirrored" sid="116137705997210" type="playerskin_Test">
+                                                    <param id="0" name="State">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="383881003672159" title="Player3_Test2">
+                    <sub-events>
+                        <event-block sid="286028463863405">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="184817228912643" type="System">
+                                    <param id="0" name="Variable">multiplayermode</param>
+                                    <param id="1" name="Comparison">1</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block any="1" sid="614342394472414">
+                                    <conditions>
+                                        <condition id="5" name="Compare axis" sid="695040488117562" type="Gamepad">
+                                            <param id="0" name="Gamepad">2</param>
+                                            <param id="1" name="Axis">0</param>
+                                            <param id="2" name="Comparison">2</param>
+                                            <param id="3" name="Value">0</param>
+                                        </condition>
+                                        <condition id="3" name="Is button down" sid="390557135332018" type="Gamepad">
+                                            <param id="0" name="Gamepad">2</param>
+                                            <param id="1" name="Button">14</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="437165983191195">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="559819763411902" type="playerskin_Test2">
+                                                    <param id="0" name="Instance variable">stagewascleared</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">0</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="191543943353084" type="PlayerObject">
+                                                    <param id="0" name="Instance variable">Player</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">3</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="875960607299685" type="PlayerObject">
+                                                    <param id="0" name="Instance variable">Character</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">3</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="7" name="Set mirrored" sid="271707388754661" type="playerskin_Test2">
+                                                    <param id="0" name="State">0</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block any="1" sid="966170271703076">
+                                    <conditions>
+                                        <condition id="5" name="Compare axis" sid="139889062015125" type="Gamepad">
+                                            <param id="0" name="Gamepad">2</param>
+                                            <param id="1" name="Axis">0</param>
+                                            <param id="2" name="Comparison">4</param>
+                                            <param id="3" name="Value">0</param>
+                                        </condition>
+                                        <condition id="3" name="Is button down" sid="745054680149880" type="Gamepad">
+                                            <param id="0" name="Gamepad">2</param>
+                                            <param id="1" name="Button">15</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="375163847273407">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="676186433753121" type="playerskin_Test2">
+                                                    <param id="0" name="Instance variable">stagewascleared</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">0</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="318846265353104" type="PlayerObject">
+                                                    <param id="0" name="Instance variable">Player</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">3</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="611510493746530" type="PlayerObject">
+                                                    <param id="0" name="Instance variable">Character</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">3</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="7" name="Set mirrored" sid="850025058467942" type="playerskin_Test2">
+                                                    <param id="0" name="State">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="428737627706269" title="Player3_Teabat">
+                    <sub-events>
+                        <event-block sid="549725286149096">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="669629057711141" type="System">
+                                    <param id="0" name="Variable">multiplayermode</param>
+                                    <param id="1" name="Comparison">1</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block any="1" sid="397305715370622">
+                                    <conditions>
+                                        <condition id="5" name="Compare axis" sid="554432602440005" type="Gamepad">
+                                            <param id="0" name="Gamepad">2</param>
+                                            <param id="1" name="Axis">0</param>
+                                            <param id="2" name="Comparison">2</param>
+                                            <param id="3" name="Value">0</param>
+                                        </condition>
+                                        <condition id="3" name="Is button down" sid="968919462159958" type="Gamepad">
+                                            <param id="0" name="Gamepad">2</param>
+                                            <param id="1" name="Button">14</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="841982837132246">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="223256511318281" type="playerskin_teabat">
+                                                    <param id="0" name="Instance variable">stagewascleared</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">0</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="296273507085892" type="PlayerObject">
+                                                    <param id="0" name="Instance variable">Player</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">3</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="878004445848412" type="PlayerObject">
+                                                    <param id="0" name="Instance variable">Character</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">4</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="7" name="Set mirrored" sid="585724388808455" type="playerskin_teabat">
+                                                    <param id="0" name="State">0</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block any="1" sid="828043974913825">
+                                    <conditions>
+                                        <condition id="5" name="Compare axis" sid="363802687310542" type="Gamepad">
+                                            <param id="0" name="Gamepad">2</param>
+                                            <param id="1" name="Axis">0</param>
+                                            <param id="2" name="Comparison">4</param>
+                                            <param id="3" name="Value">0</param>
+                                        </condition>
+                                        <condition id="3" name="Is button down" sid="341103944162012" type="Gamepad">
+                                            <param id="0" name="Gamepad">2</param>
+                                            <param id="1" name="Button">15</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="881275124237925">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="646305310983200" type="playerskin_teabat">
+                                                    <param id="0" name="Instance variable">stagewascleared</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">0</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="578234598155719" type="PlayerObject">
+                                                    <param id="0" name="Instance variable">Player</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">3</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="560954085381426" type="PlayerObject">
+                                                    <param id="0" name="Instance variable">Character</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">4</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="7" name="Set mirrored" sid="610666467340858" type="playerskin_teabat">
+                                                    <param id="0" name="State">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="698707413329450" title="Player3_Julia">
+                    <sub-events>
+                        <event-block sid="787032497537832">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="741048240114741" type="System">
+                                    <param id="0" name="Variable">multiplayermode</param>
+                                    <param id="1" name="Comparison">1</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block any="1" sid="798802429362761">
+                                    <conditions>
+                                        <condition id="5" name="Compare axis" sid="638209815759425" type="Gamepad">
+                                            <param id="0" name="Gamepad">2</param>
+                                            <param id="1" name="Axis">0</param>
+                                            <param id="2" name="Comparison">2</param>
+                                            <param id="3" name="Value">0</param>
+                                        </condition>
+                                        <condition id="3" name="Is button down" sid="621042357196366" type="Gamepad">
+                                            <param id="0" name="Gamepad">2</param>
+                                            <param id="1" name="Button">14</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="952383743904047">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="139607190174816" type="playerskin_Julia">
+                                                    <param id="0" name="Instance variable">stagewascleared</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">0</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="357501403294285" type="PlayerObject">
+                                                    <param id="0" name="Instance variable">Player</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">3</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="852829183374262" type="PlayerObject">
+                                                    <param id="0" name="Instance variable">Character</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">6</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="7" name="Set mirrored" sid="493857470085206" type="playerskin_Julia">
+                                                    <param id="0" name="State">0</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block any="1" sid="770429241576481">
+                                    <conditions>
+                                        <condition id="5" name="Compare axis" sid="748683191623037" type="Gamepad">
+                                            <param id="0" name="Gamepad">2</param>
+                                            <param id="1" name="Axis">0</param>
+                                            <param id="2" name="Comparison">4</param>
+                                            <param id="3" name="Value">0</param>
+                                        </condition>
+                                        <condition id="3" name="Is button down" sid="565637058642576" type="Gamepad">
+                                            <param id="0" name="Gamepad">2</param>
+                                            <param id="1" name="Button">15</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="678951951794153">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="563322881313669" type="playerskin_Julia">
+                                                    <param id="0" name="Instance variable">stagewascleared</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">0</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="225192524252310" type="PlayerObject">
+                                                    <param id="0" name="Instance variable">Player</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">3</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="710380141003867" type="PlayerObject">
+                                                    <param id="0" name="Instance variable">Character</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">6</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="7" name="Set mirrored" sid="187651829498956" type="playerskin_Julia">
+                                                    <param id="0" name="State">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="322963655536392" title="Player3_ChristmasTrees">
+                    <sub-events>
+                        <event-block sid="903302445837752">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="462066282349555" type="System">
+                                    <param id="0" name="Variable">multiplayermode</param>
+                                    <param id="1" name="Comparison">1</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block any="1" sid="585237762444789">
+                                    <conditions>
+                                        <condition id="5" name="Compare axis" sid="835293764799734" type="Gamepad">
+                                            <param id="0" name="Gamepad">2</param>
+                                            <param id="1" name="Axis">0</param>
+                                            <param id="2" name="Comparison">2</param>
+                                            <param id="3" name="Value">0</param>
+                                        </condition>
+                                        <condition id="3" name="Is button down" sid="530000070019473" type="Gamepad">
+                                            <param id="0" name="Gamepad">2</param>
+                                            <param id="1" name="Button">14</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="391907484731492">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="934957587403032" type="playerskin_christmastrees">
+                                                    <param id="0" name="Instance variable">stagewascleared</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">0</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="140273321852759" type="PlayerObject">
+                                                    <param id="0" name="Instance variable">Player</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">3</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="445737728615810" type="PlayerObject">
+                                                    <param id="0" name="Instance variable">Character</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">7</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="7" name="Set mirrored" sid="607568034182674" type="playerskin_christmastrees">
+                                                    <param id="0" name="State">0</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block any="1" sid="930353399397508">
+                                    <conditions>
+                                        <condition id="5" name="Compare axis" sid="203366560216163" type="Gamepad">
+                                            <param id="0" name="Gamepad">2</param>
+                                            <param id="1" name="Axis">0</param>
+                                            <param id="2" name="Comparison">4</param>
+                                            <param id="3" name="Value">0</param>
+                                        </condition>
+                                        <condition id="3" name="Is button down" sid="826949916731562" type="Gamepad">
+                                            <param id="0" name="Gamepad">2</param>
+                                            <param id="1" name="Button">15</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="743824197826446">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="403110902223225" type="playerskin_christmastrees">
+                                                    <param id="0" name="Instance variable">stagewascleared</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">0</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="973066330221968" type="PlayerObject">
+                                                    <param id="0" name="Instance variable">Player</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">3</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="816755806150128" type="PlayerObject">
+                                                    <param id="0" name="Instance variable">Character</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">7</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="7" name="Set mirrored" sid="341260581511307" type="playerskin_christmastrees">
+                                                    <param id="0" name="State">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="629906590505902" title="Player 4 Animations">
+            <sub-events>
+                <event-block sid="400637630139165">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="418883342282621" type="System">
+                            <param id="0" name="Variable">multiplayermode</param>
+                            <param id="1" name="Comparison">1</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="514006600776980">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="786254267854205" type="PlayerObject">
+                                    <param id="0" name="Instance variable">Player</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="957804677909833" type="PlayerObject">
+                                    <param id="0" name="Instance variable">Character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                                <condition id="2" name="Is playing" sid="127340228928262" type="playerskin_Trees">
+                                    <param id="0" name="Animation">&quot;Walking&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="6" name="Set speed" sid="919938273501194" type="playerskin_Trees">
+                                    <param id="0" name="Speed">13 * (PlayerObject.Platform.Speed / 200)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="453582668740195">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="801171549527909" type="PlayerObject">
+                                    <param id="0" name="Instance variable">Player</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="915543403793361" type="PlayerObject">
+                                    <param id="0" name="Instance variable">Character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                                <condition id="2" name="Is playing" sid="209061802649203" type="playerskin_Trees">
+                                    <param id="0" name="Animation">&quot;peelout&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="6" name="Set speed" sid="835903031164711" type="playerskin_Trees">
+                                    <param id="0" name="Speed">23 * (PlayerObject.Platform.Speed / 200)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="719299193094796">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="577753537613449" type="PlayerObject">
+                                    <param id="0" name="Instance variable">Player</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="968751940424099" type="PlayerObject">
+                                    <param id="0" name="Instance variable">Character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                                <condition id="2" name="Is playing" sid="199915109372321" type="playerskin_Test">
+                                    <param id="0" name="Animation">&quot;Walking&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="6" name="Set speed" sid="279202886704962" type="playerskin_Test">
+                                    <param id="0" name="Speed">10 * (PlayerObject.Platform.Speed / 200)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="536297321920704">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="142080919931400" type="PlayerObject">
+                                    <param id="0" name="Instance variable">Player</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="818595442722565" type="PlayerObject">
+                                    <param id="0" name="Instance variable">Character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                                <condition id="2" name="Is playing" sid="193227816792033" type="playerskin_Test2">
+                                    <param id="0" name="Animation">&quot;Walking&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="6" name="Set speed" sid="758229084365201" type="playerskin_Test2">
+                                    <param id="0" name="Speed">25 * (PlayerObject.Platform.Speed / 200)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="782041677902146">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="859861701431308" type="PlayerObject">
+                                    <param id="0" name="Instance variable">Player</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="552265696590197" type="PlayerObject">
+                                    <param id="0" name="Instance variable">Character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                                <condition id="2" name="Is playing" sid="239177739648024" type="playerskin_teabat">
+                                    <param id="0" name="Animation">&quot;Walking&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="6" name="Set speed" sid="654920441925580" type="playerskin_teabat">
+                                    <param id="0" name="Speed">25 * (PlayerObject.Platform.Speed / 200)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="732918187684005">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="244059388916311" type="PlayerObject">
+                                    <param id="0" name="Instance variable">Player</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="925832334996047" type="PlayerObject">
+                                    <param id="0" name="Instance variable">Character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">5</param>
+                                </condition>
+                                <condition id="2" name="Is playing" sid="245377352784327" type="playerskin_kyle">
+                                    <param id="0" name="Animation">&quot;Walking&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="6" name="Set speed" sid="475023272181901" type="playerskin_kyle">
+                                    <param id="0" name="Speed">13 * (PlayerObject.Platform.Speed / 200)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="454653140409127">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="517014932902443" type="PlayerObject">
+                                    <param id="0" name="Instance variable">Player</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="695211479486823" type="PlayerObject">
+                                    <param id="0" name="Instance variable">Character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">5</param>
+                                </condition>
+                                <condition id="2" name="Is playing" sid="313632065494046" type="playerskin_kyle">
+                                    <param id="0" name="Animation">&quot;peelout&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="6" name="Set speed" sid="869287972740774" type="playerskin_kyle">
+                                    <param id="0" name="Speed">23 * (PlayerObject.Platform.Speed / 200)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="896549829056829">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="735797795858972" type="PlayerObject">
+                                    <param id="0" name="Instance variable">Player</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="907302385813631" type="PlayerObject">
+                                    <param id="0" name="Instance variable">Character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">6</param>
+                                </condition>
+                                <condition id="2" name="Is playing" sid="826824227918171" type="playerskin_Julia">
+                                    <param id="0" name="Animation">&quot;Walking&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="6" name="Set speed" sid="735570066596829" type="playerskin_Julia">
+                                    <param id="0" name="Speed">10 * (PlayerObject.Platform.Speed / 200)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="722068393836858">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="404750739313009" type="PlayerObject">
+                                    <param id="0" name="Instance variable">Player</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="991812319612699" type="PlayerObject">
+                                    <param id="0" name="Instance variable">Character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">6</param>
+                                </condition>
+                                <condition id="2" name="Is playing" sid="757254278260782" type="playerskin_Julia">
+                                    <param id="0" name="Animation">&quot;peelout&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="6" name="Set speed" sid="696687779055467" type="playerskin_Julia">
+                                    <param id="0" name="Speed">23 * (PlayerObject.Platform.Speed / 200)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="690630421307702">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="752192657244791" type="PlayerObject">
+                                    <param id="0" name="Instance variable">Player</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="924389909868427" type="PlayerObject">
+                                    <param id="0" name="Instance variable">Character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">7</param>
+                                </condition>
+                                <condition id="2" name="Is playing" sid="203385570313941" type="playerskin_christmastrees">
+                                    <param id="0" name="Animation">&quot;Walking&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="6" name="Set speed" sid="264333355531359" type="playerskin_christmastrees">
+                                    <param id="0" name="Speed">13 * (PlayerObject.Platform.Speed / 200)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="844124926010730">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="488979140090541" type="PlayerObject">
+                                    <param id="0" name="Instance variable">Player</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="811288246597396" type="PlayerObject">
+                                    <param id="0" name="Instance variable">Character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">7</param>
+                                </condition>
+                                <condition id="2" name="Is playing" sid="332702340186697" type="playerskin_christmastrees">
+                                    <param id="0" name="Animation">&quot;peelout&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="6" name="Set speed" sid="173928878739763" type="playerskin_christmastrees">
+                                    <param id="0" name="Speed">23 * (PlayerObject.Platform.Speed / 200)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-group description="" sid="258116887191216" title="Player4_Trees">
+                    <sub-events>
+                        <event-block sid="611327190056831">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="917292786202832" type="System">
+                                    <param id="0" name="Variable">multiplayermode</param>
+                                    <param id="1" name="Comparison">1</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block any="1" sid="189454759468832">
+                                    <conditions>
+                                        <condition id="5" name="Compare axis" sid="570949838498042" type="Gamepad">
+                                            <param id="0" name="Gamepad">3</param>
+                                            <param id="1" name="Axis">0</param>
+                                            <param id="2" name="Comparison">2</param>
+                                            <param id="3" name="Value">0</param>
+                                        </condition>
+                                        <condition id="3" name="Is button down" sid="886151897457657" type="Gamepad">
+                                            <param id="0" name="Gamepad">3</param>
+                                            <param id="1" name="Button">14</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="776389245596949">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="280250189365977" type="playerskin_Trees">
+                                                    <param id="0" name="Instance variable">stagewascleared</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">0</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="341166105337777" type="PlayerObject">
+                                                    <param id="0" name="Instance variable">Player</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">4</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="419211895163808" type="PlayerObject">
+                                                    <param id="0" name="Instance variable">Character</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">1</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="7" name="Set mirrored" sid="431202665323533" type="playerskin_Trees">
+                                                    <param id="0" name="State">0</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block any="1" sid="600547471199882">
+                                    <conditions>
+                                        <condition id="5" name="Compare axis" sid="129530861749870" type="Gamepad">
+                                            <param id="0" name="Gamepad">3</param>
+                                            <param id="1" name="Axis">0</param>
+                                            <param id="2" name="Comparison">4</param>
+                                            <param id="3" name="Value">0</param>
+                                        </condition>
+                                        <condition id="3" name="Is button down" sid="351212204988989" type="Gamepad">
+                                            <param id="0" name="Gamepad">3</param>
+                                            <param id="1" name="Button">15</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="218440164364587">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="418239442951274" type="playerskin_Trees">
+                                                    <param id="0" name="Instance variable">stagewascleared</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">0</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="978671661330395" type="PlayerObject">
+                                                    <param id="0" name="Instance variable">Player</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">4</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="635094725517042" type="PlayerObject">
+                                                    <param id="0" name="Instance variable">Character</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">1</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="7" name="Set mirrored" sid="796949427620860" type="playerskin_Trees">
+                                                    <param id="0" name="State">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="613286317007118" title="Player4_Test">
+                    <sub-events>
+                        <event-block sid="318458405654365">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="229891605658972" type="System">
+                                    <param id="0" name="Variable">multiplayermode</param>
+                                    <param id="1" name="Comparison">1</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block any="1" sid="632453388822743">
+                                    <conditions>
+                                        <condition id="5" name="Compare axis" sid="980421512929755" type="Gamepad">
+                                            <param id="0" name="Gamepad">3</param>
+                                            <param id="1" name="Axis">0</param>
+                                            <param id="2" name="Comparison">2</param>
+                                            <param id="3" name="Value">0</param>
+                                        </condition>
+                                        <condition id="3" name="Is button down" sid="351984183931852" type="Gamepad">
+                                            <param id="0" name="Gamepad">3</param>
+                                            <param id="1" name="Button">14</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="951859716135629">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="887676167797055" type="playerskin_Test">
+                                                    <param id="0" name="Instance variable">stagewascleared</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">0</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="727002907847674" type="PlayerObject">
+                                                    <param id="0" name="Instance variable">Player</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">4</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="796790005473768" type="PlayerObject">
+                                                    <param id="0" name="Instance variable">Character</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">2</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="7" name="Set mirrored" sid="130829782887794" type="playerskin_Test">
+                                                    <param id="0" name="State">0</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block any="1" sid="599047126971655">
+                                    <conditions>
+                                        <condition id="5" name="Compare axis" sid="649163006893289" type="Gamepad">
+                                            <param id="0" name="Gamepad">3</param>
+                                            <param id="1" name="Axis">0</param>
+                                            <param id="2" name="Comparison">4</param>
+                                            <param id="3" name="Value">0</param>
+                                        </condition>
+                                        <condition id="3" name="Is button down" sid="840716431531489" type="Gamepad">
+                                            <param id="0" name="Gamepad">3</param>
+                                            <param id="1" name="Button">15</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="689303289451015">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="642090169708588" type="playerskin_Test">
+                                                    <param id="0" name="Instance variable">stagewascleared</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">0</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="827100432565029" type="PlayerObject">
+                                                    <param id="0" name="Instance variable">Player</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">4</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="833094547437346" type="PlayerObject">
+                                                    <param id="0" name="Instance variable">Character</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">2</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="7" name="Set mirrored" sid="976843326730433" type="playerskin_Test">
+                                                    <param id="0" name="State">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="869583304410697" title="Player4_Test2">
+                    <sub-events>
+                        <event-block sid="944561804485685">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="495581699763546" type="System">
+                                    <param id="0" name="Variable">multiplayermode</param>
+                                    <param id="1" name="Comparison">1</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block any="1" sid="243345569482906">
+                                    <conditions>
+                                        <condition id="5" name="Compare axis" sid="516536612675508" type="Gamepad">
+                                            <param id="0" name="Gamepad">3</param>
+                                            <param id="1" name="Axis">0</param>
+                                            <param id="2" name="Comparison">2</param>
+                                            <param id="3" name="Value">0</param>
+                                        </condition>
+                                        <condition id="3" name="Is button down" sid="100181127611850" type="Gamepad">
+                                            <param id="0" name="Gamepad">3</param>
+                                            <param id="1" name="Button">14</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="524659908311805">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="362206834886429" type="playerskin_Test2">
+                                                    <param id="0" name="Instance variable">stagewascleared</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">0</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="318945872485232" type="PlayerObject">
+                                                    <param id="0" name="Instance variable">Player</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">4</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="147122926507093" type="PlayerObject">
+                                                    <param id="0" name="Instance variable">Character</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">3</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="7" name="Set mirrored" sid="733516433765246" type="playerskin_Test2">
+                                                    <param id="0" name="State">0</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block any="1" sid="392113841434516">
+                                    <conditions>
+                                        <condition id="5" name="Compare axis" sid="560891369792950" type="Gamepad">
+                                            <param id="0" name="Gamepad">3</param>
+                                            <param id="1" name="Axis">0</param>
+                                            <param id="2" name="Comparison">4</param>
+                                            <param id="3" name="Value">0</param>
+                                        </condition>
+                                        <condition id="3" name="Is button down" sid="973253026086997" type="Gamepad">
+                                            <param id="0" name="Gamepad">3</param>
+                                            <param id="1" name="Button">15</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="705465987377741">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="658009895260366" type="playerskin_Test2">
+                                                    <param id="0" name="Instance variable">stagewascleared</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">0</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="337544446372195" type="PlayerObject">
+                                                    <param id="0" name="Instance variable">Player</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">4</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="223055012073404" type="PlayerObject">
+                                                    <param id="0" name="Instance variable">Character</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">3</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="7" name="Set mirrored" sid="892390604496000" type="playerskin_Test2">
+                                                    <param id="0" name="State">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="693440517855333" title="Player4_Teabat">
+                    <sub-events>
+                        <event-block sid="461800397517414">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="290496196846683" type="System">
+                                    <param id="0" name="Variable">multiplayermode</param>
+                                    <param id="1" name="Comparison">1</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block any="1" sid="565566853096703">
+                                    <conditions>
+                                        <condition id="5" name="Compare axis" sid="636348429656353" type="Gamepad">
+                                            <param id="0" name="Gamepad">3</param>
+                                            <param id="1" name="Axis">0</param>
+                                            <param id="2" name="Comparison">2</param>
+                                            <param id="3" name="Value">0</param>
+                                        </condition>
+                                        <condition id="3" name="Is button down" sid="469010201948155" type="Gamepad">
+                                            <param id="0" name="Gamepad">3</param>
+                                            <param id="1" name="Button">14</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="462065625093205">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="902277505757388" type="playerskin_teabat">
+                                                    <param id="0" name="Instance variable">stagewascleared</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">0</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="689547359156881" type="PlayerObject">
+                                                    <param id="0" name="Instance variable">Player</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">4</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="842889045230297" type="PlayerObject">
+                                                    <param id="0" name="Instance variable">Character</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">4</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="7" name="Set mirrored" sid="444300431440483" type="playerskin_teabat">
+                                                    <param id="0" name="State">0</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block any="1" sid="998324796948194">
+                                    <conditions>
+                                        <condition id="5" name="Compare axis" sid="484756898171451" type="Gamepad">
+                                            <param id="0" name="Gamepad">3</param>
+                                            <param id="1" name="Axis">0</param>
+                                            <param id="2" name="Comparison">4</param>
+                                            <param id="3" name="Value">0</param>
+                                        </condition>
+                                        <condition id="3" name="Is button down" sid="595598372940103" type="Gamepad">
+                                            <param id="0" name="Gamepad">3</param>
+                                            <param id="1" name="Button">15</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="968506771033295">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="132609586563776" type="playerskin_teabat">
+                                                    <param id="0" name="Instance variable">stagewascleared</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">0</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="767440516341460" type="PlayerObject">
+                                                    <param id="0" name="Instance variable">Player</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">4</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="683533901615216" type="PlayerObject">
+                                                    <param id="0" name="Instance variable">Character</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">4</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="7" name="Set mirrored" sid="398736598720252" type="playerskin_teabat">
+                                                    <param id="0" name="State">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="453659905477870" title="Player4_Julia">
+                    <sub-events>
+                        <event-block sid="138384396849471">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="176949566613668" type="System">
+                                    <param id="0" name="Variable">multiplayermode</param>
+                                    <param id="1" name="Comparison">1</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block any="1" sid="882200822371295">
+                                    <conditions>
+                                        <condition id="5" name="Compare axis" sid="599887611494090" type="Gamepad">
+                                            <param id="0" name="Gamepad">3</param>
+                                            <param id="1" name="Axis">0</param>
+                                            <param id="2" name="Comparison">2</param>
+                                            <param id="3" name="Value">0</param>
+                                        </condition>
+                                        <condition id="3" name="Is button down" sid="320341284552532" type="Gamepad">
+                                            <param id="0" name="Gamepad">3</param>
+                                            <param id="1" name="Button">14</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="247965867520006">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="171686821172022" type="playerskin_Julia">
+                                                    <param id="0" name="Instance variable">stagewascleared</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">0</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="665101594456628" type="PlayerObject">
+                                                    <param id="0" name="Instance variable">Player</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">4</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="855483645453558" type="PlayerObject">
+                                                    <param id="0" name="Instance variable">Character</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">6</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="7" name="Set mirrored" sid="456581407140821" type="playerskin_Julia">
+                                                    <param id="0" name="State">0</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block any="1" sid="876625342498693">
+                                    <conditions>
+                                        <condition id="5" name="Compare axis" sid="892314643534456" type="Gamepad">
+                                            <param id="0" name="Gamepad">3</param>
+                                            <param id="1" name="Axis">0</param>
+                                            <param id="2" name="Comparison">4</param>
+                                            <param id="3" name="Value">0</param>
+                                        </condition>
+                                        <condition id="3" name="Is button down" sid="883574842324437" type="Gamepad">
+                                            <param id="0" name="Gamepad">3</param>
+                                            <param id="1" name="Button">15</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="929593100829494">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="279588505163233" type="playerskin_Julia">
+                                                    <param id="0" name="Instance variable">stagewascleared</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">0</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="641385444319464" type="PlayerObject">
+                                                    <param id="0" name="Instance variable">Player</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">4</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="781199109753946" type="PlayerObject">
+                                                    <param id="0" name="Instance variable">Character</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">6</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="7" name="Set mirrored" sid="993596085945191" type="playerskin_Julia">
+                                                    <param id="0" name="State">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="645002734815567" title="Player4_ChristmasTrees">
+                    <sub-events>
+                        <event-block sid="925272944937440">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="793385915987379" type="System">
+                                    <param id="0" name="Variable">multiplayermode</param>
+                                    <param id="1" name="Comparison">1</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block any="1" sid="945945646322025">
+                                    <conditions>
+                                        <condition id="5" name="Compare axis" sid="247287498309928" type="Gamepad">
+                                            <param id="0" name="Gamepad">3</param>
+                                            <param id="1" name="Axis">0</param>
+                                            <param id="2" name="Comparison">2</param>
+                                            <param id="3" name="Value">0</param>
+                                        </condition>
+                                        <condition id="3" name="Is button down" sid="989420951183312" type="Gamepad">
+                                            <param id="0" name="Gamepad">3</param>
+                                            <param id="1" name="Button">14</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="883841964980260">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="109391237382070" type="playerskin_christmastrees">
+                                                    <param id="0" name="Instance variable">stagewascleared</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">0</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="850095510861743" type="PlayerObject">
+                                                    <param id="0" name="Instance variable">Player</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">4</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="886421477301495" type="PlayerObject">
+                                                    <param id="0" name="Instance variable">Character</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">7</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="7" name="Set mirrored" sid="420633521882903" type="playerskin_christmastrees">
+                                                    <param id="0" name="State">0</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block any="1" sid="272318973865958">
+                                    <conditions>
+                                        <condition id="5" name="Compare axis" sid="978878960349911" type="Gamepad">
+                                            <param id="0" name="Gamepad">3</param>
+                                            <param id="1" name="Axis">0</param>
+                                            <param id="2" name="Comparison">4</param>
+                                            <param id="3" name="Value">0</param>
+                                        </condition>
+                                        <condition id="3" name="Is button down" sid="599571646848692" type="Gamepad">
+                                            <param id="0" name="Gamepad">3</param>
+                                            <param id="1" name="Button">15</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="864749659037913">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="274744005645352" type="playerskin_christmastrees">
+                                                    <param id="0" name="Instance variable">stagewascleared</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">0</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="276925209918693" type="PlayerObject">
+                                                    <param id="0" name="Instance variable">Player</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">4</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="443016384384972" type="PlayerObject">
+                                                    <param id="0" name="Instance variable">Character</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">7</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="7" name="Set mirrored" sid="959490593464469" type="playerskin_christmastrees">
+                                                    <param id="0" name="State">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

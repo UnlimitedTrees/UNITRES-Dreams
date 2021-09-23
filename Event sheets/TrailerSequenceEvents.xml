@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>TrailerSequenceEvents</name>
+    <events>
+        <event-block sid="362938287444174">
+            <conditions>
+                <condition id="0" name="On function" sid="581904990289112" type="Function">
+                    <param id="0" name="Name">&quot;trailer_burgerspawn&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="266819771262632" type="System">
+                    <param id="0" name="Object to create">trailerassets_tossedhamburger</param>
+                    <param id="1" name="Layer">&quot;PlayerLayer&quot;</param>
+                    <param id="2" name="X">25</param>
+                    <param id="3" name="Y">387</param>
+                </action>
+                <action id="-3" name="Create object" sid="366980163469749" type="System">
+                    <param id="0" name="Object to create">trailerassets_tossedhamburger</param>
+                    <param id="1" name="Layer">&quot;PlayerLayer&quot;</param>
+                    <param id="2" name="X">116</param>
+                    <param id="3" name="Y">368</param>
+                </action>
+                <action id="-3" name="Create object" sid="768067812781477" type="System">
+                    <param id="0" name="Object to create">trailerassets_tossedhamburger</param>
+                    <param id="1" name="Layer">&quot;PlayerLayer&quot;</param>
+                    <param id="2" name="X">208</param>
+                    <param id="3" name="Y">344</param>
+                </action>
+                <action id="-3" name="Create object" sid="585427107746731" type="System">
+                    <param id="0" name="Object to create">trailerassets_tossedhamburger</param>
+                    <param id="1" name="Layer">&quot;PlayerLayer&quot;</param>
+                    <param id="2" name="X">283</param>
+                    <param id="3" name="Y">357</param>
+                </action>
+                <action id="-3" name="Create object" sid="195411582826516" type="System">
+                    <param id="0" name="Object to create">trailerassets_tossedhamburger</param>
+                    <param id="1" name="Layer">&quot;PlayerLayer&quot;</param>
+                    <param id="2" name="X">357</param>
+                    <param id="3" name="Y">382</param>
+                </action>
+                <action id="-3" name="Create object" sid="830524731632538" type="System">
+                    <param id="0" name="Object to create">trailerassets_tossedhamburger</param>
+                    <param id="1" name="Layer">&quot;PlayerLayer&quot;</param>
+                    <param id="2" name="X">567</param>
+                    <param id="3" name="Y">399</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="429460886987127">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="511287353136119" type="System" />
+            </conditions>
+            <actions>
+                <action id="-4" name="Set layer visible" sid="762777748116031" type="System">
+                    <param id="0" name="Layer">&quot;HUD&quot;</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="471343835181791" type="System">
+                    <param id="0" name="Variable">CurrentLevel</param>
+                    <param id="1" name="Value">&quot;TrailerSequence&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="803421736166653" type="System">
+                    <param id="0" name="Variable">darkness_lowpoint</param>
+                    <param id="1" name="Value">90</param>
+                </action>
+                <action id="-9" name="Set value" sid="141816796465390" type="System">
+                    <param id="0" name="Variable">darkness_opacity</param>
+                    <param id="1" name="Value">90</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="424224080414967" type="trailerassets_lightsradius">
+                    <param id="0" name="Object">ObjectLight1</param>
+                    <param id="1" name="Layer">&quot;DarkLayer&quot;</param>
+                    <param id="2" name="Image point">1</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="550399796188901" type="trailerassets_lightsradius">
+                    <param id="0" name="Object">ObjectLight2</param>
+                    <param id="1" name="Layer">&quot;DarkLayer&quot;</param>
+                    <param id="2" name="Image point">2</param>
+                </action>
+                <action id="-16" name="Wait" sid="738164695387811" type="System">
+                    <param id="0" name="Seconds">5.5</param>
+                </action>
+                <action id="-9" name="Set value" sid="837525724508048" type="System">
+                    <param id="0" name="Variable">cacapoopee</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="897709477454317" type="System">
+                    <param id="0" name="Seconds">2.5</param>
+                </action>
+                <action id="0" name="Call function" sid="275996902207596" type="Function">
+                    <param id="0" name="Name">&quot;trailer_burgerspawn&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="-16" name="Wait" sid="799001111003436" type="System">
+                    <param id="0" name="Seconds">0.35</param>
+                </action>
+                <action id="0" name="Call function" sid="348170508831861" type="Function">
+                    <param id="0" name="Name">&quot;trailer_burgerspawn&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="-16" name="Wait" sid="600560204512016" type="System">
+                    <param id="0" name="Seconds">0.35</param>
+                </action>
+                <action id="0" name="Call function" sid="871005633876019" type="Function">
+                    <param id="0" name="Name">&quot;trailer_burgerspawn&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="-16" name="Wait" sid="562334918381275" type="System">
+                    <param id="0" name="Seconds">1.0</param>
+                </action>
+                <action id="-3" name="Create object" sid="102165250354249" type="System">
+                    <param id="0" name="Object to create">ihatevideogames</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">0</param>
+                    <param id="3" name="Y">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <include>MainPlayer</include>
+        <event-block sid="232943607900357">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="855349363432586" type="Keyboard">
+                    <param id="0" name="Key">221</param>
+                </condition>
+                <condition disabled="1" id="-14" name="Compare variable" sid="355398409582421" type="System">
+                    <param id="0" name="Variable">DebugModeEnabled</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="406264335218355" type="System">
+                    <param id="0" name="Layout">TestLevelSelect</param>
+                </action>
+                <action id="-9" name="Set value" sid="932849235545716" type="System">
+                    <param id="0" name="Variable">selectedlevel</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="963361880265835" type="System">
+                    <param id="0" name="Variable">SavePointisActive</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="748438801777354" type="System">
+                    <param id="0" name="Variable">SavedX</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="234087322840386" type="System">
+                    <param id="0" name="Variable">SavedY</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="384517615101712" type="System">
+                    <param id="0" name="Variable">MiniBossIsDead</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="233521887062942" type="System">
+                    <param id="0" name="Variable">cacapoopee</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="33" name="Stop all" sid="591325854466786" type="Audio" />
+            </actions>
+        </event-block>
+        <event-block sid="370204563998627">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="810397149686586" type="System" />
+                <condition id="-5" name="Compare width" sid="625706196351057" type="trailerassets_lightsradius">
+                    <param id="0" name="Comparison">4</param>
+                    <param id="1" name="Width">196</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-5" name="Set width" sid="298855090967072" type="trailerassets_lightsradius">
+                    <param id="0" name="Width">self.Width-4.25</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="145153650256963">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="294490641700108" type="System" />
+                <condition id="-17" name="Compare opacity" sid="454883878524267" type="System">
+                    <param id="0" name="Layer">&quot;DarkLayer&quot;</param>
+                    <param id="1" name="Comparison">1</param>
+                    <param id="2" name="Opacity">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="421475666490234" type="ObjectLight1">
+                    <param id="0" name="X">trailerassets_lightsradius.ImagePointX(1)</param>
+                    <param id="1" name="Y">trailerassets_lightsradius.ImagePointY(1)</param>
+                </action>
+                <action id="-3" name="Set position" sid="981288271283284" type="ObjectLight2">
+                    <param id="0" name="X">trailerassets_lightsradius.ImagePointX(2)</param>
+                    <param id="1" name="Y">trailerassets_lightsradius.ImagePointY(2)</param>
+                </action>
+                <action id="-3" name="Set position" sid="910197175725714" type="trailerassets_light">
+                    <param id="0" name="X">trailerassets_lightsradius.ImagePointX(1)</param>
+                    <param id="1" name="Y">trailerassets_lightsradius.ImagePointY(1)</param>
+                </action>
+                <action id="-3" name="Set position" sid="118054765534205" type="trailerassets_light2">
+                    <param id="0" name="X">trailerassets_lightsradius.ImagePointX(2)</param>
+                    <param id="1" name="Y">trailerassets_lightsradius.ImagePointY(2)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="740366025991917">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="919761688640520" type="System" />
+                <condition id="-9" name="Layer is visible" sid="123933422340719" type="System">
+                    <param id="0" name="Layer">&quot;DarkLayer&quot;</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="388739556472717" type="System">
+                    <param id="0" name="Variable">cacapoopee</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-18" name="Set layer opacity" sid="834338338253650" type="System">
+                    <param id="0" name="Layer">&quot;DarkLayer&quot;</param>
+                    <param id="1" name="Opacity">darkness_opacity</param>
+                </action>
+                <action id="-11" name="Subtract from" sid="351588967895959" type="System">
+                    <param id="0" name="Variable">darkness_opacity</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="850086742813374" type="trailerassets_light">
+                    <param id="0" name="Opacity">darkness_opacity</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="922352994487485" type="trailerassets_light2">
+                    <param id="0" name="Opacity">darkness_opacity</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>PerfectCitySection1Events</name>
+    <events>
+        <include>MainPlayer</include>
+        <event-block sid="473886705522125">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="527758749384615" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="139216723152279" type="Function">
+                    <param id="0" name="Name">&quot;Screen_FadeOut&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="-9" name="Set value" sid="199894143489436" type="System">
+                    <param id="0" name="Variable">MaxPartyMemb</param>
+                    <param id="1" name="Value">3</param>
+                </action>
+                <action id="-9" name="Set value" sid="741948130586282" type="System">
+                    <param id="0" name="Variable">Char1IsInParty</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="394899775702863" type="System">
+                    <param id="0" name="Variable">Char2IsInParty</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="562060196486134" type="System">
+                    <param id="0" name="Variable">Char3IsInParty</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="917029553234261" type="System">
+                    <param id="0" name="Variable">PartyOrder</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="719097108176096" type="System">
+                    <param id="0" name="Variable">MiniBossIsDead</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="437723710101292" type="System">
+                    <param id="0" name="Variable">CurrentLevel</param>
+                    <param id="1" name="Value">&quot;PerfectCity1&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="446287979088717" type="System">
+                    <param id="0" name="Variable">PartySwitchEnabled</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="411332153934388" type="System">
+                    <param id="0" name="Variable">levelhasgrav</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Play" sid="106506667149679" type="Audio">
+                    <param id="0" name="Audio file">PC1</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;levelmusic&quot;</param>
+                </action>
+                <action id="4" name="Set animation" sid="672879610019578" type="hud_eyecountr">
+                    <param id="0" name="Animation">&quot;a&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="0" name="Call function" sid="473799230836099" type="Function">
+                    <param id="0" name="Name">&quot;SaveFunction&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="842065571120302">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="802818083242810" type="System">
+                            <param id="0" name="Variable">juliamode</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="320725444876302" type="System">
+                            <param id="0" name="Object to create">DialogueTrigger</param>
+                            <param id="1" name="Layer">&quot;PlayerLayer&quot;</param>
+                            <param id="2" name="X">1824</param>
+                            <param id="3" name="Y">1488</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="703850920329972" type="DialogueTrigger">
+                            <param id="0" name="Instance variable">dialogue</param>
+                            <param id="1" name="Value">&quot;Julia_Spark1&quot;</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="603937716092471" type="DialogueTrigger">
+                            <param id="0" name="Instance variable">secondarydialogue</param>
+                            <param id="1" name="Value">&quot;Julia_Spark1&quot;</param>
+                        </action>
+                        <action id="-7" name="Set size" sid="507817468581144" type="DialogueTrigger">
+                            <param id="0" name="Width">72</param>
+                            <param id="1" name="Height">72</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="514753851678223">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="627364559264020" type="Keyboard">
+                    <param id="0" name="Key">56</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="6" name="Stop" sid="472563263891020" type="Audio">
+                    <param id="0" name="Tag">&quot;levelmusic&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="759432661021535">
+            <conditions>
+                <condition id="-1" name="Compare X" sid="339582436415671" type="Camera">
+                    <param id="0" name="Comparison">5</param>
+                    <param id="1" name="X co-ordinate">29988</param>
+                </condition>
+                <condition id="-2" name="Compare Y" sid="256027586210388" type="Camera">
+                    <param id="0" name="Comparison">3</param>
+                    <param id="1" name="Y co-ordinate">125</param>
+                </condition>
+                <condition id="-8" name="Is boolean instance variable set" sid="314299420287353" type="Camera">
+                    <param id="0" name="Instance variable">IsActive</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set boolean" sid="905343558073394" type="Camera">
+                    <param id="0" name="Instance variable">IsActive</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="0" name="Call function" sid="689198295764559" type="Function">
+                    <param id="0" name="Name">&quot;Screen_FadeIn&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="-16" name="Wait" sid="674671282356037" type="System">
+                    <param id="0" name="Seconds">1.0</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="405066045281334" type="System">
+                    <param id="0" name="Layout">PerfectCity - Section2final</param>
+                </action>
+                <action id="-9" name="Set value" sid="712805727078075" type="System">
+                    <param id="0" name="Variable">PartySwitchVar</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="198614564520687" type="System">
+                    <param id="0" name="Variable">SelectedPartyMemb</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="585433303999083" type="System">
+                    <param id="0" name="Variable">SavePointisActive_UM</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="297984270518975" type="System">
+                    <param id="0" name="Variable">SavedX_UM</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="853179260037389" type="System">
+                    <param id="0" name="Variable">SavedY_UM</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="423744668302040" type="System">
+                    <param id="0" name="Variable">SavePointisActive</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="674661097187256" type="System">
+                    <param id="0" name="Variable">SavedX</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="426358473759494" type="System">
+                    <param id="0" name="Variable">SavedY</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="100606650224294" type="System">
+                    <param id="0" name="Variable">gravitydirection</param>
+                    <param id="1" name="Value">90</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="542962779816923">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="195196476066899" type="System" />
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="747877747873948" type="PC1_Cloud1">
+                    <param id="0" name="X">Self.X-((0.05 * 60) * dt)</param>
+                </action>
+                <action id="-1" name="Set X" sid="980986670682368" type="PC1_Cloud2">
+                    <param id="0" name="X">Self.X-((0.15 * 60) * dt)</param>
+                </action>
+                <action id="-1" name="Set X" sid="402464346395395" type="PC1_Cloud3">
+                    <param id="0" name="X">Self.X-((0.55 * 60) * dt)</param>
+                </action>
+                <action id="-1" name="Set X" sid="176983580087060" type="PC1_Cloud4">
+                    <param id="0" name="X">Self.X-((0.75 * 60) * dt)</param>
+                </action>
+                <action id="-1" name="Set X" sid="691157381009736" type="PC1_Cloud5">
+                    <param id="0" name="X">Self.X-((1.05 * 60) * dt)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="117658216420686">
+            <conditions>
+                <condition id="-1" name="Compare X" sid="375052337697424" type="PC1_Cloud1">
+                    <param id="0" name="Comparison">3</param>
+                    <param id="1" name="X co-ordinate">-512</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="914867744478301" type="PC1_Cloud1">
+                    <param id="0" name="X">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="807517374226641">
+            <conditions>
+                <condition id="-1" name="Compare X" sid="349140756635664" type="PC1_Cloud2">
+                    <param id="0" name="Comparison">3</param>
+                    <param id="1" name="X co-ordinate">-527</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="214067605154730" type="PC1_Cloud2">
+                    <param id="0" name="X">-16</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="564222098078201">
+            <conditions>
+                <condition id="-1" name="Compare X" sid="285405788633054" type="PC1_Cloud3">
+                    <param id="0" name="Comparison">3</param>
+                    <param id="1" name="X co-ordinate">-600</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="516220506370624" type="PC1_Cloud3">
+                    <param id="0" name="X">-88</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="545867424692176">
+            <conditions>
+                <condition id="-1" name="Compare X" sid="465616141850716" type="PC1_Cloud4">
+                    <param id="0" name="Comparison">3</param>
+                    <param id="1" name="X co-ordinate">-544</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="759817153540465" type="PC1_Cloud4">
+                    <param id="0" name="X">-32</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="702804948446859">
+            <conditions>
+                <condition id="-1" name="Compare X" sid="767151603095853" type="PC1_Cloud5">
+                    <param id="0" name="Comparison">3</param>
+                    <param id="1" name="X co-ordinate">-677</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="829662825665548" type="PC1_Cloud5">
+                    <param id="0" name="X">-168</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

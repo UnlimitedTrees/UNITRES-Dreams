@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>NOTICEscreen</name>
+    <events>
+        <event-block sid="452676081030088">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="808655722414268" type="System" />
+            </conditions>
+            <actions>
+                <action id="4" name="Preload" sid="190079812927249" type="Audio">
+                    <param id="0" name="Audio file">bossdeath</param>
+                </action>
+                <action id="4" name="Preload" sid="741649091715131" type="Audio">
+                    <param id="0" name="Audio file">bosslaser</param>
+                </action>
+                <action id="4" name="Preload" sid="227207276675376" type="Audio">
+                    <param id="0" name="Audio file">bosslaugh</param>
+                </action>
+                <action id="4" name="Preload" sid="448024676187771" type="Audio">
+                    <param id="0" name="Audio file">bosspuke</param>
+                </action>
+                <action id="4" name="Preload" sid="669676801479536" type="Audio">
+                    <param id="0" name="Audio file">enemyjump</param>
+                </action>
+                <action id="4" name="Preload" sid="995171361850049" type="Audio">
+                    <param id="0" name="Audio file">enemyshoot</param>
+                </action>
+                <action id="4" name="Preload" sid="497891563573807" type="Audio">
+                    <param id="0" name="Audio file">error</param>
+                </action>
+                <action id="4" name="Preload" sid="757233247627184" type="Audio">
+                    <param id="0" name="Audio file">explosion</param>
+                </action>
+                <action id="4" name="Preload" sid="267501982187796" type="Audio">
+                    <param id="0" name="Audio file">tresattack</param>
+                </action>
+                <action id="4" name="Preload" sid="740282519653767" type="Audio">
+                    <param id="0" name="Audio file">tresdoublejump</param>
+                </action>
+                <action id="4" name="Preload" sid="406926621421006" type="Audio">
+                    <param id="0" name="Audio file">tresheal</param>
+                </action>
+                <action id="4" name="Preload" sid="667342785441584" type="Audio">
+                    <param id="0" name="Audio file">treshurt</param>
+                </action>
+                <action id="4" name="Preload" sid="280124881260525" type="Audio">
+                    <param id="0" name="Audio file">tresjump</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block any="1" sid="492384322328548">
+            <conditions>
+                <condition id="4" name="On key code pressed" sid="955367022666961" type="Keyboard">
+                    <param id="0" name="Keycode">key_jump</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Fade" id="2" name="Set fade-in time" sid="420754340219969" type="fadein">
+                    <param id="0" name="Fade-in time">1.0</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="317378660407416" type="System">
+                    <param id="0" name="Layout">UnlimitedTrees</param>
+                </action>
+                <action id="-9" name="Set value" sid="614431951783296" type="System">
+                    <param id="0" name="Variable">ControlSetup</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="142315270246368">
+            <conditions>
+                <condition id="6" name="On button pressed" sid="909064973587535" type="Gamepad">
+                    <param id="0" name="Gamepad">0</param>
+                    <param id="1" name="Button">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Fade" id="2" name="Set fade-in time" sid="941025348761085" type="fadein">
+                    <param id="0" name="Fade-in time">1.0</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="161838320870073" type="System">
+                    <param id="0" name="Layout">UnlimitedTrees</param>
+                </action>
+                <action id="-9" name="Set value" sid="369759464723294" type="System">
+                    <param id="0" name="Variable">ControlSetup</param>
+                    <param id="1" name="Value">2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="871688190809056">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="404269885972525" type="Keyboard">
+                    <param id="0" name="Key">48</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="3" name="Clear storage" sid="389582781225982" type="LocalStorage" />
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

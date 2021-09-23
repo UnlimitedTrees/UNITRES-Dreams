@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>ResetScreenEvents</name>
+    <events>
+        <event-block any="1" sid="350635575072278">
+            <conditions>
+                <condition id="4" name="On key code pressed" sid="128802832786067" type="Keyboard">
+                    <param id="0" name="Keycode">key_attack</param>
+                </condition>
+                <condition id="6" name="On button pressed" sid="489498551530478" type="Gamepad">
+                    <param id="0" name="Gamepad">0</param>
+                    <param id="1" name="Button">2</param>
+                </condition>
+                <condition id="6" name="On button pressed" sid="158101921426000" type="Gamepad">
+                    <param id="0" name="Gamepad">0</param>
+                    <param id="1" name="Button">7</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="436477704374512">
+                    <conditions />
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="618526112357159" type="System">
+                            <param id="0" name="Layout">FinalExtrasMenu</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="419183916228733" type="System">
+                            <param id="0" name="Variable">pissdick</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="592980465448242" type="System">
+                            <param id="0" name="Variable">sunk_opacity</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="357653603633780" type="System">
+                            <param id="0" name="Variable">cacapoopee</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="742515511255655" type="System">
+                            <param id="0" name="Variable">SavePointisActive</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="967599584751306" type="System">
+                            <param id="0" name="Variable">Score</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="685233596949429" type="System">
+                            <param id="0" name="Variable">menuvar</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="234234852131872" type="System">
+                            <param id="0" name="Variable">onmenu</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="620738905155692" type="System">
+                            <param id="0" name="Variable">MiniBossIsDead</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block any="1" sid="780916253524914">
+            <conditions>
+                <condition id="4" name="On key code pressed" sid="351543314310328" type="Keyboard">
+                    <param id="0" name="Keycode">key_left</param>
+                </condition>
+                <condition id="6" name="On button pressed" sid="345227573901472" type="Gamepad">
+                    <param id="0" name="Gamepad">0</param>
+                    <param id="1" name="Button">14</param>
+                </condition>
+                <condition id="5" name="Compare axis" sid="334762825798156" type="Gamepad">
+                    <param id="0" name="Gamepad">0</param>
+                    <param id="1" name="Axis">0</param>
+                    <param id="2" name="Comparison">2</param>
+                    <param id="3" name="Value">-16</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="716153461507272">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="633951221842469" type="HUDcursor">
+                            <param id="0" name="Instance variable">atPos</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-1" name="Set X" sid="408868950672291" type="HUDcursor">
+                            <param id="0" name="X">176</param>
+                        </action>
+                        <action id="-12" name="Subtract from" sid="752157633211047" type="HUDcursor">
+                            <param id="0" name="Instance variable">atPos</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block any="1" sid="783257170743290">
+            <conditions>
+                <condition id="4" name="On key code pressed" sid="624150483725111" type="Keyboard">
+                    <param id="0" name="Keycode">key_right</param>
+                </condition>
+                <condition id="6" name="On button pressed" sid="282570403434223" type="Gamepad">
+                    <param id="0" name="Gamepad">0</param>
+                    <param id="1" name="Button">15</param>
+                </condition>
+                <condition id="5" name="Compare axis" sid="457107708176906" type="Gamepad">
+                    <param id="0" name="Gamepad">0</param>
+                    <param id="1" name="Axis">0</param>
+                    <param id="2" name="Comparison">4</param>
+                    <param id="3" name="Value">16</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="767300273618895">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="403878931991012" type="HUDcursor">
+                            <param id="0" name="Instance variable">atPos</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-1" name="Set X" sid="726658342699494" type="HUDcursor">
+                            <param id="0" name="X">384</param>
+                        </action>
+                        <action id="-11" name="Add to" sid="709955910912826" type="HUDcursor">
+                            <param id="0" name="Instance variable">atPos</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block any="1" sid="730566850492794">
+            <conditions>
+                <condition id="4" name="On key code pressed" sid="546109847702956" type="Keyboard">
+                    <param id="0" name="Keycode">key_jump</param>
+                </condition>
+                <condition id="6" name="On button pressed" sid="545352918895970" type="Gamepad">
+                    <param id="0" name="Gamepad">0</param>
+                    <param id="1" name="Button">0</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="390871784788639">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="384493777884399" type="HUDcursor">
+                            <param id="0" name="Instance variable">atPos</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="389732054942905" type="System">
+                            <param id="0" name="Layout">FinalExtrasMenu</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="872714098875622" type="System">
+                            <param id="0" name="Variable">pissdick</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="704726562043690" type="System">
+                            <param id="0" name="Variable">sunk_opacity</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="673216393734235" type="System">
+                            <param id="0" name="Variable">cacapoopee</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="217201739954558" type="System">
+                            <param id="0" name="Variable">SavePointisActive</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="790685941295856" type="System">
+                            <param id="0" name="Variable">Score</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="852223358934595" type="System">
+                            <param id="0" name="Variable">menuvar</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="830274407968953" type="System">
+                            <param id="0" name="Variable">onmenu</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="735922512794667" type="System">
+                            <param id="0" name="Variable">MiniBossIsDead</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="632677669479045">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="700810925786386" type="HUDcursor">
+                            <param id="0" name="Instance variable">atPos</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="3" name="Clear storage" sid="633080026354504" type="LocalStorage" />
+                        <action id="-2" name="Go to layout" sid="521621019707294" type="System">
+                            <param id="0" name="Layout">NOTICE</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="576054371386192" type="System">
+                            <param id="0" name="Variable">pissdick</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="185357870193184" type="System">
+                            <param id="0" name="Variable">sunk_opacity</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="811835095142962" type="System">
+                            <param id="0" name="Variable">cacapoopee</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="883579619373496" type="System">
+                            <param id="0" name="Variable">SavePointisActive</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="786429953165226" type="System">
+                            <param id="0" name="Variable">Score</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="678359115128477" type="System">
+                            <param id="0" name="Variable">menuvar</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="371503073557966" type="System">
+                            <param id="0" name="Variable">onmenu</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="209174223141807" type="System">
+                            <param id="0" name="Variable">MiniBossIsDead</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>

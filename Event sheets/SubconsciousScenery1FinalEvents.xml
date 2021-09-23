@@ -1,0 +1,208 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>SubconsciousScenery1FinalEvents</name>
+    <events>
+        <include>bossevents_UNITRES</include>
+        <include>MainPlayer</include>
+        <event-block sid="343964449953233">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="271355587601198" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="910180455252603" type="Function">
+                    <param id="0" name="Name">&quot;Screen_FadeOut&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="-9" name="Set value" sid="378118135759003" type="System">
+                    <param id="0" name="Variable">MaxPartyMemb</param>
+                    <param id="1" name="Value">2</param>
+                </action>
+                <action id="-9" name="Set value" sid="452755456290352" type="System">
+                    <param id="0" name="Variable">Char1IsInParty</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="900071544119093" type="System">
+                    <param id="0" name="Variable">Char2IsInParty</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="488957938105748" type="System">
+                    <param id="0" name="Variable">Char3IsInParty</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="233573603731706" type="System">
+                    <param id="0" name="Variable">PartyOrder</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="482449930245420" type="System">
+                    <param id="0" name="Variable">MiniBossIsDead</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="261503632402788" type="System">
+                    <param id="0" name="Variable">levelhasgrav</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="397789631516516" type="System">
+                    <param id="0" name="Variable">darkness_lowpoint</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="326836911028275" type="System">
+                    <param id="0" name="Variable">PartySwitchEnabled</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="189134002974943" type="hudicon_trees">
+                    <param id="0" name="Animation">&quot;inactive&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="714426211234730" type="hudicon_l">
+                    <param id="0" name="Animation">&quot;active&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="710910574627876" type="hudicon_s">
+                    <param id="0" name="Animation">&quot;inactive&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="833533653181715" type="System">
+                    <param id="0" name="Variable">CurrentLevel</param>
+                    <param id="1" name="Value">&quot;SubconciousScenery1&quot;</param>
+                </action>
+                <action id="0" name="Play" sid="211796219182506" type="Audio">
+                    <param id="0" name="Audio file">SS1</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;levelmusic&quot;</param>
+                </action>
+                <action id="4" name="Set animation" sid="626745199556515" type="hud_eyecountr">
+                    <param id="0" name="Animation">&quot;a&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="0" name="Call function" sid="949945509365009" type="Function">
+                    <param id="0" name="Name">&quot;SaveFunction&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="233989890134440">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="852468398953073" type="System" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Set Y" sid="755868393951484" type="SS1_BG5">
+                    <param id="0" name="Y">Self.Y+0.5</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="508400483846703">
+            <conditions>
+                <condition id="-2" name="Compare Y" sid="875733713786006" type="SS1_BG5">
+                    <param id="0" name="Comparison">5</param>
+                    <param id="1" name="Y co-ordinate">-64</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Set Y" sid="684170734574059" type="SS1_BG5">
+                    <param id="0" name="Y">-192</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="790064129998544">
+            <conditions>
+                <condition id="-1" name="Compare X" sid="708899011848285" type="Camera">
+                    <param id="0" name="Comparison">5</param>
+                    <param id="1" name="X co-ordinate">36112</param>
+                </condition>
+                <condition id="-8" name="Is boolean instance variable set" sid="209458784995624" type="Camera">
+                    <param id="0" name="Instance variable">IsActive</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set boolean" sid="899988773780949" type="Camera">
+                    <param id="0" name="Instance variable">IsActive</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="0" name="Call function" sid="612648108463297" type="Function">
+                    <param id="0" name="Name">&quot;Screen_FadeIn&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="-16" name="Wait" sid="968629492828471" type="System">
+                    <param id="0" name="Seconds">1.0</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="382016546712274" type="System">
+                    <param id="0" name="Layout">SubconsciousScenery - Section 2Final</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="859603465949183">
+            <conditions>
+                <condition id="0" name="On function" sid="986521327322601" type="Function">
+                    <param id="0" name="Name">&quot;TreesSS2Cutscene&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="916160181268549" type="playerskin_Trees">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-10" name="Set value" sid="283633239400417" type="playerskin_Trees">
+                    <param id="0" name="Instance variable">cutscenevar</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="229244726754354" type="playerskin_Trees">
+                    <param id="0" name="Animation">&quot;Walking&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="122723274402266">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="188131555386629" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="316569177689503">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="689358222902915" type="playerskin_Trees">
+                            <param id="0" name="Instance variable">cutscenevar</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-1" name="Set X" sid="113979267747438" type="playerskin_Trees">
+                            <param id="0" name="X">Self.X+6</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="124345181912652">
+            <conditions>
+                <condition id="-1" name="Compare X" sid="879118283396854" type="playerskin_Trees">
+                    <param id="0" name="Comparison">5</param>
+                    <param id="1" name="X co-ordinate">36296</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="474939242026411" type="playerskin_Trees">
+                    <param id="0" name="Instance variable">cutscenevar</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="828658570104278" type="playerskin_Trees">
+                    <param id="0" name="Instance variable">cutscenevar</param>
+                    <param id="1" name="Value">2</param>
+                </action>
+                <action id="4" name="Set animation" sid="479306174325751" type="playerskin_Trees">
+                    <param id="0" name="Animation">&quot;Idle&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="617067258370157" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+                <action id="0" name="Call function" sid="529992329727868" type="Function">
+                    <param id="0" name="Name">&quot;dialogue&quot;</param>
+                    <param id="1" name="Parameter {n}">&quot;SSsection2postboss&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

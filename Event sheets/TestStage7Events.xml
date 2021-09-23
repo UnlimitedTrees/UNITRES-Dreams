@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>TestStage7Events</name>
+    <events>
+        <include>MainPlayer</include>
+        <event-block sid="315503539975046">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="370515771349510" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="938349910727491" type="System">
+                    <param id="0" name="Variable">vortex_active</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

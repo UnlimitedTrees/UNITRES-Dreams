@@ -1,0 +1,268 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>PerfectCitySection2Events</name>
+    <events>
+        <include>bossevents_pc</include>
+        <include>MainPlayer</include>
+        <event-block sid="940135800743979">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="519574550230978" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="360496000117199" type="Function">
+                    <param id="0" name="Name">&quot;Screen_FadeOut&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="-9" name="Set value" sid="502249939269102" type="System">
+                    <param id="0" name="Variable">MaxPartyMemb</param>
+                    <param id="1" name="Value">3</param>
+                </action>
+                <action id="-9" name="Set value" sid="963905677876381" type="System">
+                    <param id="0" name="Variable">Char1IsInParty</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="732497332694012" type="System">
+                    <param id="0" name="Variable">Char2IsInParty</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="458938963963253" type="System">
+                    <param id="0" name="Variable">Char3IsInParty</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="948269426829704" type="System">
+                    <param id="0" name="Variable">PartyOrder</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="497715239310724" type="System">
+                    <param id="0" name="Variable">MiniBossIsDead</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="155144829644720" type="System">
+                    <param id="0" name="Variable">CurrentLevel</param>
+                    <param id="1" name="Value">&quot;PerfectCity2&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="272939301811473" type="System">
+                    <param id="0" name="Variable">PartySwitchEnabled</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="176705006588432" type="System">
+                    <param id="0" name="Variable">levelhasgrav</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action disabled="1" id="0" name="Play" sid="756230804273398" type="Audio">
+                    <param id="0" name="Audio file">PC1</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;levelmusic&quot;</param>
+                </action>
+                <action id="4" name="Set animation" sid="317076326194832" type="hud_eyecountr">
+                    <param id="0" name="Animation">&quot;a&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="0" name="Call function" sid="101433752998124" type="Function">
+                    <param id="0" name="Name">&quot;SaveFunction&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="238248339080392">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="868743763627123" type="System">
+                            <param id="0" name="Variable">MiniBossIsDead_UM</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="184419682410548" type="Audio">
+                            <param id="0" name="Audio file">PC2</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;levelmusic&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="428747087973724">
+            <conditions>
+                <condition id="-1" name="Compare X" sid="425234092702695" type="Camera">
+                    <param id="0" name="Comparison">5</param>
+                    <param id="1" name="X co-ordinate">40664</param>
+                </condition>
+                <condition id="-8" name="Is boolean instance variable set" sid="651215143551632" type="Camera">
+                    <param id="0" name="Instance variable">IsActive</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set boolean" sid="519816801011573" type="Camera">
+                    <param id="0" name="Instance variable">IsActive</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="0" name="Call function" sid="375197341583557" type="Function">
+                    <param id="0" name="Name">&quot;Screen_FadeIn&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="-16" name="Wait" sid="582961192573238" type="System">
+                    <param id="0" name="Seconds">1.0</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="797064984223651" type="System">
+                    <param id="0" name="Layout">PCSection 2 - Boss</param>
+                </action>
+                <action id="-9" name="Set value" sid="724764917204698" type="System">
+                    <param id="0" name="Variable">camerascale</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-17" name="Set layer scale" sid="761572231668016" type="System">
+                    <param id="0" name="Layer">&quot;PlayerLayer&quot;</param>
+                    <param id="1" name="Scale">camerascale</param>
+                </action>
+                <action id="-17" name="Set layer scale" sid="227515728473976" type="System">
+                    <param id="0" name="Layer">&quot;ForegroundArt&quot;</param>
+                    <param id="1" name="Scale">camerascale</param>
+                </action>
+                <action id="-17" name="Set layer scale" sid="508121704340445" type="System">
+                    <param id="0" name="Layer">&quot;BackgroundArt&quot;</param>
+                    <param id="1" name="Scale">camerascale</param>
+                </action>
+                <action id="-9" name="Set value" sid="418572248687451" type="System">
+                    <param id="0" name="Variable">PartySwitchVar</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="908342222656289" type="System">
+                    <param id="0" name="Variable">SelectedPartyMemb</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="536031112618782" type="System">
+                    <param id="0" name="Variable">gravitydirection</param>
+                    <param id="1" name="Value">90</param>
+                </action>
+                <action id="-9" name="Set value" sid="294953622597577" type="System">
+                    <param id="0" name="Variable">SavePointisActive_UM</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="195828332079141" type="System">
+                    <param id="0" name="Variable">SavedX_UM</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="980473348506707" type="System">
+                    <param id="0" name="Variable">SavedY_UM</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="111591608722493" type="System">
+                    <param id="0" name="Variable">SavePointisActive</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="791183985941542" type="System">
+                    <param id="0" name="Variable">SavedX</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="167050012318360" type="System">
+                    <param id="0" name="Variable">SavedY</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="554999486420138">
+            <conditions>
+                <condition id="-1" name="Compare X" sid="523056664134955" type="Camera">
+                    <param id="0" name="Comparison">5</param>
+                    <param id="1" name="X co-ordinate">29472</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-4" name="Set layer visible" sid="844882829265677" type="System">
+                    <param id="0" name="Layer">&quot;InsideBG1&quot;</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="746489865389679" type="System">
+                    <param id="0" name="Layer">&quot;InsideBG2&quot;</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="967261577350449" type="System">
+                    <param id="0" name="Layer">&quot;InsideBG3&quot;</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="827648898551810" type="System">
+                    <param id="0" name="Layer">&quot;InsideBG4&quot;</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="907125786094899" type="System">
+                    <param id="0" name="Layer">&quot;InsideBG5&quot;</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="155869209923223" type="System">
+                    <param id="0" name="Layer">&quot;InsideBG6&quot;</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="666300175014352" type="System">
+                    <param id="0" name="Layer">&quot;InsideBG7&quot;</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="419254508803232" type="System">
+                    <param id="0" name="Layer">&quot;InsideBG8&quot;</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="516912338076380" type="System">
+                    <param id="0" name="Layer">&quot;InsideBG9&quot;</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="197360793857479" type="System">
+                    <param id="0" name="Layer">&quot;InsideBG10&quot;</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="698533043289228">
+            <conditions>
+                <condition id="-1" name="Compare X" sid="489542049360689" type="Camera">
+                    <param id="0" name="Comparison">2</param>
+                    <param id="1" name="X co-ordinate">29472</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-4" name="Set layer visible" sid="567355017899937" type="System">
+                    <param id="0" name="Layer">&quot;InsideBG1&quot;</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="526328645348410" type="System">
+                    <param id="0" name="Layer">&quot;InsideBG2&quot;</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="302745015466281" type="System">
+                    <param id="0" name="Layer">&quot;InsideBG3&quot;</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="834644057618581" type="System">
+                    <param id="0" name="Layer">&quot;InsideBG4&quot;</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="657532791311902" type="System">
+                    <param id="0" name="Layer">&quot;InsideBG5&quot;</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="780039181791869" type="System">
+                    <param id="0" name="Layer">&quot;InsideBG6&quot;</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="812775815171784" type="System">
+                    <param id="0" name="Layer">&quot;InsideBG7&quot;</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="179484513171289" type="System">
+                    <param id="0" name="Layer">&quot;InsideBG8&quot;</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="929709380319616" type="System">
+                    <param id="0" name="Layer">&quot;InsideBG9&quot;</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="946931790282833" type="System">
+                    <param id="0" name="Layer">&quot;InsideBG10&quot;</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

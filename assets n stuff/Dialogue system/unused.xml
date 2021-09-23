@@ -1,0 +1,183 @@
+<Dialogue id='updatetrailer_beginning' key_next='32' key_faster='88' key_up='38' key_down='40' first_line_id='0' typing_sound ='typing'>
+		<TextLine id='0' id_next='1' begin_function='Avatar_TreesIdle'>
+			hello i am unlimited trees, maker of video games and coolest living entity </TextLine>
+		<TextLine id='1' id_next='2' begin_function='Avatar_TreesIdle'>
+			originally i wanted to do this video using a strange voice, but i aint got time for that </TextLine>
+		<TextLine id='2' id_next='3' begin_function='Avatar_TreesIdle'>
+			so, with my text and spaghetti hamburger powers, i shall present to u: me presentation </TextLine>
+		<TextLine id='3' id_next='4' begin_function='Trailer_Part1'></TextLine>
+
+	</Dialogue>
+	
+	<Dialogue id='updatetrailer_introduction' key_next='32' key_faster='88' key_up='38' key_down='40' first_line_id='0' typing_sound ='typing'>
+		<TextLine id='0' id_next='1' begin_function='Avatar_None'>
+			so, it has been quite awhile since my last update on my video game, UNITRES..over half a year in fact. </TextLine>
+		<TextLine id='1' id_next='2' begin_function='Avatar_None'>
+			a ton has changed over the past couple of months, so i decided i shall make a cool video to show you some stuff ive done </TextLine>
+		<TextLine id='2' id_next='3' begin_function='Avatar_None'>
+			so i hope you'll like some of the stuff ive got to show. anyways, let us begin with the GAMEPLAY </TextLine>
+		<TextLine id='3' id_next='4' begin_function='Trailer_Part2'></TextLine>
+
+	</Dialogue>
+	
+	<Dialogue id='updatetrailer_gameplay' key_next='32' key_faster='88' key_up='38' key_down='40' first_line_id='0' typing_sound ='typing'>
+		<TextLine id='0' id_next='1' begin_function='Avatar_None'>
+			originally, the gameplay was a lot more slower paced. there also wasn't a whole lot of options on how you moved </TextLine>
+		<TextLine id='1' id_next='2' begin_function='Avatar_None'>
+			you only stayed at one constant speed for most of the game, and the only way you could move faster was with the help of various objects which would take control away </TextLine>
+		<TextLine id='2' id_next='3' begin_function='Avatar_None'>
+			however, in the newest version of the game, every character has been sped up a bit. not only that, but a new feature has been implemented called directional attacks. </TextLine>
+		<TextLine id='3' id_next='4' begin_function='Avatar_None'>
+			Basically, if you hold a direction while you attack, not only will you get an extra reach in your attack, but youll also perform a sort of dash </TextLine>
+		<TextLine id='4' id_next='5' begin_function='Avatar_None'>
+			when holding left/right, u get a forward dash in the direction you are holding. if youre holding up/down, you get a sort of jump boost in the opposite direction </TextLine>
+		<TextLine id='5' id_next='6' begin_function='Avatar_None'>
+			you can use the horizontal and vertical attacks separately, which can be used to your advantage when moving around levels </TextLine>
+		<TextLine id='6' id_next='7' begin_function='Avatar_None'>
+			this new way of attacking should make the gameplay both more interesting, but also hopefully a lot more fun and fast. </TextLine>
+		<TextLine id='7' id_next='8' begin_function='Avatar_None'>
+			not only does the dash make you faster, but now a lot of gimmicks in the game have been fixed to where you now have absolute control over the player </TextLine>
+		<TextLine id='8' id_next='11' begin_function='Avatar_None'>
+			i hope these new changes and additions make the game a lot more interesting. they may be small but i feel more convident in the gameplay. </TextLine>
+		<TextLine id='11' id_next='12' begin_function='Trailer_Part3'></TextLine>
+		
+	</Dialogue>
+	
+	<Dialogue id='updatetrailer_levels' key_next='32' key_faster='88' key_up='38' key_down='40' first_line_id='0' typing_sound ='typing'>
+		<TextLine id='0' id_next='1' begin_function='Avatar_TreesIdle'>
+			next, i shall talk about the levels</TextLine>
+		<TextLine id='1' id_next='2' begin_function='Avatar_None'>
+			originally, this update was going to just be 1 new level and some minor updates to the original levels </TextLine>
+		<TextLine id='2' id_next='3' begin_function='Avatar_None'>
+			however, I've decided on not only including this level, but a whole new campaign with new levels </TextLine>
+		<TextLine id='3' id_next='4' begin_function='Avatar_None'>
+			There are going to be 3 fully original levels, along with 3 "remixed" versions of previous levels. </TextLine>
+		<TextLine id='4' id_next='5' begin_function='Avatar_None'>
+			I've spent a lot of time both creating the artwork for these levels and coming up with the general level design, that I'm still not even finished with these new levels. </TextLine>
+		<TextLine id='5' id_next='6' begin_function='Avatar_None'>
+			However, I hope they'll be interesting for you to go through. Hopefully the final game will have tons of stuff to do and consume. </TextLine>
+		<TextLine id='6' id_next='7' begin_function='Avatar_None'>
+			as for all the original levels, i was pretty disappointed with them when i initially released them </TextLine>
+		<TextLine id='7' id_next='8' begin_function='Avatar_None'>
+			i wasn't able to include some things which I wanted to include, and some parts of them are outright unfinished </TextLine>
+		<TextLine id='8' id_next='9' begin_function='Avatar_None'>
+			Not only that, but with the new gameplay features and the way that everything was essentially sped-up, some levels became straight up broken. </TextLine>
+		<TextLine id='9' id_next='10' begin_function='Avatar_None'>
+			And now compared to the new levels, a few of the levels just don't really hold up anymore. </TextLine>
+		<TextLine id='10' id_next='11' begin_function='Avatar_None'>
+			So, not only am I doing some updates to some of the original levels, but some levels will also be completely redone from scratch to fit the new standards. </TextLine>
+		<TextLine id='11' id_next='12' begin_function='Avatar_None'>
+			the main level im going to show off is dreamscape distance. originally, both of the level's sections were short and linear, and just weren't very interesting. </TextLine>
+		<TextLine id='12' id_next='13' begin_function='Avatar_None'>
+			now, the level is 4 times as large as it originally was, with tons of paths to take and secrets to be found. ive also added a lot more gimmicks and such to mess around with. </TextLine>
+		<TextLine id='13' id_next='14' begin_function='Avatar_None'>
+			i'm really proud of the new art i've made for the level and i hope it does a better job at being an introduction to the game and its world. </TextLine>
+		<TextLine id='14' id_next='15' begin_function='Avatar_None'>
+			another level which is in the process of being remade is tranquil trench section 1, which though isnt complete yet, will have various improvements </TextLine>
+		<TextLine id='15' id_next='16' begin_function='Avatar_None'>
+			some improvements include better art design, more complex and interesting levels, more gimmicks, and some small extra details, such as rain. </TextLine>
+		<TextLine id='16' id_next='18' begin_function='Avatar_None'>
+			thats all i have to say for the levels at the moment, theres still some work to be done, but i hope what ive shown off now will be quite interesting </TextLine>
+		<TextLine id='18' id_next='19' begin_function='Trailer_Part4'></TextLine>
+
+	</Dialogue>
+	
+	<Dialogue id='updatetrailer_bosses' key_next='32' key_faster='88' key_up='38' key_down='40' first_line_id='0' typing_sound ='typing'>
+		<TextLine id='0' id_next='1' begin_function='Avatar_None'>
+			not only are levels going to recieve makeovers, but a lot of bosses will be redone aswell.</TextLine>
+		<TextLine id='1' id_next='2' begin_function='Avatar_None'>
+			currently, the only boss which has recieved updates is the Trees boss, which has new moves and sprites </TextLine>
+		<TextLine id='2' id_next='3' begin_function='Avatar_None'>
+			however, i plan on making the rest of the bosses both more interesting, more challenging, and also a bit more fair in some regards. </TextLine>
+		<TextLine id='3' id_next='4' begin_function='Avatar_None'>
+			as for new bosses, there will be quite a few. not much progress has been done outside of art, but i will say there's at least one new boss has some progress ingame </TextLine>
+		<TextLine id='4' id_next='5' begin_function='Avatar_None'>
+			the boss for perfect city section 1 has some progress done, though it still requires a lot of work. </TextLine>
+		<TextLine id='5' id_next='6' begin_function='Avatar_None'>
+			i hope that, once the new bosses are finished, they will be very fun and interesting. it will just take a bit of time to focus on the levels first. </TextLine>
+		<TextLine id='6' id_next='7' begin_function='Trailer_Part5'></TextLine>
+
+	</Dialogue>
+	
+	<Dialogue id='updatetrailer_characters' key_next='32' key_faster='88' key_up='38' key_down='40' first_line_id='0' typing_sound ='typing'>
+		<TextLine id='0' id_next='1' begin_function='Avatar_None'>
+			levels and bosses aren't the only things recieving updates, the 3 main characters are recieving updates aswell. </TextLine>
+		<TextLine id='1' id_next='2' begin_function='Avatar_None'>
+			first off, the main gamer and coolest person, unlimited trees, has recieved a bit of a redesign. </TextLine>
+		<TextLine id='2' id_next='3' begin_function='Avatar_None'>
+			most of his sprites have been completely redrawn, though currently there's still some which will be recieving updates later. </TextLine>
+		<TextLine id='3' id_next='4' begin_function='Avatar_None'>
+			ive found this new design to be a lot more appealing and fun to draw and im overall proud of the design, so i hope you like it. </TextLine>
+		<TextLine id='4' id_next='5' begin_function='Avatar_None'>
+			then there's the blue character. their design hasn't been changed much, however the sprites themselves have recieved a major update in terms of both shading and the colors. </TextLine>
+		<TextLine id='5' id_next='6' begin_function='Avatar_None'>
+			finally, the red character has recieved a complete overhaul in design. i wasn't satisfyed with their original design, so i completely rid both the design and the sprites. </TextLine>
+		<TextLine id='6' id_next='7' begin_function='Avatar_None'>
+			im not the best when it comes to designing more "cute" characters, but i think i like the look of this character. </TextLine>
+		<TextLine id='7' id_next='8' begin_function='Avatar_None'>
+			they have completely new sprites which i find to be quite nice. and aside from the art, the character ingame has been made to be a lot more faster and fun to play. </TextLine>
+		<TextLine id='8' id_next='9' begin_function='Avatar_None'>
+			something to point out, is that there will be some cameos in the game, so i hope you will be looking forward to that. </TextLine>
+		<TextLine id='9' id_next='10' begin_function='Avatar_None'>
+			also speaking of art...</TextLine>
+		<TextLine id='10' id_next='14' begin_function='Trailer_Part6'></TextLine>
+
+	</Dialogue>
+	
+	<Dialogue id='updatetrailer_art' key_next='32' key_faster='88' key_up='38' key_down='40' first_line_id='0' typing_sound ='typing'>
+		<TextLine id='0' id_next='1' begin_function='Avatar_None'>
+			the original release of the game was very rushed. lots of things were made very quickly to fit the deadline. so im hoping this update will look a lot better when it comes out. </TextLine>
+		<TextLine id='1' id_next='2' begin_function='Avatar_None'>
+			my artstyle has grown over the years, and i've been getting better and better as time goes on. </TextLine>
+		<TextLine id='2' id_next='3' begin_function='Avatar_None'>
+			it really feels like yesterday when i struggled to make the pepsi can sprites for Pepsi in Sonic 1, so i hope you like the work ive put into making this game look the way it does. </TextLine>
+		<TextLine id='3' id_next='4' begin_function='Avatar_None'>
+			however, enough about what i've done, i want to talk about something else artwise. I've always considered music to be art, so I'm going to talk about the music of this game. </TextLine>
+		<TextLine id='4' id_next='5' begin_function='Avatar_None'>
+			I ain't a composer myself, though I hope to learn to be one. but for this game's music, I asked various music composers to join the project. </TextLine>
+		<TextLine id='5' id_next='6' begin_function='Avatar_None'>
+			They've put a lot of effort into all the tracks in this game, and I'm glad to say there will be plenty more tracks to listen to. </TextLine>
+		<TextLine id='6' id_next='7' begin_function='Avatar_None'>
+			the original release of the game was quite wacky, as they weren't able to finish all the tracks in time. with this update, however, i hope we'll be able to provide a soundtrack youll enjoy. </TextLine>
+		<TextLine id='7' id_next='8' begin_function='Avatar_None'>
+			the current team of composers consist of RRThiel, A-S-H, Scooblee, CosmicGem, and newcomers MrSauceman, [c], MiniMacro, and Crash </TextLine>
+		<TextLine id='8' id_next='9' begin_function='Avatar_None'>
+			Not only that, but a track from littlelamp100 will appear in the game aswell, who made a pretty cool song </TextLine>
+		<TextLine id='9' id_next='10' begin_function='Avatar_None'>
+			all of these people have done an amazing job, even if some of them have only composed one or two tracks, they deserve tons of recognition for all the work they put into this project. </TextLine>
+		<TextLine id='10' id_next='11' begin_function='Avatar_None'>
+			i hope you support their work, and i hope you will enjoy the work they've done for this game. </TextLine>
+		<TextLine id='11' id_next='12' begin_function='Avatar_None'>
+			anyways, with that out of the way, it is time for me to talk about the big thing: the release date </TextLine>
+		<TextLine id='12' id_next='13' begin_function='Trailer_Part7'></TextLine>
+
+	</Dialogue>
+	
+	<Dialogue id='updatetrailer_releasedate' key_next='32' key_faster='88' key_up='38' key_down='40' first_line_id='0' typing_sound ='typing'>
+		<TextLine id='0' id_next='1' begin_function='Avatar_None'>
+			originally, i intended this to just be one tiny update with like 2 new levels, some bug fixes, and finished music. </TextLine>
+		<TextLine id='1' id_next='2' begin_function='Avatar_None'>
+			however, as the scope grew larger and larger, i knew i wouldn't be able to get this game done within this year. </TextLine>
+		<TextLine id='2' id_next='3' begin_function='Avatar_None'>
+			so, the final release date is going to be on
+			
+			May 9, 2020. </TextLine>
+		<TextLine id='3' id_next='4' begin_function='Avatar_None'>
+			it's going to take quite awhile, and there's plenty of work to be done, but i hope the wait will be worth it... </TextLine>
+		<TextLine id='4' id_next='5' begin_function='Avatar_None'>
+			however, until then, i do have something to hold you over... </TextLine>
+		<TextLine id='5' id_next='6' begin_function='Avatar_None'>
+			i spent the past month or so trying to put together a small little playable demo for you guys. </TextLine>
+		<TextLine id='6' id_next='7' begin_function='Avatar_None'>
+			it's pretty early indevelopment, and it only has 1 main level, but i hope it's enough to keep you satisfied for now. </TextLine>
+		<TextLine id='7' id_next='8' begin_function='Avatar_None'>
+			it has both a tutorial zone, and the completely new version of Dreamscape Distance - Section 1. </TextLine>
+		<TextLine id='8' id_next='9' begin_function='Avatar_None'>
+			i spent a lot of time trying to get this level just right, and some things might get changed later on, but i hope you'll enjoy this small sample of what's to come. </TextLine>
+		<TextLine id='9' id_next='10' begin_function='Avatar_None'>
+			the download will be in the description, with both a google drive and dropbox link. let me know if you have any issues with the product </TextLine>
+		<TextLine id='10' id_next='12' begin_function='Avatar_None'>
+			anyways, that's all i've got to say. shout outs to all the people who helped make this game come into existence. i'll see you next year. i hope you have an epic day. </TextLine>
+		<TextLine id='12' id_next='13' begin_function='end_dialogue'></TextLine>
+
+	</Dialogue>

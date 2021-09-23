@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2layout>
+    <name>Opening_OG</name>
+    <sid>422185295642443</sid>
+    <event-sheet>OpeningEvents</event-sheet>
+    <size>
+        <width>569</width>
+        <height>320</height>
+    </size>
+    <margins>
+        <horizontal>500</horizontal>
+        <vertical>500</vertical>
+    </margins>
+    <unbounded-scrolling>0</unbounded-scrolling>
+    <layers>
+        <layer name="BG" sid="913568226471280">
+            <initially-visible>1</initially-visible>
+            <background-color>0,0,0</background-color>
+            <transparent>0</transparent>
+            <parallax>
+                <x>1</x>
+                <y>1</y>
+            </parallax>
+            <zoom-rate>1</zoom-rate>
+            <opacity>1</opacity>
+            <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <use-render-cells>0</use-render-cells>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
+            <instances>
+                <instance type="oops" uid="9408">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>288</x>
+                        <y>88</y>
+                        <z>0</z>
+                        <width>256</width>
+                        <height>112</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+            </instances>
+            <effects />
+        </layer>
+        <layer name="PlayerLayer" sid="281195108207579">
+            <initially-visible>1</initially-visible>
+            <background-color>255,255,255</background-color>
+            <transparent>1</transparent>
+            <parallax>
+                <x>1</x>
+                <y>1</y>
+            </parallax>
+            <zoom-rate>1</zoom-rate>
+            <opacity>1</opacity>
+            <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <use-render-cells>0</use-render-cells>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
+            <instances>
+                <instance type="PlayerObject" uid="22127">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <HP>20</HP>
+                        <Attacking>false</Attacking>
+                        <Shielding>false</Shielding>
+                        <EnableControl>true</EnableControl>
+                        <BeingAttacked>false</BeingAttacked>
+                        <Isdoublejumping>false</Isdoublejumping>
+                        <HasShieldJumped>false</HasShieldJumped>
+                        <HasAttacked_xcheck>false</HasAttacked_xcheck>
+                        <IsAntiGrav>false</IsAntiGrav>
+                        <Player>2</Player>
+                        <Character>2</Character>
+                        <IsAI>true</IsAI>
+                        <SP>20</SP>
+                        <AtkPower>5</AtkPower>
+                        <beinglaunched>false</beinglaunched>
+                        <onbar>false</onbar>
+                        <isswinging>false</isswinging>
+                        <onmoveablebar>false</onmoveablebar>
+                        <barangle>0</barangle>
+                        <oncar>false</oncar>
+                        <weedmeter>20</weedmeter>
+                        <weedlmao>false</weedlmao>
+                        <incart>false</incart>
+                        <ondashbar>false</ondashbar>
+                        <staramount>0</staramount>
+                        <beingteleported>false</beingteleported>
+                        <infakecar>false</infakecar>
+                        <gravtime>20</gravtime>
+                        <slowgrav>false</slowgrav>
+                        <inaircurrent>false</inaircurrent>
+                        <airdirection></airdirection>
+                        <specialair>false</specialair>
+                        <inwater>false</inwater>
+                        <slidedirection>0</slidedirection>
+                        <peespeed>0.5</peespeed>
+                        <onswingingbar>false</onswingingbar>
+                        <TopSpeed>350</TopSpeed>
+                        <HasAttacked_ycheck>false</HasAttacked_ycheck>
+                        <PoisonTime>0</PoisonTime>
+                        <onladder>false</onladder>
+                        <wackytransporter_active>false</wackytransporter_active>
+                        <wackytransporter_direction></wackytransporter_direction>
+                        <wackytransporter_var>0</wackytransporter_var>
+                        <imBadAtVarNames>0</imBadAtVarNames>
+                        <Yspeed>0</Yspeed>
+                        <floorangle>0</floorangle>
+                        <parrytimer>0</parrytimer>
+                        <isDead>false</isDead>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Platform">
+                            <properties>
+                                <max-speed>250</max-speed>
+                                <acceleration>750</acceleration>
+                                <deceleration>1500</deceleration>
+                                <jump-strength>650</jump-strength>
+                                <gravity>1450</gravity>
+                                <max-fall-speed>850</max-fall-speed>
+                                <double-jump>Disabled</double-jump>
+                                <jump-sustain>0</jump-sustain>
+                                <default-controls>No</default-controls>
+                                <initial-state>Disabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="LineOfSight">
+                            <properties>
+                                <obstacles>Solids</obstacles>
+                                <range>10000</range>
+                                <cone-of-view>360</cone-of-view>
+                                <use-collision-cells>Yes</use-collision-cells>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Pin" />
+                        <behavior-instance type="8Direction">
+                            <properties>
+                                <max-speed>260</max-speed>
+                                <acceleration>800</acceleration>
+                                <deceleration>600</deceleration>
+                                <directions>8 directions</directions>
+                                <set-angle>No</set-angle>
+                                <default-controls>No</default-controls>
+                                <initial-state>Disabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Flash" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>416</x>
+                        <y>456</y>
+                        <z>0</z>
+                        <width>32</width>
+                        <height>32</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>0</opacity>
+                    </world>
+                </instance>
+            </instances>
+            <effects />
+        </layer>
+        <layer name="ForegroundArt" sid="275927672689054">
+            <initially-visible>1</initially-visible>
+            <background-color>255,255,255</background-color>
+            <transparent>1</transparent>
+            <parallax>
+                <x>1</x>
+                <y>1</y>
+            </parallax>
+            <zoom-rate>1</zoom-rate>
+            <opacity>1</opacity>
+            <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <use-render-cells>0</use-render-cells>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
+            <instances />
+            <effects />
+        </layer>
+        <layer name="DialogBox" sid="498281174352841">
+            <initially-visible>1</initially-visible>
+            <background-color>255,255,255</background-color>
+            <transparent>1</transparent>
+            <parallax>
+                <x>1</x>
+                <y>1</y>
+            </parallax>
+            <zoom-rate>1</zoom-rate>
+            <opacity>1</opacity>
+            <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <use-render-cells>0</use-render-cells>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
+            <instances />
+            <effects />
+        </layer>
+        <layer name="HUD" sid="133334122633109">
+            <initially-visible>1</initially-visible>
+            <background-color>255,255,255</background-color>
+            <transparent>1</transparent>
+            <parallax>
+                <x>1</x>
+                <y>1</y>
+            </parallax>
+            <zoom-rate>1</zoom-rate>
+            <opacity>1</opacity>
+            <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <use-render-cells>0</use-render-cells>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
+            <instances />
+            <effects />
+        </layer>
+    </layers>
+    <nonworld-instances />
+    <effects />
+</c2layout>

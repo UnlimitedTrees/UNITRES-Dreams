@@ -1,0 +1,276 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>FullCreditsEvents</name>
+    <events>
+        <event-block sid="353862150120216">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="494409197534097" type="System" />
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="320014520748985" type="System">
+                    <param id="0" name="Seconds">2.0</param>
+                </action>
+                <action id="0" name="Set text" sid="788637045861059" type="menu_title">
+                    <param id="0" name="Text">&quot;A Wacky Video Game by&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="660329186542522" type="menu_description">
+                    <param id="0" name="Text">&quot;Unlimited Trees&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="134166098002276" type="System">
+                    <param id="0" name="Seconds">4.0</param>
+                </action>
+                <action id="0" name="Set text" sid="431107869524390" type="menu_title">
+                    <param id="0" name="Text">&quot;With Music By&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="983663428104878" type="menu_description">
+                    <param id="0" name="Text">&quot;RRThiel                  A-S-H                   Scooblee               CosmicGem&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="964256328902712" type="System">
+                    <param id="0" name="Seconds">6.0</param>
+                </action>
+                <action id="0" name="Set text" sid="326580116397055" type="menu_title">
+                    <param id="0" name="Text">&quot;Trailer Editing and Boss Cameo&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="221165149554323" type="menu_description">
+                    <param id="0" name="Text">&quot;LooneyDude&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="602325544083815" type="System">
+                    <param id="0" name="Seconds">4.0</param>
+                </action>
+                <action id="0" name="Set text" sid="379749151257674" type="menu_title">
+                    <param id="0" name="Text">&quot;Promo Art by&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="517197710745263" type="menu_description">
+                    <param id="0" name="Text">&quot;SpectraS02&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="342078219683962" type="System">
+                    <param id="0" name="Seconds">4.0</param>
+                </action>
+                <action id="0" name="Set text" sid="811922498917450" type="menu_title">
+                    <param id="0" name="Text">&quot;Beta Testing&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="707992792029173" type="menu_description">
+                    <param id="0" name="Text">&quot;LakeFeperd                Voltrix                 and a bunch of other people who i dont have enough room to list whoops&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="546824802911649" type="System">
+                    <param id="0" name="Seconds">6.0</param>
+                </action>
+                <action id="0" name="Set text" sid="699129895329500" type="menu_title">
+                    <param id="0" name="Text">&quot;Special Thanks to&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="514042054692130" type="menu_description">
+                    <param id="0" name="Text">&quot;Red         The Scirra Forums              PixelMonkey                       Mr. Potatobadger                    ...and all my friends who helped with testing and who told me how to fix my dumb game.&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="743417378878477" type="System">
+                    <param id="0" name="Seconds">6.0</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="112287012970068" type="System">
+                    <param id="0" name="Layout">Notification</param>
+                </action>
+                <action id="0" name="Set text" sid="537560234225245" type="menu_description">
+                    <param id="0" name="Text">&quot;Shoutouts to all the games aswell as certain other people whose sound effects and music I had to use for the demo.&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="731801287597703" type="System">
+                    <param id="0" name="Seconds">6.0</param>
+                </action>
+                <action id="0" name="Set text" sid="609628436134094" type="menu_title">
+                    <param id="0" name="Text">&quot;Thanks for Playing&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="214679289415207" type="menu_description">
+                    <param id="0" name="Text">&quot;The Wacky Adventures will continue in&quot;</param>
+                </action>
+                <action id="-15" name="Set visible" sid="698147272277013" type="projecttimelogo">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="907226474459118" type="System">
+                    <param id="0" name="Seconds">4.0</param>
+                </action>
+                <action id="0" name="Set text" sid="719368464044429" type="menu_title">
+                    <param id="0" name="Text">&quot;&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="259382735330225" type="menu_description">
+                    <param id="0" name="Text">&quot;&quot;</param>
+                </action>
+                <action id="-15" name="Set visible" sid="134856773196939" type="projecttimelogo">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-16" name="Wait" sid="288712900419083" type="System">
+                    <param id="0" name="Seconds">1.0</param>
+                </action>
+                <action id="0" name="Set text" sid="665641427409383" type="menu_title">
+                    <param id="0" name="Text">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="506372618684494">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="516335419923243" type="System" />
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="254858726706823" type="projecttimelogo">
+                    <param id="0" name="Instance variable">randomver</param>
+                    <param id="1" name="Value">floor(random(0, 8))</param>
+                </action>
+                <action id="-16" name="Wait" sid="260236866710273" type="System">
+                    <param id="0" name="Seconds">2.0</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="386201137986404">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="462369156244077" type="projecttimelogo">
+                            <param id="0" name="Instance variable">randomver</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="732077401514266" type="Audio">
+                            <param id="0" name="Audio file">credits1</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;credits&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="942894670676544">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="914303672963657" type="projecttimelogo">
+                            <param id="0" name="Instance variable">randomver</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="649305016843421" type="Audio">
+                            <param id="0" name="Audio file">credits1</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;credits&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="485315967825847">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="569431263685531" type="projecttimelogo">
+                            <param id="0" name="Instance variable">randomver</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="458639951618136" type="Audio">
+                            <param id="0" name="Audio file">credits1</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;credits&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="884536655741969">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="898593095389156" type="projecttimelogo">
+                            <param id="0" name="Instance variable">randomver</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="274498982028641" type="Audio">
+                            <param id="0" name="Audio file">credits3</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;credits&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="293595496996928">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="144608286106178" type="projecttimelogo">
+                            <param id="0" name="Instance variable">randomver</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="810252277072683" type="Audio">
+                            <param id="0" name="Audio file">credits2</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;credits&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="965969938412334">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="615885561807545" type="projecttimelogo">
+                            <param id="0" name="Instance variable">randomver</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">5</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="935321054772384" type="Audio">
+                            <param id="0" name="Audio file">credits1</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;credits&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="656142538796509">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="207155638891567" type="projecttimelogo">
+                            <param id="0" name="Instance variable">randomver</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">6</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="134650903016301" type="Audio">
+                            <param id="0" name="Audio file">credits1</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;credits&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="482005144628844">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="972546772881030" type="projecttimelogo">
+                            <param id="0" name="Instance variable">randomver</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">7</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="781163559241834" type="Audio">
+                            <param id="0" name="Audio file">credits2</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;credits&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="751748305270302">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="100527906990299" type="projecttimelogo">
+                            <param id="0" name="Instance variable">randomver</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">8</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="996135479105631" type="Audio">
+                            <param id="0" name="Audio file">credits1</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;credits&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>

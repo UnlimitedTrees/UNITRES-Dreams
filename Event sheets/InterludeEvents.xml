@@ -1,0 +1,268 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>InterludeEvents</name>
+    <events>
+        <variable constant="0" name="piss2" sid="834936044947881" static="0" type="number">0</variable>
+        <include>MainPlayer</include>
+        <event-block sid="352263253196478">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="408478063840998" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="690378432655879" type="Function">
+                    <param id="0" name="Name">&quot;Screen_FadeOut&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="-9" name="Set value" sid="408455373529073" type="System">
+                    <param id="0" name="Variable">piss</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="128552672438475" type="System">
+                    <param id="0" name="Variable">PartySwitchEnabled</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="759426417947680" type="System">
+                    <param id="0" name="Variable">MaxPartyMemb</param>
+                    <param id="1" name="Value">3</param>
+                </action>
+                <action id="-9" name="Set value" sid="668543683808916" type="System">
+                    <param id="0" name="Variable">Char1IsInParty</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="186492703734525" type="System">
+                    <param id="0" name="Variable">Char2IsInParty</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="499103496759877" type="System">
+                    <param id="0" name="Variable">Char3IsInParty</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="358528733655275" type="System">
+                    <param id="0" name="Variable">PartyOrder</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="993207392830759" type="System">
+                    <param id="0" name="Variable">MiniBossIsDead</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="655553729366869" type="System">
+                    <param id="0" name="Variable">CurrentLevel</param>
+                    <param id="1" name="Value">&quot;Interlude&quot;</param>
+                </action>
+                <action id="4" name="Set animation" sid="607575718139020" type="hudicon_trees">
+                    <param id="0" name="Animation">&quot;inactive&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="817718638613077" type="hudicon_l">
+                    <param id="0" name="Animation">&quot;active&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="190942322519322" type="hudicon_s">
+                    <param id="0" name="Animation">&quot;inactive&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="243137776625778" type="hud_eyecountr">
+                    <param id="0" name="Animation">&quot;CC2&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="0" name="Play" sid="980144033612466" type="Audio">
+                    <param id="0" name="Audio file">Interlude</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;levelmusic&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="465066949076441">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="713567043125247" type="playerskin_Test2">
+                    <param id="0" name="Object">portal1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="968466831079974" type="playerskin_Test2" />
+            </actions>
+        </event-block>
+        <event-block sid="699267975593340">
+            <conditions>
+                <condition id="0" name="On function" sid="465675482232318" type="Function">
+                    <param id="0" name="Name">&quot;TTSection2runaway&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="449671489211916" type="Function">
+                    <param id="0" name="Name">&quot;end_dialogue&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="-13" name="Set boolean" sid="506983012993337" type="PlayerObject">
+                    <param id="0" name="Instance variable">EnableControl</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="369718074968975" type="System">
+                    <param id="0" name="Variable">piss</param>
+                    <param id="1" name="Value">3</param>
+                </action>
+                <action id="4" name="Set animation" sid="214963581215405" type="hud_eyecountr">
+                    <param id="0" name="Animation">&quot;a&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="191173998295563">
+            <conditions>
+                <condition id="0" name="On function" sid="511863951285363" type="Function">
+                    <param id="0" name="Name">&quot;TT2Cutscene_PortalThing&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="382586843879411" type="Camera" />
+                <action id="-13" name="Set boolean" sid="370134506201946" type="PlayerObject">
+                    <param id="0" name="Instance variable">IsAI</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="0" name="Call function" sid="450218453355716" type="Function">
+                    <param id="0" name="Name">&quot;end_dialogue&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="-13" name="Set boolean" sid="386583552656663" type="PlayerObject">
+                    <param id="0" name="Instance variable">EnableControl</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-16" name="Wait" sid="270649861321816" type="System">
+                    <param id="0" name="Seconds">0.5</param>
+                </action>
+                <action id="-9" name="Set value" sid="726149940770447" type="System">
+                    <param id="0" name="Variable">piss</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="291933894978162" type="System">
+                    <param id="0" name="Seconds">2.0</param>
+                </action>
+                <action id="-9" name="Set value" sid="929973085001696" type="System">
+                    <param id="0" name="Variable">piss</param>
+                    <param id="1" name="Value">2</param>
+                </action>
+                <action id="-16" name="Wait" sid="620875064293956" type="System">
+                    <param id="0" name="Seconds">2.0</param>
+                </action>
+                <action id="33" name="Stop all" sid="777351697978752" type="Audio" />
+                <action id="-9" name="Set value" sid="231021478447918" type="System">
+                    <param id="0" name="Variable">PartySwitchEnabled</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="629902467458341" type="System">
+                    <param id="0" name="Layout">SubconsciousScenery - Section 1Final</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="300640025071567">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="943717792226072" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="589768457184984">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="718593734710379" type="System">
+                            <param id="0" name="Variable">piss</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="745711492928725">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="565982712407878" type="PlayerObject">
+                                    <param id="0" name="Instance variable">Character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Platform" id="7" name="Simulate control" sid="911350207137399" type="PlayerObject">
+                                    <param id="0" name="Control">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="838129718474079">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="370443342125521" type="System">
+                            <param id="0" name="Variable">piss</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="983322684146569">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="256095863976352" type="PlayerObject">
+                                    <param id="0" name="Instance variable">Character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Platform" id="7" name="Simulate control" sid="883010970560610" type="PlayerObject">
+                                    <param id="0" name="Control">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="406162653925954">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="395330204659229" type="System">
+                            <param id="0" name="Variable">piss</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="351798429170816">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="694105635469119" type="PlayerObject">
+                                    <param id="0" name="Instance variable">Character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-13" name="Set boolean" sid="409161901300797" type="PlayerObject">
+                                    <param id="0" name="Instance variable">IsAI</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action behavior="Platform" id="7" name="Simulate control" sid="523562575155735" type="PlayerObject">
+                                    <param id="0" name="Control">1</param>
+                                </action>
+                                <action behavior="Platform" id="1" name="Set max speed" sid="780746170961357" type="PlayerObject">
+                                    <param id="0" name="Max Speed">500</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="272359323695038">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="133081126278174" type="System">
+                            <param id="0" name="Variable">piss</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                        <condition id="-3" inverted="1" name="Is on-screen" sid="535442736412798" type="playerskin_Trees" />
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Set opacity" sid="753059084106662" type="playerskin_Trees">
+                            <param id="0" name="Opacity">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>

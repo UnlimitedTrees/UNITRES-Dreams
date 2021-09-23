@@ -1,0 +1,1458 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>ExtraMenuEvents</name>
+    <events>
+        <event-group description="" sid="408594140477017" title="MenuStuff2">
+            <sub-events>
+                <event-group description="" sid="851107651712045" title="SoundTest">
+                    <sub-events>
+                        <event-block sid="946719539247278">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="468978025121641" type="soundtest_tracknumber">
+                                    <param id="0" name="Instance variable">sound</param>
+                                    <param id="1" name="Comparison">2</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="297780480610834" type="soundtest_tracknumber">
+                                    <param id="0" name="Instance variable">sound</param>
+                                    <param id="1" name="Value">22</param>
+                                </action>
+                                <action id="0" name="Set text" sid="134887608319396" type="soundtest_tracknumber">
+                                    <param id="0" name="Text">soundtest_tracknumber.sound</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="257088663162036">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="603047020951172" type="soundtest_tracknumber">
+                                    <param id="0" name="Instance variable">sound</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">22</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="545617828032918" type="soundtest_tracknumber">
+                                    <param id="0" name="Instance variable">sound</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="0" name="Set text" sid="465316433144673" type="soundtest_tracknumber">
+                                    <param id="0" name="Text">soundtest_tracknumber.sound</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="571263568453665">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="156183728358975" type="MenuCursor">
+                                    <param id="0" name="Instance variable">selected</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;soundtest&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="914952543030812">
+                                    <conditions>
+                                        <condition id="0" name="On key pressed" sid="609288563070246" type="Keyboard">
+                                            <param id="0" name="Key">37</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="4" name="Set animation" sid="221989470200315" type="Soundtest_LeftCursor">
+                                            <param id="0" name="Animation">&quot;press&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                        <action id="-12" name="Subtract from" sid="705995588614305" type="soundtest_tracknumber">
+                                            <param id="0" name="Instance variable">sound</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="686845316951489" type="soundtest_tracknumber">
+                                            <param id="0" name="Text">soundtest_tracknumber.sound</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="753694248606275">
+                                    <conditions>
+                                        <condition id="0" name="On key pressed" sid="371444323902976" type="Keyboard">
+                                            <param id="0" name="Key">39</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="4" name="Set animation" sid="124931810933976" type="Soundtest_RightCursor">
+                                            <param id="0" name="Animation">&quot;press&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                        <action id="-11" name="Add to" sid="429402905367455" type="soundtest_tracknumber">
+                                            <param id="0" name="Instance variable">sound</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="906662944227668" type="soundtest_tracknumber">
+                                            <param id="0" name="Text">soundtest_tracknumber.sound</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="229218970532522">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="504899975767308" type="soundtest_tracknumber">
+                                    <param id="0" name="Instance variable">sound</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="447446772938855" type="soundtest_description">
+                                    <param id="0" name="Text">&quot;Stop music&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="210044192620948">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="969116403350253" type="soundtest_tracknumber">
+                                    <param id="0" name="Instance variable">sound</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="800103224815908" type="soundtest_description">
+                                    <param id="0" name="Text">&quot;Dreamscape Distance - Section 1 by RRThiel&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="475459356628944">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="972076162262862" type="soundtest_tracknumber">
+                                    <param id="0" name="Instance variable">sound</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="463579379798115" type="soundtest_description">
+                                    <param id="0" name="Text">&quot;Dreamscape Distance - Section 2 by RRThiel&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="146845279630207">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="307535957406629" type="soundtest_tracknumber">
+                                    <param id="0" name="Instance variable">sound</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="194221370037984" type="soundtest_description">
+                                    <param id="0" name="Text">&quot;Chaotic Carnvival - Section 1 (placeholder)&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="673207723003005">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="524721270714605" type="soundtest_tracknumber">
+                                    <param id="0" name="Instance variable">sound</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="381234636013864" type="soundtest_description">
+                                    <param id="0" name="Text">&quot;Chaotic Carnvival - Section 2 (placeholder)&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="226059054518215">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="265997687391565" type="soundtest_tracknumber">
+                                    <param id="0" name="Instance variable">sound</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">5</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="950822101909135" type="soundtest_description">
+                                    <param id="0" name="Text">&quot;Tranquil Trench - Section 1 by A-S-H&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="563336164400883">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="475102386259701" type="soundtest_tracknumber">
+                                    <param id="0" name="Instance variable">sound</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">6</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="874742663746079" type="soundtest_description">
+                                    <param id="0" name="Text">&quot;Tranquil Trench - Section 2 by A-S-H&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="803837101157869">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="245423460950736" type="soundtest_tracknumber">
+                                    <param id="0" name="Instance variable">sound</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">7</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="966582020728475" type="soundtest_description">
+                                    <param id="0" name="Text">&quot;Subconcious Scenery - Section 1 by Scooblee&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="520672796705652">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="861276439073974" type="soundtest_tracknumber">
+                                    <param id="0" name="Instance variable">sound</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">8</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="882188225051534" type="soundtest_description">
+                                    <param id="0" name="Text">&quot;Subconcious Scenery - Section 2 by Scooblee&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="219751124636782">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="444903264081975" type="soundtest_tracknumber">
+                                    <param id="0" name="Instance variable">sound</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">9</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="470013896746767" type="soundtest_description">
+                                    <param id="0" name="Text">&quot;Brand New World - Section 1&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="619271166652204">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="387318002455554" type="soundtest_tracknumber">
+                                    <param id="0" name="Instance variable">sound</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">10</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="515486986557416" type="soundtest_description">
+                                    <param id="0" name="Text">&quot;Brand New World - Section 2&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="845466475823333">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="919055721024378" type="soundtest_tracknumber">
+                                    <param id="0" name="Instance variable">sound</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">11</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="645728512749013" type="soundtest_description">
+                                    <param id="0" name="Text">&quot;Mini Boss Theme (placeholder)&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="967297817947744">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="423023279993311" type="soundtest_tracknumber">
+                                    <param id="0" name="Instance variable">sound</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">12</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="461045650805109" type="soundtest_description">
+                                    <param id="0" name="Text">&quot;Boss Theme (placeholder)&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="241746271961220">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="245350868533185" type="soundtest_tracknumber">
+                                    <param id="0" name="Instance variable">sound</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">13</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="289068338363874" type="soundtest_description">
+                                    <param id="0" name="Text">&quot;Final Boss Theme (placeholder)&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="280029430382158">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="146506402183935" type="soundtest_tracknumber">
+                                    <param id="0" name="Instance variable">sound</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">14</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="838213895098694" type="soundtest_description">
+                                    <param id="0" name="Text">&quot;Vs. Trees by A-S-H&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="560703778609175">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="833751745872148" type="soundtest_tracknumber">
+                                    <param id="0" name="Instance variable">sound</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">15</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="582477619669565" type="soundtest_description">
+                                    <param id="0" name="Text">&quot;HIS THEME&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="597820501817188">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="219450037609783" type="soundtest_tracknumber">
+                                    <param id="0" name="Instance variable">sound</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">16</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="753265963748174" type="soundtest_description">
+                                    <param id="0" name="Text">&quot;Trees&apos; Theme by RRThiel&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="228176054278275">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="231540964809798" type="soundtest_tracknumber">
+                                    <param id="0" name="Instance variable">sound</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">17</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="656870562339028" type="soundtest_description">
+                                    <param id="0" name="Text">&quot;Stage Clear by A-S-H&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="646245413236784">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="947436351968216" type="soundtest_tracknumber">
+                                    <param id="0" name="Instance variable">sound</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">18</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="718298552445734" type="soundtest_description">
+                                    <param id="0" name="Text">&quot;Menu by A-S-H&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="561365826470851">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="512821320561305" type="soundtest_tracknumber">
+                                    <param id="0" name="Instance variable">sound</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">19</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="321733644961580" type="soundtest_description">
+                                    <param id="0" name="Text">&quot;Credits 1, done by CosmicGem&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="465198432262816">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="475259933550091" type="soundtest_tracknumber">
+                                    <param id="0" name="Instance variable">sound</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">20</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="490323977711121" type="soundtest_description">
+                                    <param id="0" name="Text">&quot;Credits 2, done by A-S-H&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="444020263369699">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="895682777653026" type="soundtest_tracknumber">
+                                    <param id="0" name="Instance variable">sound</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">21</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="124040359253654" type="soundtest_description">
+                                    <param id="0" name="Text">&quot;Credits 3 by RRThiel&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="289936411794001">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="323136147968381" type="soundtest_tracknumber">
+                                    <param id="0" name="Instance variable">sound</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">22</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="536539994516288" type="soundtest_description">
+                                    <param id="0" name="Text">&quot;Tranquil Trench 2 - Beta Version by A-S-H&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="246675534100734" title="BasicMenuControlls2">
+                    <sub-events>
+                        <event-block sid="413276198869444">
+                            <conditions>
+                                <condition id="-2" name="Compare Y" sid="424556707140557" type="MenuCursor">
+                                    <param id="0" name="Comparison">4</param>
+                                    <param id="1" name="Y co-ordinate">56</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block any="1" sid="563012647523182">
+                                    <conditions>
+                                        <condition id="0" name="On key pressed" sid="178196932739865" type="Keyboard">
+                                            <param id="0" name="Key">38</param>
+                                        </condition>
+                                        <condition id="6" name="On button pressed" sid="212276156531448" type="Gamepad">
+                                            <param id="0" name="Gamepad">0</param>
+                                            <param id="1" name="Button">12</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="950511243600005" type="System">
+                                            <param id="0" name="Variable">pissdick</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="218371413477604">
+                            <conditions>
+                                <condition id="0" name="On key pressed" sid="332386134735900" type="Keyboard">
+                                    <param id="0" name="Key">40</param>
+                                </condition>
+                                <condition id="-2" name="Compare Y" sid="985824537946909" type="MenuCursor">
+                                    <param id="0" name="Comparison">2</param>
+                                    <param id="1" name="Y co-ordinate">235</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="545700797044056" type="System">
+                                    <param id="0" name="Variable">pissdick</param>
+                                    <param id="1" name="Value">2</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="251557183452164">
+                                    <conditions />
+                                    <actions />
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="857599331976073">
+                            <conditions>
+                                <condition id="-1" name="Every tick" sid="666085594713746" type="System" />
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="189515592906606">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="470475712915554" type="System">
+                                            <param id="0" name="Variable">pissdick</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-2" name="Set Y" sid="540416754726044" type="MenuCursor">
+                                            <param id="0" name="Y">self.Y-4</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="211663046376076">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="881968430731404" type="System">
+                                            <param id="0" name="Variable">pissdick</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">2</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-2" name="Set Y" sid="522211325804736" type="MenuCursor">
+                                            <param id="0" name="Y">self.Y+4</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="942305669807135">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="572616718414590" type="MenuCursor">
+                                    <param id="0" name="Object">menu_extra</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="568294647085507" type="MenuCursor">
+                                    <param id="0" name="Instance variable">selected</param>
+                                    <param id="1" name="Value">menu_extra.type</param>
+                                </action>
+                                <action disabled="1" id="-2" name="Set Y" sid="714931960209369" type="MenuCursor">
+                                    <param id="0" name="Y">newmenuobject.X</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="957041903461910" type="System">
+                                    <param id="0" name="Variable">pissdick</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="528411647445221">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="812129797579467" type="MenuCursor">
+                                    <param id="0" name="Instance variable">selected</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;home&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="702259556934153" type="menu_title">
+                                    <param id="0" name="Text">&quot;Unlimited Trees Zone&quot;</param>
+                                </action>
+                                <action id="0" name="Set text" sid="486352270832100" type="menu_description">
+                                    <param id="0" name="Text">&quot;You&apos;re in the other place too!&quot;</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="158884824613666" type="activemarker">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="398961648363776">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="412979564677408" type="MenuCursor">
+                                    <param id="0" name="Instance variable">selected</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;hellmode&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="805837282752886" type="menu_title">
+                                    <param id="0" name="Text">&quot;Hell Mode&quot;</param>
+                                </action>
+                                <action id="0" name="Set text" sid="681262197947758" type="menu_description">
+                                    <param id="0" name="Text">&quot;One HP. No shield. No saving.&quot;</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="268454887061813" type="activemarker">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="341165789088641">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="299967634116605" type="System">
+                                            <param id="0" name="Variable">AssMode</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="4" name="Set animation" sid="598614195317890" type="activemarker">
+                                            <param id="0" name="Animation">&quot;inactive&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="388037813898525">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="242047445723226" type="System">
+                                            <param id="0" name="Variable">AssMode</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="4" name="Set animation" sid="424002988881414" type="activemarker">
+                                            <param id="0" name="Animation">&quot;active&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="797554728220005">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="621788756693228" type="MenuCursor">
+                                    <param id="0" name="Instance variable">selected</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;darkmode&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="511257159704027" type="menu_title">
+                                    <param id="0" name="Text">&quot;Dark Mode&quot;</param>
+                                </action>
+                                <action id="0" name="Set text" sid="886457369283509" type="menu_description">
+                                    <param id="0" name="Text">&quot;Light mode is better.&quot;</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="227336659522804" type="activemarker">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="133618314824062">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="749096861241735" type="System">
+                                            <param id="0" name="Variable">darknessmodeenabled</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="4" name="Set animation" sid="780579250848927" type="activemarker">
+                                            <param id="0" name="Animation">&quot;inactive&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="906562806466220">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="844185981097185" type="System">
+                                            <param id="0" name="Variable">darknessmodeenabled</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="4" name="Set animation" sid="140234115568349" type="activemarker">
+                                            <param id="0" name="Animation">&quot;active&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="995149129557833">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="598283761142368" type="MenuCursor">
+                                    <param id="0" name="Instance variable">selected</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;debugmode&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="627025936650405" type="menu_title">
+                                    <param id="0" name="Text">&quot;Debug Mode&quot;</param>
+                                </action>
+                                <action id="0" name="Set text" sid="234445377848526" type="menu_description">
+                                    <param id="0" name="Text">&quot;Only those who know the key will be allowed in.&quot;</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="534033137047712" type="activemarker">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="220607190517698">
+                                    <conditions>
+                                        <condition id="2" name="Is playing" sid="309092661917228" type="menu_controlguide">
+                                            <param id="0" name="Animation">&quot;next&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="309070629144044" type="menu_controlguide">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="161160316214833">
+                                    <conditions>
+                                        <condition id="2" name="Is playing" sid="536844764203144" type="menu_controlguide">
+                                            <param id="0" name="Animation">&quot;previous&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="860459046490822" type="menu_controlguide">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="493867763144460">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="160903938406033" type="MenuCursor">
+                                    <param id="0" name="Instance variable">selected</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;soundtest&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="254057123074027" type="menu_title">
+                                    <param id="0" name="Text">&quot;Sound Test&quot;</param>
+                                </action>
+                                <action id="0" name="Set text" sid="256651644769851" type="menu_description">
+                                    <param id="0" name="Text">&quot;Some music to consume to.&quot;</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="255619515858504" type="activemarker">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="150889371444308">
+                                    <conditions>
+                                        <condition id="2" name="Is playing" sid="279599174110470" type="menu_controlguide">
+                                            <param id="0" name="Animation">&quot;next&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="386222637784530" type="menu_controlguide">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="334349666053888">
+                                    <conditions>
+                                        <condition id="2" name="Is playing" sid="613455684879797" type="menu_controlguide">
+                                            <param id="0" name="Animation">&quot;previous&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-15" name="Set visible" sid="552697975952653" type="menu_controlguide">
+                                            <param id="0" name="Visibility">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="772460995167185">
+                            <conditions>
+                                <condition id="0" name="On key pressed" sid="797388731986510" type="Keyboard">
+                                    <param id="0" name="Key">88</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="525921349899576" type="System">
+                                    <param id="0" name="Layout">Menu</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="760371837534271" type="System">
+                                    <param id="0" name="Variable">pissdick</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="915610046831449" type="System">
+                                    <param id="0" name="Variable">sunk_opacity</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="715627654776525" type="System">
+                                    <param id="0" name="Variable">cacapoopee</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="870244366897764" type="System">
+                                    <param id="0" name="Variable">SavePointisActive</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="896941835438332" type="System">
+                                    <param id="0" name="Variable">Score</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="874856316584801" type="System">
+                                    <param id="0" name="Variable">menuvar</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="828119491572020" type="System">
+                                    <param id="0" name="Variable">onmenu</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="223317037401516" type="System">
+                                    <param id="0" name="Variable">MiniBossIsDead</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block any="1" sid="213336031164332">
+                            <conditions>
+                                <condition id="0" name="On key pressed" sid="412888507573476" type="Keyboard">
+                                    <param id="0" name="Key">90</param>
+                                </condition>
+                                <condition id="0" name="On key pressed" sid="753004906885228" type="Keyboard">
+                                    <param id="0" name="Key">13</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="467431897950739">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="996473744726962" type="MenuCursor">
+                                            <param id="0" name="Instance variable">selected</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;home&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="6" name="Stop" sid="273587783081378" type="Audio">
+                                            <param id="0" name="Tag">&quot;menumusic&quot;</param>
+                                        </action>
+                                        <action id="-2" name="Go to layout" sid="363152555272757" type="System">
+                                            <param id="0" name="Layout">Home</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="462973583647180" type="System">
+                                            <param id="0" name="Variable">pissdick</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="135423691031553" type="System">
+                                            <param id="0" name="Variable">sunk_opacity</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="452750344058372" type="System">
+                                            <param id="0" name="Variable">cacapoopee</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="738248535017324" type="System">
+                                            <param id="0" name="Variable">SavePointisActive</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="300643631340529" type="System">
+                                            <param id="0" name="Variable">Score</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="171032804162813" type="System">
+                                            <param id="0" name="Variable">menuvar</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="891488162017822" type="System">
+                                            <param id="0" name="Variable">onmenu</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="767053197801570" type="System">
+                                            <param id="0" name="Variable">MiniBossIsDead</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="716036350744480">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="160041278790835" type="MenuCursor">
+                                            <param id="0" name="Instance variable">selected</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;hellmode&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="353288343225374">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="523791538619652" type="System">
+                                                    <param id="0" name="Variable">AssMode</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">0</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-16" name="Wait" sid="858567973185686" type="System">
+                                                    <param id="0" name="Seconds">0.1</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="393500318408537" type="System">
+                                                    <param id="0" name="Variable">AssMode</param>
+                                                    <param id="1" name="Value">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="506161328141202">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="653307843016928" type="System">
+                                                    <param id="0" name="Variable">AssMode</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">1</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="741713857363765" type="System">
+                                                    <param id="0" name="Variable">AssMode</param>
+                                                    <param id="1" name="Value">0</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="305491300580234">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="619299661256785" type="MenuCursor">
+                                            <param id="0" name="Instance variable">selected</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;darkmode&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="461576702047871">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="599065890997975" type="System">
+                                                    <param id="0" name="Variable">darknessmodeenabled</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">0</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-16" name="Wait" sid="360319912041510" type="System">
+                                                    <param id="0" name="Seconds">0.1</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="119957433459178" type="System">
+                                                    <param id="0" name="Variable">darknessmodeenabled</param>
+                                                    <param id="1" name="Value">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="350259977174620">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="498899218766962" type="System">
+                                                    <param id="0" name="Variable">darknessmodeenabled</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">1</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="426869708067648" type="System">
+                                                    <param id="0" name="Variable">darknessmodeenabled</param>
+                                                    <param id="1" name="Value">0</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="958033806780502">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="604873712728656" type="MenuCursor">
+                                            <param id="0" name="Instance variable">selected</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;debugmode&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="6" name="Stop" sid="240673391397218" type="Audio">
+                                            <param id="0" name="Tag">&quot;menumusic&quot;</param>
+                                        </action>
+                                        <action id="-2" name="Go to layout" sid="813629231338274" type="System">
+                                            <param id="0" name="Layout">DebugCode</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="938731567662613" type="System">
+                                            <param id="0" name="Variable">pissdick</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="797701260253405" type="System">
+                                            <param id="0" name="Variable">sunk_opacity</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="379479109900752" type="System">
+                                            <param id="0" name="Variable">cacapoopee</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="702256062051051" type="System">
+                                            <param id="0" name="Variable">SavePointisActive</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="715019123468224" type="System">
+                                            <param id="0" name="Variable">Score</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="650083502285295" type="System">
+                                            <param id="0" name="Variable">menuvar</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="346929201630798" type="System">
+                                            <param id="0" name="Variable">onmenu</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="381593788914381" type="System">
+                                            <param id="0" name="Variable">MiniBossIsDead</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="993612357809079">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="191451547192009" type="MenuCursor">
+                                            <param id="0" name="Instance variable">selected</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;soundtest&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="958150931777911">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="263000291840332" type="soundtest_tracknumber">
+                                                    <param id="0" name="Instance variable">sound</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">0</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="33" name="Stop all" sid="812614583592061" type="Audio" />
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="257002401454494">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="250634417747052" type="soundtest_tracknumber">
+                                                    <param id="0" name="Instance variable">sound</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">1</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="33" name="Stop all" sid="844111339844529" type="Audio" />
+                                                <action id="0" name="Play" sid="726668522675526" type="Audio">
+                                                    <param id="0" name="Audio file">DD1</param>
+                                                    <param id="2" name="Loop">1</param>
+                                                    <param id="3" name="Volume">0</param>
+                                                    <param id="1" name="Tag (optional)">&quot;menumusic&quot;</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="695822186173274">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="943907700435007" type="soundtest_tracknumber">
+                                                    <param id="0" name="Instance variable">sound</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">2</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="33" name="Stop all" sid="749786053868135" type="Audio" />
+                                                <action id="0" name="Play" sid="379861804450529" type="Audio">
+                                                    <param id="0" name="Audio file">DD2</param>
+                                                    <param id="2" name="Loop">1</param>
+                                                    <param id="3" name="Volume">0</param>
+                                                    <param id="1" name="Tag (optional)">&quot;menumusic&quot;</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="469754703324397">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="312889991840823" type="soundtest_tracknumber">
+                                                    <param id="0" name="Instance variable">sound</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">3</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="33" name="Stop all" sid="315586876288856" type="Audio" />
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="267276240294662">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="681019941951940" type="soundtest_tracknumber">
+                                                    <param id="0" name="Instance variable">sound</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">4</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="33" name="Stop all" sid="968286787953936" type="Audio" />
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="534379326342406">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="859497004896974" type="soundtest_tracknumber">
+                                                    <param id="0" name="Instance variable">sound</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">5</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="33" name="Stop all" sid="996699915360651" type="Audio" />
+                                                <action id="0" name="Play" sid="678743802698007" type="Audio">
+                                                    <param id="0" name="Audio file">TT1_Intro</param>
+                                                    <param id="2" name="Loop">0</param>
+                                                    <param id="3" name="Volume">0</param>
+                                                    <param id="1" name="Tag (optional)">&quot;TT1Intro&quot;</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="600378570023814">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="543237252979552" type="soundtest_tracknumber">
+                                                    <param id="0" name="Instance variable">sound</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">6</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="33" name="Stop all" sid="393139793229589" type="Audio" />
+                                                <action id="0" name="Play" sid="754154497658484" type="Audio">
+                                                    <param id="0" name="Audio file">TT2_Intro</param>
+                                                    <param id="2" name="Loop">0</param>
+                                                    <param id="3" name="Volume">0</param>
+                                                    <param id="1" name="Tag (optional)">&quot;TT2Intro&quot;</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="793087411052247">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="890943215952336" type="soundtest_tracknumber">
+                                                    <param id="0" name="Instance variable">sound</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">7</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="33" name="Stop all" sid="341978477958459" type="Audio" />
+                                                <action id="0" name="Play" sid="746641526701642" type="Audio">
+                                                    <param id="0" name="Audio file">SS1</param>
+                                                    <param id="2" name="Loop">1</param>
+                                                    <param id="3" name="Volume">0</param>
+                                                    <param id="1" name="Tag (optional)">&quot;menumusic&quot;</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="550791852085711">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="909124334732325" type="soundtest_tracknumber">
+                                                    <param id="0" name="Instance variable">sound</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">8</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="33" name="Stop all" sid="198853341513465" type="Audio" />
+                                                <action id="0" name="Play" sid="392429008790260" type="Audio">
+                                                    <param id="0" name="Audio file">SS2</param>
+                                                    <param id="2" name="Loop">1</param>
+                                                    <param id="3" name="Volume">0</param>
+                                                    <param id="1" name="Tag (optional)">&quot;menumusic&quot;</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="475373706956024">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="718677712643471" type="soundtest_tracknumber">
+                                                    <param id="0" name="Instance variable">sound</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">9</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="33" name="Stop all" sid="686853112166847" type="Audio" />
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="473081334918781">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="798122411842134" type="soundtest_tracknumber">
+                                                    <param id="0" name="Instance variable">sound</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">10</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="33" name="Stop all" sid="184443906642326" type="Audio" />
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="733894990853696">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="354785522841491" type="soundtest_tracknumber">
+                                                    <param id="0" name="Instance variable">sound</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">11</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="33" name="Stop all" sid="898061068335653" type="Audio" />
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="952363202675866">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="150839456053317" type="soundtest_tracknumber">
+                                                    <param id="0" name="Instance variable">sound</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">12</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="33" name="Stop all" sid="466126180449525" type="Audio" />
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="959154774555817">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="332550037623768" type="soundtest_tracknumber">
+                                                    <param id="0" name="Instance variable">sound</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">13</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="33" name="Stop all" sid="749977498465059" type="Audio" />
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="926643375187221">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="917818243589665" type="soundtest_tracknumber">
+                                                    <param id="0" name="Instance variable">sound</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">14</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="33" name="Stop all" sid="876745999990639" type="Audio" />
+                                                <action id="0" name="Play" sid="741694174214352" type="Audio">
+                                                    <param id="0" name="Audio file">VsTrees_Intro</param>
+                                                    <param id="2" name="Loop">0</param>
+                                                    <param id="3" name="Volume">0</param>
+                                                    <param id="1" name="Tag (optional)">&quot;treesbossintro&quot;</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="509509237722179">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="872969525882704" type="soundtest_tracknumber">
+                                                    <param id="0" name="Instance variable">sound</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">15</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="33" name="Stop all" sid="448837670674076" type="Audio" />
+                                                <action id="0" name="Play" sid="798775887368007" type="Audio">
+                                                    <param id="0" name="Audio file">histheme</param>
+                                                    <param id="2" name="Loop">1</param>
+                                                    <param id="3" name="Volume">0</param>
+                                                    <param id="1" name="Tag (optional)">&quot;menumusic&quot;</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="273655403529214">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="402399598927343" type="soundtest_tracknumber">
+                                                    <param id="0" name="Instance variable">sound</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">16</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="33" name="Stop all" sid="150169973793932" type="Audio" />
+                                                <action id="0" name="Play" sid="214251553036395" type="Audio">
+                                                    <param id="0" name="Audio file">TreesTheme</param>
+                                                    <param id="2" name="Loop">1</param>
+                                                    <param id="3" name="Volume">0</param>
+                                                    <param id="1" name="Tag (optional)">&quot;menumusic&quot;</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="300669882664846">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="446305085034928" type="soundtest_tracknumber">
+                                                    <param id="0" name="Instance variable">sound</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">17</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="33" name="Stop all" sid="341474233203131" type="Audio" />
+                                                <action id="0" name="Play" sid="266306739110157" type="Audio">
+                                                    <param id="0" name="Audio file">StageClear</param>
+                                                    <param id="2" name="Loop">0</param>
+                                                    <param id="3" name="Volume">0</param>
+                                                    <param id="1" name="Tag (optional)">&quot;menumusic&quot;</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="430102721346087">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="214188116744702" type="soundtest_tracknumber">
+                                                    <param id="0" name="Instance variable">sound</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">18</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="33" name="Stop all" sid="415789739010686" type="Audio" />
+                                                <action id="0" name="Play" sid="102123354373676" type="Audio">
+                                                    <param id="0" name="Audio file">menu</param>
+                                                    <param id="2" name="Loop">1</param>
+                                                    <param id="3" name="Volume">0</param>
+                                                    <param id="1" name="Tag (optional)">&quot;menumusic&quot;</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="420519535505469">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="526797909417392" type="soundtest_tracknumber">
+                                                    <param id="0" name="Instance variable">sound</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">19</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="33" name="Stop all" sid="361151591074692" type="Audio" />
+                                                <action id="0" name="Play" sid="249481390528047" type="Audio">
+                                                    <param id="0" name="Audio file">credits1</param>
+                                                    <param id="2" name="Loop">0</param>
+                                                    <param id="3" name="Volume">0</param>
+                                                    <param id="1" name="Tag (optional)">&quot;menumusic&quot;</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="403262245951415">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="728295915644662" type="soundtest_tracknumber">
+                                                    <param id="0" name="Instance variable">sound</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">20</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="33" name="Stop all" sid="151998099082874" type="Audio" />
+                                                <action id="0" name="Play" sid="872264765145136" type="Audio">
+                                                    <param id="0" name="Audio file">credits2</param>
+                                                    <param id="2" name="Loop">0</param>
+                                                    <param id="3" name="Volume">0</param>
+                                                    <param id="1" name="Tag (optional)">&quot;menumusic&quot;</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="421433366653543">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="686936499867562" type="soundtest_tracknumber">
+                                                    <param id="0" name="Instance variable">sound</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">21</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="33" name="Stop all" sid="685779435949671" type="Audio" />
+                                                <action id="0" name="Play" sid="159343837137703" type="Audio">
+                                                    <param id="0" name="Audio file">credits3</param>
+                                                    <param id="2" name="Loop">0</param>
+                                                    <param id="3" name="Volume">0</param>
+                                                    <param id="1" name="Tag (optional)">&quot;menumusic&quot;</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="848036242141025">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="839394248859908" type="soundtest_tracknumber">
+                                                    <param id="0" name="Instance variable">sound</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">22</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="33" name="Stop all" sid="938072700214802" type="Audio" />
+                                                <action id="0" name="Play" sid="418269893992148" type="Audio">
+                                                    <param id="0" name="Audio file">TT2_BetaIntro</param>
+                                                    <param id="2" name="Loop">0</param>
+                                                    <param id="3" name="Volume">0</param>
+                                                    <param id="1" name="Tag (optional)">&quot;TT2_BetaIntro&quot;</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+            </sub-events>
+        </event-group>
+        <event-block sid="223516209474898">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="715279125721181" type="System" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Set Y" sid="183484411337344" type="SS1_BG5">
+                    <param id="0" name="Y">Self.Y+0.5</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="867138381414407">
+            <conditions>
+                <condition id="-2" name="Compare Y" sid="966164130602876" type="SS1_BG5">
+                    <param id="0" name="Comparison">5</param>
+                    <param id="1" name="Y co-ordinate">-64</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Set Y" sid="704294989122957" type="SS1_BG5">
+                    <param id="0" name="Y">-192</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="467252292405877">
+            <conditions>
+                <condition id="0" name="On ended" sid="681828039748790" type="Audio">
+                    <param id="0" name="Tag">&quot;TT1Intro&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="982818371945453" type="Audio">
+                    <param id="0" name="Audio file">TT1_Loop</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;menumusic&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="644095159464770">
+            <conditions>
+                <condition id="0" name="On ended" sid="716996705084756" type="Audio">
+                    <param id="0" name="Tag">&quot;treesbossintro&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="572033751501502" type="Audio">
+                    <param id="0" name="Audio file">VsTrees_Loop</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;menumusic&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="175281861946769">
+            <conditions>
+                <condition id="0" name="On ended" sid="498679564020760" type="Audio">
+                    <param id="0" name="Tag">&quot;TT2Intro&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="188329958810459" type="Audio">
+                    <param id="0" name="Audio file">TT2_Loop</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;menumusic&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="106548110453199">
+            <conditions>
+                <condition id="0" name="On ended" sid="781010027426081" type="Audio">
+                    <param id="0" name="Tag">&quot;TT2_BetaIntro&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="178336851079833" type="Audio">
+                    <param id="0" name="Audio file">TT2_BetaLoop</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;menumusic&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

@@ -1,0 +1,595 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>FirstLevelEvents</name>
+    <events>
+        <variable constant="0" name="SavedX" sid="156346341019810" static="0" type="number">88</variable>
+        <variable constant="0" name="SavedY" sid="167494860279139" static="0" type="number">-232</variable>
+        <include>bossevents_bnw</include>
+        <include>MainPlayer</include>
+        <event-group description="" sid="642270643673357" title="Checkpoints">
+            <sub-events>
+                <comment>Basic Checkpoint system (disable first event for testing)</comment>
+                <event-block sid="129120275920493">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="332790928243265" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="406672640770105" type="PlayerObject">
+                            <param id="0" name="X">SavedX</param>
+                            <param id="1" name="Y">SavedY</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="225713653072085" type="Camera">
+                            <param id="0" name="X">SavedX</param>
+                            <param id="1" name="Y">SavedY</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="119606552829773" type="hud_eyecountr">
+                            <param id="0" name="Animation">&quot;a&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="145076403828920" type="System">
+                            <param id="0" name="Variable">CurrentLevel</param>
+                            <param id="1" name="Value">&quot;BrandNewWorld1&quot;</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="643629531994831">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="148388534594225" type="System">
+                                    <param id="0" name="Variable">SavedX</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Value">4688</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Play" sid="476953190210900" type="Audio">
+                                    <param id="0" name="Audio file">BNW1</param>
+                                    <param id="2" name="Loop">1</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;section1&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="820602241354307">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="379185889557013" type="System">
+                                    <param id="0" name="Variable">SavedX</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">5664</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Play" sid="854146501314262" type="Audio">
+                                    <param id="0" name="Audio file">BNW2</param>
+                                    <param id="2" name="Loop">1</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;section2&quot;</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="624902895532474" type="BGphase2part3">
+                                    <param id="0" name="Instance variable">background</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="254180782938675" type="System">
+                                    <param id="0" name="Variable">CurrentLevel</param>
+                                    <param id="1" name="Value">&quot;BrandNewWorld2&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="787201619341557">
+                    <conditions>
+                        <condition id="0" name="On function" sid="812069372712396" type="Function">
+                            <param id="0" name="Name">&quot;StartSection2&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="763017858054845" type="Audio">
+                            <param id="0" name="Audio file">BNW2</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;section2&quot;</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="919270234900549" type="System">
+                            <param id="0" name="Variable">hassection2started</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="486512597882959" type="System">
+                            <param id="0" name="Variable">CurrentLevel</param>
+                            <param id="1" name="Value">&quot;BrandNewWorld2&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="868607761606394">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="225893384067544" type="PlayerObject">
+                            <param id="0" name="Comparison">5</param>
+                            <param id="1" name="X co-ordinate">0</param>
+                        </condition>
+                        <condition id="-1" name="Compare X" sid="443522711027641" type="PlayerObject">
+                            <param id="0" name="Comparison">2</param>
+                            <param id="1" name="X co-ordinate">4688</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="800144432423148" type="System">
+                            <param id="0" name="Variable">SavedX</param>
+                            <param id="1" name="Value">88</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="420090359234948" type="System">
+                            <param id="0" name="Variable">SavedY</param>
+                            <param id="1" name="Value">-232</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="154810797658196">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="691966806803543" type="PlayerObject">
+                            <param id="0" name="Comparison">5</param>
+                            <param id="1" name="X co-ordinate">4688</param>
+                        </condition>
+                        <condition id="-1" name="Compare X" sid="307003685383320" type="PlayerObject">
+                            <param id="0" name="Comparison">2</param>
+                            <param id="1" name="X co-ordinate">5664</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="998533828883156" type="System">
+                            <param id="0" name="Variable">SavedX</param>
+                            <param id="1" name="Value">4688</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="543207353542684" type="System">
+                            <param id="0" name="Variable">SavedY</param>
+                            <param id="1" name="Value">256</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="729269604364292">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="666785492325343" type="PlayerObject">
+                            <param id="0" name="Comparison">5</param>
+                            <param id="1" name="X co-ordinate">5664</param>
+                        </condition>
+                        <condition id="-1" name="Compare X" sid="876121244268523" type="PlayerObject">
+                            <param id="0" name="Comparison">2</param>
+                            <param id="1" name="X co-ordinate">13032</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="332149948533804" type="System">
+                            <param id="0" name="Variable">SavedX</param>
+                            <param id="1" name="Value">5664</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="103308664644387" type="System">
+                            <param id="0" name="Variable">SavedY</param>
+                            <param id="1" name="Value">1856</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="521391525637845">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="958571613107518" type="PlayerObject">
+                            <param id="0" name="Comparison">5</param>
+                            <param id="1" name="X co-ordinate">13032</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="707535066269479" type="System">
+                            <param id="0" name="Variable">SavedX</param>
+                            <param id="1" name="Value">13032</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="143253558269314" type="System">
+                            <param id="0" name="Variable">SavedY</param>
+                            <param id="1" name="Value">176</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="480129014633105" title="Background">
+            <sub-events>
+                <event-block sid="429807162907428">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="455625314482555" type="Camera">
+                            <param id="0" name="Object">backgroundchanger</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="344053147129763" type="backgroundchanger">
+                            <param id="0" name="Instance variable">bg</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="786651748567484" type="BGphase2part3">
+                            <param id="0" name="Instance variable">background</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="565517017411524">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="304901591249592" type="Camera">
+                            <param id="0" name="Object">backgroundchanger</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="773849362899575" type="backgroundchanger">
+                            <param id="0" name="Instance variable">bg</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="398713611477463" type="BGphase2part3">
+                            <param id="0" name="Instance variable">background</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="327409326974274">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="274188489425827" type="BGphase2part3">
+                            <param id="0" name="Instance variable">background</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set layer visible" sid="546959014561482" type="System">
+                            <param id="0" name="Layer">&quot;BGPhase1Part1&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="328897797779196" type="System">
+                            <param id="0" name="Layer">&quot;BGPhase1Part2&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="202450089608828" type="System">
+                            <param id="0" name="Layer">&quot;BGPhase1Part3&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="880364691372357" type="System">
+                            <param id="0" name="Layer">&quot;BGPhase1Part4&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="332530563607360" type="System">
+                            <param id="0" name="Layer">&quot;BGPhase1Part5&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="986800508077860" type="System">
+                            <param id="0" name="Layer">&quot;BGPhase1Part6&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="451983232521967" type="System">
+                            <param id="0" name="Layer">&quot;BGPhase1Part7&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="261551872780191" type="System">
+                            <param id="0" name="Layer">&quot;BGPhase2Part1&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="196571704385958" type="System">
+                            <param id="0" name="Layer">&quot;BGPhase2Part2&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="795827192643702" type="System">
+                            <param id="0" name="Layer">&quot;BGPhase2Part3&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="258201984910370">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="864448966264161" type="BGphase2part3">
+                            <param id="0" name="Instance variable">background</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set layer visible" sid="566248221298639" type="System">
+                            <param id="0" name="Layer">&quot;BGPhase1Part1&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="158184516176997" type="System">
+                            <param id="0" name="Layer">&quot;BGPhase1Part2&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="436724244468632" type="System">
+                            <param id="0" name="Layer">&quot;BGPhase1Part3&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="387458101636819" type="System">
+                            <param id="0" name="Layer">&quot;BGPhase1Part4&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="429165315482607" type="System">
+                            <param id="0" name="Layer">&quot;BGPhase1Part5&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="330562443617917" type="System">
+                            <param id="0" name="Layer">&quot;BGPhase1Part6&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="992015245848019" type="System">
+                            <param id="0" name="Layer">&quot;BGPhase1Part7&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="383063176709861" type="System">
+                            <param id="0" name="Layer">&quot;BGPhase2Part1&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="107164770673154" type="System">
+                            <param id="0" name="Layer">&quot;BGPhase2Part2&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="929078940428137" type="System">
+                            <param id="0" name="Layer">&quot;BGPhase2Part3&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="905807885748712">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="818919000211299" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="494215075286466" type="System">
+                    <param id="0" name="Variable">MaxPartyMemb</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="341639541530937" type="System">
+                    <param id="0" name="Variable">Char1IsInParty</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="446237692186523" type="System">
+                    <param id="0" name="Variable">Char2IsInParty</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="677406351053132" type="System">
+                    <param id="0" name="Variable">Char3IsInParty</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="945946648435352" type="System">
+                    <param id="0" name="Variable">PartyOrder</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="792665518284659" type="System">
+                    <param id="0" name="Variable">levelhasgrav</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="205171322593434">
+            <conditions>
+                <condition id="-18" name="On created" sid="300625035629767" type="attackreacheffect" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="389611087132097">
+                    <conditions>
+                        <condition id="-8" name="Is boolean instance variable set" sid="176703386511511" type="PlayerObject">
+                            <param id="0" name="Instance variable">IsAntiGrav</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-8" name="Set angle" sid="553945448979045" type="attackreacheffect">
+                            <param id="0" name="Angle">180</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="371369184100182">
+                    <conditions>
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="813392189365672" type="PlayerObject">
+                            <param id="0" name="Instance variable">IsAntiGrav</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-8" name="Set angle" sid="326551041165488" type="attackreacheffect">
+                            <param id="0" name="Angle">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-group description="" sid="105240985070284" title="BGbubbles">
+            <sub-events>
+                <event-block sid="528062035117873">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="965342245464330" type="System" />
+                        <condition id="-7" name="Compare instance variable" sid="737266261782525" type="backgroundchanger">
+                            <param id="0" name="Instance variable">bg</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Set Y" sid="396672363181216" type="BGphase2part5">
+                            <param id="0" name="Y">Self.Y-((Self.random * 60) * dt)</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="836628926877057" type="BGphase2part6">
+                            <param id="0" name="Y">Self.Y-((Self.random * 60) * dt)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="253081074994568">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="751573178864685" type="System">
+                            <param id="0" name="Interval (seconds)">0.5</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="528675475664029" type="backgroundchanger">
+                            <param id="0" name="Instance variable">bg</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="555749697045670" type="System">
+                            <param id="0" name="Object to create">BGphase2part5</param>
+                            <param id="1" name="Layer">&quot;BGPhase2Part2&quot;</param>
+                            <param id="2" name="X">random(-16, 600)</param>
+                            <param id="3" name="Y">328</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="513949728029542" type="System">
+                            <param id="0" name="Object to create">BGphase2part6</param>
+                            <param id="1" name="Layer">&quot;BGPhase2Part2&quot;</param>
+                            <param id="2" name="X">random(-16, 600)</param>
+                            <param id="3" name="Y">328</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="317437419233516" type="System">
+                            <param id="0" name="Object to create">BGphase2part5</param>
+                            <param id="1" name="Layer">&quot;BGPhase2Part2&quot;</param>
+                            <param id="2" name="X">random(-16, 600)</param>
+                            <param id="3" name="Y">328</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="945290168408562" type="System">
+                            <param id="0" name="Object to create">BGphase2part6</param>
+                            <param id="1" name="Layer">&quot;BGPhase2Part2&quot;</param>
+                            <param id="2" name="X">random(-16, 600)</param>
+                            <param id="3" name="Y">328</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="143995757969671" type="System">
+                            <param id="0" name="Object to create">BGphase2part5</param>
+                            <param id="1" name="Layer">&quot;BGPhase2Part2&quot;</param>
+                            <param id="2" name="X">random(-16, 600)</param>
+                            <param id="3" name="Y">328</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="803607469256518" type="System">
+                            <param id="0" name="Object to create">BGphase2part6</param>
+                            <param id="1" name="Layer">&quot;BGPhase2Part2&quot;</param>
+                            <param id="2" name="X">random(-16, 600)</param>
+                            <param id="3" name="Y">328</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="255710008209964" type="System">
+                            <param id="0" name="Object to create">BGphase2part5</param>
+                            <param id="1" name="Layer">&quot;BGPhase2Part2&quot;</param>
+                            <param id="2" name="X">random(-16, 600)</param>
+                            <param id="3" name="Y">328</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="207374524986573" type="System">
+                            <param id="0" name="Object to create">BGphase2part6</param>
+                            <param id="1" name="Layer">&quot;BGPhase2Part2&quot;</param>
+                            <param id="2" name="X">random(-16, 600)</param>
+                            <param id="3" name="Y">328</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="833796784770995" type="System">
+                            <param id="0" name="Object to create">BGphase2part5</param>
+                            <param id="1" name="Layer">&quot;BGPhase2Part2&quot;</param>
+                            <param id="2" name="X">random(-16, 600)</param>
+                            <param id="3" name="Y">328</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="224366636080343" type="System">
+                            <param id="0" name="Object to create">BGphase2part6</param>
+                            <param id="1" name="Layer">&quot;BGPhase2Part2&quot;</param>
+                            <param id="2" name="X">random(-16, 600)</param>
+                            <param id="3" name="Y">328</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="666987524178661" type="System">
+                            <param id="0" name="Object to create">BGphase2part5</param>
+                            <param id="1" name="Layer">&quot;BGPhase2Part2&quot;</param>
+                            <param id="2" name="X">random(-16, 600)</param>
+                            <param id="3" name="Y">328</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="101837623128632" type="System">
+                            <param id="0" name="Object to create">BGphase2part6</param>
+                            <param id="1" name="Layer">&quot;BGPhase2Part2&quot;</param>
+                            <param id="2" name="X">random(-16, 600)</param>
+                            <param id="3" name="Y">328</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="123122344271192" type="System">
+                            <param id="0" name="Object to create">BGphase2part5</param>
+                            <param id="1" name="Layer">&quot;BGPhase2Part2&quot;</param>
+                            <param id="2" name="X">random(-16, 600)</param>
+                            <param id="3" name="Y">328</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="329908449189429" type="System">
+                            <param id="0" name="Object to create">BGphase2part6</param>
+                            <param id="1" name="Layer">&quot;BGPhase2Part2&quot;</param>
+                            <param id="2" name="X">random(-16, 600)</param>
+                            <param id="3" name="Y">328</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="286259774842224" type="System">
+                            <param id="0" name="Object to create">BGphase2part5</param>
+                            <param id="1" name="Layer">&quot;BGPhase2Part2&quot;</param>
+                            <param id="2" name="X">random(-16, 600)</param>
+                            <param id="3" name="Y">328</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="227782712336057" type="System">
+                            <param id="0" name="Object to create">BGphase2part6</param>
+                            <param id="1" name="Layer">&quot;BGPhase2Part2&quot;</param>
+                            <param id="2" name="X">random(-16, 600)</param>
+                            <param id="3" name="Y">328</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="473208732367779" type="System">
+                            <param id="0" name="Object to create">BGphase2part5</param>
+                            <param id="1" name="Layer">&quot;BGPhase2Part2&quot;</param>
+                            <param id="2" name="X">random(-16, 600)</param>
+                            <param id="3" name="Y">328</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="850567860475188" type="System">
+                            <param id="0" name="Object to create">BGphase2part6</param>
+                            <param id="1" name="Layer">&quot;BGPhase2Part2&quot;</param>
+                            <param id="2" name="X">random(-16, 600)</param>
+                            <param id="3" name="Y">328</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="626241933661159" type="System">
+                            <param id="0" name="Object to create">BGphase2part5</param>
+                            <param id="1" name="Layer">&quot;BGPhase2Part2&quot;</param>
+                            <param id="2" name="X">random(-16, 600)</param>
+                            <param id="3" name="Y">328</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="841674639346782" type="System">
+                            <param id="0" name="Object to create">BGphase2part6</param>
+                            <param id="1" name="Layer">&quot;BGPhase2Part2&quot;</param>
+                            <param id="2" name="X">random(-16, 600)</param>
+                            <param id="3" name="Y">328</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="213254735109509">
+                    <conditions>
+                        <condition id="-18" name="On created" sid="861377651852705" type="BGphase2part5" />
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="960615367055960" type="BGphase2part5">
+                            <param id="0" name="Instance variable">random</param>
+                            <param id="1" name="Value">random(0.05, 1)</param>
+                        </action>
+                        <action id="-7" name="Set size" sid="676699828233364" type="BGphase2part5">
+                            <param id="0" name="Width">random(4, 17)</param>
+                            <param id="1" name="Height">random(4, 17)</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="840735219305998" type="System">
+                            <param id="0" name="Seconds">random(0.5, 3)</param>
+                        </action>
+                        <action behavior="Fade" id="1" name="Start fade" sid="370845604769073" type="BGphase2part5" />
+                        <action id="-16" name="Set opacity" sid="853251135480375" type="BGphase2part5">
+                            <param id="0" name="Opacity">random(30, 100)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="900148296391145">
+                    <conditions>
+                        <condition id="-18" name="On created" sid="394249480656027" type="BGphase2part6" />
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="997305664249709" type="BGphase2part6">
+                            <param id="0" name="Instance variable">random</param>
+                            <param id="1" name="Value">random(0.05, 1)</param>
+                        </action>
+                        <action id="-7" name="Set size" sid="689464405524582" type="BGphase2part6">
+                            <param id="0" name="Width">random(4, 17)</param>
+                            <param id="1" name="Height">random(4, 17)</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="686804930232024" type="System">
+                            <param id="0" name="Seconds">random(0.5, 3)</param>
+                        </action>
+                        <action behavior="Fade" id="1" name="Start fade" sid="787757420089608" type="BGphase2part6" />
+                        <action id="-16" name="Set opacity" sid="512090944317373" type="BGphase2part6">
+                            <param id="0" name="Opacity">random(30, 100)</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

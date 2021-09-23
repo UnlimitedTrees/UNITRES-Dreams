@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>GreenhouseFrenzySection2Events</name>
+    <events>
+        <include>bossevents_gf</include>
+        <include>MainPlayer</include>
+        <event-block sid="664569225588295">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="593040721600324" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="233342356438712" type="Function">
+                    <param id="0" name="Name">&quot;Screen_FadeOut&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="-9" name="Set value" sid="830820230469620" type="System">
+                    <param id="0" name="Variable">MaxPartyMemb</param>
+                    <param id="1" name="Value">3</param>
+                </action>
+                <action id="-9" name="Set value" sid="998454810531479" type="System">
+                    <param id="0" name="Variable">Char1IsInParty</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="467963404174306" type="System">
+                    <param id="0" name="Variable">Char2IsInParty</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="706091847595257" type="System">
+                    <param id="0" name="Variable">Char3IsInParty</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="329456875093902" type="System">
+                    <param id="0" name="Variable">PartyOrder</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="160877132229290" type="System">
+                    <param id="0" name="Variable">MiniBossIsDead</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="324722510033954" type="System">
+                    <param id="0" name="Variable">CurrentLevel</param>
+                    <param id="1" name="Value">&quot;GreenhouseFrenzy2&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="571203668539114" type="System">
+                    <param id="0" name="Variable">PartySwitchEnabled</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="317732405649069" type="System">
+                    <param id="0" name="Variable">levelhasgrav</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Play" sid="355025207277362" type="Audio">
+                    <param id="0" name="Audio file">GF2</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">-5</param>
+                    <param id="1" name="Tag (optional)">&quot;levelmusic&quot;</param>
+                </action>
+                <action id="4" name="Set animation" sid="181614905852955" type="hud_eyecountr">
+                    <param id="0" name="Animation">&quot;a&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action behavior="8Direction" id="4" name="Set max speed" sid="182904502797637" type="PlayerObject">
+                    <param id="0" name="Max Speed">410</param>
+                </action>
+                <action id="0" name="Call function" sid="641066417659555" type="Function">
+                    <param id="0" name="Name">&quot;SaveFunction&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="430367108464861" title="GF2bubbles">
+            <sub-events>
+                <event-block sid="549370543418781">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="914269033149885" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Set Y" sid="950125598684877" type="GFaircurrent_bubble1">
+                            <param id="0" name="Y">Self.Y+((Self.random * 60) * dt)</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="969584981479580" type="GFaircurrent_bubble2">
+                            <param id="0" name="Y">Self.Y+((Self.random * 60) * dt)</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="390513174076835" type="GFaircurrent_bubble3">
+                            <param id="0" name="Y">Self.Y+((Self.random * 60) * dt)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="722271945148911">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="717883401785539" type="System">
+                            <param id="0" name="Interval (seconds)">1.0</param>
+                        </condition>
+                        <condition behavior="LineOfSight2" id="0" name="Has LOS to object" sid="494529779367038" type="Camera">
+                            <param id="0" name="Object">GF2aircurrentspawner</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="641904783070887" type="GF2aircurrentspawner">
+                            <param id="0" name="Object">GFaircurrent_bubble1</param>
+                            <param id="1" name="Layer">&quot;ForegroundArt&quot;</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="0" name="Spawn another object" sid="716515492040324" type="GF2aircurrentspawner">
+                            <param id="0" name="Object">GFaircurrent_bubble2</param>
+                            <param id="1" name="Layer">&quot;ForegroundArt&quot;</param>
+                            <param id="2" name="Image point">4</param>
+                        </action>
+                        <action id="0" name="Spawn another object" sid="783213341775573" type="GF2aircurrentspawner">
+                            <param id="0" name="Object">GFaircurrent_bubble3</param>
+                            <param id="1" name="Layer">&quot;ForegroundArt&quot;</param>
+                            <param id="2" name="Image point">5</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="287631148803289">
+                    <conditions>
+                        <condition id="-18" name="On created" sid="980361730913486" type="GFaircurrent_bubble1" />
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="621141236797339" type="GFaircurrent_bubble1">
+                            <param id="0" name="Instance variable">random</param>
+                            <param id="1" name="Value">random(1, 8)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="141636859202633">
+                    <conditions>
+                        <condition id="-18" name="On created" sid="528028459573171" type="GFaircurrent_bubble2" />
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="161801407671987" type="GFaircurrent_bubble2">
+                            <param id="0" name="Instance variable">random</param>
+                            <param id="1" name="Value">random(1, 15)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="879820901133922">
+                    <conditions>
+                        <condition id="-18" name="On created" sid="910350182980585" type="GFaircurrent_bubble3" />
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="437591808074004" type="GFaircurrent_bubble3">
+                            <param id="0" name="Instance variable">random</param>
+                            <param id="1" name="Value">random(1, 31)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="599334794007227">
+                    <conditions>
+                        <condition id="-2" name="Compare Y" sid="810215044804345" type="GFaircurrent_bubble1">
+                            <param id="0" name="Comparison">2</param>
+                            <param id="1" name="Y co-ordinate">Water_Top.Y</param>
+                        </condition>
+                        <condition behavior="LineOfSight2" id="0" inverted="1" name="Has LOS to object" sid="202606720419161" type="Camera">
+                            <param id="0" name="Object">GFaircurrent_bubble1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="333101712766492" type="GFaircurrent_bubble1" />
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="596038213943715">
+                    <conditions>
+                        <condition id="-2" name="Compare Y" sid="528793030411961" type="GFaircurrent_bubble2">
+                            <param id="0" name="Comparison">2</param>
+                            <param id="1" name="Y co-ordinate">Water_Top.Y</param>
+                        </condition>
+                        <condition behavior="LineOfSight2" id="0" inverted="1" name="Has LOS to object" sid="725270779030608" type="Camera">
+                            <param id="0" name="Object">GFaircurrent_bubble2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="757861811991218" type="GFaircurrent_bubble2" />
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="234802079210933">
+                    <conditions>
+                        <condition id="-2" name="Compare Y" sid="423133623895810" type="GFaircurrent_bubble3">
+                            <param id="0" name="Comparison">2</param>
+                            <param id="1" name="Y co-ordinate">Water_Top.Y</param>
+                        </condition>
+                        <condition behavior="LineOfSight2" id="0" inverted="1" name="Has LOS to object" sid="540903547037395" type="Camera">
+                            <param id="0" name="Object">GFaircurrent_bubble3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="133459480499913" type="GFaircurrent_bubble3" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

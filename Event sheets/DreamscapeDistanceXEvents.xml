@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>DreamscapeDistanceXEvents</name>
+    <events>
+        <include>bossevents_bnw</include>
+        <include>bossevents_UNITRES</include>
+        <include>MainPlayer</include>
+        <event-block sid="662645865792247">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="868886527838803" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="154597632523044" type="Function">
+                    <param id="0" name="Name">&quot;Screen_FadeOut&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="-9" name="Set value" sid="556385338414742" type="System">
+                    <param id="0" name="Variable">MaxPartyMemb</param>
+                    <param id="1" name="Value">3</param>
+                </action>
+                <action id="-9" name="Set value" sid="319810104430842" type="System">
+                    <param id="0" name="Variable">Char1IsInParty</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="549314074862392" type="System">
+                    <param id="0" name="Variable">Char2IsInParty</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="146326385289835" type="System">
+                    <param id="0" name="Variable">Char3IsInParty</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="595388251690994" type="System">
+                    <param id="0" name="Variable">PartyOrder</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="635324704720393" type="System">
+                    <param id="0" name="Variable">MiniBossIsDead</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="352994212564855" type="System">
+                    <param id="0" name="Variable">CurrentLevel</param>
+                    <param id="1" name="Value">&quot;DreamscapeDistanceX&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="217795762674802" type="System">
+                    <param id="0" name="Variable">PartySwitchEnabled</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="881102027412620" type="System">
+                    <param id="0" name="Variable">levelhasgrav</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Play" sid="706607715660570" type="Audio">
+                    <param id="0" name="Audio file">DDX</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;levelmusic&quot;</param>
+                </action>
+                <action id="4" name="Set animation" sid="291441203618513" type="hud_eyecountr">
+                    <param id="0" name="Animation">&quot;a&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="0" name="Call function" sid="971886193098084" type="Function">
+                    <param id="0" name="Name">&quot;SaveFunction&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="154653543550938">
+            <conditions>
+                <condition id="-18" name="On created" sid="506531760775191" type="AttackHItbox_JokerBoss_Star" />
+            </conditions>
+            <actions>
+                <action behavior="Bullet" id="0" name="Set speed" sid="728745313847136" type="AttackHItbox_JokerBoss_Star">
+                    <param id="0" name="Speed">300</param>
+                </action>
+                <action behavior="Bullet" id="1" name="Set acceleration" sid="998444218008000" type="AttackHItbox_JokerBoss_Star">
+                    <param id="0" name="Acceleration">70</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

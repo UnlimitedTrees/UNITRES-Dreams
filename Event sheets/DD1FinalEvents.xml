@@ -1,0 +1,508 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>DD1FinalEvents</name>
+    <events>
+        <include>bossevents_UNITRES</include>
+        <include>MainPlayer</include>
+        <include>bossevents_dd</include>
+        <event-block sid="943883376783013">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="829587034490440" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="275451412993392" type="Function">
+                    <param id="0" name="Name">&quot;Screen_FadeOut&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="-9" name="Set value" sid="118453081218406" type="System">
+                    <param id="0" name="Variable">MaxPartyMemb</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="663721266695784" type="System">
+                    <param id="0" name="Variable">Char1IsInParty</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="321918504718074" type="System">
+                    <param id="0" name="Variable">Char2IsInParty</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="106967832179671" type="System">
+                    <param id="0" name="Variable">Char3IsInParty</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="663428193911638" type="System">
+                    <param id="0" name="Variable">PartyOrder</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="349697540077071" type="System">
+                    <param id="0" name="Variable">CurrentLevel</param>
+                    <param id="1" name="Value">&quot;DreamscapeDistance1final&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="866909618196860" type="System">
+                    <param id="0" name="Variable">PartySwitchEnabled</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="349426797398075" type="System">
+                    <param id="0" name="Variable">levelhasgrav</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="0" name="Play" sid="481308954328494" type="Audio">
+                    <param id="0" name="Audio file">DD1</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;levelmusic&quot;</param>
+                </action>
+                <action id="4" name="Set animation" sid="597733543859941" type="hud_eyecountr">
+                    <param id="0" name="Animation">&quot;b&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="241128070474557">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="621839902079975" type="System">
+                            <param id="0" name="Variable">cacapoopee</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-13" name="Set boolean" sid="994494035575207" type="PlayerObject">
+                            <param id="0" name="Instance variable">EnableControl</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="610907892349888" type="System">
+                            <param id="0" name="Variable">PartyOrder</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="371787229051337" type="PlayerObject">
+                            <param id="0" name="Instance variable">Character</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="120351220675644" type="System">
+                            <param id="0" name="Variable">Char1IsInParty</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="879888340461003" type="System">
+                            <param id="0" name="Variable">Char2IsInParty</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="595596607704972" type="hudicon_trees">
+                            <param id="0" name="Animation">&quot;inactive&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="734185817082949" type="hudicon_l">
+                            <param id="0" name="Animation">&quot;active&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="779875183844010" type="hudicon_s">
+                            <param id="0" name="Animation">&quot;inactive&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="184640761714575" type="Platform1" />
+                    </actions>
+                </event-block>
+                <event-block sid="401646861178498">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="765485919354152" type="System">
+                            <param id="0" name="Variable">multiplayermode</param>
+                            <param id="1" name="Comparison">1</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-13" name="Set boolean" sid="187067209363663" type="PlayerObject">
+                            <param id="0" name="Instance variable">EnableControl</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="217965384831400" type="System">
+                            <param id="0" name="Object to create">PlayerObject</param>
+                            <param id="1" name="Layer">&quot;PlayerLayer&quot;</param>
+                            <param id="2" name="X">Camera.X</param>
+                            <param id="3" name="Y">Camera.Y</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="253122388995510" type="PlayerObject">
+                            <param id="0" name="Instance variable">Player</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="761460168838024" type="PlayerObject">
+                            <param id="0" name="Instance variable">Character</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="445642454826785" type="PlayerObject">
+                            <param id="0" name="Instance variable">IsAI</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="758902109841338" type="System">
+                            <param id="0" name="Object to create">PlayerObject</param>
+                            <param id="1" name="Layer">&quot;PlayerLayer&quot;</param>
+                            <param id="2" name="X">Camera.X</param>
+                            <param id="3" name="Y">Camera.Y</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="770470538079787" type="PlayerObject">
+                            <param id="0" name="Instance variable">Player</param>
+                            <param id="1" name="Value">3</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="766652509424116" type="PlayerObject">
+                            <param id="0" name="Instance variable">Character</param>
+                            <param id="1" name="Value">3</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="923759874481764" type="PlayerObject">
+                            <param id="0" name="Instance variable">IsAI</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="919932547898727">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="646883779021133" type="System">
+                            <param id="0" name="Variable">teabatmode</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="928205163824913" type="System">
+                            <param id="0" name="Variable">kyleandlucymode</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="669254325157966" type="System">
+                            <param id="0" name="Variable">juliamode</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="557572690394068" type="System">
+                            <param id="0" name="Variable">christmasmode</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="638036647793863" type="System">
+                            <param id="0" name="Variable">multiplayermode</param>
+                            <param id="1" name="Comparison">1</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="200959526915300" type="Platform1" />
+                    </actions>
+                </event-block>
+                <event-block sid="189164552629660">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="926881416665144" type="System">
+                            <param id="0" name="Variable">juliamode</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="848925483847519" type="System">
+                            <param id="0" name="Object to create">DialogueTrigger</param>
+                            <param id="1" name="Layer">&quot;PlayerLayer&quot;</param>
+                            <param id="2" name="X">6608</param>
+                            <param id="3" name="Y">992</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="941449988624739" type="DialogueTrigger">
+                            <param id="0" name="Instance variable">dialogue</param>
+                            <param id="1" name="Value">&quot;Julia_DDsection1jump&quot;</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="464430819535332" type="DialogueTrigger">
+                            <param id="0" name="Instance variable">secondarydialogue</param>
+                            <param id="1" name="Value">&quot;Julia_DDsection1jump&quot;</param>
+                        </action>
+                        <action id="-7" name="Set size" sid="124517825507469" type="DialogueTrigger">
+                            <param id="0" name="Width">64</param>
+                            <param id="1" name="Height">64</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="258113191703506" type="System">
+                            <param id="0" name="Object to create">DialogueTrigger</param>
+                            <param id="1" name="Layer">&quot;PlayerLayer&quot;</param>
+                            <param id="2" name="X">7104</param>
+                            <param id="3" name="Y">544</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="533525724481649" type="DialogueTrigger">
+                            <param id="0" name="Instance variable">dialogue</param>
+                            <param id="1" name="Value">&quot;Julia_DDsection1feature&quot;</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="197276240630935" type="DialogueTrigger">
+                            <param id="0" name="Instance variable">secondarydialogue</param>
+                            <param id="1" name="Value">&quot;Julia_DDsection1feature&quot;</param>
+                        </action>
+                        <action id="-7" name="Set size" sid="304469848661502" type="DialogueTrigger">
+                            <param id="0" name="Width">64</param>
+                            <param id="1" name="Height">64</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="493321021691221" type="System">
+                            <param id="0" name="Object to create">DialogueTrigger</param>
+                            <param id="1" name="Layer">&quot;PlayerLayer&quot;</param>
+                            <param id="2" name="X">13712</param>
+                            <param id="3" name="Y">112</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="644989127808033" type="DialogueTrigger">
+                            <param id="0" name="Instance variable">dialogue</param>
+                            <param id="1" name="Value">&quot;Julia_DDsection1shield&quot;</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="568526390304733" type="DialogueTrigger">
+                            <param id="0" name="Instance variable">secondarydialogue</param>
+                            <param id="1" name="Value">&quot;Julia_DDsection1shield&quot;</param>
+                        </action>
+                        <action id="-7" name="Set size" sid="739885443264047" type="DialogueTrigger">
+                            <param id="0" name="Width">64</param>
+                            <param id="1" name="Height">64</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-group description="" sid="823329642006369" title="SecondIntroCutscene_final">
+            <sub-events>
+                <event-block sid="908564383548038">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="725096601594446" type="PlayerObject">
+                            <param id="0" name="Comparison">5</param>
+                            <param id="1" name="X co-ordinate">8168</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="136731834036915" type="System">
+                            <param id="0" name="Variable">cacapoopee</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="997921219807995" type="System">
+                            <param id="0" name="Variable">teabatmode</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="861420228472658" type="System">
+                            <param id="0" name="Variable">kyleandlucymode</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="691728605891579" type="System">
+                            <param id="0" name="Variable">juliamode</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="163268859037313" type="System">
+                            <param id="0" name="Variable">christmasmode</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="463246260986134" type="System">
+                            <param id="0" name="Variable">multiplayermode</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="973388468581204" type="System">
+                            <param id="0" name="Variable">cacapoopee</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="0" name="Call function" sid="915303251087054" type="Function">
+                            <param id="0" name="Name">&quot;dialogue&quot;</param>
+                            <param id="1" name="Parameter {n}">&quot;DDsection1haha&quot;</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="924061995492598" type="PlayerObject">
+                            <param id="0" name="Instance variable">EnableControl</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="712115510445086">
+                    <conditions>
+                        <condition behavior="Platform" id="2" name="Is on floor" sid="444714610386676" type="PlayerObject" />
+                        <condition id="-14" name="Compare variable" sid="483808618319220" type="System">
+                            <param id="0" name="Variable">cacapoopee</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="990872321810871" type="PlayerObject">
+                            <param id="0" name="Instance variable">Character</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="714602434387063" type="playerskin_Trees">
+                            <param id="0" name="Animation">&quot;Idle&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="208803331619806">
+                    <conditions>
+                        <condition id="0" name="On function" sid="742318340883053" type="Function">
+                            <param id="0" name="Name">&quot;DDsecondopening_weed&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="987301339790093" type="Function">
+                            <param id="0" name="Name">&quot;end_dialogue&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="468605098646435" type="PlayerObject">
+                            <param id="0" name="Instance variable">EnableControl</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="917874716188067" type="System">
+                            <param id="0" name="Seconds">1.0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="665323707821601" type="System">
+                            <param id="0" name="Variable">cacapoopee</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="230511243868751" type="playerskin_Test">
+                            <param id="0" name="Animation">&quot;Falling&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="880810619049183">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="278634548097638" type="System" />
+                        <condition id="-14" name="Compare variable" sid="362900687297208" type="System">
+                            <param id="0" name="Variable">cacapoopee</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Set Y" sid="458868708247979" type="playerskin_Test">
+                            <param id="0" name="Y">Self.Y+((Self.spaghettivar * 60) * dt)</param>
+                        </action>
+                        <action id="-11" name="Add to" sid="363211288812037" type="playerskin_Test">
+                            <param id="0" name="Instance variable">spaghettivar</param>
+                            <param id="1" name="Value">0.05</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="802462431859123">
+                    <conditions>
+                        <condition id="-2" name="Compare Y" sid="855150070775250" type="playerskin_Test">
+                            <param id="0" name="Comparison">5</param>
+                            <param id="1" name="Y co-ordinate">1424</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="305254399173470" type="System">
+                            <param id="0" name="Variable">cacapoopee</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="886405970380714" type="System">
+                            <param id="0" name="Variable">cacapoopee</param>
+                            <param id="1" name="Value">3</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="197222151491748" type="playerskin_Trees">
+                            <param id="0" name="Animation">&quot;Death&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="0" name="Spawn another object" sid="976593248086544" type="playerskin_Trees">
+                            <param id="0" name="Object">coolexplosion</param>
+                            <param id="1" name="Layer">&quot;ForegroundArt&quot;</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-7" name="Set size" sid="352523008110889" type="coolexplosion">
+                            <param id="0" name="Width">200</param>
+                            <param id="1" name="Height">200</param>
+                        </action>
+                        <action id="0" name="Play" sid="173255071606087" type="Audio">
+                            <param id="0" name="Audio file">explosion</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;explosion&quot;</param>
+                        </action>
+                        <action behavior="Rotate" id="0" name="Set speed" sid="256078015309610" type="playerskin_Trees">
+                            <param id="0" name="Speed">360</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="655325831146097" type="System">
+                            <param id="0" name="Variable">PartyOrder</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="281094732111860" type="PlayerObject">
+                            <param id="0" name="Instance variable">Character</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="497307856027038" type="System">
+                            <param id="0" name="Variable">Char1IsInParty</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="120196282855135" type="System">
+                            <param id="0" name="Variable">Char2IsInParty</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="660901436723593" type="hudicon_trees">
+                            <param id="0" name="Animation">&quot;inactive&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="688271082078741" type="hudicon_l">
+                            <param id="0" name="Animation">&quot;active&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="521896844154483" type="hudicon_s">
+                            <param id="0" name="Animation">&quot;inactive&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="621088263466025" type="playerskin_Test">
+                            <param id="0" name="Animation">&quot;Idle&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="115566562101418" type="System">
+                            <param id="0" name="Seconds">2.0</param>
+                        </action>
+                        <action id="0" name="Call function" sid="808100618694889" type="Function">
+                            <param id="0" name="Name">&quot;dialogue&quot;</param>
+                            <param id="1" name="Parameter {n}">&quot;DDsection1secondintro&quot;</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="218885711882388" type="Platform1" />
+                    </actions>
+                </event-block>
+                <event-block sid="421368090621984">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="562383454469314" type="System" />
+                        <condition id="-14" name="Compare variable" sid="685843177673587" type="System">
+                            <param id="0" name="Variable">cacapoopee</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-1" name="Set X" sid="203299085670946" type="playerskin_Trees">
+                            <param id="0" name="X">Self.X+((6 * 60) * dt)</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="333918624220548" type="playerskin_Trees">
+                            <param id="0" name="Y">Self.Y-((6 * 60) * dt)</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="232853490247438">
+            <conditions>
+                <condition id="-18" name="On created" sid="582542800420378" type="spaghettiboss_kingmeat" />
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="394723508118351" type="System">
+                    <param id="0" name="Seconds">1.0</param>
+                </action>
+                <action id="-10" name="Set value" sid="120540429886213" type="spaghettiboss_kingmeat">
+                    <param id="0" name="Instance variable">active</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="872824406944643">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="512941195726511" type="spaghettiboss_kingmeat">
+                    <param id="0" name="Instance variable">active</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="-1" name="Every tick" sid="195444244150495" type="System" />
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="842480148781758" type="spaghettiboss_kingmeat">
+                    <param id="0" name="X">Self.X+((2 * 60) * dt)</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

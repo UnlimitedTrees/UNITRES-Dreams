@@ -1,0 +1,2549 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>bossevents_bnw</name>
+    <events>
+        <event-group description="" sid="879441365943034" title="Boss: Egg Miniboss">
+            <sub-events>
+                <event-block sid="229270582173107">
+                    <conditions>
+                        <condition id="-2" name="Compare Y" sid="641730934992680" type="Camera">
+                            <param id="0" name="Comparison">5</param>
+                            <param id="1" name="Y co-ordinate">1500</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-13" name="Set boolean" sid="819302108694658" type="Camera">
+                            <param id="0" name="Instance variable">Pee</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="595318872148550">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="183981032379435" type="Enemy">
+                            <param id="0" name="Instance variable">Type</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;EggBoss&quot;</param>
+                        </condition>
+                        <condition id="-8" name="Is boolean instance variable set" sid="861713700326002" type="Enemy">
+                            <param id="0" name="Instance variable">IsBoss</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="593016558338127" type="System">
+                            <param id="0" name="Variable">MiniBossIsDead</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="653793000341278">
+                            <conditions>
+                                <condition id="-1" name="Compare X" sid="649566991306700" type="Enemy">
+                                    <param id="0" name="Comparison">2</param>
+                                    <param id="1" name="X co-ordinate">Camera.X+400</param>
+                                </condition>
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="989738055076796" type="Enemy">
+                                    <param id="0" name="Instance variable">Active</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="726038021327280" type="Enemy">
+                                    <param id="0" name="Instance variable">Variable1</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-13" name="Set boolean" sid="246874865471249" type="Enemy">
+                                    <param id="0" name="Instance variable">Active</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="0" name="Call function" sid="402639140377580" type="Function">
+                                    <param id="0" name="Name">&quot;EggMove1&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                                <action id="6" name="Stop" sid="307740989767541" type="Audio">
+                                    <param id="0" name="Tag">&quot;section1&quot;</param>
+                                </action>
+                                <action id="0" name="Play" sid="986270013798994" type="Audio">
+                                    <param id="0" name="Audio file">miniboss_intro</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;minibossintro&quot;</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="727638627975987" type="System">
+                                    <param id="0" name="Variable">Boss_MaxHP</param>
+                                    <param id="1" name="Value">Enemy.HP</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="657068393828110" type="HUD_BossHP">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="189360403532856" type="BossHealthBar">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="848735884545909" type="BossHealthBar">
+                                    <param id="0" name="Animation">&quot;JohnEgg&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="426914542859030">
+                            <conditions>
+                                <condition id="-1" name="Every tick" sid="275994591805132" type="System" />
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="478554992244989" type="bossskin_EggBoss">
+                                    <param id="0" name="Instance variable">Dying</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Set position" sid="147694096540352" type="bossskin_EggBoss">
+                                    <param id="0" name="X">Enemy.X</param>
+                                    <param id="1" name="Y">Enemy.Y</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="420377551127934">
+                            <conditions>
+                                <condition id="0" name="On function" sid="557030639474315" type="Function">
+                                    <param id="0" name="Name">&quot;EggMove1&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="517029656669595" type="bossskin_EggBoss">
+                                    <param id="0" name="Animation">&quot;Idle&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="993694630866250" type="Enemy">
+                                    <param id="0" name="Instance variable">Variable1</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="882271757625673">
+                            <conditions>
+                                <condition id="-1" name="Every tick" sid="868157614426042" type="System" />
+                                <condition id="-7" name="Compare instance variable" sid="346984575417149" type="Enemy">
+                                    <param id="0" name="Instance variable">Variable1</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                                <condition id="-1" name="Compare X" sid="893546846737799" type="Enemy">
+                                    <param id="0" name="Comparison">5</param>
+                                    <param id="1" name="X co-ordinate">PlayerObject.X+200</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="992241780254252" type="System">
+                                    <param id="0" name="Variable">ispaused</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-1" name="Set X" sid="805653425294456" type="Enemy">
+                                    <param id="0" name="X">Self.X-((5 * 60) * dt)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="430847402812268">
+                            <conditions>
+                                <condition id="-1" name="Compare X" sid="855732563499117" type="Enemy">
+                                    <param id="0" name="Comparison">2</param>
+                                    <param id="1" name="X co-ordinate">PlayerObject.X+200</param>
+                                </condition>
+                                <condition id="-8" name="Is boolean instance variable set" sid="450489572446528" type="Enemy">
+                                    <param id="0" name="Instance variable">Active</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="440979730962149" type="Enemy">
+                                    <param id="0" name="Instance variable">Variable1</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="717934671752152" type="Enemy">
+                                    <param id="0" name="Instance variable">Variable1</param>
+                                    <param id="1" name="Value">2</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="226789450494251" type="System">
+                                    <param id="0" name="Seconds">3.0</param>
+                                </action>
+                                <action id="0" name="Call function" sid="758313905657101" type="Function">
+                                    <param id="0" name="Name">&quot;EggMove2&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="978318297239247">
+                            <conditions>
+                                <condition id="-1" name="Every tick" sid="971855655704207" type="System" />
+                                <condition id="-7" name="Compare instance variable" sid="782805394034628" type="Enemy">
+                                    <param id="0" name="Instance variable">Variable1</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="441776057126620" type="Enemy">
+                                    <param id="0" name="Instance variable">IsAttacking</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="461979770981191" type="System">
+                                    <param id="0" name="Variable">ispaused</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-1" name="Set X" sid="993088936633787" type="Enemy">
+                                    <param id="0" name="X">PlayerObject.X+((200 * 60) * dt)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="273550690089755">
+                            <conditions>
+                                <condition id="0" name="On function" sid="286934156902570" type="Function">
+                                    <param id="0" name="Name">&quot;EggMove2&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="811026706744784" type="bossskin_EggBoss">
+                                    <param id="0" name="Animation">&quot;Puke&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="25" name="Play at object" sid="698053748138701" type="Audio">
+                                    <param id="0" name="Audio file">bosspuke</param>
+                                    <param id="1" name="Loop">0</param>
+                                    <param id="2" name="Volume">0</param>
+                                    <param id="3" name="Object">bossskin_EggBoss</param>
+                                    <param id="4" name="Inner angle">360</param>
+                                    <param id="5" name="Outer angle">360</param>
+                                    <param id="6" name="Outer gain">0</param>
+                                    <param id="7" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="203151672225683" type="Enemy">
+                                    <param id="0" name="Instance variable">Variable1</param>
+                                    <param id="1" name="Value">3</param>
+                                </action>
+                                <action id="-13" name="Set boolean" sid="916354892077268" type="Enemy">
+                                    <param id="0" name="Instance variable">IsAttacking</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action behavior="Sine" id="0" name="Set active" sid="163139522120526" type="Enemy">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                                <action behavior="Sine2" id="0" name="Set active" sid="953012852447355" type="Enemy">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="894028494703254" type="System">
+                                    <param id="0" name="Seconds">7.0</param>
+                                </action>
+                                <action id="0" name="Call function" sid="197865474284439" type="Function">
+                                    <param id="0" name="Name">&quot;EggMove3&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="244043415311195">
+                            <conditions>
+                                <condition id="0" name="On function" sid="611510134900826" type="Function">
+                                    <param id="0" name="Name">&quot;EggMove3&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="860539278331053" type="bossskin_EggBoss">
+                                    <param id="0" name="Animation">&quot;Idle&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action behavior="Sine" id="0" name="Set active" sid="986274693459839" type="Enemy">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                                <action behavior="Sine2" id="0" name="Set active" sid="509349953476442" type="Enemy">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="657271609798525" type="Enemy">
+                                    <param id="0" name="Instance variable">Variable1</param>
+                                    <param id="1" name="Value">4</param>
+                                </action>
+                                <action id="-13" name="Set boolean" sid="614223290936467" type="Enemy">
+                                    <param id="0" name="Instance variable">IsAttacking</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="590419166031932">
+                            <conditions>
+                                <condition id="0" name="On function" sid="888618731987126" type="Function">
+                                    <param id="0" name="Name">&quot;EggMove4&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="867084761365913" type="bossskin_EggBoss">
+                                    <param id="0" name="Animation">&quot;Top&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="700893197452975" type="Enemy">
+                                    <param id="0" name="Instance variable">Variable1</param>
+                                    <param id="1" name="Value">5</param>
+                                </action>
+                                <action id="-2" name="Set Y" sid="564634352627980" type="Enemy">
+                                    <param id="0" name="Y">Camera.Y-20</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="899465106816921" type="System">
+                                    <param id="0" name="Seconds">6.0</param>
+                                </action>
+                                <action id="0" name="Call function" sid="748981879292510" type="Function">
+                                    <param id="0" name="Name">&quot;EggMove5&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="879105284160080">
+                            <conditions>
+                                <condition id="0" name="On function" sid="391300150700823" type="Function">
+                                    <param id="0" name="Name">&quot;EggMove5&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="256596604066034" type="bossskin_EggBoss">
+                                    <param id="0" name="Animation">&quot;TopPuke&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="25" name="Play at object" sid="416817828285984" type="Audio">
+                                    <param id="0" name="Audio file">bosspuke</param>
+                                    <param id="1" name="Loop">0</param>
+                                    <param id="2" name="Volume">0</param>
+                                    <param id="3" name="Object">bossskin_EggBoss</param>
+                                    <param id="4" name="Inner angle">360</param>
+                                    <param id="5" name="Outer angle">360</param>
+                                    <param id="6" name="Outer gain">0</param>
+                                    <param id="7" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="441140914000280" type="Enemy">
+                                    <param id="0" name="Instance variable">Variable1</param>
+                                    <param id="1" name="Value">6</param>
+                                </action>
+                                <action id="-13" name="Set boolean" sid="997994154236178" type="Enemy">
+                                    <param id="0" name="Instance variable">IsAttacking</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action behavior="Sine2" id="0" name="Set active" sid="328478755057559" type="Enemy">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="819308910822794" type="System">
+                                    <param id="0" name="Seconds">7.0</param>
+                                </action>
+                                <action id="0" name="Call function" sid="219499185582133" type="Function">
+                                    <param id="0" name="Name">&quot;EggMove1&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="187098203816987">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="358638536505430" type="Enemy">
+                                    <param id="0" name="Instance variable">HP</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="200132288846512" type="Enemy" />
+                                <action id="-13" name="Set boolean" sid="655750229910433" type="bossskin_EggBoss">
+                                    <param id="0" name="Instance variable">Dying</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="0" name="Call function" sid="129994259159725" type="Function">
+                                    <param id="0" name="Name">&quot;EggDeath&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="859715836970586">
+                            <conditions>
+                                <condition id="0" name="On function" sid="737479497470976" type="Function">
+                                    <param id="0" name="Name">&quot;EggDeath&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="615391506497279" type="HUD_BossHP">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="849611499740203" type="BossHealthBar">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="547243517678761" type="bossskin_EggBoss">
+                                    <param id="0" name="Animation">&quot;TopPuke&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="25" name="Play at object" sid="546740693330037" type="Audio">
+                                    <param id="0" name="Audio file">bosspuke</param>
+                                    <param id="1" name="Loop">0</param>
+                                    <param id="2" name="Volume">10</param>
+                                    <param id="3" name="Object">bossskin_EggBoss</param>
+                                    <param id="4" name="Inner angle">360</param>
+                                    <param id="5" name="Outer angle">360</param>
+                                    <param id="6" name="Outer gain">0</param>
+                                    <param id="7" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                                <action id="0" name="Call function" sid="629952794740157" type="Function">
+                                    <param id="0" name="Name">&quot;EggDeathAni&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                                <action id="-16" name="Wait" sid="168005432763096" type="System">
+                                    <param id="0" name="Seconds">3.0</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="585492742779066" type="bossskin_EggBoss" />
+                                <action id="-9" name="Destroy" sid="326969894343828" type="EggBoss_Platform" />
+                                <action id="-13" name="Set boolean" sid="135845188651225" type="Camera">
+                                    <param id="0" name="Instance variable">Pee</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="871580377478046" type="System">
+                                    <param id="0" name="Variable">MiniBossIsDead</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-10" name="Add to" sid="696237181978612" type="System">
+                                    <param id="0" name="Variable">Score</param>
+                                    <param id="1" name="Value">100000</param>
+                                </action>
+                                <action id="6" name="Stop" sid="204440009078116" type="Audio">
+                                    <param id="0" name="Tag">&quot;bossmusic&quot;</param>
+                                </action>
+                                <action id="6" name="Stop" sid="539996612172429" type="Audio">
+                                    <param id="0" name="Tag">&quot;minibossintro&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="179924349818624">
+                            <conditions>
+                                <condition id="0" name="On function" sid="537609480318529" type="Function">
+                                    <param id="0" name="Name">&quot;EggDeathAni&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="188333337061950" type="bossskin_EggBoss">
+                                    <param id="0" name="Object">coolexplosion</param>
+                                    <param id="1" name="Layer">&quot;PlayerLayer&quot;</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="0" name="Play" sid="414130131733935" type="Audio">
+                                    <param id="0" name="Audio file">explosion</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;explosion&quot;</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="257704054685007" type="System">
+                                    <param id="0" name="Seconds">0.2</param>
+                                </action>
+                                <action id="0" name="Spawn another object" sid="431678329682736" type="bossskin_EggBoss">
+                                    <param id="0" name="Object">coolexplosion</param>
+                                    <param id="1" name="Layer">&quot;PlayerLayer&quot;</param>
+                                    <param id="2" name="Image point">1</param>
+                                </action>
+                                <action id="0" name="Play" sid="824504339257608" type="Audio">
+                                    <param id="0" name="Audio file">explosion</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;explosion&quot;</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="198746973258499" type="System">
+                                    <param id="0" name="Seconds">0.3</param>
+                                </action>
+                                <action id="0" name="Spawn another object" sid="872847826009247" type="bossskin_EggBoss">
+                                    <param id="0" name="Object">coolexplosion</param>
+                                    <param id="1" name="Layer">&quot;PlayerLayer&quot;</param>
+                                    <param id="2" name="Image point">2</param>
+                                </action>
+                                <action id="0" name="Play" sid="715737272007303" type="Audio">
+                                    <param id="0" name="Audio file">explosion</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;explosion&quot;</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="703181364560832" type="System">
+                                    <param id="0" name="Seconds">0.1</param>
+                                </action>
+                                <action id="0" name="Spawn another object" sid="308087455998230" type="bossskin_EggBoss">
+                                    <param id="0" name="Object">coolexplosion</param>
+                                    <param id="1" name="Layer">&quot;PlayerLayer&quot;</param>
+                                    <param id="2" name="Image point">3</param>
+                                </action>
+                                <action id="0" name="Play" sid="448022815048151" type="Audio">
+                                    <param id="0" name="Audio file">explosion</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;explosion&quot;</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="624939577232714" type="System">
+                                    <param id="0" name="Seconds">0.3</param>
+                                </action>
+                                <action id="0" name="Spawn another object" sid="167514911017766" type="bossskin_EggBoss">
+                                    <param id="0" name="Object">coolexplosion</param>
+                                    <param id="1" name="Layer">&quot;PlayerLayer&quot;</param>
+                                    <param id="2" name="Image point">2</param>
+                                </action>
+                                <action id="0" name="Play" sid="420572506405289" type="Audio">
+                                    <param id="0" name="Audio file">explosion</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;explosion&quot;</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="530021303095990" type="System">
+                                    <param id="0" name="Seconds">0.2</param>
+                                </action>
+                                <action id="0" name="Spawn another object" sid="542012619052390" type="bossskin_EggBoss">
+                                    <param id="0" name="Object">coolexplosion</param>
+                                    <param id="1" name="Layer">&quot;PlayerLayer&quot;</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="0" name="Play" sid="150621770514512" type="Audio">
+                                    <param id="0" name="Audio file">explosion</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;explosion&quot;</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="459773499578039" type="System">
+                                    <param id="0" name="Seconds">0.1</param>
+                                </action>
+                                <action id="0" name="Spawn another object" sid="787512391822253" type="bossskin_EggBoss">
+                                    <param id="0" name="Object">coolexplosion</param>
+                                    <param id="1" name="Layer">&quot;PlayerLayer&quot;</param>
+                                    <param id="2" name="Image point">1</param>
+                                </action>
+                                <action id="0" name="Play" sid="465866486517724" type="Audio">
+                                    <param id="0" name="Audio file">explosion</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;explosion&quot;</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="145693306731738" type="System">
+                                    <param id="0" name="Seconds">0.3</param>
+                                </action>
+                                <action id="0" name="Spawn another object" sid="546283791220271" type="bossskin_EggBoss">
+                                    <param id="0" name="Object">coolexplosion</param>
+                                    <param id="1" name="Layer">&quot;PlayerLayer&quot;</param>
+                                    <param id="2" name="Image point">2</param>
+                                </action>
+                                <action id="0" name="Play" sid="459458416943918" type="Audio">
+                                    <param id="0" name="Audio file">explosion</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;explosion&quot;</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="329064885090335" type="System">
+                                    <param id="0" name="Seconds">0.1</param>
+                                </action>
+                                <action id="0" name="Spawn another object" sid="819220634387224" type="bossskin_EggBoss">
+                                    <param id="0" name="Object">coolexplosion</param>
+                                    <param id="1" name="Layer">&quot;PlayerLayer&quot;</param>
+                                    <param id="2" name="Image point">2</param>
+                                </action>
+                                <action id="0" name="Play" sid="460457007659589" type="Audio">
+                                    <param id="0" name="Audio file">explosion</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;explosion&quot;</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="728129478860513" type="System">
+                                    <param id="0" name="Seconds">0.2</param>
+                                </action>
+                                <action id="0" name="Spawn another object" sid="496482039180280" type="bossskin_EggBoss">
+                                    <param id="0" name="Object">coolexplosion</param>
+                                    <param id="1" name="Layer">&quot;PlayerLayer&quot;</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="0" name="Play" sid="237873449028995" type="Audio">
+                                    <param id="0" name="Audio file">explosion</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;explosion&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="676357020400402">
+                            <conditions>
+                                <condition id="-1" name="Every tick" sid="282327140112539" type="System" />
+                                <condition id="-7" name="Compare instance variable" sid="687349143817026" type="Enemy">
+                                    <param id="0" name="Instance variable">Variable1</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="453509600268823" type="System">
+                                    <param id="0" name="Variable">ispaused</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-1" name="Set X" sid="720530734541207" type="Enemy">
+                                    <param id="0" name="X">Self.X+((10 * 60) * dt)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="773403014466329">
+                            <conditions>
+                                <condition id="-1" name="Compare X" sid="631680407840680" type="Enemy">
+                                    <param id="0" name="Comparison">5</param>
+                                    <param id="1" name="X co-ordinate">Camera.X+500</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="685712329409136" type="Enemy">
+                                    <param id="0" name="Instance variable">Variable1</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="829474649921143" type="Function">
+                                    <param id="0" name="Name">&quot;EggMove4&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="946023191454840">
+                            <conditions>
+                                <condition id="-1" name="Every tick" sid="183780080413881" type="System" />
+                                <condition id="-7" name="Compare instance variable" sid="269796695637888" type="Enemy">
+                                    <param id="0" name="Instance variable">Variable1</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">5</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="925845657008948" type="System">
+                                    <param id="0" name="Variable">ispaused</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="803679492836168">
+                                    <conditions>
+                                        <condition id="-1" name="Compare X" sid="623490821399262" type="Enemy">
+                                            <param id="0" name="Comparison">4</param>
+                                            <param id="1" name="X co-ordinate">PlayerObject.X</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-1" name="Set X" sid="696656517023997" type="Enemy">
+                                            <param id="0" name="X">Self.X-((7 * 60) * dt)</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="477312211785742">
+                                    <conditions>
+                                        <condition id="-1" name="Compare X" sid="274904843601648" type="Enemy">
+                                            <param id="0" name="Comparison">2</param>
+                                            <param id="1" name="X co-ordinate">PlayerObject.X</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-1" name="Set X" sid="490059980395487" type="Enemy">
+                                            <param id="0" name="X">Self.X+((7 * 60) * dt)</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <comment>Phase 1 Egg Bullets</comment>
+                        <event-block sid="677050481093146">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="334651028586344" type="System">
+                                    <param id="0" name="Interval (seconds)">0.4</param>
+                                </condition>
+                                <condition id="-8" name="Is boolean instance variable set" sid="695319081414865" type="Enemy">
+                                    <param id="0" name="Instance variable">IsAttacking</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="552065520236523" type="Enemy">
+                                    <param id="0" name="Instance variable">Variable1</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="446039221572976" type="Enemy">
+                                    <param id="0" name="Object">AttackHItbox_EggBullet</param>
+                                    <param id="1" name="Layer">&quot;PlayerLayer&quot;</param>
+                                    <param id="2" name="Image point">&quot;Boss1&quot;</param>
+                                </action>
+                                <action id="25" name="Play at object" sid="916669022196031" type="Audio">
+                                    <param id="0" name="Audio file">enemyshoot</param>
+                                    <param id="1" name="Loop">0</param>
+                                    <param id="2" name="Volume">0</param>
+                                    <param id="3" name="Object">bossskin_EggBoss</param>
+                                    <param id="4" name="Inner angle">360</param>
+                                    <param id="5" name="Outer angle">360</param>
+                                    <param id="6" name="Outer gain">0</param>
+                                    <param id="7" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="668412838184423">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="600995497848967" type="System">
+                                    <param id="0" name="Interval (seconds)">1.8</param>
+                                </condition>
+                                <condition id="-8" name="Is boolean instance variable set" sid="949531887457545" type="Enemy">
+                                    <param id="0" name="Instance variable">IsAttacking</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="266313388299725" type="Enemy">
+                                    <param id="0" name="Instance variable">Variable1</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="573768066117103" type="Enemy">
+                                    <param id="0" name="Object">AttackHItbox_EggBullet</param>
+                                    <param id="1" name="Layer">&quot;PlayerLayer&quot;</param>
+                                    <param id="2" name="Image point">&quot;Boss2&quot;</param>
+                                </action>
+                                <action id="25" name="Play at object" sid="769014254209113" type="Audio">
+                                    <param id="0" name="Audio file">enemyshoot</param>
+                                    <param id="1" name="Loop">0</param>
+                                    <param id="2" name="Volume">0</param>
+                                    <param id="3" name="Object">bossskin_EggBoss</param>
+                                    <param id="4" name="Inner angle">360</param>
+                                    <param id="5" name="Outer angle">360</param>
+                                    <param id="6" name="Outer gain">0</param>
+                                    <param id="7" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="498283478476573">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="814024787565645" type="System">
+                                    <param id="0" name="Interval (seconds)">0.8</param>
+                                </condition>
+                                <condition id="-8" name="Is boolean instance variable set" sid="155348165541881" type="Enemy">
+                                    <param id="0" name="Instance variable">IsAttacking</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="322826143366647" type="Enemy">
+                                    <param id="0" name="Instance variable">Variable1</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="345180768520612" type="Enemy">
+                                    <param id="0" name="Object">AttackHItbox_EggBullet</param>
+                                    <param id="1" name="Layer">&quot;PlayerLayer&quot;</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="25" name="Play at object" sid="118738246355507" type="Audio">
+                                    <param id="0" name="Audio file">enemyshoot</param>
+                                    <param id="1" name="Loop">0</param>
+                                    <param id="2" name="Volume">0</param>
+                                    <param id="3" name="Object">bossskin_EggBoss</param>
+                                    <param id="4" name="Inner angle">360</param>
+                                    <param id="5" name="Outer angle">360</param>
+                                    <param id="6" name="Outer gain">0</param>
+                                    <param id="7" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment>Phase 2 Egg Bullets</comment>
+                        <event-block sid="321411807524706">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="204625932477811" type="System">
+                                    <param id="0" name="Interval (seconds)">0.3</param>
+                                </condition>
+                                <condition id="-8" name="Is boolean instance variable set" sid="766625936321312" type="Enemy">
+                                    <param id="0" name="Instance variable">IsAttacking</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="411266115693072" type="Enemy">
+                                    <param id="0" name="Instance variable">Variable1</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">6</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="797638991556880" type="Enemy">
+                                    <param id="0" name="Object">AttackHItbox_EggBulletFalling</param>
+                                    <param id="1" name="Layer">&quot;PlayerLayer&quot;</param>
+                                    <param id="2" name="Image point">&quot;Boss1&quot;</param>
+                                </action>
+                                <action id="25" name="Play at object" sid="890095248064754" type="Audio">
+                                    <param id="0" name="Audio file">enemyshoot</param>
+                                    <param id="1" name="Loop">0</param>
+                                    <param id="2" name="Volume">0</param>
+                                    <param id="3" name="Object">bossskin_EggBoss</param>
+                                    <param id="4" name="Inner angle">360</param>
+                                    <param id="5" name="Outer angle">360</param>
+                                    <param id="6" name="Outer gain">0</param>
+                                    <param id="7" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="540878365709887">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="540800706249847" type="System">
+                                    <param id="0" name="Interval (seconds)">0.5</param>
+                                </condition>
+                                <condition id="-8" name="Is boolean instance variable set" sid="843443475207828" type="Enemy">
+                                    <param id="0" name="Instance variable">IsAttacking</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="266253486510823" type="Enemy">
+                                    <param id="0" name="Instance variable">Variable1</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">6</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="544694616651063" type="Enemy">
+                                    <param id="0" name="Object">AttackHItbox_EggBulletFalling</param>
+                                    <param id="1" name="Layer">&quot;PlayerLayer&quot;</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="25" name="Play at object" sid="397183096828431" type="Audio">
+                                    <param id="0" name="Audio file">enemyshoot</param>
+                                    <param id="1" name="Loop">0</param>
+                                    <param id="2" name="Volume">0</param>
+                                    <param id="3" name="Object">bossskin_EggBoss</param>
+                                    <param id="4" name="Inner angle">360</param>
+                                    <param id="5" name="Outer angle">360</param>
+                                    <param id="6" name="Outer gain">0</param>
+                                    <param id="7" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="574524744002027">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="835037950350866" type="System">
+                                    <param id="0" name="Interval (seconds)">0.2</param>
+                                </condition>
+                                <condition id="-8" name="Is boolean instance variable set" sid="377753083979393" type="Enemy">
+                                    <param id="0" name="Instance variable">IsAttacking</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="324716609352488" type="Enemy">
+                                    <param id="0" name="Instance variable">Variable1</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">6</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="194932979991625" type="Enemy">
+                                    <param id="0" name="Object">AttackHItbox_EggBulletFalling</param>
+                                    <param id="1" name="Layer">&quot;PlayerLayer&quot;</param>
+                                    <param id="2" name="Image point">&quot;Boss2&quot;</param>
+                                </action>
+                                <action id="25" name="Play at object" sid="858111180819895" type="Audio">
+                                    <param id="0" name="Audio file">enemyshoot</param>
+                                    <param id="1" name="Loop">0</param>
+                                    <param id="2" name="Volume">0</param>
+                                    <param id="3" name="Object">bossskin_EggBoss</param>
+                                    <param id="4" name="Inner angle">360</param>
+                                    <param id="5" name="Outer angle">360</param>
+                                    <param id="6" name="Outer gain">0</param>
+                                    <param id="7" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="375717558746480">
+                            <conditions>
+                                <condition id="-18" name="On created" sid="259721347984723" type="AttackHItbox_EggBullet" />
+                            </conditions>
+                            <actions />
+                        </event-block>
+                        <event-block sid="144734057645170">
+                            <conditions>
+                                <condition id="-18" name="On created" sid="834089774389993" type="AttackHItbox_EggBulletFalling" />
+                            </conditions>
+                            <actions />
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="702491817530496" title="Boss: Fast Rat Boss">
+            <sub-events>
+                <event-block sid="675945083797130">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="643208238375779" type="Enemy">
+                            <param id="0" name="Instance variable">Type</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;FastRat&quot;</param>
+                        </condition>
+                        <condition id="-8" name="Is boolean instance variable set" sid="126454052964906" type="Enemy">
+                            <param id="0" name="Instance variable">IsBoss</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="318436775904446">
+                            <conditions>
+                                <condition id="-1" name="Every tick" sid="133825142989861" type="System" />
+                                <condition id="-7" name="Compare instance variable" sid="965726222273328" type="Enemy">
+                                    <param id="0" name="Instance variable">Variable1</param>
+                                    <param id="1" name="Comparison">1</param>
+                                    <param id="2" name="Value">7</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="232495217694252" type="Enemy">
+                                    <param id="0" name="Instance variable">Variable1</param>
+                                    <param id="1" name="Comparison">1</param>
+                                    <param id="2" name="Value">8</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Set position" sid="499227966096443" type="bossskin_RatHead">
+                                    <param id="0" name="X">bossskin_RatBody.X</param>
+                                    <param id="1" name="Y">bossskin_RatBody.Y-104</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="883664437385856">
+                            <conditions>
+                                <condition id="-1" name="Every tick" sid="381950807172863" type="System" />
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="164787306956286" type="bossskin_RatBody">
+                                    <param id="0" name="Instance variable">dying</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Set position" sid="510199086130985" type="bossskin_RatBody">
+                                    <param id="0" name="X">Enemy.X</param>
+                                    <param id="1" name="Y">Enemy.Y</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="483411737771005">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="225225535991447" type="Enemy">
+                                    <param id="0" name="Instance variable">HP</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="862254491940415" type="Enemy" />
+                                <action id="-9" name="Destroy" sid="906016707493788" type="AttackHItbox_RatBoss_laser" />
+                                <action id="-13" name="Set boolean" sid="201021237638875" type="bossskin_RatBody">
+                                    <param id="0" name="Instance variable">dying</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="0" name="Call function" sid="567179528182518" type="Function">
+                                    <param id="0" name="Name">&quot;RatDeath&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment>Death</comment>
+                        <event-block sid="164898610581585">
+                            <conditions>
+                                <condition id="0" name="On function" sid="484983116757905" type="Function">
+                                    <param id="0" name="Name">&quot;RatDeath&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Play" sid="879399817242858" type="Audio">
+                                    <param id="0" name="Audio file">bossdeath</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                                <action id="0" name="Call function" sid="763778498745541" type="Function">
+                                    <param id="0" name="Name">&quot;RatDeathAni&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                                <action id="4" name="Set animation" sid="951718483000264" type="bossskin_RatHead">
+                                    <param id="0" name="Animation">&quot;Chomp_Prepare&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="-13" name="Set boolean" sid="208855813020426" type="PlayerObject">
+                                    <param id="0" name="Instance variable">EnableControl</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="289349058655784" type="hud_eyecountr">
+                                    <param id="0" name="Animation">&quot;b&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="129480153650423" type="System">
+                                    <param id="0" name="Seconds">3.0</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="507195962336699" type="bossskin_RatHead" />
+                                <action id="-9" name="Destroy" sid="410084802069790" type="bossskin_RatBody" />
+                                <action id="-10" name="Add to" sid="470166212381612" type="System">
+                                    <param id="0" name="Variable">Score</param>
+                                    <param id="1" name="Value">500000</param>
+                                </action>
+                                <action id="6" name="Stop" sid="483574122176982" type="Audio">
+                                    <param id="0" name="Tag">&quot;section2boss&quot;</param>
+                                </action>
+                                <action id="0" name="Call function" sid="556456753102863" type="Function">
+                                    <param id="0" name="Name">&quot;StageClear&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="335993106280465" type="HUD_BossHP">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="314689939299743" type="BossHealthBar">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="412432989524405">
+                            <conditions>
+                                <condition id="0" name="On function" sid="543474146323940" type="Function">
+                                    <param id="0" name="Name">&quot;RatDeathAni&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="746077240788621" type="bossskin_RatHead">
+                                    <param id="0" name="Object">coolexplosion</param>
+                                    <param id="1" name="Layer">&quot;PlayerLayer&quot;</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="0" name="Play" sid="874274497108454" type="Audio">
+                                    <param id="0" name="Audio file">explosion</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;explosion&quot;</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="688949102217084" type="System">
+                                    <param id="0" name="Seconds">0.2</param>
+                                </action>
+                                <action id="0" name="Spawn another object" sid="726926690538550" type="bossskin_RatBody">
+                                    <param id="0" name="Object">coolexplosion</param>
+                                    <param id="1" name="Layer">&quot;PlayerLayer&quot;</param>
+                                    <param id="2" name="Image point">1</param>
+                                </action>
+                                <action id="0" name="Play" sid="488461007905580" type="Audio">
+                                    <param id="0" name="Audio file">explosion</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;explosion&quot;</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="580046538000349" type="System">
+                                    <param id="0" name="Seconds">0.3</param>
+                                </action>
+                                <action id="0" name="Spawn another object" sid="396514453203031" type="bossskin_RatHead">
+                                    <param id="0" name="Object">coolexplosion</param>
+                                    <param id="1" name="Layer">&quot;PlayerLayer&quot;</param>
+                                    <param id="2" name="Image point">2</param>
+                                </action>
+                                <action id="0" name="Play" sid="461690122074800" type="Audio">
+                                    <param id="0" name="Audio file">explosion</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;explosion&quot;</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="643403543231381" type="System">
+                                    <param id="0" name="Seconds">0.1</param>
+                                </action>
+                                <action id="0" name="Spawn another object" sid="902292690948791" type="bossskin_RatBody">
+                                    <param id="0" name="Object">coolexplosion</param>
+                                    <param id="1" name="Layer">&quot;PlayerLayer&quot;</param>
+                                    <param id="2" name="Image point">3</param>
+                                </action>
+                                <action id="0" name="Play" sid="900912187941777" type="Audio">
+                                    <param id="0" name="Audio file">explosion</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;explosion&quot;</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="781454910808474" type="System">
+                                    <param id="0" name="Seconds">0.3</param>
+                                </action>
+                                <action id="0" name="Spawn another object" sid="161556110365950" type="bossskin_RatHead">
+                                    <param id="0" name="Object">coolexplosion</param>
+                                    <param id="1" name="Layer">&quot;PlayerLayer&quot;</param>
+                                    <param id="2" name="Image point">2</param>
+                                </action>
+                                <action id="0" name="Play" sid="713692852546434" type="Audio">
+                                    <param id="0" name="Audio file">explosion</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;explosion&quot;</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="149807795571546" type="System">
+                                    <param id="0" name="Seconds">0.2</param>
+                                </action>
+                                <action id="0" name="Spawn another object" sid="929712017427446" type="bossskin_RatBody">
+                                    <param id="0" name="Object">coolexplosion</param>
+                                    <param id="1" name="Layer">&quot;PlayerLayer&quot;</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="0" name="Play" sid="701203615060661" type="Audio">
+                                    <param id="0" name="Audio file">explosion</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;explosion&quot;</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="107573653754421" type="System">
+                                    <param id="0" name="Seconds">0.1</param>
+                                </action>
+                                <action id="0" name="Spawn another object" sid="174625056019816" type="bossskin_RatHead">
+                                    <param id="0" name="Object">coolexplosion</param>
+                                    <param id="1" name="Layer">&quot;PlayerLayer&quot;</param>
+                                    <param id="2" name="Image point">1</param>
+                                </action>
+                                <action id="0" name="Play" sid="700773021686762" type="Audio">
+                                    <param id="0" name="Audio file">explosion</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;explosion&quot;</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="836478908355542" type="System">
+                                    <param id="0" name="Seconds">0.3</param>
+                                </action>
+                                <action id="0" name="Spawn another object" sid="257125847164708" type="bossskin_RatBody">
+                                    <param id="0" name="Object">coolexplosion</param>
+                                    <param id="1" name="Layer">&quot;PlayerLayer&quot;</param>
+                                    <param id="2" name="Image point">2</param>
+                                </action>
+                                <action id="0" name="Play" sid="819590901477026" type="Audio">
+                                    <param id="0" name="Audio file">explosion</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;explosion&quot;</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="369168818086852" type="System">
+                                    <param id="0" name="Seconds">0.1</param>
+                                </action>
+                                <action id="0" name="Spawn another object" sid="872258689384109" type="bossskin_RatHead">
+                                    <param id="0" name="Object">coolexplosion</param>
+                                    <param id="1" name="Layer">&quot;PlayerLayer&quot;</param>
+                                    <param id="2" name="Image point">2</param>
+                                </action>
+                                <action id="0" name="Play" sid="453912555219138" type="Audio">
+                                    <param id="0" name="Audio file">explosion</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;explosion&quot;</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="666154655289623" type="System">
+                                    <param id="0" name="Seconds">0.2</param>
+                                </action>
+                                <action id="0" name="Spawn another object" sid="369538092820020" type="bossskin_RatBody">
+                                    <param id="0" name="Object">coolexplosion</param>
+                                    <param id="1" name="Layer">&quot;PlayerLayer&quot;</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="0" name="Play" sid="491389997848212" type="Audio">
+                                    <param id="0" name="Audio file">explosion</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;explosion&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment>Fight Start-up</comment>
+                        <event-block sid="767071815216357">
+                            <conditions>
+                                <condition id="-1" name="Compare X" sid="822579763838530" type="Enemy">
+                                    <param id="0" name="Comparison">2</param>
+                                    <param id="1" name="X co-ordinate">Camera.X+300</param>
+                                </condition>
+                                <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="241224558866019" type="Enemy">
+                                    <param id="0" name="Instance variable">Active</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="732345914394953" type="Enemy">
+                                    <param id="0" name="Instance variable">Variable1</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-13" name="Set boolean" sid="924767769635940" type="Enemy">
+                                    <param id="0" name="Instance variable">Active</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="0" name="Call function" sid="482540863795803" type="Function">
+                                    <param id="0" name="Name">&quot;RatBoss_falling&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                                <action id="6" name="Stop" sid="496293415083549" type="Audio">
+                                    <param id="0" name="Tag">&quot;section2&quot;</param>
+                                </action>
+                                <action id="0" name="Play" sid="995366775097741" type="Audio">
+                                    <param id="0" name="Audio file">majorboss</param>
+                                    <param id="2" name="Loop">1</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;section2boss&quot;</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="153554926271297" type="System">
+                                    <param id="0" name="Variable">Boss_MaxHP</param>
+                                    <param id="1" name="Value">Enemy.HP</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="259646308627080" type="HUD_BossHP">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="969219903612787" type="BossHealthBar">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="538546998068195" type="BossHealthBar">
+                                    <param id="0" name="Animation">&quot;RatKing&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment>Falling</comment>
+                        <event-block sid="525418628786641">
+                            <conditions>
+                                <condition id="0" name="On function" sid="561686706659511" type="Function">
+                                    <param id="0" name="Name">&quot;RatBoss_falling&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-1" name="Set X" sid="625082050819445" type="Enemy">
+                                    <param id="0" name="X">ratboss_floordecider.X</param>
+                                </action>
+                                <action id="-2" name="Set Y" sid="239875453106458" type="Enemy">
+                                    <param id="0" name="Y">Camera.Y-200</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="711747913225759" type="System">
+                                    <param id="0" name="Seconds">0.5</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="552755873416873" type="Enemy">
+                                    <param id="0" name="Instance variable">Variable1</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="277130178902809">
+                            <conditions>
+                                <condition id="-1" name="Every tick" sid="775063003115071" type="System" />
+                                <condition id="-7" name="Compare instance variable" sid="410530629845965" type="Enemy">
+                                    <param id="0" name="Instance variable">Variable1</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="549213787027296" type="System">
+                                    <param id="0" name="Variable">ispaused</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Set Y" sid="778054044424536" type="Enemy">
+                                    <param id="0" name="Y">Self.Y+((4 * 60) * dt)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="386547491767925">
+                            <conditions>
+                                <condition id="-2" name="Compare Y" sid="887286147450900" type="Enemy">
+                                    <param id="0" name="Comparison">5</param>
+                                    <param id="1" name="Y co-ordinate">ratboss_floordecider.Y</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="981293942361548" type="Enemy">
+                                    <param id="0" name="Instance variable">Variable1</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="799924088018993" type="Enemy">
+                                    <param id="0" name="Instance variable">Variable1</param>
+                                    <param id="1" name="Value">2</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="498544544519744" type="Enemy">
+                                    <param id="0" name="Instance variable">nextmove</param>
+                                    <param id="1" name="Value">floor(random(1, 18))</param>
+                                </action>
+                                <action id="0" name="Call function" sid="513147724804250" type="Function">
+                                    <param id="0" name="Name">&quot;Ratperformnextmove&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="953399354096493">
+                            <conditions>
+                                <condition id="0" name="On function" sid="576100138162513" type="Function">
+                                    <param id="0" name="Name">&quot;Ratperformnextmove&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="229169052737306">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="111118724042277" type="Enemy">
+                                            <param id="0" name="Instance variable">nextmove</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Call function" sid="576632534480081" type="Function">
+                                            <param id="0" name="Name">&quot;RatBoss_dash&quot;</param>
+                                            <param id="1" name="Parameter {n}"></param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="731768203957210">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="342990989333037" type="Enemy">
+                                            <param id="0" name="Instance variable">nextmove</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">2</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Call function" sid="207175850955461" type="Function">
+                                            <param id="0" name="Name">&quot;RatBoss_RingofDeath&quot;</param>
+                                            <param id="1" name="Parameter {n}"></param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="389542347034903">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="255935211423353" type="Enemy">
+                                            <param id="0" name="Instance variable">nextmove</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">3</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Call function" sid="661571544245397" type="Function">
+                                            <param id="0" name="Name">&quot;RatBoss_Laser1&quot;</param>
+                                            <param id="1" name="Parameter {n}"></param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="281015488606377">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="138181422791183" type="Enemy">
+                                            <param id="0" name="Instance variable">nextmove</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">4</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Call function" sid="953527978501402" type="Function">
+                                            <param id="0" name="Name">&quot;RatBoss_Laser2&quot;</param>
+                                            <param id="1" name="Parameter {n}"></param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="910397415364125">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="960710287437383" type="Enemy">
+                                            <param id="0" name="Instance variable">nextmove</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">5</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Call function" sid="772251697676974" type="Function">
+                                            <param id="0" name="Name">&quot;RatBoss_Chomp&quot;</param>
+                                            <param id="1" name="Parameter {n}"></param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="109514957847626">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="523371563320192" type="Enemy">
+                                            <param id="0" name="Instance variable">nextmove</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">6</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Call function" sid="601133799037623" type="Function">
+                                            <param id="0" name="Name">&quot;RatBoss_EggAttack1&quot;</param>
+                                            <param id="1" name="Parameter {n}"></param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="348763945308311">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="524127134965935" type="Enemy">
+                                            <param id="0" name="Instance variable">nextmove</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">7</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Call function" sid="735445627169262" type="Function">
+                                            <param id="0" name="Name">&quot;RatBoss_EggAttack2&quot;</param>
+                                            <param id="1" name="Parameter {n}"></param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="548356925941540">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="350049494715163" type="Enemy">
+                                            <param id="0" name="Instance variable">nextmove</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">8</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Call function" sid="220303273598295" type="Function">
+                                            <param id="0" name="Name">&quot;RatBoss_RingofDeath&quot;</param>
+                                            <param id="1" name="Parameter {n}"></param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="311153402506736">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="904779574049815" type="Enemy">
+                                            <param id="0" name="Instance variable">nextmove</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">9</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Call function" sid="311368084637086" type="Function">
+                                            <param id="0" name="Name">&quot;RatBoss_RingofDeath&quot;</param>
+                                            <param id="1" name="Parameter {n}"></param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="128344220372161">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="520280565415434" type="Enemy">
+                                            <param id="0" name="Instance variable">nextmove</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">10</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Call function" sid="915516224517277" type="Function">
+                                            <param id="0" name="Name">&quot;RatBoss_EggAttack2&quot;</param>
+                                            <param id="1" name="Parameter {n}"></param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="156462521669618">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="384873580659498" type="Enemy">
+                                            <param id="0" name="Instance variable">nextmove</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">11</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Call function" sid="560471942388458" type="Function">
+                                            <param id="0" name="Name">&quot;RatBoss_RingofDeath&quot;</param>
+                                            <param id="1" name="Parameter {n}"></param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="461796388075666">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="741247990382666" type="Enemy">
+                                            <param id="0" name="Instance variable">nextmove</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">12</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Call function" sid="556834377656901" type="Function">
+                                            <param id="0" name="Name">&quot;RatBoss_Chomp&quot;</param>
+                                            <param id="1" name="Parameter {n}"></param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="735325908093670">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="964465760609561" type="Enemy">
+                                            <param id="0" name="Instance variable">nextmove</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">13</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Call function" sid="448592917159932" type="Function">
+                                            <param id="0" name="Name">&quot;RatBoss_RingofDeath&quot;</param>
+                                            <param id="1" name="Parameter {n}"></param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="485496888917648">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="594411952954128" type="Enemy">
+                                            <param id="0" name="Instance variable">nextmove</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">14</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Call function" sid="506370676359321" type="Function">
+                                            <param id="0" name="Name">&quot;RatBoss_EggAttack1&quot;</param>
+                                            <param id="1" name="Parameter {n}"></param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="194451176033170">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="593278934500326" type="Enemy">
+                                            <param id="0" name="Instance variable">nextmove</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">15</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Call function" sid="750359475606778" type="Function">
+                                            <param id="0" name="Name">&quot;RatBoss_EggAttack1&quot;</param>
+                                            <param id="1" name="Parameter {n}"></param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="534324506555285">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="606495213371150" type="Enemy">
+                                            <param id="0" name="Instance variable">nextmove</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">16</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Call function" sid="346554268944977" type="Function">
+                                            <param id="0" name="Name">&quot;RatBoss_Chomp&quot;</param>
+                                            <param id="1" name="Parameter {n}"></param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="164969590279568">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="632691258184500" type="Enemy">
+                                            <param id="0" name="Instance variable">nextmove</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">17</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Call function" sid="836772077175692" type="Function">
+                                            <param id="0" name="Name">&quot;RatBoss_EggAttack2&quot;</param>
+                                            <param id="1" name="Parameter {n}"></param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="367563079852049">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="690230795867021" type="Enemy">
+                                            <param id="0" name="Instance variable">nextmove</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">18</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Call function" sid="712539525855412" type="Function">
+                                            <param id="0" name="Name">&quot;RatBoss_RingofDeath&quot;</param>
+                                            <param id="1" name="Parameter {n}"></param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <comment>Dash move (move 1)</comment>
+                        <event-block sid="566256979410040">
+                            <conditions>
+                                <condition id="0" name="On function" sid="648052522502780" type="Function">
+                                    <param id="0" name="Name">&quot;RatBoss_dash&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Play" sid="140520899670729" type="Audio">
+                                    <param id="0" name="Audio file">bosslaugh</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="253346538557045" type="bossskin_RatHead">
+                                    <param id="0" name="Animation">&quot;Laugh&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="695972407178775" type="System">
+                                    <param id="0" name="Seconds">3.0</param>
+                                </action>
+                                <action id="0" name="Spawn another object" sid="186897812186388" type="Enemy">
+                                    <param id="0" name="Object">AttackHItbox_RatBoss_Shield</param>
+                                    <param id="1" name="Layer">&quot;PlayerLayer&quot;</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="0" name="Play" sid="172507416779954" type="Audio">
+                                    <param id="0" name="Audio file">bosscharge</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="177370799187730" type="System">
+                                    <param id="0" name="Seconds">0.5</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="576341207375499" type="bossskin_RatHead">
+                                    <param id="0" name="Animation">&quot;Idle&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="248873201813981" type="Enemy">
+                                    <param id="0" name="Instance variable">Variable1</param>
+                                    <param id="1" name="Value">3</param>
+                                </action>
+                                <action id="0" name="Play" sid="165118600277025" type="Audio">
+                                    <param id="0" name="Audio file">bossdash</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="537247909557411">
+                            <conditions>
+                                <condition id="-3" inverted="1" name="Is on-screen" sid="302408364669461" type="AttackHItbox_RatBoss_Shield" />
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="396780157671467" type="AttackHItbox_RatBoss_Shield" />
+                            </actions>
+                        </event-block>
+                        <event-block sid="642809402531919">
+                            <conditions>
+                                <condition id="-1" name="Every tick" sid="805305619499046" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Set position" sid="360634277144742" type="AttackHItbox_RatBoss_Shield">
+                                    <param id="0" name="X">bossskin_RatBody.X</param>
+                                    <param id="1" name="Y">bossskin_RatBody.Y-64</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="115994652598417">
+                            <conditions>
+                                <condition id="-1" name="Every tick" sid="742306801415681" type="System" />
+                                <condition id="-7" name="Compare instance variable" sid="224926485536369" type="Enemy">
+                                    <param id="0" name="Instance variable">Variable1</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="160223337880751" type="System">
+                                    <param id="0" name="Variable">ispaused</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-1" name="Set X" sid="858078282337398" type="Enemy">
+                                    <param id="0" name="X">Self.X-((6 * 60) * dt)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="955903670478904">
+                            <conditions>
+                                <condition id="-3" inverted="1" name="Is on-screen" sid="951852817269040" type="Enemy" />
+                                <condition id="-7" name="Compare instance variable" sid="910335754121710" type="Enemy">
+                                    <param id="0" name="Instance variable">Variable1</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Wait" sid="514877352349366" type="System">
+                                    <param id="0" name="Seconds">1.0</param>
+                                </action>
+                                <action id="0" name="Call function" sid="941385723546217" type="Function">
+                                    <param id="0" name="Name">&quot;RatBoss_falling&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment>RingofDeath (move 2)</comment>
+                        <event-block sid="652517123680767">
+                            <conditions>
+                                <condition id="0" name="On function" sid="974070309858538" type="Function">
+                                    <param id="0" name="Name">&quot;RatBoss_RingofDeath&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="547069138780298" type="Enemy">
+                                    <param id="0" name="Instance variable">Variable1</param>
+                                    <param id="1" name="Value">4</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="333209192052563" type="bossskin_RatHead">
+                                    <param id="0" name="Animation">&quot;Laugh&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="0" name="Play" sid="130261043838852" type="Audio">
+                                    <param id="0" name="Audio file">bosslaugh</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="946546759431593">
+                            <conditions>
+                                <condition id="4" name="On finished" sid="385580814606708" type="bossskin_RatHead">
+                                    <param id="0" name="Animation">&quot;Laugh&quot;</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="515025247718768" type="Enemy">
+                                    <param id="0" name="Instance variable">Variable1</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Wait" sid="792839146016635" type="System">
+                                    <param id="0" name="Seconds">1.0</param>
+                                </action>
+                                <action id="0" name="Call function" sid="204780838329546" type="Function">
+                                    <param id="0" name="Name">&quot;RatBoss_dash&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="951999341458275">
+                            <conditions>
+                                <condition id="3" name="Compare frame" sid="619185292384542" type="bossskin_RatHead">
+                                    <param id="0" name="Comparison">0</param>
+                                    <param id="1" name="Number">4</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="580549723630349" type="Enemy">
+                                    <param id="0" name="Instance variable">Variable1</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                                <condition id="2" name="Is playing" sid="102550683896223" type="bossskin_RatHead">
+                                    <param id="0" name="Animation">&quot;Laugh&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="234085720505227" type="bossskin_RatHead">
+                                    <param id="0" name="Object">AttackHItbox_RatBoss_ringofdeath</param>
+                                    <param id="1" name="Layer">&quot;PlayerLayer&quot;</param>
+                                    <param id="2" name="Image point">2</param>
+                                </action>
+                                <action id="6" name="Stop" sid="997847105563361" type="Audio">
+                                    <param id="0" name="Tag">&quot;bossinstakill_shot&quot;</param>
+                                </action>
+                                <action id="0" name="Play" sid="329873051242181" type="Audio">
+                                    <param id="0" name="Audio file">bossinstakill_shot</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;bossinstakill_shot&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment>Body Laser Attack (move 3)</comment>
+                        <event-block sid="709423423105701">
+                            <conditions>
+                                <condition id="0" name="On function" sid="846327641365404" type="Function">
+                                    <param id="0" name="Name">&quot;RatBoss_Laser1&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="531350388936644" type="Enemy">
+                                    <param id="0" name="Instance variable">Variable1</param>
+                                    <param id="1" name="Value">5</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="151287528970796" type="System">
+                                    <param id="0" name="Seconds">2.0</param>
+                                </action>
+                                <action id="0" name="Play" sid="731027619679675" type="Audio">
+                                    <param id="0" name="Audio file">bosslaser</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;bosslaser&quot;</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="128933090966387" type="System">
+                                    <param id="0" name="Seconds">1.0</param>
+                                </action>
+                                <action id="0" name="Spawn another object" sid="753620905076285" type="bossskin_RatBody">
+                                    <param id="0" name="Object">AttackHItbox_RatBoss_laser</param>
+                                    <param id="1" name="Layer">&quot;PlayerLayer&quot;</param>
+                                    <param id="2" name="Image point">1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="705911237694100" type="System">
+                                    <param id="0" name="Seconds">6.0</param>
+                                </action>
+                                <action id="0" name="Call function" sid="638837674424977" type="Function">
+                                    <param id="0" name="Name">&quot;RatBoss_dash&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="210136777096329">
+                            <conditions>
+                                <condition id="-18" name="On created" sid="201477158638252" type="AttackHItbox_RatBoss_laser" />
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Wait" sid="412289411052978" type="System">
+                                    <param id="0" name="Seconds">5.0</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="220344016538504" type="AttackHItbox_RatBoss_laser" />
+                            </actions>
+                        </event-block>
+                        <comment>Head Laser Attack (move 4)</comment>
+                        <event-block sid="148369810384040">
+                            <conditions>
+                                <condition id="0" name="On function" sid="732174943515775" type="Function">
+                                    <param id="0" name="Name">&quot;RatBoss_Laser2&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="398416438939138" type="Enemy">
+                                    <param id="0" name="Instance variable">Variable1</param>
+                                    <param id="1" name="Value">6</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="271463144323339" type="System">
+                                    <param id="0" name="Seconds">2.0</param>
+                                </action>
+                                <action id="0" name="Play" sid="990497739834844" type="Audio">
+                                    <param id="0" name="Audio file">bosslaser</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;bosslaser&quot;</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="889524046726171" type="System">
+                                    <param id="0" name="Seconds">1.0</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="852759758397086" type="bossskin_RatHead">
+                                    <param id="0" name="Animation">&quot;Chomp_Prepare&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="0" name="Spawn another object" sid="192011807485895" type="bossskin_RatHead">
+                                    <param id="0" name="Object">AttackHItbox_RatBoss_laser</param>
+                                    <param id="1" name="Layer">&quot;PlayerLayer&quot;</param>
+                                    <param id="2" name="Image point">2</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="743554991120324" type="System">
+                                    <param id="0" name="Seconds">6.0</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="914466678606311" type="bossskin_RatHead">
+                                    <param id="0" name="Animation">&quot;Chomp_attack&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="0" name="Call function" sid="574396054330225" type="Function">
+                                    <param id="0" name="Name">&quot;RatBoss_dash&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment>Chomp Attack (move 5)</comment>
+                        <event-block sid="335628508314538">
+                            <conditions>
+                                <condition id="0" name="On function" sid="214259447931780" type="Function">
+                                    <param id="0" name="Name">&quot;RatBoss_Chomp&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="780674095141780" type="Enemy">
+                                    <param id="0" name="Instance variable">Variable1</param>
+                                    <param id="1" name="Value">7</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="902845868371153" type="bossskin_RatHead">
+                                    <param id="0" name="Animation">&quot;Chomp_Prepare&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="399730669193848" type="System">
+                                    <param id="0" name="Seconds">5.0</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="637806821025314" type="bossskin_RatHead">
+                                    <param id="0" name="Animation">&quot;Chomp_attack&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="0" name="Spawn another object" sid="636673522912574" type="bossskin_RatHead">
+                                    <param id="0" name="Object">AttackHItbox_RatBoss_Chomp</param>
+                                    <param id="1" name="Layer">&quot;PlayerLayer&quot;</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="565838403440323">
+                            <conditions>
+                                <condition id="-18" name="On created" sid="730738447606227" type="AttackHItbox_RatBoss_Chomp" />
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Wait" sid="933193546284023" type="System">
+                                    <param id="0" name="Seconds">0.3</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="303726697296601" type="AttackHItbox_RatBoss_Chomp" />
+                            </actions>
+                        </event-block>
+                        <event-block sid="882799406308768">
+                            <conditions>
+                                <condition id="4" name="On finished" sid="942723160878001" type="bossskin_RatHead">
+                                    <param id="0" name="Animation">&quot;Chomp_attack&quot;</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="979183300009547" type="Enemy">
+                                    <param id="0" name="Instance variable">Variable1</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">7</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Wait" sid="331335797323968" type="System">
+                                    <param id="0" name="Seconds">0.7</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="329201344380445" type="Enemy">
+                                    <param id="0" name="Instance variable">Variable1</param>
+                                    <param id="1" name="Value">8</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="726756248315987">
+                            <conditions>
+                                <condition id="-1" name="Every tick" sid="399595844436344" type="System" />
+                                <condition id="-7" name="Compare instance variable" sid="681411849105168" type="Enemy">
+                                    <param id="0" name="Instance variable">Variable1</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">7</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="961254887794142" type="System">
+                                    <param id="0" name="Variable">ispaused</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-1" name="Set X" sid="522168716724945" type="Enemy">
+                                    <param id="0" name="X">Self.X+((15 * 60) * dt)</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="157480875985534">
+                                    <conditions>
+                                        <condition id="-1" name="Compare X" sid="750465536009923" type="bossskin_RatHead">
+                                            <param id="0" name="Comparison">2</param>
+                                            <param id="1" name="X co-ordinate">PlayerObject.X</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-1" name="Set X" sid="470966463761072" type="bossskin_RatHead">
+                                            <param id="0" name="X">Self.X+((5 * 60) * dt)</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="554613557780248">
+                                    <conditions>
+                                        <condition id="-1" name="Compare X" sid="417823269991042" type="bossskin_RatHead">
+                                            <param id="0" name="Comparison">5</param>
+                                            <param id="1" name="X co-ordinate">PlayerObject.X</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-1" name="Set X" sid="716943325174069" type="bossskin_RatHead">
+                                            <param id="0" name="X">Self.X-((5 * 60) * dt)</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="600594516755075">
+                                    <conditions>
+                                        <condition id="-2" name="Compare Y" sid="303481787542906" type="bossskin_RatHead">
+                                            <param id="0" name="Comparison">2</param>
+                                            <param id="1" name="Y co-ordinate">PlayerObject.Y</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-2" name="Set Y" sid="932294842588775" type="bossskin_RatHead">
+                                            <param id="0" name="Y">Self.Y+((5 * 60) * dt)</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="315935190274626">
+                                    <conditions>
+                                        <condition id="-2" name="Compare Y" sid="458629332406776" type="bossskin_RatHead">
+                                            <param id="0" name="Comparison">5</param>
+                                            <param id="1" name="Y co-ordinate">PlayerObject.Y</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-2" name="Set Y" sid="757072238633633" type="bossskin_RatHead">
+                                            <param id="0" name="Y">Self.Y-((5 * 60) * dt)</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="142175646060054">
+                            <conditions>
+                                <condition id="-1" name="Every tick" sid="255567923678749" type="System" />
+                                <condition id="-7" name="Compare instance variable" sid="105033012237671" type="Enemy">
+                                    <param id="0" name="Instance variable">Variable1</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">8</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="595767332810387" type="System">
+                                    <param id="0" name="Variable">ispaused</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-1" name="Set X" sid="934595756531030" type="bossskin_RatHead">
+                                    <param id="0" name="X">Self.X+((10 * 60) * dt)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="846421844205088">
+                            <conditions>
+                                <condition id="-3" inverted="1" name="Is on-screen" sid="921464009905333" type="bossskin_RatHead" />
+                                <condition id="-7" name="Compare instance variable" sid="186112413881776" type="Enemy">
+                                    <param id="0" name="Instance variable">Variable1</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">8</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="919894428857275" type="Enemy">
+                                    <param id="0" name="Instance variable">Variable1</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="0" name="Call function" sid="842333326039962" type="Function">
+                                    <param id="0" name="Name">&quot;RatBoss_falling&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment>Body Egg Attack (move 6)</comment>
+                        <event-block sid="369138064644871">
+                            <conditions>
+                                <condition id="0" name="On function" sid="573396848425776" type="Function">
+                                    <param id="0" name="Name">&quot;RatBoss_EggAttack1&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="785525730166354" type="Enemy">
+                                    <param id="0" name="Instance variable">Variable1</param>
+                                    <param id="1" name="Value">9</param>
+                                </action>
+                                <action id="-13" name="Set boolean" sid="970661684756436" type="Enemy">
+                                    <param id="0" name="Instance variable">IsAttacking</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="378745848703537" type="System">
+                                    <param id="0" name="Seconds">5.0</param>
+                                </action>
+                                <action id="-13" name="Set boolean" sid="727457822342123" type="Enemy">
+                                    <param id="0" name="Instance variable">IsAttacking</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="0" name="Call function" sid="197767931317237" type="Function">
+                                    <param id="0" name="Name">&quot;RatBoss_dash&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="639699571001192">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="720946095531339" type="System">
+                                    <param id="0" name="Interval (seconds)">0.2</param>
+                                </condition>
+                                <condition id="-8" name="Is boolean instance variable set" sid="419942521286859" type="Enemy">
+                                    <param id="0" name="Instance variable">IsAttacking</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="412419394741322" type="Enemy">
+                                    <param id="0" name="Instance variable">Variable1</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">9</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="623763025747666" type="bossskin_RatBody">
+                                    <param id="0" name="Object">AttackHItbox_EggBullet</param>
+                                    <param id="1" name="Layer">&quot;PlayerLayer&quot;</param>
+                                    <param id="2" name="Image point">1</param>
+                                </action>
+                                <action id="0" name="Play" sid="132344180652469" type="Audio">
+                                    <param id="0" name="Audio file">enemyshoot</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="385303896554818">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="802660780687506" type="System">
+                                    <param id="0" name="Interval (seconds)">0.4</param>
+                                </condition>
+                                <condition id="-8" name="Is boolean instance variable set" sid="948284401989701" type="Enemy">
+                                    <param id="0" name="Instance variable">IsAttacking</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="884614542876940" type="Enemy">
+                                    <param id="0" name="Instance variable">Variable1</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">9</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="392971023511256" type="bossskin_RatBody">
+                                    <param id="0" name="Object">AttackHItbox_EggBullet</param>
+                                    <param id="1" name="Layer">&quot;PlayerLayer&quot;</param>
+                                    <param id="2" name="Image point">2</param>
+                                </action>
+                                <action id="0" name="Play" sid="766454070024525" type="Audio">
+                                    <param id="0" name="Audio file">enemyshoot</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="250476004319850">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="880977690727697" type="System">
+                                    <param id="0" name="Interval (seconds)">0.3</param>
+                                </condition>
+                                <condition id="-8" name="Is boolean instance variable set" sid="620016980830595" type="Enemy">
+                                    <param id="0" name="Instance variable">IsAttacking</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="463001978861061" type="Enemy">
+                                    <param id="0" name="Instance variable">Variable1</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">9</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="174746785427154" type="bossskin_RatBody">
+                                    <param id="0" name="Object">AttackHItbox_EggBullet</param>
+                                    <param id="1" name="Layer">&quot;PlayerLayer&quot;</param>
+                                    <param id="2" name="Image point">3</param>
+                                </action>
+                                <action id="0" name="Play" sid="626936390568865" type="Audio">
+                                    <param id="0" name="Audio file">enemyshoot</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment>Head Egg Attack (move 7)</comment>
+                        <event-block sid="555025636555439">
+                            <conditions>
+                                <condition id="0" name="On function" sid="361917892823006" type="Function">
+                                    <param id="0" name="Name">&quot;RatBoss_EggAttack2&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="176723938514983" type="bossskin_RatHead">
+                                    <param id="0" name="Animation">&quot;Chomp_Prepare&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="351433694132301" type="Enemy">
+                                    <param id="0" name="Instance variable">Variable1</param>
+                                    <param id="1" name="Value">10</param>
+                                </action>
+                                <action id="-13" name="Set boolean" sid="348094796003995" type="Enemy">
+                                    <param id="0" name="Instance variable">IsAttacking</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="711972330991227" type="System">
+                                    <param id="0" name="Seconds">5.0</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="795573429151652" type="bossskin_RatHead">
+                                    <param id="0" name="Animation">&quot;Chomp_attack&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                                <action id="-13" name="Set boolean" sid="954417004746794" type="Enemy">
+                                    <param id="0" name="Instance variable">IsAttacking</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="0" name="Call function" sid="244691130086934" type="Function">
+                                    <param id="0" name="Name">&quot;RatBoss_dash&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="956715413267722">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="448340691245044" type="System">
+                                    <param id="0" name="Interval (seconds)">0.1</param>
+                                </condition>
+                                <condition id="-8" name="Is boolean instance variable set" sid="108679780799306" type="Enemy">
+                                    <param id="0" name="Instance variable">IsAttacking</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="185887347068317" type="Enemy">
+                                    <param id="0" name="Instance variable">Variable1</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">10</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="857123592978329" type="bossskin_RatHead">
+                                    <param id="0" name="Object">AttackHItbox_EggBullet</param>
+                                    <param id="1" name="Layer">&quot;PlayerLayer&quot;</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="0" name="Play" sid="758859504997345" type="Audio">
+                                    <param id="0" name="Audio file">enemyshoot</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="925702663834447">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="291652311702088" type="System">
+                                    <param id="0" name="Interval (seconds)">0.5</param>
+                                </condition>
+                                <condition id="-8" name="Is boolean instance variable set" sid="145151216641206" type="Enemy">
+                                    <param id="0" name="Instance variable">IsAttacking</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="144347658553062" type="Enemy">
+                                    <param id="0" name="Instance variable">Variable1</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">10</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="327925241679548" type="bossskin_RatHead">
+                                    <param id="0" name="Object">AttackHItbox_EggBullet</param>
+                                    <param id="1" name="Layer">&quot;PlayerLayer&quot;</param>
+                                    <param id="2" name="Image point">1</param>
+                                </action>
+                                <action id="0" name="Spawn another object" sid="243072462097129" type="bossskin_RatBody">
+                                    <param id="0" name="Object">AttackHItbox_EggBullet</param>
+                                    <param id="1" name="Layer">&quot;PlayerLayer&quot;</param>
+                                    <param id="2" name="Image point">3</param>
+                                </action>
+                                <action id="0" name="Play" sid="170150783234160" type="Audio">
+                                    <param id="0" name="Audio file">enemyshoot</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="958968485490863">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="226590354166968" type="System">
+                                    <param id="0" name="Interval (seconds)">0.2</param>
+                                </condition>
+                                <condition id="-8" name="Is boolean instance variable set" sid="636323756788208" type="Enemy">
+                                    <param id="0" name="Instance variable">IsAttacking</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="716870725179718" type="Enemy">
+                                    <param id="0" name="Instance variable">Variable1</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">10</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="949831946800894" type="bossskin_RatHead">
+                                    <param id="0" name="Object">AttackHItbox_EggBullet</param>
+                                    <param id="1" name="Layer">&quot;PlayerLayer&quot;</param>
+                                    <param id="2" name="Image point">2</param>
+                                </action>
+                                <action id="0" name="Play" sid="710731812625009" type="Audio">
+                                    <param id="0" name="Audio file">enemyshoot</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="640151831317925">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="846186159913148" type="System">
+                                    <param id="0" name="Interval (seconds)">0.3</param>
+                                </condition>
+                                <condition id="-8" name="Is boolean instance variable set" sid="759158399483400" type="Enemy">
+                                    <param id="0" name="Instance variable">IsAttacking</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="589274794546132" type="Enemy">
+                                    <param id="0" name="Instance variable">Variable1</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">10</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="217738593788118" type="bossskin_RatHead">
+                                    <param id="0" name="Object">AttackHItbox_EggBullet</param>
+                                    <param id="1" name="Layer">&quot;PlayerLayer&quot;</param>
+                                    <param id="2" name="Image point">3</param>
+                                </action>
+                                <action id="0" name="Spawn another object" sid="602772816736224" type="bossskin_RatBody">
+                                    <param id="0" name="Object">AttackHItbox_EggBullet</param>
+                                    <param id="1" name="Layer">&quot;PlayerLayer&quot;</param>
+                                    <param id="2" name="Image point">1</param>
+                                </action>
+                                <action id="0" name="Play" sid="721711815610514" type="Audio">
+                                    <param id="0" name="Audio file">enemyshoot</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="281598474910199">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="380466968042102" type="System">
+                                    <param id="0" name="Interval (seconds)">0.6</param>
+                                </condition>
+                                <condition id="-8" name="Is boolean instance variable set" sid="938558120572748" type="Enemy">
+                                    <param id="0" name="Instance variable">IsAttacking</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="573950723383962" type="Enemy">
+                                    <param id="0" name="Instance variable">Variable1</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">10</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="370175547886303" type="bossskin_RatHead">
+                                    <param id="0" name="Object">AttackHItbox_EggBullet</param>
+                                    <param id="1" name="Layer">&quot;PlayerLayer&quot;</param>
+                                    <param id="2" name="Image point">4</param>
+                                </action>
+                                <action id="0" name="Spawn another object" sid="578981582206277" type="bossskin_RatBody">
+                                    <param id="0" name="Object">AttackHItbox_EggBullet</param>
+                                    <param id="1" name="Layer">&quot;PlayerLayer&quot;</param>
+                                    <param id="2" name="Image point">1</param>
+                                </action>
+                                <action id="0" name="Play" sid="174181051576869" type="Audio">
+                                    <param id="0" name="Audio file">enemyshoot</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment>Egg Rain Attack (move 8) unused</comment>
+                        <event-block disabled="1" sid="770160422534087">
+                            <conditions>
+                                <condition id="0" name="On function" sid="628112634930738" type="Function">
+                                    <param id="0" name="Name">&quot;RatBoss_RainAttack&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="618604691931142" type="Enemy">
+                                    <param id="0" name="Instance variable">Variable1</param>
+                                    <param id="1" name="Value">11</param>
+                                </action>
+                                <action id="-13" name="Set boolean" sid="834305496120408" type="Enemy">
+                                    <param id="0" name="Instance variable">IsAttacking</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="623020102395206" type="System">
+                                    <param id="0" name="Seconds">7.0</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="746272446872183" type="Enemy">
+                                    <param id="0" name="Instance variable">Variable1</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-13" name="Set boolean" sid="336630693022533" type="Enemy">
+                                    <param id="0" name="Instance variable">IsAttacking</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="0" name="Call function" sid="325387542616174" type="Function">
+                                    <param id="0" name="Name">&quot;RatBoss_falling&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block disabled="1" sid="240428505917617">
+                            <conditions>
+                                <condition id="-1" name="Every tick" sid="624182899921570" type="System" />
+                                <condition id="-7" name="Compare instance variable" sid="339173430111643" type="Enemy">
+                                    <param id="0" name="Instance variable">Variable1</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">11</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-1" name="Set X" sid="995441239922264" type="Enemy">
+                                    <param id="0" name="X">Self.X+10</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block disabled="1" sid="807447217782340">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="203943298299741" type="System">
+                                    <param id="0" name="Interval (seconds)">1.0</param>
+                                </condition>
+                                <condition id="-8" name="Is boolean instance variable set" sid="638319102040764" type="Enemy">
+                                    <param id="0" name="Instance variable">IsAttacking</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="939832332129280" type="Enemy">
+                                    <param id="0" name="Instance variable">Variable1</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">11</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Create object" sid="342474534150055" type="System">
+                                    <param id="0" name="Object to create">AttackHItbox_EggBulletFalling</param>
+                                    <param id="1" name="Layer">&quot;PlayerLayer&quot;</param>
+                                    <param id="2" name="X">Camera.X-30</param>
+                                    <param id="3" name="Y">Camera.Y-200</param>
+                                </action>
+                                <action id="0" name="Play" sid="726309694650660" type="Audio">
+                                    <param id="0" name="Audio file">enemyshoot</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block disabled="1" sid="845646394118893">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="787688974057053" type="System">
+                                    <param id="0" name="Interval (seconds)">1.4</param>
+                                </condition>
+                                <condition id="-8" name="Is boolean instance variable set" sid="421277593919472" type="Enemy">
+                                    <param id="0" name="Instance variable">IsAttacking</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="177158460450822" type="Enemy">
+                                    <param id="0" name="Instance variable">Variable1</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">11</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Create object" sid="174726013572240" type="System">
+                                    <param id="0" name="Object to create">AttackHItbox_EggBulletFalling</param>
+                                    <param id="1" name="Layer">&quot;PlayerLayer&quot;</param>
+                                    <param id="2" name="X">Camera.X-80</param>
+                                    <param id="3" name="Y">Camera.Y-220</param>
+                                </action>
+                                <action id="0" name="Play" sid="300115889496259" type="Audio">
+                                    <param id="0" name="Audio file">enemyshoot</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block disabled="1" sid="658211478595143">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="542132698315374" type="System">
+                                    <param id="0" name="Interval (seconds)">0.7</param>
+                                </condition>
+                                <condition id="-8" name="Is boolean instance variable set" sid="458152154193331" type="Enemy">
+                                    <param id="0" name="Instance variable">IsAttacking</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="550306167216401" type="Enemy">
+                                    <param id="0" name="Instance variable">Variable1</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">11</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Create object" sid="647476396998476" type="System">
+                                    <param id="0" name="Object to create">AttackHItbox_EggBulletFalling</param>
+                                    <param id="1" name="Layer">&quot;PlayerLayer&quot;</param>
+                                    <param id="2" name="X">Camera.X-160</param>
+                                    <param id="3" name="Y">Camera.Y-190</param>
+                                </action>
+                                <action id="0" name="Play" sid="557043082127807" type="Audio">
+                                    <param id="0" name="Audio file">enemyshoot</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block disabled="1" sid="959110067011294">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="771019968276177" type="System">
+                                    <param id="0" name="Interval (seconds)">0.6</param>
+                                </condition>
+                                <condition id="-8" name="Is boolean instance variable set" sid="119151650777361" type="Enemy">
+                                    <param id="0" name="Instance variable">IsAttacking</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="208321987085121" type="Enemy">
+                                    <param id="0" name="Instance variable">Variable1</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">11</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Create object" sid="776985425814909" type="System">
+                                    <param id="0" name="Object to create">AttackHItbox_EggBulletFalling</param>
+                                    <param id="1" name="Layer">&quot;PlayerLayer&quot;</param>
+                                    <param id="2" name="X">Camera.X+120</param>
+                                    <param id="3" name="Y">Camera.Y-215</param>
+                                </action>
+                                <action id="0" name="Play" sid="884029706253529" type="Audio">
+                                    <param id="0" name="Audio file">enemyshoot</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block disabled="1" sid="324791768792007">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="496871725422314" type="System">
+                                    <param id="0" name="Interval (seconds)">0.3</param>
+                                </condition>
+                                <condition id="-8" name="Is boolean instance variable set" sid="236408055215677" type="Enemy">
+                                    <param id="0" name="Instance variable">IsAttacking</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="791840238883252" type="Enemy">
+                                    <param id="0" name="Instance variable">Variable1</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">11</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Create object" sid="571465895620220" type="System">
+                                    <param id="0" name="Object to create">AttackHItbox_EggBulletFalling</param>
+                                    <param id="1" name="Layer">&quot;PlayerLayer&quot;</param>
+                                    <param id="2" name="X">Camera.X+70</param>
+                                    <param id="3" name="Y">Camera.Y-195</param>
+                                </action>
+                                <action id="0" name="Play" sid="699823248147595" type="Audio">
+                                    <param id="0" name="Audio file">enemyshoot</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block disabled="1" sid="631852023481427">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="270964676011039" type="System">
+                                    <param id="0" name="Interval (seconds)">2.0</param>
+                                </condition>
+                                <condition id="-8" name="Is boolean instance variable set" sid="740836660573238" type="Enemy">
+                                    <param id="0" name="Instance variable">IsAttacking</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="940485419902262" type="Enemy">
+                                    <param id="0" name="Instance variable">Variable1</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">11</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Create object" sid="498298805739577" type="System">
+                                    <param id="0" name="Object to create">AttackHItbox_EggBulletFalling</param>
+                                    <param id="1" name="Layer">&quot;PlayerLayer&quot;</param>
+                                    <param id="2" name="X">Camera.X+10</param>
+                                    <param id="3" name="Y">Camera.Y-225</param>
+                                </action>
+                                <action id="0" name="Play" sid="161548796749582" type="Audio">
+                                    <param id="0" name="Audio file">enemyshoot</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="685459071548579">
+                    <conditions>
+                        <condition id="-18" name="On created" sid="340466609727234" type="AttackHItbox_EggBullet" />
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="320759980529437" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="506142668923551" type="AttackHItbox_EggBullet">
+                            <param id="0" name="Instance variable">active</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="751994762413027">
+                    <conditions>
+                        <condition id="-18" name="On created" sid="204892941566957" type="AttackHItbox_EggBulletFalling" />
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="724832154407808" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="188765033442363" type="AttackHItbox_EggBulletFalling">
+                            <param id="0" name="Instance variable">active</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="901546108279793">
+                    <conditions>
+                        <condition id="-18" name="On created" sid="331435918062209" type="AttackHItbox_RatBoss_ringofdeath" />
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="320527096510422" type="System">
+                            <param id="0" name="Seconds">0.5</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="710973693689173" type="AttackHItbox_RatBoss_ringofdeath" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

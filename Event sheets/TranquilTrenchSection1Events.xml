@@ -1,0 +1,292 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>TranquilTrenchSection1Events</name>
+    <events>
+        <include>MainPlayer</include>
+        <event-block sid="892191368246742">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="318943953860547" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="134011113529649" type="Function">
+                    <param id="0" name="Name">&quot;Screen_FadeOut&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="-9" name="Set value" sid="515758903741269" type="System">
+                    <param id="0" name="Variable">MaxPartyMemb</param>
+                    <param id="1" name="Value">3</param>
+                </action>
+                <action id="-9" name="Set value" sid="910818574391588" type="System">
+                    <param id="0" name="Variable">Char1IsInParty</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="567536617144258" type="System">
+                    <param id="0" name="Variable">Char2IsInParty</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="439208073022733" type="System">
+                    <param id="0" name="Variable">Char3IsInParty</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="591011921671154" type="System">
+                    <param id="0" name="Variable">PartyOrder</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="822044509289163" type="System">
+                    <param id="0" name="Variable">MiniBossIsDead</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="148357607469922" type="System">
+                    <param id="0" name="Variable">darkness_lowpoint</param>
+                    <param id="1" name="Value">40</param>
+                </action>
+                <action id="-9" name="Set value" sid="437851244281342" type="System">
+                    <param id="0" name="Variable">darkness_opacity</param>
+                    <param id="1" name="Value">40</param>
+                </action>
+                <action id="-9" name="Set value" sid="491777678831843" type="System">
+                    <param id="0" name="Variable">levelhasgrav</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="683034268032047" type="System">
+                    <param id="0" name="Variable">PartySwitchEnabled</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="448996238439052" type="System">
+                    <param id="0" name="Variable">CurrentLevel</param>
+                    <param id="1" name="Value">&quot;TranquilTrench1&quot;</param>
+                </action>
+                <action id="4" name="Set animation" sid="459670838936751" type="hudicon_trees">
+                    <param id="0" name="Animation">&quot;inactive&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="505719176934708" type="hudicon_l">
+                    <param id="0" name="Animation">&quot;active&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="726795803971668" type="hudicon_s">
+                    <param id="0" name="Animation">&quot;inactive&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="0" name="Play" sid="371219120164239" type="Audio">
+                    <param id="0" name="Audio file">TT1_Intro</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;TT1Intro&quot;</param>
+                </action>
+                <action id="4" name="Set animation" sid="264503085579396" type="hud_eyecountr">
+                    <param id="0" name="Animation">&quot;CC2&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="649009140721247">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="925481225738547" type="Camera">
+                            <param id="0" name="Comparison">5</param>
+                            <param id="1" name="X co-ordinate">28904</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="768020260247073" type="System">
+                            <param id="0" name="Variable">darkness_opacity</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="784024290439374">
+            <conditions>
+                <condition id="-1" name="Compare X" sid="864756577540780" type="Camera">
+                    <param id="0" name="Comparison">5</param>
+                    <param id="1" name="X co-ordinate">1312</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="356294711688627">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="821645803228717" type="PlayerObject">
+                            <param id="0" name="Instance variable">Character</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="496364273578209" type="PlayerObject" />
+                        <action id="-9" name="Destroy" sid="645063924047094" type="playerskin_Trees" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="252518714555729">
+            <conditions>
+                <condition id="0" name="On ended" sid="914608957106035" type="Audio">
+                    <param id="0" name="Tag">&quot;TT1Intro&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="587789826915733" type="Audio">
+                    <param id="0" name="Audio file">TT1_Loop</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;levelmusic&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="388329858951917">
+            <conditions>
+                <condition id="-1" name="Compare X" sid="821973522009579" type="Camera">
+                    <param id="0" name="Comparison">5</param>
+                    <param id="1" name="X co-ordinate">28904</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="635437727036773" type="System">
+                    <param id="0" name="Variable">darkness_lowpoint</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="848504831644810">
+            <conditions>
+                <condition id="0" name="On function" sid="723635060415785" type="Function">
+                    <param id="0" name="Name">&quot;TTSection1opening&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="269298402291026" type="Function">
+                    <param id="0" name="Name">&quot;end_dialogue&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="-13" name="Set boolean" sid="995751182229271" type="PlayerObject">
+                    <param id="0" name="Instance variable">EnableControl</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="754725906795293" type="System">
+                    <param id="0" name="Variable">piss</param>
+                    <param id="1" name="Value">4</param>
+                </action>
+                <action id="-9" name="Set value" sid="671759206097969" type="System">
+                    <param id="0" name="Variable">MaxPartyMemb</param>
+                    <param id="1" name="Value">2</param>
+                </action>
+                <action id="-9" name="Set value" sid="715592384299919" type="System">
+                    <param id="0" name="Variable">Char1IsInParty</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="710643015497902" type="System">
+                    <param id="0" name="Variable">PartySwitchEnabled</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="151940443874458">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="773109936793835" type="System" />
+                <condition id="-14" name="Compare variable" sid="901983299324459" type="System">
+                    <param id="0" name="Variable">piss</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="117755172328320" type="System">
+                    <param id="0" name="Variable">MaxPartyMemb</param>
+                    <param id="1" name="Value">2</param>
+                </action>
+                <action id="-9" name="Set value" sid="303294236719386" type="System">
+                    <param id="0" name="Variable">Char1IsInParty</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="978384205210565" type="System">
+                    <param id="0" name="Variable">PartySwitchEnabled</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="468704698747095">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="866541531871211" type="PlayerObject">
+                            <param id="0" name="Instance variable">Character</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="383823120641120" type="PlayerObject" />
+                        <action id="-9" name="Destroy" sid="871488708582355" type="playerskin_Trees" />
+                    </actions>
+                </event-block>
+                <event-block sid="138932802118351">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="866074288217303" type="DialogueTrigger">
+                            <param id="0" name="Instance variable">dialogue</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;TTsection1intro&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="111796938563107" type="DialogueTrigger" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="731040324755841">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="196778647225110" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="463230833223752">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="178236282821557" type="System">
+                            <param id="0" name="Variable">piss</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">4</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="225699590702062">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="469864288254867" type="PlayerObject">
+                                    <param id="0" name="Instance variable">Character</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-13" name="Set boolean" sid="904188651788736" type="PlayerObject">
+                                    <param id="0" name="Instance variable">IsAI</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action behavior="Platform" id="7" name="Simulate control" sid="847798423301568" type="PlayerObject">
+                                    <param id="0" name="Control">1</param>
+                                </action>
+                                <action behavior="Platform" id="1" name="Set max speed" sid="386126824356217" type="PlayerObject">
+                                    <param id="0" name="Max Speed">500</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="308930344868489">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="558325576285499" type="System">
+                    <param id="0" name="Variable">piss</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">4</param>
+                </condition>
+                <condition id="-3" inverted="1" name="Is on-screen" sid="635786639796240" type="playerskin_Trees" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="812779095988758" type="playerskin_Trees" />
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

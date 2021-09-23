@@ -1,0 +1,319 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>ChaoticCarnivalXEvents</name>
+    <events>
+        <include>MainPlayer</include>
+        <event-block sid="380673702405707">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="915887459782324" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="381945889794377" type="Function">
+                    <param id="0" name="Name">&quot;Screen_FadeOut&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="-9" name="Set value" sid="387528121278451" type="System">
+                    <param id="0" name="Variable">MaxPartyMemb</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="708117193101350" type="System">
+                    <param id="0" name="Variable">Char1IsInParty</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="114340694707830" type="System">
+                    <param id="0" name="Variable">Char2IsInParty</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="610720828739356" type="System">
+                    <param id="0" name="Variable">Char3IsInParty</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="532491624511726" type="System">
+                    <param id="0" name="Variable">PartyOrder</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="234690033146938" type="System">
+                    <param id="0" name="Variable">MiniBossIsDead</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="395766218399599" type="System">
+                    <param id="0" name="Variable">CurrentLevel</param>
+                    <param id="1" name="Value">&quot;ChaoticCarnivalX&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="153753572026336" type="System">
+                    <param id="0" name="Variable">PartySwitchEnabled</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="497512036934660" type="System">
+                    <param id="0" name="Variable">levelhasgrav</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action disabled="1" id="0" name="Play" sid="166094068527161" type="Audio">
+                    <param id="0" name="Audio file">PC1</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;levelmusic&quot;</param>
+                </action>
+                <action id="4" name="Set animation" sid="840222299081647" type="hud_eyecountr">
+                    <param id="0" name="Animation">&quot;a&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="0" name="Play" sid="806912916091102" type="Audio">
+                    <param id="0" name="Audio file">unnamedopening_intro</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;CCXIntro&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="776584617315042">
+            <conditions>
+                <condition id="0" name="On ended" sid="113291199618129" type="Audio">
+                    <param id="0" name="Tag">&quot;CCXIntro&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="917037720258288" type="Audio">
+                    <param id="0" name="Audio file">unnamedopening_loop</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;levelmusic&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="286633321618428">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="152082765512007" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="260007273629485">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="297008197795957" type="playerskin_Trees">
+                            <param id="0" name="Instance variable">cutscenevar</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="497733046173613" type="PlayerObject">
+                            <param id="0" name="Control">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="716302562950944">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="403620038797343" type="playerskin_Trees">
+                            <param id="0" name="Instance variable">cutscenevar</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                        <condition id="-6" name="Compare height" sid="294268716701378" type="openinglevel_radius1">
+                            <param id="0" name="Comparison">4</param>
+                            <param id="1" name="Height">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-6" name="Set height" sid="607164534756554" type="openinglevel_radius1">
+                            <param id="0" name="Height">Self.Height-((0.7 * 60) * dt)</param>
+                        </action>
+                        <action id="-6" name="Set height" sid="334883181574951" type="openinglevel_radius2">
+                            <param id="0" name="Height">Self.Height-((0.7 * 60) * dt)</param>
+                        </action>
+                        <action id="-6" name="Set height" sid="983220542958284" type="openinglevel_radius3">
+                            <param id="0" name="Height">Self.Height-((0.7 * 60) * dt)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="508284154795570">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="538730758188561" type="RSwormhole">
+                            <param id="0" name="Instance variable">active</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-7" name="Set size" sid="621550855646424" type="RSwormhole">
+                            <param id="0" name="Width">Self.Width+((6 * 60) * dt)</param>
+                            <param id="1" name="Height">Self.Height+((6 * 60) * dt)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="676073509358493">
+                    <conditions>
+                        <condition id="2" name="Is playing" sid="678143303666127" type="eye">
+                            <param id="0" name="Animation">&quot;green&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set position to another object" sid="898801145185244" type="eye">
+                            <param id="0" name="Object">openinglevel_radius1</param>
+                            <param id="1" name="Image point (optional)">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="611584289328534">
+                    <conditions>
+                        <condition id="2" name="Is playing" sid="367027609577428" type="eye">
+                            <param id="0" name="Animation">&quot;orange&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set position to another object" sid="164472578583477" type="eye">
+                            <param id="0" name="Object">openinglevel_radius1</param>
+                            <param id="1" name="Image point (optional)">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="981619446247355">
+                    <conditions>
+                        <condition id="2" name="Is playing" sid="305597617731205" type="eye">
+                            <param id="0" name="Animation">&quot;purple&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set position to another object" sid="315800915187743" type="eye">
+                            <param id="0" name="Object">openinglevel_radius2</param>
+                            <param id="1" name="Image point (optional)">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="368282911621073">
+                    <conditions>
+                        <condition id="2" name="Is playing" sid="114983314650505" type="eye">
+                            <param id="0" name="Animation">&quot;red&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set position to another object" sid="616377791198525" type="eye">
+                            <param id="0" name="Object">openinglevel_radius2</param>
+                            <param id="1" name="Image point (optional)">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="729541786297876">
+                    <conditions>
+                        <condition id="2" name="Is playing" sid="832902693352575" type="eye">
+                            <param id="0" name="Animation">&quot;white&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set position to another object" sid="505760546627364" type="eye">
+                            <param id="0" name="Object">openinglevel_radius3</param>
+                            <param id="1" name="Image point (optional)">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="106298257483666">
+                    <conditions>
+                        <condition id="2" name="Is playing" sid="100038351174584" type="eye">
+                            <param id="0" name="Animation">&quot;yellow&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set position to another object" sid="604248643720855" type="eye">
+                            <param id="0" name="Object">openinglevel_radius3</param>
+                            <param id="1" name="Image point (optional)">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="293160477602356">
+            <conditions>
+                <condition id="-1" name="Compare X" sid="264665262192704" type="Camera">
+                    <param id="0" name="Comparison">5</param>
+                    <param id="1" name="X co-ordinate">11840</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="995331623529751" type="playerskin_Trees">
+                    <param id="0" name="Instance variable">cutscenevar</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set boolean" sid="941818777436124" type="PlayerObject">
+                    <param id="0" name="Instance variable">EnableControl</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-10" name="Set value" sid="463424132989571" type="playerskin_Trees">
+                    <param id="0" name="Instance variable">cutscenevar</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="804692898271113">
+            <conditions>
+                <condition id="-1" name="Compare X" sid="921693252113718" type="Camera">
+                    <param id="0" name="Comparison">5</param>
+                    <param id="1" name="X co-ordinate">12416</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="632826737533255" type="playerskin_Trees">
+                    <param id="0" name="Instance variable">cutscenevar</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="208381675372793" type="Audio">
+                    <param id="0" name="Audio file">RSsparkle</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-10" name="Set value" sid="770391805297027" type="playerskin_Trees">
+                    <param id="0" name="Instance variable">cutscenevar</param>
+                    <param id="1" name="Value">2</param>
+                </action>
+                <action id="-16" name="Wait" sid="633077896938393" type="System">
+                    <param id="0" name="Seconds">1.0</param>
+                </action>
+                <action id="-10" name="Set value" sid="149198836977342" type="playerskin_Trees">
+                    <param id="0" name="Instance variable">cutscenevar</param>
+                    <param id="1" name="Value">3</param>
+                </action>
+                <action id="-16" name="Wait" sid="660811020089531" type="System">
+                    <param id="0" name="Seconds">4.5</param>
+                </action>
+                <action id="-10" name="Set value" sid="420558127975497" type="RSwormhole">
+                    <param id="0" name="Instance variable">active</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Play" sid="308142770691162" type="Audio">
+                    <param id="0" name="Audio file">RSsparkle</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="635382703676797" type="System">
+                    <param id="0" name="Seconds">1.0</param>
+                </action>
+                <action id="0" name="Call function" sid="961973847794486" type="Function">
+                    <param id="0" name="Name">&quot;Screen_FadeIn&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="-16" name="Wait" sid="227641835091080" type="System">
+                    <param id="0" name="Seconds">1.0</param>
+                </action>
+                <action id="33" name="Stop all" sid="346791700583763" type="Audio" />
+                <action id="-2" name="Go to layout" sid="915724552547455" type="System">
+                    <param id="0" name="Layout">GreenhouseFrenzy - Section 1</param>
+                </action>
+                <action id="-9" name="Set value" sid="619583348560702" type="System">
+                    <param id="0" name="Variable">SavePointisActive_UM</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="117913915369126" type="System">
+                    <param id="0" name="Variable">SavedX_UM</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="893958011722235" type="System">
+                    <param id="0" name="Variable">SavedY_UM</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>DreamscapeDistanceSection2Events</name>
+    <events>
+        <include>MainPlayer</include>
+        <include>bossevents_dd</include>
+        <event-block sid="500731281704276">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="461718242613180" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="121650378255986" type="System">
+                    <param id="0" name="Variable">MaxPartyMemb</param>
+                    <param id="1" name="Value">2</param>
+                </action>
+                <action id="-9" name="Set value" sid="740465885175309" type="System">
+                    <param id="0" name="Variable">Char1IsInParty</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="317011397392472" type="System">
+                    <param id="0" name="Variable">Char2IsInParty</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="848342506908729" type="System">
+                    <param id="0" name="Variable">Char3IsInParty</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="390053345477004" type="System">
+                    <param id="0" name="Variable">PartyOrder</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="646644990600839" type="System">
+                    <param id="0" name="Variable">levelhasgrav</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="163483863232960" type="System">
+                    <param id="0" name="Variable">CurrentLevel</param>
+                    <param id="1" name="Value">&quot;DreamscapeDistance2&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="732118821861797" type="System">
+                    <param id="0" name="Variable">PartySwitchEnabled</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Play" sid="294182148049030" type="Audio">
+                    <param id="0" name="Audio file">DD2</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;levelmusic&quot;</param>
+                </action>
+                <action id="4" name="Set animation" sid="686434304206666" type="hud_eyecountr">
+                    <param id="0" name="Animation">&quot;a&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="147824796338154" type="System">
+                    <param id="0" name="Variable">camerascale</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-17" name="Set layer scale" sid="577254533361072" type="System">
+                    <param id="0" name="Layer">&quot;PlayerLayer&quot;</param>
+                    <param id="1" name="Scale">camerascale</param>
+                </action>
+                <action id="-17" name="Set layer scale" sid="252271549593304" type="System">
+                    <param id="0" name="Layer">&quot;ForegroundArt&quot;</param>
+                    <param id="1" name="Scale">camerascale</param>
+                </action>
+                <action id="-17" name="Set layer scale" sid="908560736019757" type="System">
+                    <param id="0" name="Layer">&quot;BackgroundArt&quot;</param>
+                    <param id="1" name="Scale">camerascale</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="194018281180383">
+            <conditions>
+                <condition id="-3" inverted="1" name="Is on-screen" sid="340810280256757" type="AttackHItbox_Meatball" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="825775721031038" type="AttackHItbox_Meatball" />
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

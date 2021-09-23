@@ -1,0 +1,91 @@
+=dialogue avatar list=
+	
+	~trees list~
+	-"Avatar_TreesIdle" - idle
+	-"Avatar_TreesHappy" - happy
+	-"Avatar_TreesSurprise" - (used rarely)
+	-"Avatar_TreesOh" - oh
+	-"Avatar_TreesFuck" - used rarely
+	-"Avatar_TreesBirth" - only used in TT2
+	-"Avatar_TreesOMG" - very happy expression
+	-"Avatar_TreesOk" - ok.
+
+	~player list~
+	-"Avatar_PlayerIdle" - idle
+	-"Avatar_PlayerDisappointment" - disappoited/questioning
+	-"Avatar_PlayerConfusion" - confused
+	-"Avatar_PlayerMood" - very sad
+	-"Avatar_PlayerDepression" - depressed, tired
+	-"Avatar_PlayerPorque" - questioning, in disbelief.
+	-"Avatar_PlayerTransparent" - transparent. (only used in millie cutscene)
+	-"Avatar_PlayerFustrated" - very fustrated, only used in ULTRAMEGA campaign
+	-"Avatar_PlayerLost" - feeling very lost
+	-"Avatar_PlayerUpset" - upset, crying.
+	-"Avatar_PlayerGone" - gone.
+
+	~alt list~
+	-"Avatar_AltIdle" - idle
+	-"Avatar_AltAppreciation" - showing appreaction/positivety
+	-"Avatar_AltConfusion" - confused
+	-"Avatar_AltWhat" - really confused
+	-"Avatar_AltDisappointment" - disappointed
+
+	~misc~
+	-"Avatar_NotTrees" - cardboard cut out
+	-"Avatar_Dia" - diamond character, mainly used in DD
+	-"Avatar_SafetySphere" - sphere character, mainly used in DD
+	-"Avatar_DiamondBoss" - DD1 miniboss
+	-"Avatar_Sign" - sign character
+	-"Avatar_None" - no avatar used.
+
+	'Avatar_JuliaIdle' - julia idle
+	'Avatar_JuliaDepression' - julia deperssion
+	'Avatar_JuliaConfused' - julia confused
+	'Avatar_JuliaAppreciation' - julia appreciation
+	'Avatar_JuliaShock' - julia shock
+
+	'Avatar_MisfortuneIdle' - misfortune idle
+	'Avatar_SparkIdle - spark idle
+	'Avatar_PeeperHoe' - peeper hoe
+	'Avatar_AldenIdle' - alden idle	
+
+	'Avatar_StealthIdle' - stealth idle
+	'Avatar_StealthConfused' - stealth confused
+
+	'Avatar_StoneIdle' - stone idle
+	'Avatar_GalagtiCatIdle' - cat idle
+	'Avatar_ViridiIdle' - viridi idle
+
+	'Avatar_J3t0Idle' - j3t0 idle
+	'Avatar_J3t0Happy' - j3t0 happi
+	'Avatar_J3t0Confused' - j3t0 confusion
+
+	'Avatar_MillieIdle' - millie idle
+	'Avatar_MillieExcited' -millie excited
+	'Avatar_MillieTaunt' - millie taunt
+
+	'Avatar_EllieIdle' - ellie idle
+	'Avatar_EllieSurprised' - ellie surprised
+	'Avatar_EllieWelcoming' - ellie welcoming
+
+	'Avatar_GoldianIdle' - goldian idle
+
+	'Avatar_SuzyIdle' - suzy idle
+	'Avatar_SuzyConfused - suzy slightly confused
+	'Avatar_SuzyJudging' - suzy judging
+
+	'Avatar_MinIdle' - min idle
+
+	'Avatar_VoltrixIdle' - voltrix idle
+
+	'Avatar_VieIdle' - vie idle	
+
+	~BNW opening~
+	-"Opening_BNW1" - second cutscene background
+	-"Opening_BNW2" - third cutscene background
+	-"Opening_BNW3" - fourth cutscene background
+	-"Opening_BNW4" - fifth cutscene background
+	-"Opening_End" - end BNW opening, go to BNW
+
+	~Storybook~
+	-"Storybook_enddialogue" - end dialgoue for storybook

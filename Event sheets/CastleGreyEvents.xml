@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>CastleGreyEvents</name>
+    <events>
+        <include>bossevents_UNITRES</include>
+        <include>MainPlayer</include>
+        <event-block sid="662493314830856">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="742395732845523" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="956634949198286" type="System">
+                    <param id="0" name="Variable">CurrentLevel</param>
+                    <param id="1" name="Value">&quot;CastleGrey&quot;</param>
+                </action>
+                <action id="0" name="Call function" sid="530809990411541" type="Function">
+                    <param id="0" name="Name">&quot;Screen_FadeOut&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="-9" name="Set value" sid="561703401242716" type="System">
+                    <param id="0" name="Variable">MaxPartyMemb</param>
+                    <param id="1" name="Value">2</param>
+                </action>
+                <action id="-9" name="Set value" sid="485115038078276" type="System">
+                    <param id="0" name="Variable">Char1IsInParty</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="710624165217896" type="System">
+                    <param id="0" name="Variable">Char2IsInParty</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="149061330265118" type="System">
+                    <param id="0" name="Variable">Char3IsInParty</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="802949548187726" type="System">
+                    <param id="0" name="Variable">PartyOrder</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="236079833988665" type="System">
+                    <param id="0" name="Variable">MiniBossIsDead</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="376489218467495" type="System">
+                    <param id="0" name="Variable">levelhasgrav</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="984533177212370" type="System">
+                    <param id="0" name="Variable">darkness_lowpoint</param>
+                    <param id="1" name="Value">40</param>
+                </action>
+                <action id="-9" name="Set value" sid="512679767768947" type="System">
+                    <param id="0" name="Variable">darkness_opacity</param>
+                    <param id="1" name="Value">40</param>
+                </action>
+                <action id="-9" name="Set value" sid="649991517894346" type="System">
+                    <param id="0" name="Variable">PartySwitchEnabled</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="346961170040284" type="hudicon_trees">
+                    <param id="0" name="Animation">&quot;inactive&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="759232763632975" type="hudicon_l">
+                    <param id="0" name="Animation">&quot;active&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="854895375554795" type="hudicon_s">
+                    <param id="0" name="Animation">&quot;inactive&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="0" name="Play" sid="665875365225827" type="Audio">
+                    <param id="0" name="Audio file">CG1</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;levelmusic&quot;</param>
+                </action>
+                <action id="4" name="Set animation" sid="364871609853175" type="hud_eyecountr">
+                    <param id="0" name="Animation">&quot;a&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="0" name="Call function" sid="517221096027316" type="Function">
+                    <param id="0" name="Name">&quot;SaveFunction&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="-15" name="Set visible" sid="645025389267816" type="teacup">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="514024536113083">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="314424731385722" type="System" />
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="956689092610141" type="TT1_bgCloud1">
+                    <param id="0" name="X">Self.X-((0.055 * 60) * dt)</param>
+                </action>
+                <action id="-1" name="Set X" sid="650835828628129" type="TT1_bgCloud2">
+                    <param id="0" name="X">Self.X-((0.35 * 60) * dt)</param>
+                </action>
+                <action id="-1" name="Set X" sid="712667526571897" type="TT1_bgCloud3">
+                    <param id="0" name="X">Self.X-((0.755 * 60) * dt)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="137158499066961">
+            <conditions>
+                <condition id="-18" name="On created" sid="723934992190989" type="Star" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block any="1" sid="738440014246498">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="956078166743630" type="System">
+                            <param id="0" name="Variable">teabatmode</param>
+                            <param id="1" name="Comparison">1</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="204958080718448" type="Star">
+                            <param id="0" name="Animation">&quot;teabat&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="209900618768234">
+            <conditions>
+                <condition id="-1" name="Compare X" sid="304040948846127" type="TT1_bgCloud1">
+                    <param id="0" name="Comparison">3</param>
+                    <param id="1" name="X co-ordinate">-128</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="567673559804229" type="TT1_bgCloud1">
+                    <param id="0" name="X">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="317190155648534">
+            <conditions>
+                <condition id="-1" name="Compare X" sid="986196038676385" type="TT1_bgCloud2">
+                    <param id="0" name="Comparison">3</param>
+                    <param id="1" name="X co-ordinate">-128</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="443652157029960" type="TT1_bgCloud2">
+                    <param id="0" name="X">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="425475030919401">
+            <conditions>
+                <condition id="-1" name="Compare X" sid="915588222522574" type="TT1_bgCloud3">
+                    <param id="0" name="Comparison">3</param>
+                    <param id="1" name="X co-ordinate">-80</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="588208820632987" type="TT1_bgCloud3">
+                    <param id="0" name="X">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="361422283436217">
+            <conditions>
+                <condition id="-18" name="On created" sid="530741289574076" type="DD1floatingplatform" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="205936161432809" type="DD1floatingplatform">
+                    <param id="0" name="Animation">&quot;CastleGrey&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="633844709349532">
+            <conditions>
+                <condition id="2" name="Is playing" sid="728938229335111" type="CGeye">
+                    <param id="0" name="Animation">&quot;idle&quot;</param>
+                </condition>
+                <condition id="-3" name="Is on-screen" sid="240419561746161" type="CGeye" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="682188836830475" type="CGeye">
+                    <param id="0" name="Animation">&quot;open&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="578495737836147">
+            <conditions>
+                <condition id="2" name="Is playing" sid="821564965786014" type="CGeye">
+                    <param id="0" name="Animation">&quot;open&quot;</param>
+                </condition>
+                <condition id="-3" inverted="1" name="Is on-screen" sid="698316013063817" type="CGeye" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="305607421220185" type="CGeye">
+                    <param id="0" name="Animation">&quot;idle&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="364711221613761" title="Rain2">
+            <sub-events>
+                <event-block sid="918664975088743">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="593665255396686" type="System">
+                            <param id="0" name="Interval (seconds)">0.05</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="771705989264044" type="System">
+                            <param id="0" name="Object to create">rain</param>
+                            <param id="1" name="Layer">&quot;PlayerLayer&quot;</param>
+                            <param id="2" name="X">Camera.X+(random(-420, 420))</param>
+                            <param id="3" name="Y">Camera.Y-(random(256, 320))</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="556991418605123">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="887863466769885" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Set Y" sid="166510160001009" type="rain">
+                            <param id="0" name="Y">Self.Y+((Self.speed * 60) * dt)</param>
+                        </action>
+                        <action id="-1" name="Set X" sid="127845224447639" type="rain">
+                            <param id="0" name="X">Self.X-(((Self.speed/2) * 60) * dt)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="313559941042953">
+                    <conditions>
+                        <condition id="-18" name="On created" sid="354274471632097" type="rain" />
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="587443145027424" type="rain">
+                            <param id="0" name="Instance variable">speed</param>
+                            <param id="1" name="Value">random(3.5, 7.5)</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="370634771857657">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="390421316821399" type="rain">
+                                    <param id="0" name="Object">TT1raindeleteobj</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="633981774354615" type="rain" />
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="169866833263192">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="343901358207853" type="rain">
+                            <param id="0" name="Object">FakeTestLeveltileset</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="404725550858723" type="rain" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

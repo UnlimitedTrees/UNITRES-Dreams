@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>FakeTestLevel2Events</name>
+    <events>
+        <include>MainPlayer</include>
+        <event-block sid="114129641741594">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="500579456714848" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="460708010491170" type="Function">
+                    <param id="0" name="Name">&quot;Screen_FadeOut&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="-9" name="Set value" sid="398229204173029" type="System">
+                    <param id="0" name="Variable">MaxPartyMemb</param>
+                    <param id="1" name="Value">3</param>
+                </action>
+                <action id="-9" name="Set value" sid="921435031753933" type="System">
+                    <param id="0" name="Variable">Char1IsInParty</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="574251840008602" type="System">
+                    <param id="0" name="Variable">Char2IsInParty</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="546373756424375" type="System">
+                    <param id="0" name="Variable">Char3IsInParty</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="924975954841651" type="System">
+                    <param id="0" name="Variable">PartyOrder</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="598474194980474" type="System">
+                    <param id="0" name="Variable">MiniBossIsDead</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="489894146935534" type="System">
+                    <param id="0" name="Variable">CurrentLevel</param>
+                    <param id="1" name="Value">&quot;FakeTest2&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="298958521741962" type="System">
+                    <param id="0" name="Variable">PartySwitchEnabled</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="769548903156163" type="System">
+                    <param id="0" name="Variable">levelhasgrav</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action disabled="1" id="0" name="Play" sid="189482477912716" type="Audio">
+                    <param id="0" name="Audio file">PC1</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;levelmusic&quot;</param>
+                </action>
+                <action id="4" name="Set animation" sid="967720724640133" type="hud_eyecountr">
+                    <param id="0" name="Animation">&quot;a&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="431384417851571">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="168804663211953" type="System" />
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="732664923736248" type="FakeTest_BG2green">
+                    <param id="0" name="X">Self.X+1.5</param>
+                </action>
+                <action id="-2" name="Set Y" sid="588727566914524" type="FakeTest_BG2green">
+                    <param id="0" name="Y">Self.Y+1.5</param>
+                </action>
+                <action id="-1" name="Set X" sid="345519158644265" type="FakeTest_BG1green">
+                    <param id="0" name="X">Self.X-0.5</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="932314835438655">
+            <conditions>
+                <condition id="-1" name="Compare X" sid="494906595121342" type="FakeTest_BG2green">
+                    <param id="0" name="Comparison">5</param>
+                    <param id="1" name="X co-ordinate">0</param>
+                </condition>
+                <condition id="-2" name="Compare Y" sid="100927039963418" type="FakeTest_BG2green">
+                    <param id="0" name="Comparison">5</param>
+                    <param id="1" name="Y co-ordinate">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="595205198706764" type="FakeTest_BG2green">
+                    <param id="0" name="X">-32</param>
+                    <param id="1" name="Y">-32</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="614224858699934">
+            <conditions>
+                <condition id="-1" name="Compare X" sid="610586241386460" type="FakeTest_BG1green">
+                    <param id="0" name="Comparison">3</param>
+                    <param id="1" name="X co-ordinate">-32</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="390991816708653" type="FakeTest_BG1green">
+                    <param id="0" name="X">0</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>DD2FinalEvents</name>
+    <events>
+        <include>MainPlayer</include>
+        <include>bossevents_dd</include>
+        <event-block sid="303042215133195">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="247489829610987" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="555020885654346" type="System">
+                    <param id="0" name="Variable">MaxPartyMemb</param>
+                    <param id="1" name="Value">2</param>
+                </action>
+                <action id="-9" name="Set value" sid="647342446912179" type="System">
+                    <param id="0" name="Variable">Char1IsInParty</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="744650016108098" type="System">
+                    <param id="0" name="Variable">Char2IsInParty</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="795880338943514" type="System">
+                    <param id="0" name="Variable">Char3IsInParty</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="121783349836695" type="System">
+                    <param id="0" name="Variable">PartyOrder</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="258995676081900" type="System">
+                    <param id="0" name="Variable">levelhasgrav</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="154146324265888" type="System">
+                    <param id="0" name="Variable">CurrentLevel</param>
+                    <param id="1" name="Value">&quot;DreamscapeDistance2&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="549605750610430" type="System">
+                    <param id="0" name="Variable">PartySwitchEnabled</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Play" sid="915043322331620" type="Audio">
+                    <param id="0" name="Audio file">DD2</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;levelmusic&quot;</param>
+                </action>
+                <action id="4" name="Set animation" sid="896530475752612" type="hud_eyecountr">
+                    <param id="0" name="Animation">&quot;a&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="0" name="Call function" sid="421156827224281" type="Function">
+                    <param id="0" name="Name">&quot;SaveFunction&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+            <sub-events>
+                <comment>fix object spawning position in newgroudns version</comment>
+                <event-block sid="409295179937718">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="183434577007347" type="System">
+                            <param id="0" name="Variable">juliamode</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="533983735401734" type="System">
+                            <param id="0" name="Object to create">DialogueTrigger</param>
+                            <param id="1" name="Layer">&quot;PlayerLayer&quot;</param>
+                            <param id="2" name="X">18896</param>
+                            <param id="3" name="Y">5216</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="239759214776358" type="DialogueTrigger">
+                            <param id="0" name="Instance variable">dialogue</param>
+                            <param id="1" name="Value">&quot;Julia_peeperhoe1&quot;</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="810897526085102" type="DialogueTrigger">
+                            <param id="0" name="Instance variable">secondarydialogue</param>
+                            <param id="1" name="Value">&quot;Julia_peeperhoe1&quot;</param>
+                        </action>
+                        <action id="-7" name="Set size" sid="615820376218505" type="DialogueTrigger">
+                            <param id="0" name="Width">72</param>
+                            <param id="1" name="Height">72</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="795098366458878">
+            <conditions>
+                <condition id="-1" name="Compare X" sid="121049383444925" type="Camera">
+                    <param id="0" name="Comparison">5</param>
+                    <param id="1" name="X co-ordinate">53864</param>
+                </condition>
+                <condition id="-9" inverted="1" name="Layer is visible" sid="135894818675333" type="System">
+                    <param id="0" name="Layer">&quot;BGa1&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-4" name="Set layer visible" sid="886042460175973" type="System">
+                    <param id="0" name="Layer">&quot;BGa1&quot;</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="494302024819974" type="System">
+                    <param id="0" name="Layer">&quot;BGa2&quot;</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="828495532307234" type="System">
+                    <param id="0" name="Layer">&quot;BGa3&quot;</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="655393687038255" type="System">
+                    <param id="0" name="Layer">&quot;BGa4&quot;</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="255757607393593" type="System">
+                    <param id="0" name="Layer">&quot;BGa5&quot;</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="943935847396003" type="System">
+                    <param id="0" name="Layer">&quot;BGa6&quot;</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="370218062691161" type="System">
+                    <param id="0" name="Layer">&quot;BGa7&quot;</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="291001488747354" type="System">
+                    <param id="0" name="Layer">&quot;BGa8&quot;</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="676990805334521" type="System">
+                    <param id="0" name="Layer">&quot;Lights1&quot;</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="221034605703747" type="System">
+                    <param id="0" name="Layer">&quot;Lights2&quot;</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="314338384136046" type="System">
+                    <param id="0" name="Layer">&quot;Lights3&quot;</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="911361402659299" type="System">
+                    <param id="0" name="Layer">&quot;Lights4&quot;</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="757341756620292" type="System">
+                    <param id="0" name="Layer">&quot;Lights5&quot;</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="713444041597275" type="System">
+                    <param id="0" name="Layer">&quot;Lights6&quot;</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="445368937865940">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="296982585195282" type="System" />
+                <condition id="-3" name="Is on-screen" sid="958388786943334" type="eye" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="557765687420869">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="188385143655015" type="eye">
+                            <param id="0" name="Comparison">4</param>
+                            <param id="1" name="X co-ordinate">PlayerObject.X</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="101117356511941" type="PlayerObject">
+                            <param id="0" name="Instance variable">Player</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-1" name="Set X" sid="677308810925500" type="eye">
+                            <param id="0" name="X">Self.X-4</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="745699374717861">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="428579942775986" type="eye">
+                            <param id="0" name="Comparison">2</param>
+                            <param id="1" name="X co-ordinate">PlayerObject.X</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="467427931874734" type="PlayerObject">
+                            <param id="0" name="Instance variable">Player</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-1" name="Set X" sid="201552844769825" type="eye">
+                            <param id="0" name="X">Self.X+4</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="882904708391479">
+                    <conditions>
+                        <condition id="-2" name="Compare Y" sid="977834636873749" type="eye">
+                            <param id="0" name="Comparison">4</param>
+                            <param id="1" name="Y co-ordinate">PlayerObject.Y</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="838795798027261" type="PlayerObject">
+                            <param id="0" name="Instance variable">Player</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Set Y" sid="324394451474143" type="eye">
+                            <param id="0" name="Y">Self.Y-4</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="207653631720638">
+                    <conditions>
+                        <condition id="-2" name="Compare Y" sid="244112025017814" type="eye">
+                            <param id="0" name="Comparison">2</param>
+                            <param id="1" name="Y co-ordinate">PlayerObject.Y</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="668294445791291" type="PlayerObject">
+                            <param id="0" name="Instance variable">Player</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Set Y" sid="484215228729755" type="eye">
+                            <param id="0" name="Y">Self.Y+4</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="423543168972717">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="152597810942670" type="eye">
+                    <param id="0" name="Object">PlayerObject</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="878390651853671" type="PlayerObject">
+                    <param id="0" name="Instance variable">Player</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions />
+        </event-block>
+    </events>
+</c2eventsheet>

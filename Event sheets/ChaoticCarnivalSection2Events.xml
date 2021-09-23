@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>ChaoticCarnivalSection2Events</name>
+    <events>
+        <include>bossevents_cc</include>
+        <include>MainPlayer</include>
+        <event-block sid="125509115005327">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="505163039760721" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="453462323018337" type="System">
+                    <param id="0" name="Variable">MaxPartyMemb</param>
+                    <param id="1" name="Value">3</param>
+                </action>
+                <action id="-9" name="Set value" sid="138872901533278" type="System">
+                    <param id="0" name="Variable">Char1IsInParty</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="817310973034804" type="System">
+                    <param id="0" name="Variable">Char2IsInParty</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="920296954292018" type="System">
+                    <param id="0" name="Variable">Char3IsInParty</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="713400597818211" type="System">
+                    <param id="0" name="Variable">PartyOrder</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="838597131091414" type="System">
+                    <param id="0" name="Variable">MiniBossIsDead</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="839092851842695" type="System">
+                    <param id="0" name="Variable">CurrentLevel</param>
+                    <param id="1" name="Value">&quot;ChaoticCarnival2&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="494233181223391" type="System">
+                    <param id="0" name="Variable">PartySwitchEnabled</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Play" sid="574073331550412" type="Audio">
+                    <param id="0" name="Audio file">CC2intro</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;CC2Intro&quot;</param>
+                </action>
+                <action id="4" name="Set animation" sid="376293552135705" type="hud_eyecountr">
+                    <param id="0" name="Animation">&quot;b&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="0" name="Call function" sid="280940255828884" type="Function">
+                    <param id="0" name="Name">&quot;SaveFunction&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="364276507549387">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="172779471725201" type="System">
+                            <param id="0" name="Variable">juliamode</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="813404430666769" type="System">
+                            <param id="0" name="Object to create">DialogueTrigger</param>
+                            <param id="1" name="Layer">&quot;PlayerLayer&quot;</param>
+                            <param id="2" name="X">5664</param>
+                            <param id="3" name="Y">3392</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="450704346707740" type="DialogueTrigger">
+                            <param id="0" name="Instance variable">dialogue</param>
+                            <param id="1" name="Value">&quot;Julia_Ellie1&quot;</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="681627301453607" type="DialogueTrigger">
+                            <param id="0" name="Instance variable">secondarydialogue</param>
+                            <param id="1" name="Value">&quot;Julia_Ellie1&quot;</param>
+                        </action>
+                        <action id="-7" name="Set size" sid="164462439434757" type="DialogueTrigger">
+                            <param id="0" name="Width">72</param>
+                            <param id="1" name="Height">72</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="575045234702111">
+            <conditions>
+                <condition id="0" name="On ended" sid="692082174666392" type="Audio">
+                    <param id="0" name="Tag">&quot;CC2Intro&quot;</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="121467264986480" type="Looney">
+                    <param id="0" name="Instance variable">active</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="596935577930166" type="Audio">
+                    <param id="0" name="Audio file">CC2loop</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;levelmusic&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="982545707717925">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="716506164926726" type="System">
+                    <param id="0" name="Variable">key</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">3</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="152982401370302" type="DialogueTrigger">
+                    <param id="0" name="Instance variable">dialogue</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;CCsection2gift&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="640359873555595" type="DialogueTrigger">
+                    <param id="0" name="Instance variable">dialogue</param>
+                    <param id="1" name="Value">&quot;CCsection2key&quot;</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="342271594201075" type="DialogueTrigger">
+                    <param id="0" name="Instance variable">worksonce</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="408066841470074">
+            <conditions>
+                <condition id="0" name="On function" sid="764930454368645" type="Function">
+                    <param id="0" name="Name">&quot;CC2_Joker&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="892365325859883" type="joker_entrance">
+                    <param id="0" name="Animation">&quot;open&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="133638017918460" type="System">
+                    <param id="0" name="Seconds">0.25</param>
+                </action>
+                <action id="0" name="Call function" sid="328663338201246" type="Function">
+                    <param id="0" name="Name">&quot;end_dialogue&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="0" name="Call function" sid="923331901687062" type="Function">
+                    <param id="0" name="Name">&quot;Screen_FadeOut&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="-16" name="Wait" sid="972531729027704" type="System">
+                    <param id="0" name="Seconds">1.0</param>
+                </action>
+                <action id="33" name="Stop all" sid="140445880396577" type="Audio" />
+                <action id="-9" name="Set value" sid="207486542573633" type="System">
+                    <param id="0" name="Variable">SavePointisActive</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="116214255037323" type="System">
+                    <param id="0" name="Variable">key</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="862834170950901" type="System">
+                    <param id="0" name="Layout">JokerRoom</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="956119565454352">
+            <conditions>
+                <condition id="-2" name="Compare Y" sid="656159190525825" type="Camera">
+                    <param id="0" name="Comparison">4</param>
+                    <param id="1" name="Y co-ordinate">3000</param>
+                </condition>
+            </conditions>
+            <actions />
+        </event-block>
+        <event-block sid="237468265985730">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="835557955229128" type="System" />
+                <condition disabled="1" id="-3" name="Is on-screen" sid="553801724535091" type="eye" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="707436372256374">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="245296219956383" type="eye">
+                            <param id="0" name="Comparison">4</param>
+                            <param id="1" name="X co-ordinate">PlayerObject.X</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="301925898391168" type="PlayerObject">
+                            <param id="0" name="Instance variable">Player</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-1" name="Set X" sid="981136327662886" type="eye">
+                            <param id="0" name="X">Self.X-4</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="752092615586936">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="721611050488337" type="eye">
+                            <param id="0" name="Comparison">2</param>
+                            <param id="1" name="X co-ordinate">PlayerObject.X</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="423296563505800" type="PlayerObject">
+                            <param id="0" name="Instance variable">Player</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-1" name="Set X" sid="591918267110335" type="eye">
+                            <param id="0" name="X">Self.X+4</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="375244718001433">
+                    <conditions>
+                        <condition id="-2" name="Compare Y" sid="679073291341139" type="eye">
+                            <param id="0" name="Comparison">4</param>
+                            <param id="1" name="Y co-ordinate">PlayerObject.Y</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="431693989377648" type="PlayerObject">
+                            <param id="0" name="Instance variable">Player</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Set Y" sid="400340106330966" type="eye">
+                            <param id="0" name="Y">Self.Y-4</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="372663422174849">
+                    <conditions>
+                        <condition id="-2" name="Compare Y" sid="694768964450897" type="eye">
+                            <param id="0" name="Comparison">2</param>
+                            <param id="1" name="Y co-ordinate">PlayerObject.Y</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="403089532696862" type="PlayerObject">
+                            <param id="0" name="Instance variable">Player</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Set Y" sid="810580898218920" type="eye">
+                            <param id="0" name="Y">Self.Y+4</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="130057070550220">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="492070204348842" type="eye">
+                    <param id="0" name="Object">PlayerObject</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="188938791228268" type="PlayerObject">
+                    <param id="0" name="Instance variable">Player</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions />
+        </event-block>
+    </events>
+</c2eventsheet>

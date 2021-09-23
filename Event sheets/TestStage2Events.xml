@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>TestStage2Events</name>
+    <events>
+        <include>MainPlayer</include>
+    </events>
+</c2eventsheet>

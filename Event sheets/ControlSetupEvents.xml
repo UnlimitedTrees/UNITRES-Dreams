@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>ControlSetupEvents</name>
+    <events>
+        <event-block any="1" sid="788376575546563">
+            <conditions>
+                <condition id="4" name="On key code pressed" sid="133868368448218" type="Keyboard">
+                    <param id="0" name="Keycode">key_left</param>
+                </condition>
+                <condition id="6" name="On button pressed" sid="864898940945152" type="Gamepad">
+                    <param id="0" name="Gamepad">0</param>
+                    <param id="1" name="Button">14</param>
+                </condition>
+                <condition id="5" name="Compare axis" sid="904689487328890" type="Gamepad">
+                    <param id="0" name="Gamepad">0</param>
+                    <param id="1" name="Axis">0</param>
+                    <param id="2" name="Comparison">2</param>
+                    <param id="3" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="893674584202472">
+                    <conditions>
+                        <condition disabled="1" id="-7" name="Compare instance variable" sid="158668744878881" type="HUDcursor">
+                            <param id="0" name="Instance variable">atPos</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-1" name="Set X" sid="458348136919716" type="HUDcursor">
+                            <param id="0" name="X">160</param>
+                        </action>
+                        <action disabled="1" id="-12" name="Subtract from" sid="129176751040018" type="HUDcursor">
+                            <param id="0" name="Instance variable">atPos</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block any="1" sid="588779419107623">
+            <conditions>
+                <condition id="4" name="On key code pressed" sid="856017241469191" type="Keyboard">
+                    <param id="0" name="Keycode">key_right</param>
+                </condition>
+                <condition id="5" name="Compare axis" sid="719167910911333" type="Gamepad">
+                    <param id="0" name="Gamepad">0</param>
+                    <param id="1" name="Axis">0</param>
+                    <param id="2" name="Comparison">4</param>
+                    <param id="3" name="Value">0</param>
+                </condition>
+                <condition id="6" name="On button pressed" sid="592381317849116" type="Gamepad">
+                    <param id="0" name="Gamepad">0</param>
+                    <param id="1" name="Button">15</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="809531368829255">
+                    <conditions>
+                        <condition disabled="1" id="-7" name="Compare instance variable" sid="858332011507113" type="HUDcursor">
+                            <param id="0" name="Instance variable">atPos</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-1" name="Set X" sid="305192112219149" type="HUDcursor">
+                            <param id="0" name="X">416</param>
+                        </action>
+                        <action disabled="1" id="-11" name="Add to" sid="942704488725528" type="HUDcursor">
+                            <param id="0" name="Instance variable">atPos</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block any="1" sid="457377802901620">
+            <conditions>
+                <condition id="4" name="On key code pressed" sid="250459861860291" type="Keyboard">
+                    <param id="0" name="Keycode">key_jump</param>
+                </condition>
+                <condition id="4" name="On key code pressed" sid="742076813129474" type="Keyboard">
+                    <param id="0" name="Keycode">key_attack</param>
+                </condition>
+                <condition id="4" name="On key code pressed" sid="802080483563731" type="Keyboard">
+                    <param id="0" name="Keycode">key_start</param>
+                </condition>
+                <condition id="6" name="On button pressed" sid="375574703908358" type="Gamepad">
+                    <param id="0" name="Gamepad">0</param>
+                    <param id="1" name="Button">0</param>
+                </condition>
+                <condition id="6" name="On button pressed" sid="805058013108740" type="Gamepad">
+                    <param id="0" name="Gamepad">0</param>
+                    <param id="1" name="Button">9</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="212403968953554">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="157223888065762" type="HUDcursor">
+                            <param id="0" name="Instance variable">atPos</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="679883787581647" type="System">
+                            <param id="0" name="Variable">ControlSetup</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="273018381034902">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="792419667247957" type="HUDcursor">
+                            <param id="0" name="Instance variable">atPos</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="633388844725891" type="System">
+                            <param id="0" name="Variable">ControlSetup</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="428160755855183">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="553713982081059" type="HUDcursor">
+                            <param id="0" name="Instance variable">atPos</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="992464474392003" type="System">
+                            <param id="0" name="Variable">ControlSetup</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="957923371515940">
+                    <conditions />
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="991817771956245" type="System">
+                            <param id="0" name="Layout">NOTICE</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="936151250306629">
+            <conditions>
+                <condition id="3" name="On touched object" sid="229275259594482" type="Touch">
+                    <param id="0" name="Object">ControlSelection</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="192031055250408">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="241749274774935" type="ControlSelection">
+                            <param id="0" name="Instance variable">type</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="275876384368427" type="System">
+                            <param id="0" name="Variable">ControlSetup</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="461558591069550">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="573729072777512" type="ControlSelection">
+                            <param id="0" name="Instance variable">type</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="785747000977124" type="System">
+                            <param id="0" name="Variable">ControlSetup</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="684566926293904">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="394929225886836" type="ControlSelection">
+                            <param id="0" name="Instance variable">type</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="146028507107412" type="System">
+                            <param id="0" name="Variable">ControlSetup</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="551387606416014">
+                    <conditions />
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="790913508491168" type="System">
+                            <param id="0" name="Layout">NOTICE</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>

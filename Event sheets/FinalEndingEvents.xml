@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>FinalEndingEvents</name>
+    <events>
+        <event-block sid="786582288298445">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="797803758723014" type="System" />
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="879155847854904" type="projecttimelogo">
+                    <param id="0" name="Instance variable">randomver</param>
+                    <param id="1" name="Value">floor(random(0, 8))</param>
+                </action>
+                <action id="-16" name="Wait" sid="647669901228581" type="System">
+                    <param id="0" name="Seconds">2.0</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="120307452757369">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="728428660546423" type="projecttimelogo">
+                            <param id="0" name="Instance variable">randomver</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="213888694920469" type="Audio">
+                            <param id="0" name="Audio file">credits1</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;credits&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="242517202864919">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="519050798450212" type="projecttimelogo">
+                            <param id="0" name="Instance variable">randomver</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="166697919970495" type="Audio">
+                            <param id="0" name="Audio file">credits1</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;credits&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="431896132284228">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="976170717429163" type="projecttimelogo">
+                            <param id="0" name="Instance variable">randomver</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="841754773226552" type="Audio">
+                            <param id="0" name="Audio file">credits1</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;credits&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="785958004636722">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="762799283900507" type="projecttimelogo">
+                            <param id="0" name="Instance variable">randomver</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="865126415188518" type="Audio">
+                            <param id="0" name="Audio file">credits3</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;credits&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="147327829039699">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="182600772305323" type="projecttimelogo">
+                            <param id="0" name="Instance variable">randomver</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="323215282844530" type="Audio">
+                            <param id="0" name="Audio file">credits2</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;credits&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="560514114014236">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="280272080899463" type="projecttimelogo">
+                            <param id="0" name="Instance variable">randomver</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">5</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="968029082465709" type="Audio">
+                            <param id="0" name="Audio file">credits1</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;credits&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="621784333950004">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="741088802452711" type="projecttimelogo">
+                            <param id="0" name="Instance variable">randomver</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">6</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="472429394668584" type="Audio">
+                            <param id="0" name="Audio file">credits1</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;credits&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="712381355841599">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="293977024815364" type="projecttimelogo">
+                            <param id="0" name="Instance variable">randomver</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">7</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="635329905923108" type="Audio">
+                            <param id="0" name="Audio file">credits2</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;credits&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="223713878870852">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="889933765967058" type="projecttimelogo">
+                            <param id="0" name="Instance variable">randomver</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">8</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="686853643446401" type="Audio">
+                            <param id="0" name="Audio file">credits1</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;credits&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="327364109212722">
+            <conditions>
+                <condition id="0" name="On ended" sid="342529877538811" type="Audio">
+                    <param id="0" name="Tag">&quot;credits&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="164219729401091" type="System">
+                    <param id="0" name="Seconds">3.0</param>
+                </action>
+                <action behavior="Fade" id="2" name="Set fade-in time" sid="764985431774865" type="fadein">
+                    <param id="0" name="Fade-in time">1.0</param>
+                </action>
+                <action id="-16" name="Wait" sid="942714206831644" type="System">
+                    <param id="0" name="Seconds">1.0</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="632752700156744" type="System">
+                    <param id="0" name="Layout">UnlimitedTrees</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

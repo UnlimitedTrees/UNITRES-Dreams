@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>MysticGardenEvents</name>
+    <events>
+        <include>MainPlayer</include>
+        <event-block sid="943460321235072">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="586731194161571" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="101210953763470" type="Function">
+                    <param id="0" name="Name">&quot;Screen_FadeOut&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="-9" name="Set value" sid="345102254613445" type="System">
+                    <param id="0" name="Variable">MaxPartyMemb</param>
+                    <param id="1" name="Value">3</param>
+                </action>
+                <action id="-9" name="Set value" sid="820141397708468" type="System">
+                    <param id="0" name="Variable">Char1IsInParty</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="233522392065961" type="System">
+                    <param id="0" name="Variable">Char2IsInParty</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="558525130975958" type="System">
+                    <param id="0" name="Variable">Char3IsInParty</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="907169206053313" type="System">
+                    <param id="0" name="Variable">PartyOrder</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="264697682680163" type="System">
+                    <param id="0" name="Variable">MiniBossIsDead</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="575282803852247" type="System">
+                    <param id="0" name="Variable">CurrentLevel</param>
+                    <param id="1" name="Value">&quot;MysticGarden&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="389305933483928" type="System">
+                    <param id="0" name="Variable">PartySwitchEnabled</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="898327608696221" type="System">
+                    <param id="0" name="Variable">levelhasgrav</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Play" sid="988134666045085" type="Audio">
+                    <param id="0" name="Audio file">MG1intro</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;MG1Intro&quot;</param>
+                </action>
+                <action id="4" name="Set animation" sid="352748028365646" type="hud_eyecountr">
+                    <param id="0" name="Animation">&quot;a&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="0" name="Play" sid="889241030200365" type="Audio">
+                    <param id="0" name="Audio file">chain_platform_rotate</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;chain_platformloop&quot;</param>
+                </action>
+                <action id="2" name="Set muted" sid="800829590581395" type="Audio">
+                    <param id="0" name="Tag">&quot;chain_platformloop&quot;</param>
+                    <param id="1" name="State">0</param>
+                </action>
+                <action id="0" name="Play" sid="924877668726441" type="Audio">
+                    <param id="0" name="Audio file">mouseliner_running</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;mouselinerloop&quot;</param>
+                </action>
+                <action id="2" name="Set muted" sid="512052570576718" type="Audio">
+                    <param id="0" name="Tag">&quot;mouselinerloop&quot;</param>
+                    <param id="1" name="State">0</param>
+                </action>
+                <action id="2" name="Set muted" sid="739614713247208" type="Audio">
+                    <param id="0" name="Tag">&quot;sandwormsfx&quot;</param>
+                    <param id="1" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="955806191892520">
+            <conditions>
+                <condition id="0" name="On ended" sid="537872708993202" type="Audio">
+                    <param id="0" name="Tag">&quot;MG1Intro&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="177103056265828" type="Audio">
+                    <param id="0" name="Audio file">MG1loop</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;levelmusic&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

@@ -1,0 +1,310 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>StorybookEvents</name>
+    <events>
+        <include>MainPlayer</include>
+        <event-block sid="671523404533215">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="136819850056024" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="845735808485282" type="Audio">
+                    <param id="0" name="Audio file">Interlude</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;menumusic&quot;</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="405907554372991" type="System">
+                    <param id="0" name="Layer">&quot;HUD&quot;</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="448600919486318" type="System">
+                    <param id="0" name="Variable">CurrentLevel</param>
+                    <param id="1" name="Value">&quot;Storybook&quot;</param>
+                </action>
+                <action id="-3" name="Create object" sid="406160709817019" type="System">
+                    <param id="0" name="Object to create">ihatevideogames</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">-600</param>
+                    <param id="3" name="Y">-600</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="682536929621766" title="cursor movement ooga booga">
+            <sub-events>
+                <event-block sid="550955138547191">
+                    <conditions>
+                        <condition id="-9" name="Layer is visible" sid="881339162564961" type="System">
+                            <param id="0" name="Layer">&quot;Objects&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="303143240543620">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="253225071677069" type="storybook_cursor">
+                                    <param id="0" name="Object">storybook_selection</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="837706841199272" type="storybook_cursor">
+                                    <param id="0" name="Instance variable">type</param>
+                                    <param id="1" name="Value">storybook_selection.type</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block any="1" sid="732226929936358">
+                            <conditions>
+                                <condition id="4" name="On key code pressed" sid="359636439948079" type="Keyboard">
+                                    <param id="0" name="Keycode">key_up</param>
+                                </condition>
+                                <condition id="6" name="On button pressed" sid="329624168879716" type="Gamepad">
+                                    <param id="0" name="Gamepad">0</param>
+                                    <param id="1" name="Button">12</param>
+                                </condition>
+                                <condition id="5" name="Compare axis" sid="610661578492315" type="Gamepad">
+                                    <param id="0" name="Gamepad">0</param>
+                                    <param id="1" name="Axis">1</param>
+                                    <param id="2" name="Comparison">2</param>
+                                    <param id="3" name="Value">-16</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="913373894935047">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="781816074692919" type="storybook_cursor">
+                                            <param id="0" name="Instance variable">area</param>
+                                            <param id="1" name="Comparison">4</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-2" name="Set Y" sid="253418114582465" type="storybook_cursor">
+                                            <param id="0" name="Y">self.Y-64</param>
+                                        </action>
+                                        <action id="-12" name="Subtract from" sid="771250708225312" type="storybook_cursor">
+                                            <param id="0" name="Instance variable">area</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block any="1" sid="916641791937875">
+                            <conditions>
+                                <condition id="4" name="On key code pressed" sid="740986445869243" type="Keyboard">
+                                    <param id="0" name="Keycode">key_down</param>
+                                </condition>
+                                <condition id="6" name="On button pressed" sid="976852655678045" type="Gamepad">
+                                    <param id="0" name="Gamepad">0</param>
+                                    <param id="1" name="Button">13</param>
+                                </condition>
+                                <condition id="5" name="Compare axis" sid="626897338315266" type="Gamepad">
+                                    <param id="0" name="Gamepad">0</param>
+                                    <param id="1" name="Axis">1</param>
+                                    <param id="2" name="Comparison">4</param>
+                                    <param id="3" name="Value">16</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="834733806970841">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="443077630236777" type="storybook_cursor">
+                                            <param id="0" name="Instance variable">area</param>
+                                            <param id="1" name="Comparison">2</param>
+                                            <param id="2" name="Value">5</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-2" name="Set Y" sid="211815012800237" type="storybook_cursor">
+                                            <param id="0" name="Y">self.Y+64</param>
+                                        </action>
+                                        <action id="-11" name="Add to" sid="611408295895426" type="storybook_cursor">
+                                            <param id="0" name="Instance variable">area</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block any="1" sid="935334834909480">
+                            <conditions>
+                                <condition id="4" name="On key code pressed" sid="763423616539405" type="Keyboard">
+                                    <param id="0" name="Keycode">key_jump</param>
+                                </condition>
+                                <condition id="4" name="On key code pressed" sid="680056169673020" type="Keyboard">
+                                    <param id="0" name="Keycode">key_start</param>
+                                </condition>
+                                <condition id="6" name="On button pressed" sid="892055240872059" type="Gamepad">
+                                    <param id="0" name="Gamepad">0</param>
+                                    <param id="1" name="Button">0</param>
+                                </condition>
+                                <condition id="6" name="On button pressed" sid="323098802000795" type="Gamepad">
+                                    <param id="0" name="Gamepad">0</param>
+                                    <param id="1" name="Button">9</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="486285846423790">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="350514390323964" type="storybook_cursor">
+                                            <param id="0" name="Instance variable">type</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Call function" sid="874915722178987" type="Function">
+                                            <param id="0" name="Name">&quot;dialogue&quot;</param>
+                                            <param id="1" name="Parameter {n}">&quot;storybook_thefacility&quot;</param>
+                                        </action>
+                                        <action id="-4" name="Set layer visible" sid="351002139900760" type="System">
+                                            <param id="0" name="Layer">&quot;Objects&quot;</param>
+                                            <param id="1" name="Visibility">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="154175032156335">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="310434079560021" type="storybook_cursor">
+                                            <param id="0" name="Instance variable">type</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">2</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Call function" sid="725632975773950" type="Function">
+                                            <param id="0" name="Name">&quot;dialogue&quot;</param>
+                                            <param id="1" name="Parameter {n}">&quot;storybook_thelonelygardener&quot;</param>
+                                        </action>
+                                        <action id="-4" name="Set layer visible" sid="192078386276434" type="System">
+                                            <param id="0" name="Layer">&quot;Objects&quot;</param>
+                                            <param id="1" name="Visibility">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="698448903314767">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="316114890814683" type="storybook_cursor">
+                                            <param id="0" name="Instance variable">type</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">3</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Call function" sid="426511043943882" type="Function">
+                                            <param id="0" name="Name">&quot;dialogue&quot;</param>
+                                            <param id="1" name="Parameter {n}">&quot;storybook_thecarnival&quot;</param>
+                                        </action>
+                                        <action id="-4" name="Set layer visible" sid="336431938531972" type="System">
+                                            <param id="0" name="Layer">&quot;Objects&quot;</param>
+                                            <param id="1" name="Visibility">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="445521594747155">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="644971984690498" type="storybook_cursor">
+                                            <param id="0" name="Instance variable">type</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">4</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Call function" sid="562021239195332" type="Function">
+                                            <param id="0" name="Name">&quot;dialogue&quot;</param>
+                                            <param id="1" name="Parameter {n}">&quot;storybook_theguardian&quot;</param>
+                                        </action>
+                                        <action id="-4" name="Set layer visible" sid="198363680992998" type="System">
+                                            <param id="0" name="Layer">&quot;Objects&quot;</param>
+                                            <param id="1" name="Visibility">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="496027345856412">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="490376763858596" type="storybook_cursor">
+                                            <param id="0" name="Instance variable">type</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">5</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Call function" sid="982177651436432" type="Function">
+                                            <param id="0" name="Name">&quot;dialogue&quot;</param>
+                                            <param id="1" name="Parameter {n}">&quot;storybook_thebaddream&quot;</param>
+                                        </action>
+                                        <action id="-4" name="Set layer visible" sid="656538457207215" type="System">
+                                            <param id="0" name="Layer">&quot;Objects&quot;</param>
+                                            <param id="1" name="Visibility">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block any="1" sid="956991333086390">
+                            <conditions>
+                                <condition id="4" name="On key code pressed" sid="551242767293156" type="Keyboard">
+                                    <param id="0" name="Keycode">key_attack</param>
+                                </condition>
+                                <condition id="6" name="On button pressed" sid="468820485417196" type="Gamepad">
+                                    <param id="0" name="Gamepad">0</param>
+                                    <param id="1" name="Button">2</param>
+                                </condition>
+                                <condition id="6" name="On button pressed" sid="741364217490673" type="Gamepad">
+                                    <param id="0" name="Gamepad">0</param>
+                                    <param id="1" name="Button">7</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-4" name="Set layer visible" sid="176541635501180" type="System">
+                                    <param id="0" name="Layer">&quot;Objects&quot;</param>
+                                    <param id="1" name="Visibility">0</param>
+                                </action>
+                                <action id="-2" name="Go to layout" sid="429266835066216" type="System">
+                                    <param id="0" name="Layout">UnlimitedTrees</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="346081948224869" type="System">
+                                    <param id="0" name="Variable">pissdick</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="992019187799477" type="System">
+                                    <param id="0" name="Variable">sunk_opacity</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="500480885195545" type="System">
+                                    <param id="0" name="Variable">cacapoopee</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="320212541738353" type="System">
+                                    <param id="0" name="Variable">SavePointisActive</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="869498569030782" type="System">
+                                    <param id="0" name="Variable">Score</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="551232427268191" type="System">
+                                    <param id="0" name="Variable">menuvar</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="434319230421784" type="System">
+                                    <param id="0" name="Variable">onmenu</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="567766000510523" type="System">
+                                    <param id="0" name="Variable">MiniBossIsDead</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

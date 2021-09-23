@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>EndingCutscene</name>
+    <events>
+        <event-block sid="646262077710661">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="159741963364293" type="System" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="247211881548502" type="playerskin_Trees">
+                    <param id="0" name="Animation">&quot;Walking&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="524792329190536">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="792121808514923" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="784525413466212">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="378253685706688" type="playerskin_Trees">
+                            <param id="0" name="Instance variable">cutscenevar</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-1" name="Set X" sid="788344985206027" type="playerskin_Trees">
+                            <param id="0" name="X">Self.X+1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="438335419693293">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="949783283956909" type="playerskin_Trees">
+                            <param id="0" name="Instance variable">cutscenevar</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Set Y" sid="461626603236182" type="Camera">
+                            <param id="0" name="Y">Self.Y-1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="274156499337430">
+            <conditions>
+                <condition id="-1" name="Compare X" sid="681810414810026" type="playerskin_Trees">
+                    <param id="0" name="Comparison">5</param>
+                    <param id="1" name="X co-ordinate">224</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="296535848801488" type="playerskin_Trees">
+                    <param id="0" name="Instance variable">cutscenevar</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="417355244340876" type="playerskin_Trees">
+                    <param id="0" name="Instance variable">cutscenevar</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Call function" sid="925013805953367" type="Function">
+                    <param id="0" name="Name">&quot;end&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="600550596566726">
+            <conditions>
+                <condition id="0" name="On function" sid="263897425959773" type="Function">
+                    <param id="0" name="Name">&quot;end&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="452806309034907" type="playerskin_Trees">
+                    <param id="0" name="Animation">&quot;Idle&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="146983122779120" type="System">
+                    <param id="0" name="Seconds">2.0</param>
+                </action>
+                <action id="4" name="Set animation" sid="155925418090576" type="playerskin_Trees">
+                    <param id="0" name="Animation">&quot;Sleeping&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="428290505683637" type="System">
+                    <param id="0" name="Seconds">2.0</param>
+                </action>
+                <action id="-10" name="Set value" sid="623275992267643" type="playerskin_Trees">
+                    <param id="0" name="Instance variable">cutscenevar</param>
+                    <param id="1" name="Value">2</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

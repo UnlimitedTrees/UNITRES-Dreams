@@ -1,0 +1,725 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>SpecialMenuEvents</name>
+    <events>
+        <event-group description="" sid="114160595474755" title="ooga booga moment">
+            <sub-events>
+                <event-block any="1" sid="273423620135997">
+                    <conditions>
+                        <condition id="4" name="On key code pressed" sid="343159588918723" type="Keyboard">
+                            <param id="0" name="Keycode">key_left</param>
+                        </condition>
+                        <condition id="6" name="On button pressed" sid="209160764862000" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Button">14</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="421175350424772">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="764970369961203" type="specialmenu_bg">
+                                    <param id="0" name="Instance variable">slot</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-12" name="Subtract from" sid="114576524117592" type="specialmenu_bg">
+                                    <param id="0" name="Instance variable">slot</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block any="1" sid="303278275997204">
+                    <conditions>
+                        <condition id="4" name="On key code pressed" sid="996349124922075" type="Keyboard">
+                            <param id="0" name="Keycode">key_right</param>
+                        </condition>
+                        <condition id="6" name="On button pressed" sid="266960376232040" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Button">15</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="196654016331352">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="772431642032296" type="specialmenu_bg">
+                                    <param id="0" name="Instance variable">slot</param>
+                                    <param id="1" name="Comparison">2</param>
+                                    <param id="2" name="Value">39</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-11" name="Add to" sid="320977598749045" type="specialmenu_bg">
+                                    <param id="0" name="Instance variable">slot</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block any="1" sid="830205125585054">
+                    <conditions>
+                        <condition id="4" name="On key code pressed" sid="651589044255641" type="Keyboard">
+                            <param id="0" name="Keycode">key_attack</param>
+                        </condition>
+                        <condition id="6" name="On button pressed" sid="686167666045866" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Button">2</param>
+                        </condition>
+                        <condition id="6" name="On button pressed" sid="440556594925322" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Button">7</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action disabled="1" id="33" name="Stop all" sid="267037829332821" type="Audio" />
+                        <action id="-2" name="Go to layout" sid="254599919854589" type="System">
+                            <param id="0" name="Layout">Menu</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="399392483562615" type="System">
+                            <param id="0" name="Variable">pissdick</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="451101209820411" type="System">
+                            <param id="0" name="Variable">sunk_opacity</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="961373499214728" type="System">
+                            <param id="0" name="Variable">cacapoopee</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="679163310379838" type="System">
+                            <param id="0" name="Variable">SavePointisActive</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="288574372140535" type="System">
+                            <param id="0" name="Variable">Score</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="889504740526291" type="System">
+                            <param id="0" name="Variable">menuvar</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="226393293512083" type="System">
+                            <param id="0" name="Variable">onmenu</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="141419712592848" type="System">
+                            <param id="0" name="Variable">MiniBossIsDead</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="952300579969585" title="mm yes hamburger">
+            <sub-events>
+                <event-block sid="363732275624337">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="500093937387622" type="specialmenu_bg">
+                            <param id="0" name="Instance variable">slot</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="189633527573047" type="specialmenu_bg">
+                            <param id="0" name="Animation">&quot;a&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="129831075018200">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="466283838271505" type="specialmenu_bg">
+                            <param id="0" name="Instance variable">slot</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="620501104168655" type="specialmenu_bg">
+                            <param id="0" name="Animation">&quot;b&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="710650474456490">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="627567482899045" type="specialmenu_bg">
+                            <param id="0" name="Instance variable">slot</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="551323986918150" type="specialmenu_bg">
+                            <param id="0" name="Animation">&quot;c&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="193822586712419">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="293412015384614" type="specialmenu_bg">
+                            <param id="0" name="Instance variable">slot</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="797854921885411" type="specialmenu_bg">
+                            <param id="0" name="Animation">&quot;d&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="519713503735192">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="221950271383552" type="specialmenu_bg">
+                            <param id="0" name="Instance variable">slot</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">5</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="300934939107627" type="specialmenu_bg">
+                            <param id="0" name="Animation">&quot;e&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="374169132125770">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="343269422150383" type="specialmenu_bg">
+                            <param id="0" name="Instance variable">slot</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">6</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="392678470478930" type="specialmenu_bg">
+                            <param id="0" name="Animation">&quot;f&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="146534718067244">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="989392868918369" type="specialmenu_bg">
+                            <param id="0" name="Instance variable">slot</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">7</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="276868296182052" type="specialmenu_bg">
+                            <param id="0" name="Animation">&quot;g&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="401793544099133">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="331397648401314" type="specialmenu_bg">
+                            <param id="0" name="Instance variable">slot</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">8</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="547164343095888" type="specialmenu_bg">
+                            <param id="0" name="Animation">&quot;h&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="890715249287821">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="384634472040677" type="specialmenu_bg">
+                            <param id="0" name="Instance variable">slot</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">9</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="661925830657097" type="specialmenu_bg">
+                            <param id="0" name="Animation">&quot;i&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="170294831582082">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="281857161742855" type="specialmenu_bg">
+                            <param id="0" name="Instance variable">slot</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">10</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="845795577750158" type="specialmenu_bg">
+                            <param id="0" name="Animation">&quot;j&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="591140325477433">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="980910809890917" type="specialmenu_bg">
+                            <param id="0" name="Instance variable">slot</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">11</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="557396995520276" type="specialmenu_bg">
+                            <param id="0" name="Animation">&quot;k&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="467861197391034">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="788089611262525" type="specialmenu_bg">
+                            <param id="0" name="Instance variable">slot</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">12</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="235262850335119" type="specialmenu_bg">
+                            <param id="0" name="Animation">&quot;l&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="512300596232300">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="168830557568999" type="specialmenu_bg">
+                            <param id="0" name="Instance variable">slot</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">13</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="632018201878003" type="specialmenu_bg">
+                            <param id="0" name="Animation">&quot;m&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="521008099320724">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="393305175527231" type="specialmenu_bg">
+                            <param id="0" name="Instance variable">slot</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">14</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="708905301317118" type="specialmenu_bg">
+                            <param id="0" name="Animation">&quot;n&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="661339289207894">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="844534324599631" type="specialmenu_bg">
+                            <param id="0" name="Instance variable">slot</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">15</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="524207450357191" type="specialmenu_bg">
+                            <param id="0" name="Animation">&quot;o&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="169303584950363">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="941213137645098" type="specialmenu_bg">
+                            <param id="0" name="Instance variable">slot</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">16</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="903727651624192" type="specialmenu_bg">
+                            <param id="0" name="Animation">&quot;p&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="453234269234838">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="921951206179214" type="specialmenu_bg">
+                            <param id="0" name="Instance variable">slot</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">17</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="494079648050377" type="specialmenu_bg">
+                            <param id="0" name="Animation">&quot;q&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="838872907613865">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="928718363622462" type="specialmenu_bg">
+                            <param id="0" name="Instance variable">slot</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">18</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="990905407107640" type="specialmenu_bg">
+                            <param id="0" name="Animation">&quot;r&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="485768480463736">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="643674768766759" type="specialmenu_bg">
+                            <param id="0" name="Instance variable">slot</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">19</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="687594571559972" type="specialmenu_bg">
+                            <param id="0" name="Animation">&quot;s&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="227219100867416">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="914433199864833" type="specialmenu_bg">
+                            <param id="0" name="Instance variable">slot</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">20</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="110720422316429" type="specialmenu_bg">
+                            <param id="0" name="Animation">&quot;t&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="469324983677363">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="218257662766401" type="specialmenu_bg">
+                            <param id="0" name="Instance variable">slot</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">21</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="646757956528487" type="specialmenu_bg">
+                            <param id="0" name="Animation">&quot;u&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="967670012551479">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="973315708432508" type="specialmenu_bg">
+                            <param id="0" name="Instance variable">slot</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">22</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="787215683097039" type="specialmenu_bg">
+                            <param id="0" name="Animation">&quot;v&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="157177747277625">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="300461425599010" type="specialmenu_bg">
+                            <param id="0" name="Instance variable">slot</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">23</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="258354875655206" type="specialmenu_bg">
+                            <param id="0" name="Animation">&quot;w&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="905267183908768">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="407816231326712" type="specialmenu_bg">
+                            <param id="0" name="Instance variable">slot</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">24</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="889312027003421" type="specialmenu_bg">
+                            <param id="0" name="Animation">&quot;x&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="471074819324936">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="221010818455098" type="specialmenu_bg">
+                            <param id="0" name="Instance variable">slot</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">25</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="182101496442951" type="specialmenu_bg">
+                            <param id="0" name="Animation">&quot;y&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="709186735806866">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="804530287678551" type="specialmenu_bg">
+                            <param id="0" name="Instance variable">slot</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">26</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="550240294971319" type="specialmenu_bg">
+                            <param id="0" name="Animation">&quot;z&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="756446501706793">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="107896888732057" type="specialmenu_bg">
+                            <param id="0" name="Instance variable">slot</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">27</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="663478379619028" type="specialmenu_bg">
+                            <param id="0" name="Animation">&quot;za&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="164209649015854">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="600153792691759" type="specialmenu_bg">
+                            <param id="0" name="Instance variable">slot</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">28</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="847393221030027" type="specialmenu_bg">
+                            <param id="0" name="Animation">&quot;zb&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="673554432086761">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="561404893974469" type="specialmenu_bg">
+                            <param id="0" name="Instance variable">slot</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">29</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="899213170634908" type="specialmenu_bg">
+                            <param id="0" name="Animation">&quot;zc&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="155308068890472">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="663074328007966" type="specialmenu_bg">
+                            <param id="0" name="Instance variable">slot</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">30</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="442081643442690" type="specialmenu_bg">
+                            <param id="0" name="Animation">&quot;zd&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="722959755561830">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="268133356564133" type="specialmenu_bg">
+                            <param id="0" name="Instance variable">slot</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">31</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="950309298007747" type="specialmenu_bg">
+                            <param id="0" name="Animation">&quot;ze&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="376521037635805">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="521523105563938" type="specialmenu_bg">
+                            <param id="0" name="Instance variable">slot</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">32</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="933205186089784" type="specialmenu_bg">
+                            <param id="0" name="Animation">&quot;zf&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="721746325930710">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="633635514959315" type="specialmenu_bg">
+                            <param id="0" name="Instance variable">slot</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">33</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="337053860289970" type="specialmenu_bg">
+                            <param id="0" name="Animation">&quot;zg&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="390894746882600">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="373287182076774" type="specialmenu_bg">
+                            <param id="0" name="Instance variable">slot</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">34</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="226982726821045" type="specialmenu_bg">
+                            <param id="0" name="Animation">&quot;zh&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="591412037008833">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="285211453443658" type="specialmenu_bg">
+                            <param id="0" name="Instance variable">slot</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">35</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="586233621497762" type="specialmenu_bg">
+                            <param id="0" name="Animation">&quot;zi&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="422580504931000">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="745621011589219" type="specialmenu_bg">
+                            <param id="0" name="Instance variable">slot</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">36</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="562619057351317" type="specialmenu_bg">
+                            <param id="0" name="Animation">&quot;zj&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="524627683832142">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="833716582315369" type="specialmenu_bg">
+                            <param id="0" name="Instance variable">slot</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">37</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="511347449961087" type="specialmenu_bg">
+                            <param id="0" name="Animation">&quot;zk&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="180724510575285">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="630983493812622" type="specialmenu_bg">
+                            <param id="0" name="Instance variable">slot</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">38</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="168632106125616" type="specialmenu_bg">
+                            <param id="0" name="Animation">&quot;zl&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="687017008083315">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="566785475855701" type="specialmenu_bg">
+                            <param id="0" name="Instance variable">slot</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">39</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="603720649740431" type="specialmenu_bg">
+                            <param id="0" name="Animation">&quot;zm&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="522514218818208">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="521363057379240" type="System" />
+            </conditions>
+            <actions>
+                <action id="33" name="Stop all" sid="681466309488223" type="Audio" />
+                <action id="0" name="Play" sid="967596438321708" type="Audio">
+                    <param id="0" name="Audio file">LittleBlackCat</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;menumusic&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

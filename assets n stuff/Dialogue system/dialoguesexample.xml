@@ -1,0 +1,65 @@
+<?xml version='1.0' ?>
+<Dialogues>
+	<Dialogue id='intro' key_next='32' key_faster='88' key_up='38' key_down='40' first_line_id='0' typing_sound ='typing'>
+		<TextLine id='0' id_next='1'>Hello, I am Sahasrahla. This is a demonstration of a Zelda style dialogue system. Press Space to continue to the next part of dialogue.</TextLine>
+		<TextLine id='1' id_next='2'>
+			Here you will see the power of this dialogue box.</TextLine>
+		<TextLine id='2' id_next='6'>
+			Well, it's not perfect. But if it will be enough for your basic dialogue box needs. </TextLine>
+		<TextLine id='6' id_next='7'>
+			You can press X to display the text faster. I will talk a lot next time so you can try. </TextLine>
+		<TextLine id='7' id_next='8'>LALALALA LALALALALA LALALALALA LALALALA LALALALA LALALALA LALALALALA LALALALALA LALALALALA LALALALALA LALALALALA LALALALALA LALALALALA LALALALALA LALALALALA LALALALA LALALALALA LALALALALALA</TextLine>
+		<TextLine id='8' id_next='9' begin_function='play_music'>I will now also use a function to play a music file!</TextLine>
+		<TextLine id='9' id_next='10'>Pretty neat huh?</TextLine>
+		<TextLine id='10' id_next='13'>I will now also use a function to stop the music.</TextLine>
+		<TextLine id='13' id_next='14' begin_function='stop_music'>
+			All the dialogues must be written in a single XML file and only a few events are needed. </TextLine>
+		<TextLine id='14' id_next='variable_insert1'  begin_function='move_sass' end_function='stop_sass'>
+			You just need to write some functions, if you want to do something at the beginning of a new speech line, or when the text is entirely displayed. </TextLine>
+
+		<TextLine id='variable_insert1' id_next='variable_insert2'>
+			A new feature has just been added. You can now insert variable names in your dialogues and it will replace it with it's value.</TextLine>
+		<TextLine id='variable_insert2' id_next='variable_insert3'>
+			Let's make an example.</TextLine>
+		<TextLine id='variable_insert3' id_next='variable_insert4' type='wait' auto='1' begin_function='create_buttons'>Click a few time on this rupee and when you're done, click on done.</TextLine>
+		<TextLine id='variable_insert4' id_next='variable_insert5' >You've clicked that rupee...exactly {clicks} times.</TextLine>
+		<TextLine id='variable_insert5' id_next='15'>
+			I couldn't know that before you clicked, haha.</TextLine>
+		
+
+		
+		<TextLine id='15' id_next='16' type='wait' begin_function='move_deku' >
+			Oh, what's this? </TextLine>
+		<TextLine id='16' id_next='17' >
+			Do you know this deku scrub? </TextLine>
+		<TextLine id='17' id_next='1' type='choice' choice_number='2'>
+			<Choice id_next='18'> Yes.</Choice>
+			<Choice id_next='19'> No.</Choice>
+		</TextLine>
+		<TextLine id='18' id_next='20'>
+			That's what I thought. You two look pretty intimate if you know what I mean.</TextLine>
+		<TextLine id='19' id_next='20'>
+			Oh really? She seems to know you though.</TextLine>
+		<TextLine id='20' id_next='21'>
+			By the way, you just saw that it's possible to do choices.</TextLine>
+		<TextLine id='21' id_next='22'>
+			We're having a lot of fun, aren't we?</TextLine>
+		<TextLine id='22' id_next='23'>
+			SHUT UP HYLIANS!!!</TextLine>
+		<TextLine id='23' id_next='24'>
+			I'M GONNA KILL YOU ALL!!!</TextLine>
+		<TextLine id='24' id_next='25'>
+			Oh my god! I think it's time to end the demonstration.</TextLine>
+		<TextLine id='25' id_next='26'>
+			I have to go now, I hope it will be useful to you. Leave a comment if you want some improvements.</TextLine>
+		<TextLine id='26' id_next='end' end_dialogue_function='bye'>
+			Bye!</TextLine>
+	</Dialogue>
+
+	<Dialogue id='skip' key_next='32' key_faster='88' key_skip='13' skip_function='change_screen' first_line_id='0' typing_sound ='typing'>
+		<TextLine id='0' id_next='1'>
+			I forgot to tell you, you can also choose to set a key to skip an entire dialogue.</TextLine>
+		<TextLine id='1' id_next='0'>
+			Press Enter to skip this looping dialogue.</TextLine>
+	</Dialogue>
+</Dialogues>

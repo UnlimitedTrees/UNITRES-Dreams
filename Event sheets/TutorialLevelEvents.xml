@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>TutorialLevelEvents</name>
+    <events>
+        <include>MainPlayer</include>
+        <event-block sid="191418563818725">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="155642590333721" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="243830470421439" type="Function">
+                    <param id="0" name="Name">&quot;Screen_FadeOut&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="-9" name="Set value" sid="821833847387081" type="System">
+                    <param id="0" name="Variable">MaxPartyMemb</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="139969949182274" type="System">
+                    <param id="0" name="Variable">Char1IsInParty</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="975902897392835" type="System">
+                    <param id="0" name="Variable">Char2IsInParty</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="496365225422913" type="System">
+                    <param id="0" name="Variable">Char3IsInParty</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="595136041699754" type="System">
+                    <param id="0" name="Variable">PartyOrder</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="300774077680023" type="System">
+                    <param id="0" name="Variable">CurrentLevel</param>
+                    <param id="1" name="Value">&quot;TutorialLevel&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="960851090743336" type="System">
+                    <param id="0" name="Variable">PartySwitchEnabled</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="303903698903859" type="System">
+                    <param id="0" name="Variable">levelhasgrav</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="0" name="Play" sid="739844851328998" type="Audio">
+                    <param id="0" name="Audio file">tutorialzone</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;levelmusic&quot;</param>
+                </action>
+                <action id="4" name="Set animation" sid="726202198254665" type="hud_eyecountr">
+                    <param id="0" name="Animation">&quot;b&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="655417812077608">
+            <conditions>
+                <condition id="-1" name="Compare X" sid="833144068281554" type="Camera">
+                    <param id="0" name="Comparison">5</param>
+                    <param id="1" name="X co-ordinate">19020</param>
+                </condition>
+                <condition id="-8" name="Is boolean instance variable set" sid="257946932129044" type="Camera">
+                    <param id="0" name="Instance variable">IsActive</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set boolean" sid="122421075770461" type="Camera">
+                    <param id="0" name="Instance variable">IsActive</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="0" name="Call function" sid="421512823454451" type="Function">
+                    <param id="0" name="Name">&quot;Screen_FadeIn&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="-16" name="Wait" sid="892333562688913" type="System">
+                    <param id="0" name="Seconds">1.0</param>
+                </action>
+                <action id="33" name="Stop all" sid="285512080545241" type="Audio" />
+                <action id="-2" name="Go to layout" sid="329006020833878" type="System">
+                    <param id="0" name="Layout">DreamscapeDistance - Section 1Final</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="919771248154254">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="211656060121066" type="System" />
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="399923301006393" type="FakeTest_BG2green">
+                    <param id="0" name="X">Self.X+0.75</param>
+                </action>
+                <action id="-2" name="Set Y" sid="813428660627094" type="FakeTest_BG2green">
+                    <param id="0" name="Y">Self.Y+0.5</param>
+                </action>
+                <action id="-1" name="Set X" sid="985798950468528" type="FakeTest_BG1green">
+                    <param id="0" name="X">Self.X-0.25</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="378649524682892">
+            <conditions>
+                <condition id="-1" name="Compare X" sid="281330136164232" type="FakeTest_BG2green">
+                    <param id="0" name="Comparison">5</param>
+                    <param id="1" name="X co-ordinate">0</param>
+                </condition>
+                <condition id="-2" name="Compare Y" sid="715852383905095" type="FakeTest_BG2green">
+                    <param id="0" name="Comparison">5</param>
+                    <param id="1" name="Y co-ordinate">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="669668796929652" type="FakeTest_BG2green">
+                    <param id="0" name="X">-32</param>
+                    <param id="1" name="Y">-32</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="223250691313761">
+            <conditions>
+                <condition id="-1" name="Compare X" sid="333979308288959" type="FakeTest_BG1green">
+                    <param id="0" name="Comparison">3</param>
+                    <param id="1" name="X co-ordinate">-32</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="266545106654075" type="FakeTest_BG1green">
+                    <param id="0" name="X">0</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

@@ -1,0 +1,829 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>MP_LocalLevelSelectEvents</name>
+    <events>
+        <event-group description="" sid="248699039795131" title="cursor movement3">
+            <sub-events>
+                <event-block disabled="1" sid="217926490657763">
+                    <conditions>
+                        <condition id="-3" inverted="1" name="Is on-screen" sid="156800678208429" type="finallevelselect_selection" />
+                    </conditions>
+                    <actions>
+                        <action id="-1" name="Set X" sid="210331369416024" type="Camera">
+                            <param id="0" name="X">finallevelselect_selection.X</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="548479780173121">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="619101198852334" type="finallevelselect_selection">
+                            <param id="0" name="Object">finallevelselect_object</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="756060404691519" type="finallevelselect_selection">
+                            <param id="0" name="Instance variable">type</param>
+                            <param id="1" name="Value">finallevelselect_object.type</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="550985789682751">
+                    <conditions>
+                        <condition id="4" name="On key code pressed" sid="726959965497456" type="Keyboard">
+                            <param id="0" name="Keycode">key_left</param>
+                        </condition>
+                        <condition id="6" name="On button pressed" sid="369018855197555" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Button">14</param>
+                        </condition>
+                        <condition id="5" name="Compare axis" sid="790550619075743" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Axis">0</param>
+                            <param id="2" name="Comparison">2</param>
+                            <param id="3" name="Value">-16</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="384330933766926">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="750991663863954" type="finallevelselect_selection">
+                                    <param id="0" name="Instance variable">xpos</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-1" name="Set X" sid="267662468924153" type="finallevelselect_selection">
+                                    <param id="0" name="X">self.X-192</param>
+                                </action>
+                                <action id="-12" name="Subtract from" sid="449690732045314" type="finallevelselect_selection">
+                                    <param id="0" name="Instance variable">xpos</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block any="1" sid="939666314541036">
+                    <conditions>
+                        <condition id="4" name="On key code pressed" sid="791436255866446" type="Keyboard">
+                            <param id="0" name="Keycode">key_right</param>
+                        </condition>
+                        <condition id="6" name="On button pressed" sid="327122196210774" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Button">15</param>
+                        </condition>
+                        <condition id="5" name="Compare axis" sid="432174346702878" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Axis">0</param>
+                            <param id="2" name="Comparison">4</param>
+                            <param id="3" name="Value">16</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="978074471136865">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="160446426156497" type="finallevelselect_selection">
+                                    <param id="0" name="Instance variable">xpos</param>
+                                    <param id="1" name="Comparison">2</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-1" name="Set X" sid="344092137279084" type="finallevelselect_selection">
+                                    <param id="0" name="X">self.X+192</param>
+                                </action>
+                                <action id="-11" name="Add to" sid="518463281066338" type="finallevelselect_selection">
+                                    <param id="0" name="Instance variable">xpos</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block any="1" sid="431614887541427">
+                    <conditions>
+                        <condition id="4" name="On key code pressed" sid="122887451541997" type="Keyboard">
+                            <param id="0" name="Keycode">key_up</param>
+                        </condition>
+                        <condition id="6" name="On button pressed" sid="973423488788622" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Button">12</param>
+                        </condition>
+                        <condition id="5" name="Compare axis" sid="889874523614050" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Axis">1</param>
+                            <param id="2" name="Comparison">2</param>
+                            <param id="3" name="Value">-16</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="529177502025601">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="570778777519037" type="finallevelselect_selection">
+                                    <param id="0" name="Instance variable">ypos</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Set Y" sid="298701463209480" type="finallevelselect_selection">
+                                    <param id="0" name="Y">self.Y-96</param>
+                                </action>
+                                <action id="-12" name="Subtract from" sid="140661017436259" type="finallevelselect_selection">
+                                    <param id="0" name="Instance variable">ypos</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block any="1" sid="696349475745316">
+                    <conditions>
+                        <condition id="4" name="On key code pressed" sid="831499378143930" type="Keyboard">
+                            <param id="0" name="Keycode">key_down</param>
+                        </condition>
+                        <condition id="6" name="On button pressed" sid="349972023746089" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Button">13</param>
+                        </condition>
+                        <condition id="5" name="Compare axis" sid="604651985658239" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Axis">1</param>
+                            <param id="2" name="Comparison">4</param>
+                            <param id="3" name="Value">16</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="235057117012570">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="793962757265345" type="finallevelselect_selection">
+                                    <param id="0" name="Instance variable">ypos</param>
+                                    <param id="1" name="Comparison">2</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Set Y" sid="929481210613071" type="finallevelselect_selection">
+                                    <param id="0" name="Y">self.Y+96</param>
+                                </action>
+                                <action id="-11" name="Add to" sid="634013277983373" type="finallevelselect_selection">
+                                    <param id="0" name="Instance variable">ypos</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block any="1" sid="906680344279874">
+                    <conditions>
+                        <condition id="4" name="On key code pressed" sid="308977541775713" type="Keyboard">
+                            <param id="0" name="Keycode">key_jump</param>
+                        </condition>
+                        <condition id="4" name="On key code pressed" sid="992071431997037" type="Keyboard">
+                            <param id="0" name="Keycode">key_start</param>
+                        </condition>
+                        <condition id="6" name="On button pressed" sid="431067050851836" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Button">0</param>
+                        </condition>
+                        <condition id="6" name="On button pressed" sid="648142254075752" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Button">9</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="6" name="Stop" sid="371781808354548" type="Audio">
+                            <param id="0" name="Tag">&quot;menumusic&quot;</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="236434585813954">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="693726870301614" type="finallevelselect_selection">
+                                    <param id="0" name="Instance variable">type</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;BrandNewWorld&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="310689357081351" type="System">
+                                    <param id="0" name="Layout">BrandNewWorld</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="861231698338248" type="System">
+                                    <param id="0" name="Variable">SavedX</param>
+                                    <param id="1" name="Value">88</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="590785183398446" type="System">
+                                    <param id="0" name="Variable">SavedY</param>
+                                    <param id="1" name="Value">-232</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="225671657270833">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="491804356267793" type="finallevelselect_selection">
+                                    <param id="0" name="Instance variable">type</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;DreamscapeDistance1&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="789747262540134" type="System">
+                                    <param id="0" name="Layout">DreamscapeDistance - Section 1Final</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="257354309648064">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="845695686363226" type="finallevelselect_selection">
+                                    <param id="0" name="Instance variable">type</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;DreamscapeDistance2&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="798802067507596" type="System">
+                                    <param id="0" name="Layout">DreamscapeDistance - Section 2Final</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="187704892889017">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="561747090648324" type="finallevelselect_selection">
+                                    <param id="0" name="Instance variable">type</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;ChaoticCarnival1&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="685759329987464" type="System">
+                                    <param id="0" name="Layout">ChaoticCarnival - Section 1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="277928411587577">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="728368399444434" type="finallevelselect_selection">
+                                    <param id="0" name="Instance variable">type</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;ChaoticCarnival2&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="359386710217106" type="System">
+                                    <param id="0" name="Layout">ChaoticCarnival - Section 2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="473067799866085">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="495601659202745" type="finallevelselect_selection">
+                                    <param id="0" name="Instance variable">type</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;TranquilTrench1&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="104687477975051" type="System">
+                                    <param id="0" name="Layout">TranquilTrench - Section 1final</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="378495574488106">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="763507626189216" type="finallevelselect_selection">
+                                    <param id="0" name="Instance variable">type</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;TranquilTrench2&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="772446878314302" type="System">
+                                    <param id="0" name="Layout">TranquilTrench - Section 2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="343564640835991">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="386543717165398" type="finallevelselect_selection">
+                                    <param id="0" name="Instance variable">type</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;SubconciousScenery1&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="429430831032884" type="System">
+                                    <param id="0" name="Layout">SubconciousScenery - Section 1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="519659161941695">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="661523417530502" type="finallevelselect_selection">
+                                    <param id="0" name="Instance variable">type</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;SubconciousScenery2&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="752526666533083" type="System">
+                                    <param id="0" name="Layout">SubconciousScenery - Section 2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="584206317941961">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="722304168794837" type="finallevelselect_selection">
+                                    <param id="0" name="Instance variable">type</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;SubconciousScenery1Final&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="858400318974462" type="System">
+                                    <param id="0" name="Layout">SubconsciousScenery - Section 1Final</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="909853646416483">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="679707662537973" type="finallevelselect_selection">
+                                    <param id="0" name="Instance variable">type</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;SubconciousScenery2Final&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="669406766144603" type="System">
+                                    <param id="0" name="Layout">SubconsciousScenery - Section 2Final</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="227580161792604">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="878909961691852" type="finallevelselect_selection">
+                                    <param id="0" name="Instance variable">type</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;JokerRoom&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="809375757725209" type="System">
+                                    <param id="0" name="Layout">JokerRoom</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="329594147103401">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="373518549829987" type="finallevelselect_selection">
+                                    <param id="0" name="Instance variable">type</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;Home&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="468908554436476" type="System">
+                                    <param id="0" name="Layout">Home</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="735781025416104">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="411099267916441" type="finallevelselect_selection">
+                                    <param id="0" name="Instance variable">type</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;CastleGrey&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="618724757347338" type="System">
+                                    <param id="0" name="Layout">CastleGrey - Secret</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="515647591405713">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="629177379454749" type="finallevelselect_selection">
+                                    <param id="0" name="Instance variable">type</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;ChaoticCarnivalX&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="257104847131603" type="System">
+                                    <param id="0" name="Layout">RadiantShrine</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="873483685145719">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="336569162069425" type="finallevelselect_selection">
+                                    <param id="0" name="Instance variable">type</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;GreenhouseFrenzy1&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="809171742266832" type="System">
+                                    <param id="0" name="Layout">GreenhouseFrenzy - Section 1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="792401933641581">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="108801833196817" type="finallevelselect_selection">
+                                    <param id="0" name="Instance variable">type</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;GreenhouseFrenzy2&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="147029265389911" type="System">
+                                    <param id="0" name="Layout">GreenhouseFrenzy - Section 2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="893628386376749">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="738266161214459" type="finallevelselect_selection">
+                                    <param id="0" name="Instance variable">type</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;PerfectCity1&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="841463960476533" type="System">
+                                    <param id="0" name="Layout">PerfectCity - Section 1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="642913993896415">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="700653030143399" type="finallevelselect_selection">
+                                    <param id="0" name="Instance variable">type</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;PerfectCity2&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="828772114712915" type="System">
+                                    <param id="0" name="Layout">PerfectCity - Section2final</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="231658302229031">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="720128777556971" type="finallevelselect_selection">
+                                    <param id="0" name="Instance variable">type</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;TranquilTrenchX&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="318268067740147" type="System">
+                                    <param id="0" name="Layout">TranquilTrench - Section X</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="133999189560868">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="298966696979909" type="finallevelselect_selection">
+                                    <param id="0" name="Instance variable">type</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;DreamscapeDistanceX&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="883358903940365" type="System">
+                                    <param id="0" name="Layout">DreamscapeDistance - Section X</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="479488602092316">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="214815103651101" type="finallevelselect_selection">
+                                    <param id="0" name="Instance variable">type</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;MysticGarden&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="150499730652019" type="System">
+                                    <param id="0" name="Layout">MysticGarden - Secret</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="489418826436225">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="452751976260212" type="finallevelselect_selection">
+                                    <param id="0" name="Instance variable">type</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;FakeTestLevel1&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="425664665530347" type="System">
+                                    <param id="0" name="Layout">FakeTest1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="428944663567597">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="124757622535987" type="finallevelselect_selection">
+                                    <param id="0" name="Instance variable">type</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;FakeTestLevel2&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="217244355980779" type="System">
+                                    <param id="0" name="Layout">FakeTest2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="821554458030523">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="941477687011142" type="finallevelselect_selection">
+                                    <param id="0" name="Instance variable">type</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;FakeTestLevel3&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="484940385639256" type="System">
+                                    <param id="0" name="Layout">FakeTest3</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="237449468929837">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="877106431899383" type="finallevelselect_selection">
+                                    <param id="0" name="Instance variable">type</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;FakeTestLevel4&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="941759771793900" type="System">
+                                    <param id="0" name="Layout">FakeTest4</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="657691065312716">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="135980923806906" type="finallevelselect_selection">
+                                    <param id="0" name="Instance variable">type</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;FakeTestLevel5&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="287614315021894" type="System">
+                                    <param id="0" name="Layout">FakeTest5</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="153599536921925">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="256695893600263" type="finallevelselect_selection">
+                                    <param id="0" name="Instance variable">type</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;FakeTestLevel6&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="594397741311368" type="System">
+                                    <param id="0" name="Layout">FakeTest6</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="230368162176002">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="853995987108206" type="finallevelselect_selection">
+                                    <param id="0" name="Instance variable">type</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;FakeTestLevel7&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="452462367038163" type="System">
+                                    <param id="0" name="Layout">FakeTest7</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="311698886060473">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="168513833101430" type="finallevelselect_selection">
+                                    <param id="0" name="Instance variable">type</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;DD1Beta&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="718978905318011" type="System">
+                                    <param id="0" name="Layout">DreamscapeDistance - Section 1Beta</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="869904084389077">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="635288364271557" type="finallevelselect_selection">
+                                    <param id="0" name="Instance variable">type</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;DD2Beta&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="214527330377639" type="System">
+                                    <param id="0" name="Layout">DreamscapeDistance - Section 2Beta</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="290519498592002">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="794193943577653" type="finallevelselect_selection">
+                                    <param id="0" name="Instance variable">type</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;TT1Beta&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="879833826715330" type="System">
+                                    <param id="0" name="Layout">TranquilTrench - Section 1beta</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="102319006519941">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="872331276795172" type="finallevelselect_selection">
+                                    <param id="0" name="Instance variable">type</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;PC2Beta&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="497806955701237" type="System">
+                                    <param id="0" name="Layout">PerfectCity - Section 2beta</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="361563518369450">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="742430637561179" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Play" sid="513676389475524" type="Audio">
+                                    <param id="0" name="Audio file">error</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block any="1" sid="127756201345092">
+                    <conditions>
+                        <condition id="4" name="On key code pressed" sid="357615957783704" type="Keyboard">
+                            <param id="0" name="Keycode">key_attack</param>
+                        </condition>
+                        <condition id="6" name="On button pressed" sid="273445177441476" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Button">2</param>
+                        </condition>
+                        <condition id="6" name="On button pressed" sid="298795030922306" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Button">7</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="841209927888905" type="System">
+                            <param id="0" name="Layout">Menu</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="158691828516019" type="System">
+                            <param id="0" name="Variable">pissdick</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="519671428116545" type="System">
+                            <param id="0" name="Variable">sunk_opacity</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="883913025128747" type="System">
+                            <param id="0" name="Variable">cacapoopee</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="131339546101581" type="System">
+                            <param id="0" name="Variable">SavePointisActive</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="532139500305877" type="System">
+                            <param id="0" name="Variable">Score</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="734739172408155" type="System">
+                            <param id="0" name="Variable">menuvar</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="232030420594664" type="System">
+                            <param id="0" name="Variable">onmenu</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="435535614146629" type="System">
+                            <param id="0" name="Variable">MiniBossIsDead</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="807401291508221" type="System">
+                            <param id="0" name="Variable">multiplayermode</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="261683883413936">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="637942211089866" type="System" />
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="147288074355760" type="FakeTest_BG1green">
+                    <param id="0" name="X">Self.X-((0.5 * 60) * dt)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="700542884657450">
+            <conditions>
+                <condition id="-1" name="Compare X" sid="821242095140535" type="FakeTest_BG1green">
+                    <param id="0" name="Comparison">3</param>
+                    <param id="1" name="X co-ordinate">-32</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="812869337454680" type="FakeTest_BG1green">
+                    <param id="0" name="X">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="161716664951380">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="499620215902475" type="finallevelselect_selection">
+                    <param id="0" name="Instance variable">type</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;DreamscapeDistance1&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="884185725550919" type="menu_title">
+                    <param id="0" name="Text">&quot;Dreamscape Distance - Section 1&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="910785292692875">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="747381753289105" type="finallevelselect_selection">
+                    <param id="0" name="Instance variable">type</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;ChaoticCarnival2&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="401627252164670" type="menu_title">
+                    <param id="0" name="Text">&quot;Chaotic Carnival - Section 2&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="952890237493345">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="455097790489674" type="finallevelselect_selection">
+                    <param id="0" name="Instance variable">type</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;GreenhouseFrenzy1&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="903779324708945" type="menu_title">
+                    <param id="0" name="Text">&quot;Greenhouse Frenzy - Section 1&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="289048846367890">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="597914993938339" type="finallevelselect_selection">
+                    <param id="0" name="Instance variable">type</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;MysticGarden&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="972053897636063" type="menu_title">
+                    <param id="0" name="Text">&quot;Mystic Garden&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

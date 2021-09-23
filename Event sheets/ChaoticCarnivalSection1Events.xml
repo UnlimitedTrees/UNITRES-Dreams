@@ -1,0 +1,1594 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>ChaoticCarnivalSection1Events</name>
+    <events>
+        <include>bossevents_UNITRES</include>
+        <include>bossevents_cc</include>
+        <include>MainPlayer</include>
+        <variable constant="0" name="gamerpoints" sid="548315083262047" static="0" type="number">0</variable>
+        <variable constant="0" name="pissdick3" sid="948034813644112" static="0" type="number">0</variable>
+        <variable constant="0" name="pissdick2" sid="844686979663825" static="0" type="number">1</variable>
+        <variable constant="0" name="obamaMoment" sid="753988671563940" static="0" type="number">0</variable>
+        <variable constant="0" name="pissdick" sid="362152955169651" static="0" type="number">0</variable>
+        <event-block sid="658504806794955">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="322374199596455" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="357158753060976" type="Function">
+                    <param id="0" name="Name">&quot;Screen_FadeOut&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="-9" name="Set value" sid="961619206275754" type="System">
+                    <param id="0" name="Variable">MaxPartyMemb</param>
+                    <param id="1" name="Value">2</param>
+                </action>
+                <action id="-9" name="Set value" sid="964380984446732" type="System">
+                    <param id="0" name="Variable">Char1IsInParty</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="922465918867676" type="System">
+                    <param id="0" name="Variable">Char2IsInParty</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="986841889006174" type="System">
+                    <param id="0" name="Variable">Char3IsInParty</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="846941355487170" type="System">
+                    <param id="0" name="Variable">PartyOrder</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="671221461242381" type="System">
+                    <param id="0" name="Variable">MiniBossIsDead</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="485058307156677" type="System">
+                    <param id="0" name="Variable">CurrentLevel</param>
+                    <param id="1" name="Value">&quot;ChaoticCarnival1&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="741747796558264" type="System">
+                    <param id="0" name="Variable">PartySwitchEnabled</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="718436580837491" type="System">
+                    <param id="0" name="Variable">pissdick</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="0" name="Play" sid="691293315000054" type="Audio">
+                    <param id="0" name="Audio file">CC1</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;levelmusic&quot;</param>
+                </action>
+                <action id="4" name="Set animation" sid="140945668843971" type="hud_eyecountr">
+                    <param id="0" name="Animation">&quot;b&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="0" name="Call function" sid="809500037993042" type="Function">
+                    <param id="0" name="Name">&quot;SaveFunction&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="132679536520841">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="306122932821841" type="PlayerObject">
+                            <param id="0" name="Instance variable">Character</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="865557450753948" type="PlayerObject">
+                            <param id="0" name="X">32088</param>
+                            <param id="1" name="Y">880</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="850094615495986">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="130631206324009" type="System">
+                            <param id="0" name="Variable">juliamode</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="532771328257526" type="System">
+                            <param id="0" name="Object to create">DialogueTrigger</param>
+                            <param id="1" name="Layer">&quot;PlayerLayer&quot;</param>
+                            <param id="2" name="X">13336</param>
+                            <param id="3" name="Y">304</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="228657312216931" type="DialogueTrigger">
+                            <param id="0" name="Instance variable">dialogue</param>
+                            <param id="1" name="Value">&quot;Julia_Millie1&quot;</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="960488648022676" type="DialogueTrigger">
+                            <param id="0" name="Instance variable">secondarydialogue</param>
+                            <param id="1" name="Value">&quot;Julia_Millie1&quot;</param>
+                        </action>
+                        <action id="-7" name="Set size" sid="638068031277085" type="DialogueTrigger">
+                            <param id="0" name="Width">72</param>
+                            <param id="1" name="Height">72</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="881000287210976" type="System">
+                            <param id="0" name="Object to create">DialogueTrigger</param>
+                            <param id="1" name="Layer">&quot;PlayerLayer&quot;</param>
+                            <param id="2" name="X">11520</param>
+                            <param id="3" name="Y">1216</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="581225735792863" type="DialogueTrigger">
+                            <param id="0" name="Instance variable">dialogue</param>
+                            <param id="1" name="Value">&quot;Julia_galacticat&quot;</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="162054759103172" type="DialogueTrigger">
+                            <param id="0" name="Instance variable">secondarydialogue</param>
+                            <param id="1" name="Value">&quot;Julia_galacticat&quot;</param>
+                        </action>
+                        <action id="-7" name="Set size" sid="414450528158699" type="DialogueTrigger">
+                            <param id="0" name="Width">72</param>
+                            <param id="1" name="Height">72</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="946387470522069" type="System">
+                            <param id="0" name="Object to create">DialogueTrigger</param>
+                            <param id="1" name="Layer">&quot;PlayerLayer&quot;</param>
+                            <param id="2" name="X">13592</param>
+                            <param id="3" name="Y">272</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="893388143060117" type="DialogueTrigger">
+                            <param id="0" name="Instance variable">dialogue</param>
+                            <param id="1" name="Value">&quot;Julia_Goldian1&quot;</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="555595370683818" type="DialogueTrigger">
+                            <param id="0" name="Instance variable">secondarydialogue</param>
+                            <param id="1" name="Value">&quot;Julia_Goldian1&quot;</param>
+                        </action>
+                        <action id="-7" name="Set size" sid="867308217362074" type="DialogueTrigger">
+                            <param id="0" name="Width">72</param>
+                            <param id="1" name="Height">72</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-group description="" sid="139749485410196" title="Review Time">
+            <sub-events>
+                <event-group description="" sid="880795732336637" title="PeepeePoopooPiss">
+                    <sub-events>
+                        <event-block sid="372832042647356">
+                            <conditions>
+                                <condition id="-18" name="On created" sid="522109254080121" type="ReviewTime_negative" />
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Wait" sid="994501237979615" type="System">
+                                    <param id="0" name="Seconds">2.0</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="727102068313875" type="ReviewTime_negative" />
+                            </actions>
+                        </event-block>
+                        <event-block sid="711640909276200">
+                            <conditions>
+                                <condition id="-18" name="On created" sid="974785960075561" type="ReviewTime_positive" />
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Wait" sid="942685681606107" type="System">
+                                    <param id="0" name="Seconds">2.0</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="843735336966118" type="ReviewTime_positive" />
+                            </actions>
+                        </event-block>
+                        <event-block sid="571378181349124">
+                            <conditions>
+                                <condition id="-1" name="Every tick" sid="247062392317678" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Set Y" sid="606608450232390" type="ReviewTime_negative">
+                                    <param id="0" name="Y">Self.Y-((2 * 60) * dt)</param>
+                                </action>
+                                <action id="-2" name="Set Y" sid="511262379931328" type="ReviewTime_positive">
+                                    <param id="0" name="Y">Self.Y-((2 * 60) * dt)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block any="1" sid="568174673675066">
+                            <conditions>
+                                <condition id="17" name="On tap object" sid="336952381529428" type="Touch">
+                                    <param id="0" name="Object">TouchControl_Z</param>
+                                </condition>
+                                <condition id="4" name="On key code pressed" sid="430630124094025" type="Keyboard">
+                                    <param id="0" name="Keycode">key_jump</param>
+                                </condition>
+                                <condition id="6" name="On button pressed" sid="444859934383160" type="Gamepad">
+                                    <param id="0" name="Gamepad">0</param>
+                                    <param id="1" name="Button">0</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="389903309074943">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="720844301828215" type="System">
+                                            <param id="0" name="Variable">pissdick3</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="731414325848290" type="System">
+                                            <param id="0" name="Variable">obamaMoment</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="850971725482608" type="System">
+                                            <param id="0" name="Variable">obamaMoment</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="281058180363833" type="System">
+                                            <param id="0" name="Variable">pissdick3</param>
+                                            <param id="1" name="Value">2</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="304076087272390" type="ReviewTime_title">
+                                            <param id="0" name="Text">&quot;How do u like ur burgres&quot;</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="790984721146838" type="System">
+                                            <param id="0" name="Seconds">0.1</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="297442909628239" type="System">
+                                            <param id="0" name="Variable">pissdick3</param>
+                                            <param id="1" name="Value">3</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="668371177763255" type="System">
+                                            <param id="0" name="Variable">obamaMoment</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                    </actions>
+                                    <sub-events>
+                                        <event-block sid="920228913002321">
+                                            <conditions>
+                                                <condition id="1" name="Is overlapping another object" sid="636351714857601" type="peeeeee">
+                                                    <param id="0" name="Object">burgerselection</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="533540172245593" type="burgerselection">
+                                                    <param id="0" name="Instance variable">type</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">&quot;The Classic&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-3" name="Create object" sid="861402431517161" type="System">
+                                                    <param id="0" name="Object to create">ReviewTime_positive</param>
+                                                    <param id="1" name="Layer">&quot;ReviewTime&quot;</param>
+                                                    <param id="2" name="X">160</param>
+                                                    <param id="3" name="Y">216</param>
+                                                </action>
+                                                <action id="0" name="Set text" sid="282819813766781" type="ReviewTime_positive">
+                                                    <param id="0" name="Text">&quot;+5 Is Pretty Decent!&quot;</param>
+                                                </action>
+                                                <action id="-10" name="Add to" sid="188587103311487" type="System">
+                                                    <param id="0" name="Variable">gamerpoints</param>
+                                                    <param id="1" name="Value">5</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="308201014541348">
+                                            <conditions>
+                                                <condition id="1" name="Is overlapping another object" sid="368672971461971" type="peeeeee">
+                                                    <param id="0" name="Object">burgerselection</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="525858006172364" type="burgerselection">
+                                                    <param id="0" name="Instance variable">type</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">&quot;The Cool One&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-3" name="Create object" sid="478330318907198" type="System">
+                                                    <param id="0" name="Object to create">ReviewTime_positive</param>
+                                                    <param id="1" name="Layer">&quot;ReviewTime&quot;</param>
+                                                    <param id="2" name="X">160</param>
+                                                    <param id="3" name="Y">216</param>
+                                                </action>
+                                                <action id="0" name="Set text" sid="882913474997936" type="ReviewTime_positive">
+                                                    <param id="0" name="Text">&quot;+10 An Awesome Choice!!&quot;</param>
+                                                </action>
+                                                <action id="-10" name="Add to" sid="649044857865601" type="System">
+                                                    <param id="0" name="Variable">gamerpoints</param>
+                                                    <param id="1" name="Value">10</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="451920190307768">
+                                            <conditions>
+                                                <condition id="1" name="Is overlapping another object" sid="368776055214404" type="peeeeee">
+                                                    <param id="0" name="Object">burgerselection</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="608234480436989" type="burgerselection">
+                                                    <param id="0" name="Instance variable">type</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">&quot;The Red One&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-3" name="Create object" sid="334223101718792" type="System">
+                                                    <param id="0" name="Object to create">ReviewTime_positive</param>
+                                                    <param id="1" name="Layer">&quot;ReviewTime&quot;</param>
+                                                    <param id="2" name="X">160</param>
+                                                    <param id="3" name="Y">216</param>
+                                                </action>
+                                                <action id="0" name="Set text" sid="348924814807452" type="ReviewTime_positive">
+                                                    <param id="0" name="Text">&quot;+4 Uhhhh alirght&quot;</param>
+                                                </action>
+                                                <action id="-10" name="Add to" sid="250420031210805" type="System">
+                                                    <param id="0" name="Variable">gamerpoints</param>
+                                                    <param id="1" name="Value">4</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="687773767240852">
+                                            <conditions>
+                                                <condition id="1" name="Is overlapping another object" sid="610230262785196" type="peeeeee">
+                                                    <param id="0" name="Object">burgerselection</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="844945441376647" type="burgerselection">
+                                                    <param id="0" name="Instance variable">type</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">&quot;It&apos;s a Damn Hotdog&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-3" name="Create object" sid="255663467775393" type="System">
+                                                    <param id="0" name="Object to create">ReviewTime_negative</param>
+                                                    <param id="1" name="Layer">&quot;ReviewTime&quot;</param>
+                                                    <param id="2" name="X">160</param>
+                                                    <param id="3" name="Y">216</param>
+                                                </action>
+                                                <action id="0" name="Set text" sid="925579159001795" type="ReviewTime_negative">
+                                                    <param id="0" name="Text">&quot;-5 that just aint a burger&quot;</param>
+                                                </action>
+                                                <action id="-11" name="Subtract from" sid="660964649388257" type="System">
+                                                    <param id="0" name="Variable">gamerpoints</param>
+                                                    <param id="1" name="Value">5</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="656458514431130">
+                                            <conditions>
+                                                <condition id="1" name="Is overlapping another object" sid="643225472313136" type="peeeeee">
+                                                    <param id="0" name="Object">burgerselection</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="510774100587889" type="burgerselection">
+                                                    <param id="0" name="Instance variable">type</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">&quot;It&apos;s a Feature&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-3" name="Create object" sid="787961283145062" type="System">
+                                                    <param id="0" name="Object to create">ReviewTime_negative</param>
+                                                    <param id="1" name="Layer">&quot;ReviewTime&quot;</param>
+                                                    <param id="2" name="X">160</param>
+                                                    <param id="3" name="Y">216</param>
+                                                </action>
+                                                <action id="0" name="Set text" sid="208384490339938" type="ReviewTime_negative">
+                                                    <param id="0" name="Text">&quot;-9999999 LOL!&quot;</param>
+                                                </action>
+                                                <action id="-11" name="Subtract from" sid="403774553231847" type="System">
+                                                    <param id="0" name="Variable">gamerpoints</param>
+                                                    <param id="1" name="Value">9999999</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="479225278889700">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="911899081848051" type="burgerselection">
+                                                    <param id="0" name="Instance variable">type</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">&quot;The Classic&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="4" name="Set animation" sid="492424556997457" type="burgerselection">
+                                                    <param id="0" name="Animation">&quot;Grilled&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="890284111297236" type="burgerselection">
+                                                    <param id="0" name="Instance variable">type</param>
+                                                    <param id="1" name="Value">&quot;Grilled Burger&quot;</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="351471868389821">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="524624425460101" type="burgerselection">
+                                                    <param id="0" name="Instance variable">type</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">&quot;The Cool One&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="4" name="Set animation" sid="392133386489802" type="burgerselection">
+                                                    <param id="0" name="Animation">&quot;Oven&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="300687591572013" type="burgerselection">
+                                                    <param id="0" name="Instance variable">type</param>
+                                                    <param id="1" name="Value">&quot;Oven-Flavored Hams&quot;</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="446975054715835">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="674354116771318" type="burgerselection">
+                                                    <param id="0" name="Instance variable">type</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">&quot;The Red One&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="4" name="Set animation" sid="476445942629607" type="burgerselection">
+                                                    <param id="0" name="Animation">&quot;Waved&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="436413495123847" type="burgerselection">
+                                                    <param id="0" name="Instance variable">type</param>
+                                                    <param id="1" name="Value">&quot;The 4 A.M Meal on a Saturday&quot;</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="207568250144689">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="242982902678204" type="burgerselection">
+                                                    <param id="0" name="Instance variable">type</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">&quot;It&apos;s a Damn Hotdog&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="4" name="Set animation" sid="811187052447551" type="burgerselection">
+                                                    <param id="0" name="Animation">&quot;Boiled&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="637736062697977" type="burgerselection">
+                                                    <param id="0" name="Instance variable">type</param>
+                                                    <param id="1" name="Value">&quot;Boiled Burger (Wet and Moist!)&quot;</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block any="1" sid="263989143270738">
+                            <conditions>
+                                <condition id="17" name="On tap object" sid="483201315813257" type="Touch">
+                                    <param id="0" name="Object">TouchControl_Z</param>
+                                </condition>
+                                <condition id="4" name="On key code pressed" sid="539999069741057" type="Keyboard">
+                                    <param id="0" name="Keycode">key_jump</param>
+                                </condition>
+                                <condition id="6" name="On button pressed" sid="420350153935612" type="Gamepad">
+                                    <param id="0" name="Gamepad">0</param>
+                                    <param id="1" name="Button">0</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="748288823004686">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="412658570762266" type="System">
+                                            <param id="0" name="Variable">pissdick3</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">3</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="118780180303709" type="System">
+                                            <param id="0" name="Variable">obamaMoment</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="505989358438683" type="System">
+                                            <param id="0" name="Variable">obamaMoment</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="105961456370983" type="System">
+                                            <param id="0" name="Variable">pissdick3</param>
+                                            <param id="1" name="Value">4</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="801985180715047" type="ReviewTime_title">
+                                            <param id="0" name="Text">&quot;what is ur Opinion on Burger&quot;</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="246776682275251" type="System">
+                                            <param id="0" name="Seconds">0.1</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="431147964690205" type="System">
+                                            <param id="0" name="Variable">pissdick3</param>
+                                            <param id="1" name="Value">5</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="822752916374358" type="System">
+                                            <param id="0" name="Variable">obamaMoment</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                    </actions>
+                                    <sub-events>
+                                        <event-block sid="487364507006124">
+                                            <conditions>
+                                                <condition id="1" name="Is overlapping another object" sid="454225133068823" type="peeeeee">
+                                                    <param id="0" name="Object">burgerselection</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="247729270349635" type="burgerselection">
+                                                    <param id="0" name="Instance variable">type</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">&quot;Grilled Burger&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-3" name="Create object" sid="179124076300422" type="System">
+                                                    <param id="0" name="Object to create">ReviewTime_positive</param>
+                                                    <param id="1" name="Layer">&quot;ReviewTime&quot;</param>
+                                                    <param id="2" name="X">160</param>
+                                                    <param id="3" name="Y">216</param>
+                                                </action>
+                                                <action id="0" name="Set text" sid="256142186664994" type="ReviewTime_positive">
+                                                    <param id="0" name="Text">&quot;+10 is Fine with Me&quot;</param>
+                                                </action>
+                                                <action id="-10" name="Add to" sid="527949963792651" type="System">
+                                                    <param id="0" name="Variable">gamerpoints</param>
+                                                    <param id="1" name="Value">10</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="386355141598704">
+                                            <conditions>
+                                                <condition id="1" name="Is overlapping another object" sid="500272066910344" type="peeeeee">
+                                                    <param id="0" name="Object">burgerselection</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="655673142364502" type="burgerselection">
+                                                    <param id="0" name="Instance variable">type</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">&quot;Oven-Flavored Hams&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-3" name="Create object" sid="722019596528025" type="System">
+                                                    <param id="0" name="Object to create">ReviewTime_negative</param>
+                                                    <param id="1" name="Layer">&quot;ReviewTime&quot;</param>
+                                                    <param id="2" name="X">160</param>
+                                                    <param id="3" name="Y">216</param>
+                                                </action>
+                                                <action id="0" name="Set text" sid="301953388090815" type="ReviewTime_negative">
+                                                    <param id="0" name="Text">&quot;-5 that soundz Weird 2 me&quot;</param>
+                                                </action>
+                                                <action id="-11" name="Subtract from" sid="293580128194719" type="System">
+                                                    <param id="0" name="Variable">gamerpoints</param>
+                                                    <param id="1" name="Value">5</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="456502260473926">
+                                            <conditions>
+                                                <condition id="1" name="Is overlapping another object" sid="173624340121130" type="peeeeee">
+                                                    <param id="0" name="Object">burgerselection</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="682182910867125" type="burgerselection">
+                                                    <param id="0" name="Instance variable">type</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">&quot;The 4 A.M Meal on a Saturday&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-3" name="Create object" sid="823674641819746" type="System">
+                                                    <param id="0" name="Object to create">ReviewTime_negative</param>
+                                                    <param id="1" name="Layer">&quot;ReviewTime&quot;</param>
+                                                    <param id="2" name="X">160</param>
+                                                    <param id="3" name="Y">216</param>
+                                                </action>
+                                                <action id="0" name="Set text" sid="202421618427260" type="ReviewTime_negative">
+                                                    <param id="0" name="Text">&quot;-5 Sad! Couldnt be me!&quot;</param>
+                                                </action>
+                                                <action id="-11" name="Subtract from" sid="280816396211652" type="System">
+                                                    <param id="0" name="Variable">gamerpoints</param>
+                                                    <param id="1" name="Value">5</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="807456673561687">
+                                            <conditions>
+                                                <condition id="1" name="Is overlapping another object" sid="870100488080933" type="peeeeee">
+                                                    <param id="0" name="Object">burgerselection</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="923649595204848" type="burgerselection">
+                                                    <param id="0" name="Instance variable">type</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">&quot;Boiled Burger (Wet and Moist!)&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-3" name="Create object" sid="555731580663521" type="System">
+                                                    <param id="0" name="Object to create">ReviewTime_positive</param>
+                                                    <param id="1" name="Layer">&quot;ReviewTime&quot;</param>
+                                                    <param id="2" name="X">160</param>
+                                                    <param id="3" name="Y">216</param>
+                                                </action>
+                                                <action id="0" name="Set text" sid="853169849767681" type="ReviewTime_positive">
+                                                    <param id="0" name="Text">&quot;+2 U Do U I guess&quot;</param>
+                                                </action>
+                                                <action id="-10" name="Add to" sid="523647707133942" type="System">
+                                                    <param id="0" name="Variable">gamerpoints</param>
+                                                    <param id="1" name="Value">2</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="518071753931730">
+                                            <conditions>
+                                                <condition id="1" name="Is overlapping another object" sid="356761111619976" type="peeeeee">
+                                                    <param id="0" name="Object">burgerselection</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="627145576160600" type="burgerselection">
+                                                    <param id="0" name="Instance variable">type</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">&quot;It&apos;s a Feature&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-3" name="Create object" sid="548648323653534" type="System">
+                                                    <param id="0" name="Object to create">ReviewTime_negative</param>
+                                                    <param id="1" name="Layer">&quot;ReviewTime&quot;</param>
+                                                    <param id="2" name="X">160</param>
+                                                    <param id="3" name="Y">216</param>
+                                                </action>
+                                                <action id="0" name="Set text" sid="711439844369727" type="ReviewTime_negative">
+                                                    <param id="0" name="Text">&quot;-9999999 Im really funny&quot;</param>
+                                                </action>
+                                                <action id="-11" name="Subtract from" sid="529668056612980" type="System">
+                                                    <param id="0" name="Variable">gamerpoints</param>
+                                                    <param id="1" name="Value">9999999</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="779712524948015">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="968134142172366" type="burgerselection">
+                                                    <param id="0" name="Instance variable">type</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">&quot;Grilled Burger&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="4" name="Set animation" sid="835464816327264" type="burgerselection">
+                                                    <param id="0" name="Animation">&quot;italright&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="993434736101810" type="burgerselection">
+                                                    <param id="0" name="Instance variable">type</param>
+                                                    <param id="1" name="Value">&quot;it alright&quot;</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="674609340452761">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="589177590544577" type="burgerselection">
+                                                    <param id="0" name="Instance variable">type</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">&quot;Oven-Flavored Hams&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="4" name="Set animation" sid="190018661807758" type="burgerselection">
+                                                    <param id="0" name="Animation">&quot;itcool&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="133433090622112" type="burgerselection">
+                                                    <param id="0" name="Instance variable">type</param>
+                                                    <param id="1" name="Value">&quot;burgrs r cool&quot;</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="497687445122631">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="937673311991519" type="burgerselection">
+                                                    <param id="0" name="Instance variable">type</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">&quot;The 4 A.M Meal on a Saturday&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="4" name="Set animation" sid="737428909902690" type="burgerselection">
+                                                    <param id="0" name="Animation">&quot;thebest&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="496980434739891" type="burgerselection">
+                                                    <param id="0" name="Instance variable">type</param>
+                                                    <param id="1" name="Value">&quot;burgrs r AWESOME&quot;</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="332215734307854">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="725431118529779" type="burgerselection">
+                                                    <param id="0" name="Instance variable">type</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">&quot;Boiled Burger (Wet and Moist!)&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="4" name="Set animation" sid="388763129969314" type="burgerselection">
+                                                    <param id="0" name="Animation">&quot;itsuck&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="204368644743717" type="burgerselection">
+                                                    <param id="0" name="Instance variable">type</param>
+                                                    <param id="1" name="Value">&quot;burgers SUCK&quot;</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block any="1" sid="488472190513204">
+                            <conditions>
+                                <condition id="17" name="On tap object" sid="233758956004965" type="Touch">
+                                    <param id="0" name="Object">TouchControl_Z</param>
+                                </condition>
+                                <condition id="4" name="On key code pressed" sid="498651136857454" type="Keyboard">
+                                    <param id="0" name="Keycode">key_jump</param>
+                                </condition>
+                                <condition id="6" name="On button pressed" sid="264991144713280" type="Gamepad">
+                                    <param id="0" name="Gamepad">0</param>
+                                    <param id="1" name="Button">0</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="867456089469507">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="806105707004725" type="System">
+                                            <param id="0" name="Variable">pissdick3</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">5</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="341837649559656" type="System">
+                                            <param id="0" name="Variable">obamaMoment</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="419894540590992" type="System">
+                                            <param id="0" name="Variable">obamaMoment</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="199296196819431" type="System">
+                                            <param id="0" name="Variable">pissdick3</param>
+                                            <param id="1" name="Value">6</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="783582901460003" type="ReviewTime_title">
+                                            <param id="0" name="Text">&quot;Wat is your onion on Trees&quot;</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="360872480857245" type="System">
+                                            <param id="0" name="Seconds">0.1</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="313919075235291" type="System">
+                                            <param id="0" name="Variable">pissdick3</param>
+                                            <param id="1" name="Value">7</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="199865630777548" type="System">
+                                            <param id="0" name="Variable">obamaMoment</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                    </actions>
+                                    <sub-events>
+                                        <event-block sid="372334690485679">
+                                            <conditions>
+                                                <condition id="1" name="Is overlapping another object" sid="297309896098365" type="peeeeee">
+                                                    <param id="0" name="Object">burgerselection</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="835174278280124" type="burgerselection">
+                                                    <param id="0" name="Instance variable">type</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">&quot;it alright&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-3" name="Create object" sid="902855173443468" type="System">
+                                                    <param id="0" name="Object to create">ReviewTime_negative</param>
+                                                    <param id="1" name="Layer">&quot;ReviewTime&quot;</param>
+                                                    <param id="2" name="X">160</param>
+                                                    <param id="3" name="Y">216</param>
+                                                </action>
+                                                <action id="0" name="Set text" sid="796099096132886" type="ReviewTime_negative">
+                                                    <param id="0" name="Text">&quot;-5 JUST ALRIGHT????? HUH?&quot;</param>
+                                                </action>
+                                                <action id="-11" name="Subtract from" sid="649073171864143" type="System">
+                                                    <param id="0" name="Variable">gamerpoints</param>
+                                                    <param id="1" name="Value">5</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="936157260893933">
+                                            <conditions>
+                                                <condition id="1" name="Is overlapping another object" sid="393465206326933" type="peeeeee">
+                                                    <param id="0" name="Object">burgerselection</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="126228671764722" type="burgerselection">
+                                                    <param id="0" name="Instance variable">type</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">&quot;burgrs r cool&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-3" name="Create object" sid="764452331975146" type="System">
+                                                    <param id="0" name="Object to create">ReviewTime_positive</param>
+                                                    <param id="1" name="Layer">&quot;ReviewTime&quot;</param>
+                                                    <param id="2" name="X">160</param>
+                                                    <param id="3" name="Y">216</param>
+                                                </action>
+                                                <action id="0" name="Set text" sid="242646250577785" type="ReviewTime_positive">
+                                                    <param id="0" name="Text">&quot;+10 I Agree!!&quot;</param>
+                                                </action>
+                                                <action id="-10" name="Add to" sid="771788916317620" type="System">
+                                                    <param id="0" name="Variable">gamerpoints</param>
+                                                    <param id="1" name="Value">10</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="950078352896426">
+                                            <conditions>
+                                                <condition id="1" name="Is overlapping another object" sid="656264856977215" type="peeeeee">
+                                                    <param id="0" name="Object">burgerselection</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="786043675330369" type="burgerselection">
+                                                    <param id="0" name="Instance variable">type</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">&quot;burgrs r AWESOME&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-3" name="Create object" sid="193646330960371" type="System">
+                                                    <param id="0" name="Object to create">ReviewTime_positive</param>
+                                                    <param id="1" name="Layer">&quot;ReviewTime&quot;</param>
+                                                    <param id="2" name="X">160</param>
+                                                    <param id="3" name="Y">216</param>
+                                                </action>
+                                                <action id="0" name="Set text" sid="862715091223236" type="ReviewTime_positive">
+                                                    <param id="0" name="Text">&quot;+10000 U Get It!!!&quot;</param>
+                                                </action>
+                                                <action id="-10" name="Add to" sid="753973292888809" type="System">
+                                                    <param id="0" name="Variable">gamerpoints</param>
+                                                    <param id="1" name="Value">10000</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="285622184432503">
+                                            <conditions>
+                                                <condition id="1" name="Is overlapping another object" sid="604994880283284" type="peeeeee">
+                                                    <param id="0" name="Object">burgerselection</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="452299908803122" type="burgerselection">
+                                                    <param id="0" name="Instance variable">type</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">&quot;burgers SUCK&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-3" name="Create object" sid="654218948880106" type="System">
+                                                    <param id="0" name="Object to create">ReviewTime_negative</param>
+                                                    <param id="1" name="Layer">&quot;ReviewTime&quot;</param>
+                                                    <param id="2" name="X">160</param>
+                                                    <param id="3" name="Y">216</param>
+                                                </action>
+                                                <action id="0" name="Set text" sid="315288664242762" type="ReviewTime_negative">
+                                                    <param id="0" name="Text">&quot;-99999 Shut Up&quot;</param>
+                                                </action>
+                                                <action id="-11" name="Subtract from" sid="900527505449713" type="System">
+                                                    <param id="0" name="Variable">gamerpoints</param>
+                                                    <param id="1" name="Value">99999</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="302759130576790">
+                                            <conditions>
+                                                <condition id="1" name="Is overlapping another object" sid="814454941547571" type="peeeeee">
+                                                    <param id="0" name="Object">burgerselection</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="638093007807038" type="burgerselection">
+                                                    <param id="0" name="Instance variable">type</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">&quot;It&apos;s a Feature&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-3" name="Create object" sid="148985420375473" type="System">
+                                                    <param id="0" name="Object to create">ReviewTime_negative</param>
+                                                    <param id="1" name="Layer">&quot;ReviewTime&quot;</param>
+                                                    <param id="2" name="X">160</param>
+                                                    <param id="3" name="Y">216</param>
+                                                </action>
+                                                <action id="0" name="Set text" sid="504710340240005" type="ReviewTime_negative">
+                                                    <param id="0" name="Text">&quot;-9999999 Sucks To Be You&quot;</param>
+                                                </action>
+                                                <action id="-11" name="Subtract from" sid="404266049066857" type="System">
+                                                    <param id="0" name="Variable">gamerpoints</param>
+                                                    <param id="1" name="Value">9999999</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="808048559744573">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="925372240582448" type="burgerselection">
+                                                    <param id="0" name="Instance variable">type</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">&quot;it alright&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="4" name="Set animation" sid="704733509055485" type="burgerselection">
+                                                    <param id="0" name="Animation">&quot;TreesAlright&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="191462376807194" type="burgerselection">
+                                                    <param id="0" name="Instance variable">type</param>
+                                                    <param id="1" name="Value">&quot;They alright&quot;</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="709537174474526">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="727139239230685" type="burgerselection">
+                                                    <param id="0" name="Instance variable">type</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">&quot;burgrs r cool&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="4" name="Set animation" sid="970870013003709" type="burgerselection">
+                                                    <param id="0" name="Animation">&quot;TreesLegs&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="996466879621420" type="burgerselection">
+                                                    <param id="0" name="Instance variable">type</param>
+                                                    <param id="1" name="Value">&quot;I like Umm legs&quot;</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="389644771785254">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="811371122188246" type="burgerselection">
+                                                    <param id="0" name="Instance variable">type</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">&quot;burgrs r AWESOME&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="4" name="Set animation" sid="511435047324148" type="burgerselection">
+                                                    <param id="0" name="Animation">&quot;TreesMarriage&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="616620381855001" type="burgerselection">
+                                                    <param id="0" name="Instance variable">type</param>
+                                                    <param id="1" name="Value">&quot;Can I Marry You?&quot;</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="133862352268065">
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" sid="281197832073534" type="burgerselection">
+                                                    <param id="0" name="Instance variable">type</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">&quot;burgers SUCK&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="4" name="Set animation" sid="408897661797153" type="burgerselection">
+                                                    <param id="0" name="Animation">&quot;TreesSUCKS&quot;</param>
+                                                    <param id="1" name="From">1</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="915425504417508" type="burgerselection">
+                                                    <param id="0" name="Instance variable">type</param>
+                                                    <param id="1" name="Value">&quot;YOUR STUPID (this is the wrong answer)&quot;</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block any="1" sid="671451823799742">
+                            <conditions>
+                                <condition id="17" name="On tap object" sid="226869687683248" type="Touch">
+                                    <param id="0" name="Object">TouchControl_Z</param>
+                                </condition>
+                                <condition id="4" name="On key code pressed" sid="759408038700994" type="Keyboard">
+                                    <param id="0" name="Keycode">key_jump</param>
+                                </condition>
+                                <condition id="6" name="On button pressed" sid="500251690991067" type="Gamepad">
+                                    <param id="0" name="Gamepad">0</param>
+                                    <param id="1" name="Button">0</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="123311377908974">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="531196658351401" type="System">
+                                            <param id="0" name="Variable">pissdick3</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">7</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="199146512440432" type="System">
+                                            <param id="0" name="Variable">obamaMoment</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="988518297054877" type="System">
+                                            <param id="0" name="Variable">pissdick3</param>
+                                            <param id="1" name="Value">8</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="143257183327919" type="System">
+                                            <param id="0" name="Variable">obamaMoment</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                    <sub-events>
+                                        <event-block sid="811735830685124">
+                                            <conditions>
+                                                <condition id="1" name="Is overlapping another object" sid="198399635450278" type="peeeeee">
+                                                    <param id="0" name="Object">burgerselection</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="717375504498753" type="burgerselection">
+                                                    <param id="0" name="Instance variable">type</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">&quot;They alright&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-3" name="Create object" sid="141067961136632" type="System">
+                                                    <param id="0" name="Object to create">ReviewTime_positive</param>
+                                                    <param id="1" name="Layer">&quot;ReviewTime&quot;</param>
+                                                    <param id="2" name="X">160</param>
+                                                    <param id="3" name="Y">216</param>
+                                                </action>
+                                                <action id="0" name="Set text" sid="602682902958633" type="ReviewTime_positive">
+                                                    <param id="0" name="Text">&quot;+2 fair&quot;</param>
+                                                </action>
+                                                <action id="-10" name="Add to" sid="641750405861865" type="System">
+                                                    <param id="0" name="Variable">gamerpoints</param>
+                                                    <param id="1" name="Value">2</param>
+                                                </action>
+                                                <action id="-16" name="Wait" sid="652506530424125" type="System">
+                                                    <param id="0" name="Seconds">2.5</param>
+                                                </action>
+                                                <action id="0" name="Call function" sid="955400275310115" type="Function">
+                                                    <param id="0" name="Name">&quot;ReviewTime_End&quot;</param>
+                                                    <param id="1" name="Parameter {n}"></param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="582803227368811">
+                                            <conditions>
+                                                <condition id="1" name="Is overlapping another object" sid="365473306111249" type="peeeeee">
+                                                    <param id="0" name="Object">burgerselection</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="258331715109354" type="burgerselection">
+                                                    <param id="0" name="Instance variable">type</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">&quot;I like Umm legs&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-3" name="Create object" sid="290385119029040" type="System">
+                                                    <param id="0" name="Object to create">ReviewTime_positive</param>
+                                                    <param id="1" name="Layer">&quot;ReviewTime&quot;</param>
+                                                    <param id="2" name="X">160</param>
+                                                    <param id="3" name="Y">216</param>
+                                                </action>
+                                                <action id="0" name="Set text" sid="992840445337799" type="ReviewTime_negative">
+                                                    <param id="0" name="Text">&quot;-10 NoThanks!&quot;</param>
+                                                </action>
+                                                <action id="-11" name="Subtract from" sid="559246729239958" type="System">
+                                                    <param id="0" name="Variable">gamerpoints</param>
+                                                    <param id="1" name="Value">10</param>
+                                                </action>
+                                                <action id="-16" name="Wait" sid="404704257460102" type="System">
+                                                    <param id="0" name="Seconds">2.5</param>
+                                                </action>
+                                                <action id="0" name="Call function" sid="871570171558589" type="Function">
+                                                    <param id="0" name="Name">&quot;ReviewTime_End&quot;</param>
+                                                    <param id="1" name="Parameter {n}"></param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="488721357362669">
+                                            <conditions>
+                                                <condition id="1" name="Is overlapping another object" sid="849198738895272" type="peeeeee">
+                                                    <param id="0" name="Object">burgerselection</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="356695288363649" type="burgerselection">
+                                                    <param id="0" name="Instance variable">type</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">&quot;Can I Marry You?&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-3" name="Create object" sid="712488451186286" type="System">
+                                                    <param id="0" name="Object to create">ReviewTime_positive</param>
+                                                    <param id="1" name="Layer">&quot;ReviewTime&quot;</param>
+                                                    <param id="2" name="X">160</param>
+                                                    <param id="3" name="Y">216</param>
+                                                </action>
+                                                <action id="0" name="Set text" sid="279479312885856" type="ReviewTime_positive">
+                                                    <param id="0" name="Text">&quot;+10 Im Flattered But No&quot;</param>
+                                                </action>
+                                                <action id="-10" name="Add to" sid="475570729000646" type="System">
+                                                    <param id="0" name="Variable">gamerpoints</param>
+                                                    <param id="1" name="Value">10</param>
+                                                </action>
+                                                <action id="-16" name="Wait" sid="754308615585403" type="System">
+                                                    <param id="0" name="Seconds">2.5</param>
+                                                </action>
+                                                <action id="0" name="Call function" sid="210365127800108" type="Function">
+                                                    <param id="0" name="Name">&quot;ReviewTime_End&quot;</param>
+                                                    <param id="1" name="Parameter {n}"></param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="207186874259185">
+                                            <conditions>
+                                                <condition id="1" name="Is overlapping another object" sid="306710605830336" type="peeeeee">
+                                                    <param id="0" name="Object">burgerselection</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="743387398227856" type="burgerselection">
+                                                    <param id="0" name="Instance variable">type</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">&quot;YOUR STUPID (this is the wrong answer)&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-3" name="Create object" sid="636302257219512" type="System">
+                                                    <param id="0" name="Object to create">ReviewTime_negative</param>
+                                                    <param id="1" name="Layer">&quot;ReviewTime&quot;</param>
+                                                    <param id="2" name="X">160</param>
+                                                    <param id="3" name="Y">216</param>
+                                                </action>
+                                                <action id="0" name="Set text" sid="885754585493065" type="ReviewTime_negative">
+                                                    <param id="0" name="Text">&quot;-999999999 at least you&apos;re honest&quot;</param>
+                                                </action>
+                                                <action id="-11" name="Subtract from" sid="786376512758667" type="System">
+                                                    <param id="0" name="Variable">gamerpoints</param>
+                                                    <param id="1" name="Value">999999999</param>
+                                                </action>
+                                                <action id="-16" name="Wait" sid="791448686719710" type="System">
+                                                    <param id="0" name="Seconds">2.5</param>
+                                                </action>
+                                                <action id="0" name="Call function" sid="572530381650621" type="Function">
+                                                    <param id="0" name="Name">&quot;ReviewTime_End&quot;</param>
+                                                    <param id="1" name="Parameter {n}"></param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="980995964754755">
+                                            <conditions>
+                                                <condition id="1" name="Is overlapping another object" sid="911193045635714" type="peeeeee">
+                                                    <param id="0" name="Object">burgerselection</param>
+                                                </condition>
+                                                <condition id="-7" name="Compare instance variable" sid="213521927986284" type="burgerselection">
+                                                    <param id="0" name="Instance variable">type</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">&quot;It&apos;s a Feature&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-3" name="Create object" sid="164357384357261" type="System">
+                                                    <param id="0" name="Object to create">ReviewTime_negative</param>
+                                                    <param id="1" name="Layer">&quot;ReviewTime&quot;</param>
+                                                    <param id="2" name="X">160</param>
+                                                    <param id="3" name="Y">216</param>
+                                                </action>
+                                                <action id="0" name="Set text" sid="869142368120743" type="ReviewTime_negative">
+                                                    <param id="0" name="Text">&quot;-9999999 bye bye!&quot;</param>
+                                                </action>
+                                                <action id="-16" name="Wait" sid="712291926298530" type="System">
+                                                    <param id="0" name="Seconds">2.5</param>
+                                                </action>
+                                                <action id="0" name="Call function" sid="399696607944999" type="Function">
+                                                    <param id="0" name="Name">&quot;ReviewTime_End&quot;</param>
+                                                    <param id="1" name="Parameter {n}"></param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="633631358825818" title="BaiscMovement">
+                    <sub-events>
+                        <event-block any="1" sid="319033753065157">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="160218191030456" type="TouchControl_ControlStick">
+                                    <param id="0" name="Instance variable">input</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;left&quot;</param>
+                                </condition>
+                                <condition id="4" name="On key code pressed" sid="790548986425128" type="Keyboard">
+                                    <param id="0" name="Keycode">key_left</param>
+                                </condition>
+                                <condition id="6" name="On button pressed" sid="229094988660783" type="Gamepad">
+                                    <param id="0" name="Gamepad">0</param>
+                                    <param id="1" name="Button">14</param>
+                                </condition>
+                                <condition id="5" name="Compare axis" sid="820165959928769" type="Gamepad">
+                                    <param id="0" name="Gamepad">0</param>
+                                    <param id="1" name="Axis">0</param>
+                                    <param id="2" name="Comparison">2</param>
+                                    <param id="3" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="887940372487397">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="247341940963487" type="System">
+                                            <param id="0" name="Variable">pissdick</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="101252723103574" type="System">
+                                            <param id="0" name="Variable">pissdick2</param>
+                                            <param id="1" name="Comparison">4</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="574723664027364" type="System">
+                                            <param id="0" name="Variable">pissdick3</param>
+                                            <param id="1" name="Comparison">5</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="983824228361484" type="System">
+                                            <param id="0" name="Variable">pissdick</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="4" name="Set animation" sid="950865893500945" type="ReviewTime_LeftCursor">
+                                            <param id="0" name="Animation">&quot;press&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                        <action id="-11" name="Subtract from" sid="766900900596015" type="System">
+                                            <param id="0" name="Variable">pissdick2</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block any="1" sid="355663474296120">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="990180361163152" type="TouchControl_ControlStick">
+                                    <param id="0" name="Instance variable">input</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;right&quot;</param>
+                                </condition>
+                                <condition id="4" name="On key code pressed" sid="677412334957693" type="Keyboard">
+                                    <param id="0" name="Keycode">key_right</param>
+                                </condition>
+                                <condition id="6" name="On button pressed" sid="630860241664724" type="Gamepad">
+                                    <param id="0" name="Gamepad">0</param>
+                                    <param id="1" name="Button">15</param>
+                                </condition>
+                                <condition id="5" name="Compare axis" sid="932444825468655" type="Gamepad">
+                                    <param id="0" name="Gamepad">0</param>
+                                    <param id="1" name="Axis">0</param>
+                                    <param id="2" name="Comparison">4</param>
+                                    <param id="3" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="268868382765393">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="976800913953885" type="System">
+                                            <param id="0" name="Variable">pissdick</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="163573236830061" type="System">
+                                            <param id="0" name="Variable">pissdick2</param>
+                                            <param id="1" name="Comparison">2</param>
+                                            <param id="2" name="Value">5</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="159410156881193" type="System">
+                                            <param id="0" name="Variable">pissdick3</param>
+                                            <param id="1" name="Comparison">5</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="814289507444137" type="System">
+                                            <param id="0" name="Variable">pissdick</param>
+                                            <param id="1" name="Value">2</param>
+                                        </action>
+                                        <action id="4" name="Set animation" sid="378868523203650" type="ReviewTime_RightCursor">
+                                            <param id="0" name="Animation">&quot;press&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                        <action id="-10" name="Add to" sid="591989378676092" type="System">
+                                            <param id="0" name="Variable">pissdick2</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="337681286540105">
+                            <conditions>
+                                <condition id="-1" name="Every tick" sid="648783217554058" type="System" />
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="902487866757478">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="177167952639978" type="System">
+                                            <param id="0" name="Variable">pissdick</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-1" name="Set X" sid="736442674809197" type="burgerselection">
+                                            <param id="0" name="X">self.X+((5 * 60) * dt)</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="807458589202649">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="133651937895689" type="System">
+                                            <param id="0" name="Variable">pissdick</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">2</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-1" name="Set X" sid="445851472591937" type="burgerselection">
+                                            <param id="0" name="X">self.X-((5 * 60) * dt)</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="556881630120681">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="877022666209452" type="burgerselection">
+                                    <param id="0" name="Object">peeeeee</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="801734896551671" type="ReviewTime_selected">
+                                    <param id="0" name="Text">burgerselection.type</param>
+                                </action>
+                                <action id="-1" name="Set X" sid="938830997653446" type="burgerselection">
+                                    <param id="0" name="X">peeeeee.X</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="604693454649454" type="System">
+                                    <param id="0" name="Variable">pissdick</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="593041883175279">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="620147469575839" type="burgerselection">
+                                    <param id="0" name="Object">peeeeee</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="791397744353843" type="ReviewTime_selected">
+                                    <param id="0" name="Text">burgerselection.type</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-block sid="339025903448215">
+                    <conditions>
+                        <condition id="0" name="On function" sid="662888898337252" type="Function">
+                            <param id="0" name="Name">&quot;ReviewTime_TreesMusic&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="202257918531383" type="avatar">
+                            <param id="0" name="Animation">&quot;treeshappy&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="310854246860741" type="CharacterFont">
+                            <param id="0" name="Text">&quot;Trees&quot;</param>
+                        </action>
+                        <action id="0" name="Play" sid="164834110200817" type="Audio">
+                            <param id="0" name="Audio file">TreesTheme</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">-5</param>
+                            <param id="1" name="Tag (optional)">&quot;levelmusic&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="661702016706509">
+                    <conditions>
+                        <condition id="0" name="On function" sid="766056998138991" type="Function">
+                            <param id="0" name="Name">&quot;ReviewTime_StartUp&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="490165358300907" type="Function">
+                            <param id="0" name="Name">&quot;end_dialogue&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="-9" name="Set value" sid="114090813783902" type="System">
+                            <param id="0" name="Variable">pissdick3</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="474986323000179" type="System">
+                            <param id="0" name="Layer">&quot;ReviewTime&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="882178533161354">
+                    <conditions>
+                        <condition id="0" name="On function" sid="375539941750606" type="Function">
+                            <param id="0" name="Name">&quot;ReviewTime_End&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set layer visible" sid="981942376643971" type="System">
+                            <param id="0" name="Layer">&quot;ReviewTime&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="403096479682194">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="728149774246472" type="System">
+                                    <param id="0" name="Variable">gamerpoints</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Value">-9999999</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="882795994982888" type="System">
+                                    <param id="0" name="Variable">pissdick3</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">8</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="842621277861804" type="Function">
+                                    <param id="0" name="Name">&quot;dialogue&quot;</param>
+                                    <param id="1" name="Parameter {n}">&quot;CCsection1worstreview&quot;</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="197441405359232" type="System">
+                                    <param id="0" name="Variable">pissdick3</param>
+                                    <param id="1" name="Value">9</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="486122839802720">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="541980996762830" type="System">
+                                    <param id="0" name="Variable">gamerpoints</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">-9999999</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="922482251294576" type="System">
+                                    <param id="0" name="Variable">gamerpoints</param>
+                                    <param id="1" name="Comparison">2</param>
+                                    <param id="2" name="Value">-10</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="298773199554104" type="System">
+                                    <param id="0" name="Variable">pissdick3</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">8</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="500781547534292" type="Function">
+                                    <param id="0" name="Name">&quot;dialogue&quot;</param>
+                                    <param id="1" name="Parameter {n}">&quot;CCsection1badreview&quot;</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="763693979330556" type="System">
+                                    <param id="0" name="Variable">pissdick3</param>
+                                    <param id="1" name="Value">9</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="750989143738166">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="505213911481243" type="System">
+                                    <param id="0" name="Variable">gamerpoints</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">-10</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="762144003636948" type="System">
+                                    <param id="0" name="Variable">gamerpoints</param>
+                                    <param id="1" name="Comparison">2</param>
+                                    <param id="2" name="Value">25</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="294211356633197" type="System">
+                                    <param id="0" name="Variable">pissdick3</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">8</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="838831229459054" type="Function">
+                                    <param id="0" name="Name">&quot;dialogue&quot;</param>
+                                    <param id="1" name="Parameter {n}">&quot;CCsection1okreview&quot;</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="717719956635931" type="System">
+                                    <param id="0" name="Variable">pissdick3</param>
+                                    <param id="1" name="Value">9</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="809633953685114">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="949696419944277" type="System">
+                                    <param id="0" name="Variable">gamerpoints</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">25</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="960600304086427" type="System">
+                                    <param id="0" name="Variable">gamerpoints</param>
+                                    <param id="1" name="Comparison">2</param>
+                                    <param id="2" name="Value">999999999999999</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="807497042515633" type="System">
+                                    <param id="0" name="Variable">pissdick3</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">8</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="767074896958078" type="Function">
+                                    <param id="0" name="Name">&quot;dialogue&quot;</param>
+                                    <param id="1" name="Parameter {n}">&quot;CCsection1goodreview&quot;</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="195010199410568" type="System">
+                                    <param id="0" name="Variable">pissdick3</param>
+                                    <param id="1" name="Value">9</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="452256357468641">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="636032875110792" type="System">
+                                    <param id="0" name="Variable">gamerpoints</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">999999999999999</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="342802165603814" type="System">
+                                    <param id="0" name="Variable">pissdick3</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">8</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="974687351070780" type="Function">
+                                    <param id="0" name="Name">&quot;dialogue&quot;</param>
+                                    <param id="1" name="Parameter {n}">&quot;CCsection1legreview&quot;</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="565959090608372" type="System">
+                                    <param id="0" name="Variable">pissdick3</param>
+                                    <param id="1" name="Value">9</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>DemoEvents</name>
+    <events>
+        <event-block sid="487132405247732">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="266580022317982" type="System" />
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="458791018780504" type="FakeTest_BG1green">
+                    <param id="0" name="X">Self.X-0.5</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="688302731857956">
+            <conditions>
+                <condition id="-1" name="Compare X" sid="386741480384477" type="FakeTest_BG1green">
+                    <param id="0" name="Comparison">3</param>
+                    <param id="1" name="X co-ordinate">-32</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="223953794487141" type="FakeTest_BG1green">
+                    <param id="0" name="X">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="560441654841830">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="639610293887828" type="System" />
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="463607392214076" type="System">
+                    <param id="0" name="Seconds">10.0</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="734235691863143" type="System">
+                    <param id="0" name="Layout">Menu</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="404499301613057">
+            <conditions>
+                <condition id="-1" name="Compare X" sid="453109245944798" type="treesdemo">
+                    <param id="0" name="Comparison">4</param>
+                    <param id="1" name="X co-ordinate">300</param>
+                </condition>
+                <condition id="7" inverted="1" name="Is mirrored" sid="986995970527979" type="treesdemo" />
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="607435141117195" type="treesdemo">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
