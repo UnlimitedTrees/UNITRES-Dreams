@@ -4,7 +4,7 @@ This is the repository for UNITRES Dreams, a free, experimental pixel 2D platfor
 
 - Made in Construct 2
 - Requires 'SonicPhysics' behavior by PixelMonkey and the 'Paster' plugin
-- I am bad at programming so everything is kind of a mess. aAso i used a few tutorials for some specific aspects of the game but i forgot which ones lol.
+- I am bad at programming so everything is kind of a mess. Also i used a few tutorials for some specific aspects of the game but i forgot which ones lol.
 
 [Play it on Newgrounds](https://www.newgrounds.com/portal/view/778934)
 
