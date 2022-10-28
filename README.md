@@ -16,70 +16,70 @@ IF YOU DISTRIBUTE A MODIFIED VERSION OF THE GAME, YOU MUST MAKE IT OPEN SOURCE A
 ## Credits and Shout Outs
 
 Main Developer/Main Artist/Main Programmer
--Unlimited Trees
+- Unlimited Trees
 
 Composers
--RRThiel
--A-S-H
--Scooblee
--CosmicGem
--Mr. Sauceman
--[c]
--MiniMacro
--Crash
--littlelamp100
--Woofle
--Lange
--MegaBaZ
--SoundCirclet (dante)
--R3tronaut
+- RRThiel
+- A-S-H
+- Scooblee
+- CosmicGem
+- Mr. Sauceman
+- [c]
+- MiniMacro
+- Crash
+- littlelamp100
+- Woofle
+- Lange
+- MegaBaZ
+- SoundCirclet (dante)
+- R3tronaut
 
 Julia Animations and Promo Artwork
--LooneyDude
+- LooneyDude
 
 Extra Artwork
--SpectraS02
--Nathan
--Jeto
--Peeper
+- SpectraS02
+- Nathan
+- Jeto
+- Peeper
 
 Testing
--LakeFeperd
--Voltrix
--Barak
--GameBro
--Tpot
--staticj3ff
--probably some others I don't exactly remember
+- LakeFeperd
+- Voltrix
+- Barak
+- GameBro
+- Tpot
+- staticj3ff
+- probably some others I don't exactly remember
 
 Mystic Garden Assests / K&LWW Team
--Shane (Sparks)
--Lapper
--PixelatedEric
--FUNKVESSEL
--Woofle
--The KKM
--Naoshi
+- Shane (Sparks)
+- Lapper
+- PixelatedEric
+- FUNKVESSEL
+- Woofle
+- The KKM
+- Naoshi
 
 Petscop Soundeffects
--Tony (pressedyes)
+- Tony (pressedyes)
 
 Special Thanks/Shout outs
--Mr. Potatobadger
--Heraga
--MtH
--Red
--saladplainzone
--TrippleJaz
--TysonTay
--MeloSoni
--Thursday
--Sliat Scarlettt
--JamoART
--PixelMonkey
--LaDestitute
--Nexter
--Stealth
--Spazer40
--Senri_Kitty
--Andrew75
+- Mr. Potatobadger
+- Heraga
+- MtH
+- Red
+- saladplainzone
+- TrippleJaz
+- TysonTay
+- MeloSoni
+- Thursday
+- Sliat Scarlettt
+- JamoART
+- PixelMonkey
+- LaDestitute
+- Nexter
+- Stealth
+- Spazer40
+- Senri_Kitty
+- Andrew75
